@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-25",
+  "title": "HARMONi-GI1 与多项竞品在 ESMO 读出",
+  "items": [
+    {
+      "entry": "harmoni-gi1",
+      "headline": "HARMONi-GI1 摘要解禁：期中总生存阳性",
+      "blurb": "682 人，中位随访 14.3 个月。中位 OS 14.9 对 12.1 个月，HR 0.75（0.61–0.92）；中位 PFS 8.4 对 5.8 个月，HR 0.61。当时未见官方摘要原页，数字来自会议转述。",
+      "grades": [
+        "二手"
+      ]
+    },
+    {
+      "entry": "sac-tmt",
+      "headline": "OptiTROP-Lung06 达到无进展生存终点，同期发表于 NEJM",
+      "blurb": "sac-TMT 联合 K药对照化疗联合 K药，一线 PD-L1<1% 非鳞 NSCLC，455 人。独立评审 PFS 15.0 对 5.7 个月，HR 0.49。",
+      "grades": [
+        "一手"
+      ]
+    },
+    {
+      "entry": "pumitamig",
+      "headline": "ROSETTA Lung-107：pumitamig 联合多西他赛的全球 II 期",
+      "blurb": "免疫治疗后进展的 NSCLC，50 例，中位随访 12.2 周；30 例可评估，确认 ORR 36.7%，中位 PFS 6.9 个月。",
+      "grades": [
+        "一手"
+      ]
+    },
+    {
+      "entry": "sone-ve",
+      "headline": "CLARITY-Gastric 01：Sone-Ve 单药总生存阳性",
+      "blurb": "二线及以后 CLDN18.2 阳性胃癌。意向性治疗人群 OS 10.6 对 6.4 个月，HR 0.58；独立评审 PFS 未达显著。数字来自会议转述。",
+      "grades": [
+        "二手"
+      ]
+    },
+    {
+      "entry": "domestic-pd1vegf",
+      "headline": "基石药业公布 CS2009 的 II 期更新",
+      "blurb": "PD-1/VEGF/CTLA-4 三抗。一线 TPS≥50% 单药在更晚截止时整体 ORR 87.5%（21/24），30 mg/kg 组 11/11。早期单臂，无头对头。",
+      "grades": [
+        "一手"
+      ]
+    }
+  ],
+  "note": ""
+}

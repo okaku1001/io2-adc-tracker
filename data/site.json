@@ -1,0 +1,44 @@
+{
+  "title": "IO2.0+ADC 临床追踪",
+  "tagline": "以康方生物为中心，记录依沃西、卡度尼利及其战略竞品与伙伴的核心临床变动。同一条试验只保留一个条目，每日动态是索引。",
+  "base_url": "https://okaku1001.github.io/io2-adc-tracker",
+  "repo_url": "https://github.com/okaku1001/io2-adc-tracker",
+  "source_as_of": "2026-11-10",
+  "disclaimer": "本站为公开信息整理，不构成投资建议。数字均来自已核对的一手或已标注来源，不代表康方、Summit 或其他公司立场。",
+  "banner": {
+    "title": "近端节点：FDA PDUFA 2026-11-14",
+    "text": "适应症是依沃西联合化疗，用于 EGFR 突变非鳞 NSCLC、三代 TKI 之后。不是一线，也不是对 K药的头对头。截至 2026-11-10，所查未见 CRL、延期或咨询会披露。"
+  },
+  "upcoming": [
+    {
+      "when": "2026-11-14",
+      "title": "依沃西美国 BLA 的 PDUFA 日",
+      "detail": "依据全球 HARMONi。FDA 书面要求该适应症需要统计学显著的 OS。主分析 OS p=0.057，后续更新为名义 p 值。"
+    },
+    {
+      "when": "2026Q4（指引）",
+      "title": "HARMONi-3 鳞癌队列：主要 PFS 事件数预计达到",
+      "detail": "同时安排一次计划内早期 OS 期中分析。公司原文是事件数预计达到，不等于数据公布日。"
+    },
+    {
+      "when": "计划 2026-11-10",
+      "title": "翰森 NCT07899086（HS-20093+依沃西）计划开始",
+      "detail": "截至 2026-11-10 查 ClinicalTrials.gov，状态仍为尚未招募，最后更新 2026-10-27。"
+    },
+    {
+      "when": "2026-11（登记估计）",
+      "title": "COMPLUS-5 预计主要完成",
+      "detail": "卡度尼利联合 AK109 与紫杉醇，用于免疫治疗后进展的胃癌。计划日期不等于读出。"
+    },
+    {
+      "when": "2026Q4（指引）",
+      "title": "EA2251 美国开中心",
+      "detail": "一线晚期胆道癌的海外确认路径。Summit 称 registration-enabling。"
+    },
+    {
+      "when": "仍未见到登记",
+      "title": "依沃西+Datroway 一线 TNBC III 期、HARMONi-10 的 CT.gov 页",
+      "detail": "合作或 CDE 公示已经宣布，截至 2026-11-10 仍未在 ClinicalTrials.gov 查到对应登记。"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://okaku1001.github.io/io2-adc-tracker/sitemap.xml

@@ -1,0 +1,2891 @@
+[
+  {
+    "slug": "harmoni-fda",
+    "title": "依沃西美国 BLA（HARMONi）",
+    "subtitle": "EGFR 突变非鳞 NSCLC、三代 TKI 之后，依沃西联合化疗。PDUFA 日为 2026-11-14。",
+    "kicker": "监管 · 全球 HARMONi",
+    "group": "ivo",
+    "priority": 1,
+    "companies": [
+      "康方生物",
+      "Summit"
+    ],
+    "drugs": [
+      "依沃西"
+    ],
+    "indications": [
+      "NSCLC"
+    ],
+    "aliases": [
+      "SMT112",
+      "AK112",
+      "ivonescimab",
+      "依达方",
+      "PDUFA",
+      "HARMONi"
+    ],
+    "updated": "2026-11-05",
+    "status": "FDA 已于 2026-01-29 受理 BLA，PDUFA 2026-11-14。截至 2026-11-10，所查未见 CRL、延期或咨询会披露。",
+    "summary": "依沃西（AK112 / ivonescimab / SMT112，商品名依达方）递交美国上市的依据，是 Summit 申办的全球 III 期 HARMONi，不是中国的 HARMONi-A，也不是一线头对头 K药的适应症。PFS 显著；主分析 OS 未达显著。FDA 书面指出，该适应症获批需要统计学显著的 OS，本研究的 PFS 可能不足以支持上市。之后几次 OS 更新给出的是名义 p 值，不能替代预设检验。",
+    "timeline": [
+      {
+        "date": "2025-04",
+        "title": "主分析：PFS 显著，OS 未达显著",
+        "grades": [
+          "一手"
+        ],
+        "body": "HARMONi（NCT06396065）与中国 HARMONi-A 共用方案号 AK112-301，但是独立研究。入组人数有两套并列口径：深挖材料记 n=438，试验清单按登记页记 n=420，引用时以最新登记页或论文为准。\n\nPFS：中位随访 22.3 个月，中位 PFS 6.8 对 4.4 个月，HR 0.52（0.41–0.66），p<0.0001。主分析 OS（数据截止 2025-04）：中位 OS 16.8 对 14.0 个月，HR 0.79（0.62–1.01），p=0.057，未达显著。严重 TRAE 28%（61/218）对 15%（33/218）；TRAE 导致死亡 4 例对 5 例。",
+        "sources": [
+          {
+            "label": "Lancet Oncology（PFS）",
+            "grade": "一手"
+          },
+          {
+            "label": "主分析 OS（2025-04 截止）",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-29",
+        "title": "FDA 受理 BLA，PDUFA 定为 2026-11-14",
+        "grades": [
+          "一手"
+        ],
+        "body": "2025 年第四季度递交 BLA，2026-01-29 受理，此前已获 Fast Track。适应症：依沃西联合化疗，用于 EGFR 突变非鳞 NSCLC、三代 TKI 治疗之后。Summit 自称美国每年符合条件的患者在 1.4 万人以上。",
+        "sources": [
+          {
+            "label": "Summit BLA 受理新闻稿",
+            "url": "https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Announces-U-S--FDA-Acceptance-of-Biologics-License-Application-BLA-Seeking-Approval-for-Ivonescimab-in-Combination-with-Chemotherapy-in-Treatment-of-Patients-with-EGFRm-NSCLC-Post-TKI-Therapy/default.aspx",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-02-23",
+        "title": "10-K 写明 FDA 要求统计学显著的 OS",
+        "grades": [
+          "一手"
+        ],
+        "body": "Summit 2025 财年 10-K 的大意是：FDA 指出该适应症获批需要统计学显著的 OS，本研究的 PFS 可能不足以支持上市。这一约束在 2026 年第三季度新闻稿里再次被重申。",
+        "sources": [
+          {
+            "label": "Summit 10-K FY2025（2026-02-23）",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-15",
+        "title": "WCLC 更新：ITT 名义显著，西方亚组置信区间仍跨 1",
+        "grades": [
+          "一手"
+        ],
+        "body": "Summit 8-K 附件给出三次 OS 分析。亚洲患者数据仍锁定在 2025-04 截点。更新分析已提交 FDA。后续更新的 p 值均为名义 p 值。",
+        "table": {
+          "headers": [
+            "数据截止",
+            "ITT HR（95%CI）",
+            "西方亚组 HR（95%CI）",
+            "西方中位随访"
+          ],
+          "rows": [
+            [
+              "2025-04（主分析）",
+              "0.79（0.62–1.01），p=0.057",
+              "0.98（0.55–1.73）",
+              "9.2 个月"
+            ],
+            [
+              "2025-09",
+              "0.78（0.62–0.98），名义 p=0.0332",
+              "0.84（0.53–1.32）",
+              "13.7 个月"
+            ],
+            [
+              "2026-06",
+              "0.76（0.61–0.95），名义 p=0.0151",
+              "0.76（0.52–1.10）",
+              "23.2 个月"
+            ]
+          ]
+        },
+        "sources": [
+          {
+            "label": "Summit 8-K EX-99.1（2026-09-15，WCLC）",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-04",
+        "title": "三季报再次重申 FDA 的 OS 要求，未提咨询会或延期",
+        "grades": [
+          "一手"
+        ],
+        "body": "Summit 2026 年第三季度新闻稿重申「FDA 指出该适应症获批需要统计学显著的 OS 获益」，并写明 6 月更新的 OS（HR 0.76，名义 p=0.0151）已提交 FDA。稿件未提及咨询委员会或审评延期。截至 2026-11-10，所查 EDGAR 未见 CRL、延期或咨询会披露。",
+        "sources": [
+          {
+            "label": "Summit 8-K（2026-11-04）",
+            "url": "https://www.sec.gov/Archives/edgar/data/1599298/000159929826000088/smmt-20261104.htm",
+            "grade": "一手"
+          },
+          {
+            "label": "Q3 新闻稿",
+            "url": "https://www.sec.gov/Archives/edgar/data/1599298/000159929826000088/a2026_prx1105xq32026earn.htm",
+            "grade": "一手"
+          }
+        ]
+      }
+    ],
+    "impact": {
+      "text": "这是本季度最大的二元事件。说明书是否以及如何写 OS，决定依沃西以什么身份进入美国。它拿的是 EGFR 突变、TKI 之后的位置，不是一线、也不是对 K药的头对头。\n\n研究组根据 FDA「需要显著 OS」的原话和主分析 p=0.057 判断：出现 CRL、要求补充数据，或因审评新数据而延期的可能性都不低。这是推论，不是已经发生的监管决定。",
+      "attribution": "研究组判断（知识库截至 2026-11-10；其中关于 CRL/延期可能性的表述标为推论，依据为深挖材料对 FDA 原话的解读）"
+    },
+    "grades_present": [
+      "一手"
+    ]
+  },
+  {
+    "slug": "harmoni-a",
+    "title": "HARMONi-A",
+    "subtitle": "中国 III 期。EGFR-TKI 治疗进展的 EGFR 突变非鳞 NSCLC，依沃西联合化疗对照安慰剂联合化疗。",
+    "kicker": "已获批 · 中国",
+    "group": "ivo",
+    "priority": 5,
+    "companies": [
+      "康方生物"
+    ],
+    "drugs": [
+      "依沃西"
+    ],
+    "indications": [
+      "NSCLC"
+    ],
+    "aliases": [
+      "AK112-301",
+      "NCT05184712",
+      "CTR20213079"
+    ],
+    "updated": "2026-06-18",
+    "status": "已读出最终 OS，并作为 2024-05-24 中国首个获批适应症的依据。",
+    "summary": "HARMONi-A（NCT05184712 / CTR20213079）入组 322 人。最终 OS：中位随访 32.5 个月，中位 OS 16.8 对 14.1 个月，分层 HR 0.74（95%CI 0.58–0.95），P=0.02；30 个月 OS 率 29.1% 对 18.4%；3 级及以上 TEAE 67.1% 对 54.7%。全球 HARMONi 研究同一适应症，但是独立试验，OS 结果不能互相替代。",
+    "timeline": [
+      {
+        "date": "2024-05-24",
+        "title": "中国获批：EGFR-TKI 后非鳞 NSCLC，联合化疗",
+        "grades": [
+          "一手"
+        ],
+        "body": "这是依沃西在中国的第一个适应症，依据即为 HARMONi-A。2024 年 12 月，该适应症进入国家医保目录。",
+        "sources": [
+          {
+            "label": "康方新闻 / 港交所自愿公告",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-06-18",
+        "title": "最终 OS 见刊",
+        "grades": [
+          "一手"
+        ],
+        "body": "中位随访 32.5 个月，中位 OS 16.8 对 14.1 个月，分层 HR 0.74（0.58–0.95），P=0.02；30 个月 OS 率 29.1% 对 18.4%；3 级及以上 TEAE 67.1% 对 54.7%。",
+        "sources": [
+          {
+            "label": "JAMA 2026;336(4):306-314，PMID 42307937",
+            "grade": "一手"
+          },
+          {
+            "label": "康方新闻 2026-06-18",
+            "grade": "一手"
+          }
+        ]
+      }
+    ],
+    "impact": {
+      "text": "这是依沃西在中国落地的起点，也是全球 HARMONi 的中国对照镜像。全球申报走的是独立的 HARMONi，不能把这边已经显著的最终 OS 直接说成美国申请的依据。",
+      "attribution": "研究组判断"
+    },
+    "grades_present": [
+      "一手"
+    ]
+  },
+  {
+    "slug": "harmoni-2",
+    "title": "HARMONi-2",
+    "subtitle": "中国 III 期。一线 PD-L1 阳性（TPS≥1%）NSCLC，依沃西单药对照帕博利珠单抗（K药）单药。",
+    "kicker": "头对头 K药 · 已获批",
+    "group": "ivo",
+    "priority": 3,
+    "companies": [
+      "康方生物"
+    ],
+    "drugs": [
+      "依沃西"
+    ],
+    "indications": [
+      "NSCLC"
+    ],
+    "aliases": [
+      "NCT05499390",
+      "CTR20222137",
+      "AK112-302"
+    ],
+    "updated": "2026-09-14",
+    "status": "PFS 期中和预设 OS 期中均为阳性。最终 OS 仍待公布。中国已于 2025-04-25 获批该适应症。",
+    "summary": "HARMONi-2（NCT05499390 / CTR20222137）入组 398 人，是依沃西第一条对 K药单药的注册性头对头。PFS 期中：中位 PFS 11.14 对 5.82 个月，HR 0.51（P<0.0001）。预设 OS 期中（数据截止 2026-08-20，中位随访 36 个月，OS 事件 234 例，单侧 α=0.0141）：中位 OS 30.75 对 22.57 个月，HR 0.73（0.57–0.95），P=0.009。一手只称「预设期中分析」，不是「第二次期中」。",
+    "timeline": [
+      {
+        "date": "2025-04-25",
+        "title": "中国获批一线 PD-L1 阳性 NSCLC 单药",
+        "grades": [
+          "一手"
+        ],
+        "body": "依据 HARMONi-2 对帕博利珠单抗的头对头。2025 年 12 月，该适应症进入医保。",
+        "sources": [
+          {
+            "label": "康方新闻 / 港交所自愿公告",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2025",
+        "title": "PFS 期中见刊",
+        "grades": [
+          "一手"
+        ],
+        "body": "中位 PFS 11.14 对 5.82 个月，HR 0.51（P<0.0001）。严重 TRAE 29.9% 对 21.6%。见刊年份为 2025，具体月份以 Lancet 论文为准。",
+        "sources": [
+          {
+            "label": "Lancet 2025;405:839-849，PMID 40057343",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-14",
+        "title": "WCLC / JTO：预设 OS 期中阳性",
+        "grades": [
+          "一手"
+        ],
+        "body": "数据截止 2026-08-20，中位随访 36 个月，OS 事件 234 例，单侧 α=0.0141。中位 OS 30.75 对 22.57 个月（有的基线报告四舍五入写成 30.8 对 22.6，引用推荐带一位小数的原文）。HR 0.73（0.57–0.95），P=0.009。2 年 OS 率 57.9% 对 48.0%，3 年 45.0% 对 33.1%。鳞癌亚组 HR 0.65（0.45–0.95），非鳞 HR 0.79（0.55–1.14）；PD-L1 1–49% 亚组 OS HR 0.85（0.61–1.18）。最终 OS 仍待公布。",
+        "sources": [
+          {
+            "label": "JTO 摘要 doi:10.1016/j.jtho.2026.104254",
+            "grade": "一手"
+          },
+          {
+            "label": "Summit 8-K 2026-09-14",
+            "grade": "一手"
+          }
+        ]
+      }
+    ],
+    "impact": {
+      "text": "这是依沃西已经读出的、对 K药单药的头对头 OS 阳性。优势在鳞癌和高表达人群里更清楚；PD-L1 1–49% 亚组的置信区间跨 1。全球能否坐实对 Keytruda 体系的优势，仍要看 HARMONi-3，不能把中国单药头对头直接外推到全球联合化疗人群。",
+      "attribution": "研究组判断"
+    },
+    "grades_present": [
+      "一手"
+    ]
+  },
+  {
+    "slug": "harmoni-6",
+    "title": "HARMONi-6",
+    "subtitle": "中国 III 期。一线鳞状 NSCLC，依沃西联合化疗对照替雷利珠单抗联合化疗。",
+    "kicker": "头对头替雷利珠 · 已获批",
+    "group": "ivo",
+    "priority": 4,
+    "companies": [
+      "康方生物"
+    ],
+    "drugs": [
+      "依沃西"
+    ],
+    "indications": [
+      "NSCLC"
+    ],
+    "aliases": [
+      "NCT05840016",
+      "CTR20231272"
+    ],
+    "updated": "2026-08-12",
+    "status": "PFS 与首次计划内 OS 均为阳性。中国已于 2026-08-12 获批该适应症。",
+    "summary": "HARMONi-6（NCT05840016 / CTR20231272）入组 532 人。PFS 期中：11.1 对 6.9 个月，HR 0.60（0.46–0.78）。路演披露的最终 PFS：12.48 对 8.31 个月，HR 0.72（P=0.003），中位随访 17.02 个月；说明书原文有条目记为未看到，数字来自路演。首次计划内 OS（数据截止 2026-02-27，中位随访 21.4 个月）：中位 OS 27.9 对 23.7 个月，HR 0.66（0.50–0.87），单侧 P=0.0017。",
+    "timeline": [
+      {
+        "date": "2025",
+        "title": "PFS 期中见刊",
+        "grades": [
+          "一手"
+        ],
+        "body": "11.1 对 6.9 个月，HR 0.60（0.46–0.78）。",
+        "sources": [
+          {
+            "label": "Lancet 2025;406:2078-2088，PMID 41125109",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-06",
+        "title": "ASCO 全体大会：首次计划内 OS 阳性",
+        "grades": [
+          "一手"
+        ],
+        "body": "数据截止 2026-02-27，中位随访 21.4 个月；有效性边界为单侧 P<0.0049。中位 OS 27.9 对 23.7 个月，HR 0.66（0.50–0.87），单侧 P=0.0017。PD-L1<1% 的 HR 0.64（0.43–0.96），PD-L1≥1% 的 HR 0.68（0.46–0.99）。3 级及以上 TRAE 69% 对 59%，3 级及以上出血 3% 对 1%。\n\n路演还披露了最终 PFS：12.48 对 8.31 个月，HR 0.72（P=0.003），中位随访 17.02 个月。说明书原文未看到，数字来自康方 2026 年中期路演第 14 页。",
+        "sources": [
+          {
+            "label": "Lancet 2026;407:2620-2629，PMID 42218899",
+            "grade": "一手"
+          },
+          {
+            "label": "康方 2026H1 路演 p.14（最终 PFS）",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-08-12",
+        "title": "中国获批一线鳞状 NSCLC，联合化疗",
+        "grades": [
+          "一手",
+          "推论"
+        ],
+        "body": "依据 HARMONi-6。研究组推断：该适应症获批晚于「2026-06-10 前批准」的医保目录调整窗口，大概率不在 2026 年目录内，最早 2027 年。依沃西和卡度尼利现有协议 2026 年底到期，续约有降价风险。依据是国家医保局 2026-07-14 形式审查名单，依沃西通过条件为「目录内条件 1」（协议到期且不申请调整支付范围）。",
+        "sources": [
+          {
+            "label": "康方新闻 / 港交所自愿公告",
+            "grade": "一手"
+          }
+        ]
+      }
+    ],
+    "impact": {
+      "text": "这是依沃西在鳞状 NSCLC 里对另一种已上市 PD-1 联合化疗的头对头 OS 阳性，也是 2026 年 8 月刚拿到的新适应症。它不能代替 HARMONi-3 对 K药联合化疗的全球检验，但给鳞癌队列提供了中国人群的参照。",
+      "attribution": "研究组判断；医保时间表部分为推论"
+    },
+    "grades_present": [
+      "一手",
+      "推论"
+    ]
+  },
+  {
+    "slug": "harmoni-3",
+    "title": "HARMONi-3",
+    "subtitle": "全球一线转移性 NSCLC，依沃西联合化疗对照帕博利珠单抗联合化疗。两个组织学队列分别分析。",
+    "kicker": "全球注册主线",
+    "group": "ivo",
+    "priority": 2,
+    "companies": [
+      "康方生物",
+      "Summit"
+    ],
+    "drugs": [
+      "依沃西"
+    ],
+    "indications": [
+      "NSCLC"
+    ],
+    "aliases": [
+      "NCT05899608",
+      "CTR20232457",
+      "SMT112-3003",
+      "AK112-3003"
+    ],
+    "updated": "2026-11-05",
+    "status": "两个队列均已入组完成。鳞癌队列主要 PFS 分析所需事件数预计 2026 年第四季度达到，同时做一次计划内早期 OS 期中分析。这是事件数预计达到，不是数据公布日。",
+    "summary": "HARMONi-3（NCT05899608 / CTR20232457，方案号 SMT112-3003 / AK112-3003）计划入组约 1600 例（鳞癌约 600，非鳞约 1000）。两个组织学队列分别进行主要终点 PFS 与 OS 的分析，「如同同一方案下的两项独立研究」。对照是帕博利珠单抗联合化疗，对应 KEYNOTE-189（非鳞）和 KEYNOTE-407（鳞癌）的领地。目前唯一读出是 2026-04-30 鳞癌队列期中 PFS 未达显著。",
+    "timeline": [
+      {
+        "date": "2026-04-30",
+        "title": "鳞癌队列期中 PFS 未达显著",
+        "grades": [
+          "一手",
+          "二手"
+        ],
+        "body": "Summit 在 HARMONi-2（PFS HR 0.51）和 HARMONi-6（PFS HR 0.60）都在计划内期中 PFS 获益之后，为鳞癌队列增加了一次期中 PFS 分析，以便更早与监管沟通，并称最初把 PFS 作为主要终点是基于 HARMONi-2。公司称该期中分析分配了「minimal alpha」（第一季度财报原话）。实际读出未达显著。当时 OS 尚不成熟，公司称可能无法沟通 OS。股价当日跌幅见二手报道，本站不记录行情。",
+        "sources": [
+          {
+            "label": "Summit 第一季度财报（minimal alpha）",
+            "grade": "一手"
+          },
+          {
+            "label": "Fierce 2026-05-01（期中结果的市场报道）",
+            "grade": "二手"
+          }
+        ]
+      },
+      {
+        "date": "2026-07-23",
+        "title": "第二季度：按鳞/非鳞分别分析，并给出事件驱动时间表",
+        "grades": [
+          "一手"
+        ],
+        "body": "上季度宣布按鳞癌、非鳞分别分析 PFS 与 OS。入组口径在同一天的文件里不完全一致，需要并列：10-Q / 8-K 写鳞癌「2026 年一季度完成入组」、非鳞「2026 年二季度完成入组」；同日电话会则说「已完成鳞状队列筛查，末例受试者将在未来几周内随机入组」，非鳞「仍预计今年下半年完成入组」。公司未在后续文件里解释这一字面差别。\n\n事件驱动流程的正确读法是：入组完成之后，等待该队列预设的 PFS 事件数；事件数达到，才做该队列的主要 PFS 分析。鳞癌队列在同一时点还安排一次计划内早期 OS 期中分析。第二季度指引：鳞癌主要 PFS 事件数预计 2026 年下半年达到；独立于 PFS 的鳞癌 OS 期中计划在 2027 年上半年；非鳞 PFS 事件数预计 2027 年上半年达到。ClinicalTrials.gov（2026-10-08 更新）状态为 ACTIVE_NOT_RECRUITING，主要完成估计 2028-12-31。",
+        "sources": [
+          {
+            "label": "Summit Q2 10-Q / 8-K（2026-07-23）",
+            "grade": "一手"
+          },
+          {
+            "label": "Summit Q2 电话会",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-04",
+        "title": "第三季度：两个队列均已入组完成，鳞癌 PFS 事件数细化到第四季度",
+        "grades": [
+          "一手",
+          "未核实"
+        ],
+        "body": "Q3 8-K 写明两个队列均已入组完成。时间表在第二季度指引上进一步细化：鳞癌主要 PFS 事件数预计 2026 年第四季度达到，同时做一次计划内早期 OS 期中分析；鳞癌独立 OS 期中仍计划 2027 年上半年；非鳞 PFS 事件数预计 2027 年上半年达到。\n\n不可把「事件数达到」写成「读出」，也不可把第三季度更新写成「首次给出时间表」——第二季度已经给出，第三季度是细化到季度。自媒体曾称鳞癌最终 PFS 将在 12 月读出，这一点未核实。BioSpace 11-02 引 Summit「年底前读出」、阿斯利康发言人「海外获批需全球人群 OS 显著改善」，属评论。",
+        "sources": [
+          {
+            "label": "Summit Q3 8-K / 新闻稿（2026-11-04）",
+            "url": "https://www.sec.gov/Archives/edgar/data/1599298/000159929826000088/a2026_prx1105xq32026earn.htm",
+            "grade": "一手"
+          }
+        ]
+      }
+    ],
+    "impact": {
+      "text": "HARMONi-3 比 11-14 的 PDUFA 更能决定依沃西的海外天花板。PDUFA 对应的是 EGFR 突变、TKI 之后；HARMONi-3 对应的是 Keytruda 最大的单一适应症。鳞癌期中 PFS 未显著，已经说明全球数据不是单行线。下一步要看的是主要 PFS 分析，以及同期那次早期 OS 期中——OS 当时仍可能不成熟。",
+      "attribution": "研究组判断（第 5 期周报，2026-11-09）"
+    },
+    "grades_present": [
+      "一手",
+      "二手",
+      "未核实"
+    ]
+  },
+  {
+    "slug": "harmoni-gi1",
+    "title": "HARMONi-GI1（一线胆道癌）",
+    "subtitle": "中国 III 期。依沃西联合吉西他滨/顺铂，对照度伐利尤单抗（I药）联合吉西他滨/顺铂。优先审评已正式纳入。",
+    "kicker": "头对头 I药 · 非肺癌 OS",
+    "group": "ivo",
+    "priority": 3,
+    "companies": [
+      "康方生物"
+    ],
+    "drugs": [
+      "依沃西"
+    ],
+    "indications": [
+      "胆道癌"
+    ],
+    "aliases": [
+      "AK112-309",
+      "NCT06591520",
+      "CTR20243164",
+      "LBA8",
+      "BTC"
+    ],
+    "updated": "2026-11-06",
+    "status": "期中分析 OS、PFS、ORR 均达到。NMPA CDE 已将一线胆道癌纳入优先审评（公司 2026-11-05 宣布）。美国确认路径是 EA2251。",
+    "summary": "HARMONi-GI1（NCT06591520 / CTR20243164，AK112-309）是双盲研究，入组 682 人（依沃西 340 / 度伐 342）。公众号文章曾误写 632，已更正。这是依沃西第一个肺癌以外、对现行 PD-L1 标准方案的 OS 阳性 III 期，但是仅中国人群、且为期中分析。",
+    "timeline": [
+      {
+        "date": "2026-10-12",
+        "title": "前置 II 期见刊",
+        "grades": [
+          "一手"
+        ],
+        "body": "一线晚期胆道癌，依沃西联合吉西他滨/顺铂，30 例，剂量 20 或 30 mg/kg。ORR 66.7%，DCR 100%，中位 PFS 8.5 个月，中位 OS 16.8 个月。康方稿同时重申 HARMONi-GI1 将以 LBA 在 ESMO 2026 主席论坛口头报告。",
+        "sources": [
+          {
+            "label": "Journal of Hepatology；康方新闻 2026-10-12",
+            "url": "https://akesobio.com/cn/media/akeso-news/20261012/",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-23",
+        "title": "CDE 拟纳入优先审评公示，列表页当时不显示适应症",
+        "grades": [
+          "一手",
+          "二手"
+        ],
+        "body": "依沃西单抗注射液，申请人康方赛诺医药有限公司，受理号「无」，申请日期 2026-10-20，公示 2026-10-23，截止 2026-10-30，非罕见病。列表页不显示适应症和理由。「一线胆道癌」当时只出自 Insight / 网易等二手报道。国泰海通称中国上市申请 10-23 受理，未核实；这与受理号为「无」的关系也不清楚。",
+        "sources": [
+          {
+            "label": "CDE 拟优先审评品种公示",
+            "url": "https://www.cde.org.cn/main/xxgk/listpage/2f78f372d351c6851af7431c7710a731",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-25",
+        "title": "ESMO LBA8 摘要解禁：期中 OS 阳性",
+        "grades": [
+          "二手"
+        ],
+        "body": "当时看到的是 Oncoletter 对官方摘要的德文转述，国泰海通点评数字一致，ESMO 原页未能打开。682 例，中位随访 14.3 个月。中位 OS 14.9 对 12.1 个月，HR 0.75（0.61–0.92），p=0.0031；中位 PFS 8.4 对 5.8 个月，HR 0.61（0.51–0.72）；ORR 53.8% 对 32.5%。安全性当时只有定性描述。会上报告时间为北京时间 10-26 00:42（马德里已回到 CET，北京＝马德里加 7 小时；康方公众号曾按夏令时写成 23:42）。",
+        "sources": [
+          {
+            "label": "Oncoletter 转述 Presidential Symposium II",
+            "url": "https://www.oncoletter.ch/de/Kongressbericht/2026/esmo-congress-2026/presidential-symposium-ii.html",
+            "grade": "二手"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-26",
+        "title": "会上全文与公司稿、港交所公告",
+        "grades": [
+          "一手",
+          "二手"
+        ],
+        "body": "设计（会议上报道）：依沃西 20 mg/kg 每三周一次，对照度伐 1500 mg 每三周一次，均联合吉西他滨 1000 与顺铂 25 mg/m²，第 1、8 天，最多 8 周期后维持。转移性占 90.6%，肝内胆管癌约 58%。数据截止采用 TargetedOnc 与第 3 期周报的 2026-06-30；另有材料写「一手稿未写截止日」，同一时点仍对不上，并列保留。中位随访 14.3 个月。\n\n疗效与公司稿一致：OS 14.9（12.9–NE）对 12.1（11.0–13.4）个月，HR 0.75（0.61–0.92），单侧 p=0.0031；12 个月 OS 率 59.7% 对 50.7%，18 个月 44.0% 对 32.5%。PFS 8.4 对 5.8 个月，HR 0.61（0.51–0.72）；6 个月 PFS 率 68.7% 对 49.3%，9 个月 49.3% 对 31.7%。ORR 53.8% 对 32.5%，DCR 91.5% 对 77.8%。ECOG 1 的 OS HR 0.71，65 岁及以上 OS HR 0.67。后续抗肿瘤治疗 31.8% 对 45.9%（对照组更高，理论上应稀释而非放大 OS 差异）。\n\n安全性：SAE 43.4% 对 43.7%；出血任意级 9.7% 对 6.5%，3 级及以上 1.5% 对 1.8%（公司稿）。3/4 级 TEAE 82.0% 对 72.3%、停药 3.5% 对 5.6%、AE 致死 3.2% 对 3.8%（归因研究抗体 0.9% 对 1.8%）、免疫相关不良事件 26.3% 对 22.1%（3 级及以上各 4.1%）仅见 TargetedOnc 或幻灯转录，按二手处理。依沃西组暴露中位 7.8 对 5.7 个月，未做暴露校正。ESMO 幻灯和官方摘要原页多次未打开。\n\n公司英文稿写明一线胆道癌已被拟纳入优先审评，由此确认 10-23 公示对应的就是这一适应症。港交所自愿公告编号 2026102600020。",
+        "sources": [
+          {
+            "label": "康方 PR Newswire 英文稿 2026-10-25",
+            "url": "https://www.prnewswire.com/news-releases/positive-overall-survival-results-from-the-phase-iii-harmoni-gi1-trial-of-ivonescimab-plus-chemotherapy-versus-durvalumab-plus-chemotherapy-in-first-line-biliary-tract-cancer-presented-at-the-esmo-2026-presidential-symposium-302918768.html",
+            "grade": "一手"
+          },
+          {
+            "label": "港交所 2026102600020",
+            "grade": "一手"
+          },
+          {
+            "label": "TargetedOnc 会议报道（部分安全性）",
+            "url": "https://www.targetedonc.com/view/esmo-2026-savolitinib-presidential-symposium-divarasib-nsclc-krascendo1-saffron-clarity-gastric01-harmoni-gi1",
+            "grade": "二手"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-05",
+        "title": "公司宣布 CDE 正式纳入优先审评",
+        "grades": [
+          "一手",
+          "未核实"
+        ],
+        "body": "康方 11-05 发布（PR Newswire 时间戳为美东 11-04 23:19）。文称 NMPA CDE 已将依沃西联合化疗一线局部晚期或转移性胆道癌纳入优先审评审批程序。未披露审评时限或受理号。港交所当日无对应自愿公告。CDE 原页当时未打开，以公司稿为准。10-31 至 11-05 的日检曾连续写「正式纳入未见」，11-06 更正为已经纳入。",
+        "sources": [
+          {
+            "label": "康方官网 2026-11-05",
+            "url": "https://www.akesobio.com/cn/media/akeso-news/20261105/",
+            "grade": "一手"
+          },
+          {
+            "label": "PR Newswire 英文稿",
+            "url": "https://www.prnewswire.com/news-releases/ivonescimab-receives-nmpa-priority-review-for-first-line-biliary-tract-cancer-302930129.html",
+            "grade": "一手"
+          }
+        ]
+      }
+    ],
+    "impact": {
+      "text": "加分。依沃西第一次在肺癌以外对 PD-L1 现行标准拿出 OS 阳性，而且是头对头。局限也很清楚：只做了中国人群，现在仍是期中分析，美国路径要看 EA2251。优先审评正式纳入，意味着国内上市节奏可能前移，但不改变全球注册主线（PDUFA 与 HARMONi-3）。\n\n跨试验并置、不可写成优劣：IMbrave151 入组 162 人，PFS HR 0.67，OS HR 0.97，本身是非比较性 II 期、无正式假设检验；KEYNOTE-966 随访 36.6 个月时 OS 12.7 对 10.9 个月，HR 0.86。外资胆道癌峰值销售等外推数字未核实，不采用。",
+      "attribution": "研究组判断（第 3 期周报及 2026-11-06 日检）"
+    },
+    "grades_present": [
+      "一手",
+      "二手",
+      "未核实"
+    ]
+  },
+  {
+    "slug": "ea2251",
+    "title": "EA2251（美国一线胆道癌）",
+    "subtitle": "Summit 与 ECOG-ACRIN 合作。依沃西联合吉西他滨/顺铂，对照 K药或 I药联合吉西他滨/顺铂。",
+    "kicker": "海外确认路径",
+    "group": "ivo",
+    "priority": 6,
+    "companies": [
+      "康方生物",
+      "Summit"
+    ],
+    "drugs": [
+      "依沃西"
+    ],
+    "indications": [
+      "胆道癌"
+    ],
+    "aliases": [
+      "NCT07765433",
+      "ECOG-ACRIN"
+    ],
+    "updated": "2026-11-04",
+    "status": "ClinicalTrials.gov 预计 2027-01-11 开始、2028-12-31 主要完成。Summit 称开中心预计 2026 年第四季度，并称 registration-enabling。",
+    "summary": "这是 HARMONi-GI1 之后的海外确认路径。美国、开放、随机 II/III 期，主要终点 OS，估计入组约 336 人。对照可以是帕博利珠单抗或度伐利尤单抗，均联合吉西他滨/顺铂。",
+    "timeline": [
+      {
+        "date": "2026-08-14",
+        "title": "ClinicalTrials.gov 首次登记",
+        "grades": [
+          "一手"
+        ],
+        "body": "登记号 NCT07765433。10-21 宣布的是合作，不是新登记。",
+        "sources": [
+          {
+            "label": "NCT07765433",
+            "url": "https://clinicaltrials.gov/study/NCT07765433",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-21",
+        "title": "Summit 宣布与 ECOG-ACRIN 的试验合作",
+        "grades": [
+          "一手"
+        ],
+        "body": "Summit 称开中心预计 2026 年第四季度，并使用 registration-enabling 的表述。地域口径需要并列：Summit 写美国入组，康方港交所曾写「全球多中心」，以 Summit 原稿为准。",
+        "sources": [
+          {
+            "label": "Summit 新闻稿 2026-10-21",
+            "url": "https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-and-ECOG-ACRIN-Cancer-Research-Group-Enter-into-Phase-II--III-Clinical-Trial-Collaboration-to-Evaluate-Ivonescimab-in-First-Line-Biliary-Tract-Cancer/default.aspx",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-04",
+        "title": "三季报重申美国开中心预计第四季度",
+        "grades": [
+          "一手"
+        ],
+        "body": "与 10-21 指引一致，不是新的时间表。",
+        "sources": [
+          {
+            "label": "Summit Q3 新闻稿",
+            "url": "https://www.sec.gov/Archives/edgar/data/1599298/000159929826000088/a2026_prx1105xq32026earn.htm",
+            "grade": "一手"
+          }
+        ]
+      }
+    ],
+    "impact": {
+      "text": "HARMONi-GI1 证明的是中国人群对 I药联合化疗的期中优势。EA2251 决定这件事能否在美国被确认。对照臂允许 K药或 I药，和 GI1 并不完全同一。",
+      "attribution": "研究组判断"
+    },
+    "grades_present": [
+      "一手"
+    ]
+  },
+  {
+    "slug": "harmoni-10",
+    "title": "HARMONi-10",
+    "subtitle": "不可切除 III 期 NSCLC，同步放化疗后未进展，依沃西对照度伐利尤单抗做巩固。",
+    "kicker": "头对头 I药 · 巩固治疗",
+    "group": "ivo",
+    "priority": 7,
+    "companies": [
+      "康方生物",
+      "Summit"
+    ],
+    "drugs": [
+      "依沃西"
+    ],
+    "indications": [
+      "NSCLC"
+    ],
+    "aliases": [
+      "CTR20263641",
+      "AK112-3010",
+      "PACIFIC"
+    ],
+    "updated": "2026-11-10",
+    "status": "CDE 于 2026-10-09 首次公示。截至 2026-11-10 仍无 ClinicalTrials.gov 登记。剂量、疗程、随机比例、分层因素、是否排除 EGFR/ALK 均未公开。",
+    "summary": "HARMONi-10（CTR20263641，方案号 AK112-3010）针对同步放化疗（至少 2 周期含铂化疗同步放疗，60–66 Gy）后未进展的不可切除 III 期 NSCLC。开放、随机、国际多中心，设数据监察委员会。主要终点是独立评审的 PFS。这是依沃西第二项头对头度伐的 III 期（第一项是 HARMONi-GI1）。",
+    "timeline": [
+      {
+        "date": "2026-10-09",
+        "title": "CDE 首次公示",
+        "grades": [
+          "一手"
+        ],
+        "body": "目标入组国内 342 人、国际 830 人。按 CDE 惯例，「国际」是全球总数（含中国），也就是全球约 830、中国约 342（约 41%），不是 342 加 830。主要终点为独立评审委员会评估的 PFS；次要终点包括 OS、ORR、至远处转移时间、安全性和生活质量。PD-L1 必须已知，但不限阳性。排除序贯放化疗、既往抗 PD-(L)1、既往抗血管、出血倾向、未控制高血压、间质性肺病等。主要研究者为于金明、陈昶。方案号是四位数，与 Summit 全球研究同一体系，全球申办方可能是 Summit，这一点是推断。\n\n竞品镜像：pumitamig 的 ROSETTA Lung-201（NCT07361497，850 人，开放，独立评审 PFS，2026-03-16 开始，主要完成估计 2030-09）比 HARMONi-10 大约早七个月。",
+        "sources": [
+          {
+            "label": "CDE CTR20263641 公示",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-10",
+        "title": "仍未出现 ClinicalTrials.gov 登记",
+        "grades": [
+          "一手"
+        ],
+        "body": "全球申办方、分层、EGFR/ALK 处理和剂量疗程，仍要等登记页才能看清。",
+        "sources": []
+      }
+    ],
+    "impact": {
+      "text": "PACIFIC（度伐对照安慰剂）确立了这一场景的标准：主要分析 PFS HR 0.52、OS HR 0.68；5 年 OS 42.9% 对 33.4%，中位 OS 47.5 对 29.1 个月。此后约八年半，凡已读出的「超越或叠加 PACIFIC」III 期全部失败，包括 PACIFIC-2、SKYSCRAPER-03、CheckMate-73L。共同点是叠加另一个免疫靶点，或把免疫治疗提前到放疗期间。HARMONi-10 换了一条路：用抗 VEGF 一对一替换度伐。\n\n分析作者提醒的特异风险包括：抗 VEGF 在残余病灶阶段（如术后辅助 E1505 的贝伐珠单抗，OS HR 0.99）从未成功；胸部放疗叠加抗血管有气管食管瘘和致死性出血的历史；依沃西没有公开的 II 期巩固数据；开放标签可能影响后续换药，从而干扰 OS。PACIFIC-9（预计主要完成 2026-09-30）和 KEYLYNK-012（2027-05）截至知识库建立时仍未见读出。",
+      "attribution": "研究组整理；风险讨论来自 HARMONi-10 专项分析作者，不是公司原文"
+    },
+    "grades_present": [
+      "一手"
+    ]
+  },
+  {
+    "slug": "harmoni-7",
+    "title": "HARMONi-7",
+    "subtitle": "一线 PD-L1≥50% 的 NSCLC，依沃西单药对照帕博利珠单抗单药。",
+    "kicker": "全球 · 头对头 K药",
+    "group": "ivo",
+    "priority": 10,
+    "companies": [
+      "康方生物",
+      "Summit"
+    ],
+    "drugs": [
+      "依沃西"
+    ],
+    "indications": [
+      "NSCLC"
+    ],
+    "aliases": [
+      "NCT06767514"
+    ],
+    "updated": "2026-11-04",
+    "status": "仍在入组。第三季度预计 2027 年完成入组。ClinicalTrials.gov 主要完成估计 2028-04。",
+    "summary": "HARMONi-7（NCT06767514）计划入组 780 人，是依沃西在高表达人群里对 K药单药的全球头对头，和已经读出的中国 HARMONi-2 形成对照。",
+    "timeline": [
+      {
+        "date": "2026-11-04",
+        "title": "三季报：预计 2027 年完成入组",
+        "grades": [
+          "一手"
+        ],
+        "body": "研究仍在入组。主要完成日期仍是登记页上的估计值 2028-04。",
+        "sources": [
+          {
+            "label": "Summit Q3 新闻稿",
+            "url": "https://www.sec.gov/Archives/edgar/data/1599298/000159929826000088/a2026_prx1105xq32026earn.htm",
+            "grade": "一手"
+          },
+          {
+            "label": "NCT06767514",
+            "url": "https://clinicaltrials.gov/study/NCT06767514",
+            "grade": "一手"
+          }
+        ]
+      }
+    ],
+    "grades_present": [
+      "一手"
+    ]
+  },
+  {
+    "slug": "harmoni-gi3",
+    "title": "HARMONi-GI3",
+    "subtitle": "一线转移性结直肠癌，依沃西对照贝伐珠单抗联合 FOLFOX。",
+    "kicker": "全球 · 肠癌",
+    "group": "ivo",
+    "priority": 11,
+    "companies": [
+      "康方生物",
+      "Summit"
+    ],
+    "drugs": [
+      "依沃西"
+    ],
+    "indications": [
+      "结直肠癌"
+    ],
+    "aliases": [
+      "NCT07228832"
+    ],
+    "updated": "2026-11-05",
+    "status": "仍在招募。计划例数已由 600 调整为 900，预计 2027 年第三季度完成入组。",
+    "summary": "HARMONi-GI3（NCT07228832）把依沃西放到一线肠癌，对照是贝伐珠单抗联合 FOLFOX。入组快于预期，样本量在第三季度上调。",
+    "timeline": [
+      {
+        "date": "2026-11-04",
+        "title": "三季报：计划 900 例，预计 2027 年第三季度完成入组",
+        "grades": [
+          "一手"
+        ],
+        "body": "公司称入组快于预期，计划例数从登记时的 600 调整为 900。",
+        "sources": [
+          {
+            "label": "Summit Q3 新闻稿",
+            "url": "https://www.sec.gov/Archives/edgar/data/1599298/000159929826000088/a2026_prx1105xq32026earn.htm",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-05",
+        "title": "登记页同步改为 900 例",
+        "grades": [
+          "一手"
+        ],
+        "body": "NCT07228832 更新后仍为招募中，入组人数现显示 900，与三季报一致。主要完成日期仍估计为 2028-05-31。",
+        "sources": [
+          {
+            "label": "NCT07228832",
+            "url": "https://clinicaltrials.gov/study/NCT07228832",
+            "grade": "一手"
+          }
+        ]
+      }
+    ],
+    "grades_present": [
+      "一手"
+    ]
+  },
+  {
+    "slug": "harmoni-gu1",
+    "title": "HARMONi-GU1",
+    "subtitle": "一线局部晚期或转移性尿路上皮癌，依沃西联合恩诺单抗对照帕博利珠单抗联合恩诺单抗。",
+    "kicker": "双抗 + ADC · 注册性",
+    "group": "ivo",
+    "priority": 8,
+    "companies": [
+      "康方生物",
+      "Summit",
+      "辉瑞"
+    ],
+    "drugs": [
+      "依沃西",
+      "恩诺单抗"
+    ],
+    "indications": [
+      "尿路上皮癌"
+    ],
+    "aliases": [
+      "NCT07815665",
+      "Padcev",
+      "EV"
+    ],
+    "updated": "2026-11-04",
+    "status": "2026-09-10 开始，招募中。第三季度称 II 期部分已开中心入组。中国登记原页尚未看到。",
+    "summary": "HARMONi-GU1（NCT07815665）是 II/III 期，计划 800 人。这是依沃西已经启动的注册性「双抗 + ADC」研究，对照是已经获批的 K药联合恩诺单抗。恩诺单抗（Padcev）由辉瑞 / 安斯泰来持有。康方称「联合辉瑞维恩妥尤单抗」；Summit 新闻稿未写与辉瑞的正式供药合作。",
+    "timeline": [
+      {
+        "date": "2026-08-05",
+        "title": "研究宣布，康方称这是第 16 项注册性 / III 期、第 6 项国际多中心",
+        "grades": [
+          "一手"
+        ],
+        "body": "当时肺癌注册性试验为 8 项。这一口径后来随着 HARMONi-10 等研究加入而变化，详见试验清单条目。",
+        "sources": [
+          {
+            "label": "康方新闻 2026-08-05",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-10",
+        "title": "实际开始入组",
+        "grades": [
+          "一手"
+        ],
+        "body": "登记页记实际开始日期为 2026-09-10。",
+        "sources": [
+          {
+            "label": "NCT07815665",
+            "url": "https://clinicaltrials.gov/study/NCT07815665",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-30",
+        "title": "二手报道称中国 CTR 登记，国内 202 / 国际 800",
+        "grades": [
+          "二手"
+        ],
+        "body": "求实药社（新浪财经 11-02 转载）称 CDE 平台 10-30 显示该项登记。CTR 编号与原页未看到。",
+        "sources": [
+          {
+            "label": "求实药社 / 新浪财经转载",
+            "grade": "二手"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-04",
+        "title": "三季报：II 期部分已开中心入组",
+        "grades": [
+          "一手"
+        ],
+        "body": "与已经获批的对照需要放在一起看：恩诺单抗联合 K药已在美国获批用于一线局部晚期或转移性尿路上皮癌（2023），并于 2025-11-21 获批用于不适合顺铂、拟行膀胱切除的肌层浸润性膀胱癌围手术期，2026-07-10 扩大到所有拟行膀胱切除者（EV-304，EFS HR 0.53，OS HR 0.65）。辉瑞还计划用自家 tivunatamig 联合恩诺单抗做一线尿路上皮癌 III 期（尚未登记），会争夺同一联用位置。阿斯利康的 VOLGA（度伐联合恩诺单抗，围手术期肌层浸润性膀胱癌，695 人）EFS HR 0.51，OS HR 0.58，是同类组合思路，但是围手术期、度伐骨架。",
+        "sources": [
+          {
+            "label": "Summit Q3 新闻稿",
+            "url": "https://www.sec.gov/Archives/edgar/data/1599298/000159929826000088/a2026_prx1105xq32026earn.htm",
+            "grade": "一手"
+          },
+          {
+            "label": "FDA：帕博利珠单抗联合恩诺单抗",
+            "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-pembrolizumab-or-pembrolizumab-and-berahyaluronidase-alfa-pmph-each-enfortumab-vedotin",
+            "grade": "一手"
+          }
+        ]
+      }
+    ],
+    "impact": {
+      "text": "这是依沃西已经开动的注册性双抗加 ADC 路径，但目前还没有任何公开的联合疗效数据。对照门槛很高：K药联合恩诺单抗已经是获批标准。辉瑞如果启动自家双抗加恩诺单抗的 III 期，会在同一适应症里形成直接竞争。",
+      "attribution": "研究组判断"
+    },
+    "grades_present": [
+      "一手",
+      "二手"
+    ]
+  },
+  {
+    "slug": "harmoni-bc1",
+    "title": "HARMONi-BC1 与依沃西乳腺癌",
+    "subtitle": "中国 III 期 HARMONi-BC1 已在做；与第一三共 / 阿斯利康的 Datroway 联用 III 期仍在计划中。",
+    "kicker": "乳腺癌",
+    "group": "ivo",
+    "priority": 9,
+    "companies": [
+      "康方生物",
+      "Summit",
+      "阿斯利康"
+    ],
+    "drugs": [
+      "依沃西",
+      "Datroway"
+    ],
+    "indications": [
+      "乳腺癌"
+    ],
+    "aliases": [
+      "NCT06767527",
+      "AK112-308",
+      "TNBC",
+      "Dato-DXd"
+    ],
+    "updated": "2026-11-10",
+    "status": "HARMONi-BC1 招募中，主要完成估计 2026-12。依沃西联合 Datroway 的一线三阴性乳腺癌 III 期截至 2026-11-10 仍未在 ClinicalTrials.gov 查到登记。",
+    "summary": "依沃西在乳腺癌有两条线。一条是康方申办的中国 III 期 HARMONi-BC1：依沃西联合白蛋白紫杉醇，对照安慰剂联合白蛋白紫杉醇，用于一线三阴性乳腺癌。另一条是 2026-10-02 宣布、计划由阿斯利康或第一三共申办的依沃西联合 Datroway III 期，同样以一线三阴性乳腺癌为首发适应症。合作宣布不等于试验已经启动。",
+    "timeline": [
+      {
+        "date": "2026-08-18",
+        "title": "支撑 II 期全文发表于 Nature Medicine",
+        "grades": [
+          "一手"
+        ],
+        "body": "登记号 NCT05227664，数据截止 2025-07-15。具体数字以论文和康方 2026-08-18 稿为准。",
+        "sources": [
+          {
+            "label": "康方新闻 2026-08-18",
+            "url": "https://www.akesobio.com/cn/media/akeso-news/20260818/",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2025-02-07",
+        "title": "HARMONi-BC1 开始",
+        "grades": [
+          "一手"
+        ],
+        "body": "NCT06767527 / AK112-308，康方申办中国 III 期，约 416 人，招募中，主要完成估计 2026-12。",
+        "sources": [
+          {
+            "label": "NCT06767527",
+            "url": "https://clinicaltrials.gov/study/NCT06767527",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-02",
+        "title": "宣布与阿斯利康、第一三共合作评价依沃西联合 Datroway",
+        "grades": [
+          "一手"
+        ],
+        "body": "首发适应症为一线三阴性乳腺癌 III 期，三方分担费用，由阿斯利康或第一三共申办。康方 10-05 中文稿同步确认。截至 2026-11-10，ClinicalTrials.gov 上没有对应的 III 期登记。已有的相关研究者发起研究包括：MSKCC 的 NCT07535437（I/II 期，肺癌，含 Datroway 联合依沃西）；复旦的 NCT06793332（依沃西联合 TROP2 ADC，三阴性乳腺癌脑转移，II 期，39 人，2026-11-06 更新时实际开始日改为 2025-02-05，主要完成估计 2026-12-31）。",
+        "sources": [
+          {
+            "label": "Summit 新闻稿 2026-10-02",
+            "url": "https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Announces-Clinical-Trial-Collaboration-with-AstraZeneca-and-Daiichi-Sankyo-to-Evaluate-Ivonescimab-in-Combination-with-TROP2-Directed-ADC-Datroway/default.aspx",
+            "grade": "一手"
+          },
+          {
+            "label": "阿斯利康稿",
+            "url": "https://news.cision.com/astrazeneca/r/az---ds-collaboration-with-summit-for-datroway,c4403835",
+            "grade": "一手"
+          },
+          {
+            "label": "康方新闻 2026-10-05",
+            "url": "https://www.akesobio.com/cn/media/akeso-news/20261005/",
+            "grade": "一手"
+          }
+        ]
+      }
+    ],
+    "impact": {
+      "text": "HARMONi-BC1 的对照是化疗，读出估计仍早于竞品 ROSETTA Breast-01。Datroway 联用若启动，才是依沃西在乳腺癌里的双抗加 ADC 路径。目前还没有依沃西联合 ADC 的随机疗效数据。",
+      "attribution": "研究组判断（ROSETTA Breast-01 专项，2026-10-23）"
+    },
+    "grades_present": [
+      "一手"
+    ]
+  },
+  {
+    "slug": "other-harmoni",
+    "title": "其他注册性 HARMONi 与 ILLUMINE",
+    "subtitle": "HARMONi-8A、HARMONi-9、HARMONi-HN1、HARMONi-GI2、HARMONi-GI6 以及 GORTEC 主办的 ILLUMINE。",
+    "kicker": "注册性试验",
+    "group": "ivo",
+    "priority": 18,
+    "companies": [
+      "康方生物",
+      "Summit"
+    ],
+    "drugs": [
+      "依沃西",
+      "莱法利"
+    ],
+    "indications": [
+      "NSCLC",
+      "头颈癌",
+      "胰腺癌"
+    ],
+    "aliases": [
+      "ILLUMINE",
+      "HARMONi-8A",
+      "HARMONi-9",
+      "HARMONi-HN1",
+      "HARMONi-GI2",
+      "HARMONi-GI6",
+      "NCT07264075"
+    ],
+    "updated": "2026-11-10",
+    "status": "均为已纳入可核对清单的注册性或 III 期研究。HARMONi-9 的期别在 Summit 管线页与登记库不一致。",
+    "summary": "除了已经单独成条的研究，截至 2026-11-10 还能逐条对应的注册性或 III 期还包括：HARMONi-8A（联合多西他赛）、HARMONi-9（局限期小细胞肺癌巩固，对照安慰剂而不是度伐，560 人）、HARMONi-GI2（联合或不联合莱法利，胰腺癌，999 人）、HARMONi-GI6、HARMONi-HN1，以及 GORTEC 主办的 ILLUMINE。",
+    "timeline": [
+      {
+        "date": "2026-05",
+        "title": "ILLUMINE 开始招募",
+        "grades": [
+          "一手"
+        ],
+        "body": "ILLUMINE（NCT07264075）由 GORTEC 主办，一线复发或转移、PD-L1 阳性的头颈部鳞癌，三臂：依沃西、依沃西联合莱法利、帕博利珠单抗，计划 780 人。第二季度电话会曾预计下一季度初开始入组，此事已经发生。",
+        "sources": [
+          {
+            "label": "NCT07264075",
+            "url": "https://clinicaltrials.gov/study/NCT07264075",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-10",
+        "title": "HARMONi-9 期别存疑，以登记库为准",
+        "grades": [
+          "一手"
+        ],
+        "body": "Summit 管线页将 HARMONi-9 标为 II 期，ClinicalTrials.gov 与 CDE 均为 III 期。对照是安慰剂，场景接近 ADRIATIC，但不算对度伐的头对头。HARMONi-HN1 是依沃西联合莱法利对照帕博利珠单抗，计划 510 人，主要终点 OS。",
+        "sources": []
+      }
+    ],
+    "grades_present": [
+      "一手"
+    ]
+  },
+  {
+    "slug": "ivonescimab-perioperative",
+    "title": "依沃西围手术期",
+    "subtitle": "可切除 NSCLC 的中国 II 期全文于 2026-11-04 发表。看数字时必须先分清完成手术人群和全分析集。",
+    "kicker": "II 期全文",
+    "group": "ivo",
+    "priority": 8,
+    "companies": [
+      "康方生物"
+    ],
+    "drugs": [
+      "依沃西"
+    ],
+    "indications": [
+      "NSCLC",
+      "围手术期"
+    ],
+    "aliases": [
+      "AK112-205",
+      "NCT05247684",
+      "CTR20220028",
+      "Nature Medicine"
+    ],
+    "updated": "2026-11-07",
+    "status": "II 期全文已发表。截至 2026-11-06，ClinicalTrials.gov 上依沃西围手术期仍以这条 II 期和若干研究者发起研究为主；康方列举的十七项 III 期未点名围手术。论文自己要求更大的随机 III 期。",
+    "summary": "试验编号 AK112-205（NCT05247684 / CTR20220028），赵等人发表于《Nature Medicine》，期刊页标注 Published: 2026-11-04。中国两个中心，开放、非随机，入组 90 人。公司稿主推完成手术人群；与 KEYNOTE-671、CheckMate-816 等 III 期并排看时，应用全分析集。中位无事件生存尚未成熟，总生存未报。",
+    "timeline": [
+      {
+        "date": "2026-11-04",
+        "title": "Nature Medicine 全文上线",
+        "grades": [
+          "一手"
+        ],
+        "body": "完成手术人群：联合化疗的主要病理缓解 70.1%（47/67），病理完全缓解 50.7%（34/67），残余活肿瘤不超过 5% 的比例 68.7%；单药的主要病理缓解 60.0%（6/10），病理完全缓解 30.0%。全分析集：联合化疗的主要病理缓解 59.5%，病理完全缓解 43.0%。公司稿和周报未单列单药的全分析集。\n\n12 个月无事件生存率：联合 83.3%，单药 81.8%。队列 2 完成手术者中鳞癌约八成；鳞癌主要病理缓解 81.5%、病理完全缓解 61.1%；非鳞只有 13 例，主要病理缓解 23.1%、病理完全缓解 7.7%，论文写明要谨慎解读。PD-L1 阴性和阳性的主要病理缓解均为 69.2%（单臂、例数少）。III 期受试者主要病理缓解 65.5%、病理完全缓解 47.3%。安全性：无 3 级及以上出血，无因药物相关不良事件取消手术。",
+        "sources": [
+          {
+            "label": "Nature Medicine，doi:10.1038/s41591-026-04745-4",
+            "url": "https://www.nature.com/articles/s41591-026-04745-4",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-06",
+        "title": "康方发布中文稿；日检将其记为 II 期全文上刊，未达重大事件门槛",
+        "grades": [
+          "一手"
+        ],
+        "body": "该数据此前已有世界肺癌大会等会议披露，属于 II 期全文发表，不是 III 期读出、监管决定或新交易。Summit 管线页标注为 China Phase II。",
+        "sources": [
+          {
+            "label": "康方官网 2026-11-06",
+            "url": "https://www.akesobio.com/cn/media/akeso-news/20261106/",
+            "grade": "一手"
+          }
+        ]
+      }
+    ],
+    "impact": {
+      "text": "横截面并置、不是头对头：已发表的围手术期 III 期免疫化疗臂，病理完全缓解大约 17% 到 41%，主要病理缓解大约 30% 到 56%（CheckMate-816、KEYNOTE-671、AEGEAN、Neotorch、RATIONALE-315）。依沃西这条 II 期的全分析集处在偏高一侧，但分期、鳞癌比例和随访都不同，不能写成优于。\n\n研究组判断：这是往围手术期前移的强信号，不是已经定价的商业故事；不从主要病理缓解或病理完全缓解外推销售。中国已有特瑞普利单抗、替雷利珠单抗等标准疗法，要在无事件生存上打过现有方案才谈得上换标准。需要观察的是：有没有注册 III 期，对照是什么，如何做组织学分层，主要终点是无事件生存还是双终点，以及 Summit 是否接做。",
+      "attribution": "研究组判断（围手术期短分析作者，2026-11-06）"
+    },
+    "grades_present": [
+      "一手"
+    ]
+  },
+  {
+    "slug": "ivonescimab-china",
+    "title": "依沃西：分子、中国获批与医保",
+    "subtitle": "中国已获批三个肺癌适应症。用药例数和公司口径要按时间点来读。",
+    "kicker": "已上市",
+    "group": "ivo",
+    "priority": 12,
+    "companies": [
+      "康方生物"
+    ],
+    "drugs": [
+      "依沃西"
+    ],
+    "indications": [
+      "NSCLC"
+    ],
+    "aliases": [
+      "依达方",
+      "AK112",
+      "ivonescimab"
+    ],
+    "updated": "2026-11-10",
+    "status": "三个肺癌适应症已获批。前两个已进医保；2026-08-12 获批的鳞状 NSCLC，研究组推断大概率不在 2026 年目录调整内。",
+    "summary": "依沃西是 PD-1×VEGF 四价双抗（Tetrabody）。公司表述：在 VEGF 存在时，对 PD-1 的亲合力上升；Fc 段做了 L234A/L235A 突变，去除 FcγR 和 C1q 结合。一线胆道癌的优先审评见 HARMONi-GI1 条目，不在本页重复展开。",
+    "timeline": [
+      {
+        "date": "2024-05-24",
+        "title": "首个适应症获批：EGFR-TKI 后非鳞 NSCLC，联合化疗",
+        "grades": [
+          "一手"
+        ],
+        "body": "依据 HARMONi-A。2024 年 12 月进入国家医保目录。",
+        "sources": [
+          {
+            "label": "康方新闻 / 港交所自愿公告",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2025-04-25",
+        "title": "第二个适应症获批：一线 PD-L1 阳性 NSCLC 单药",
+        "grades": [
+          "一手"
+        ],
+        "body": "依据 HARMONi-2。2025 年 12 月进入医保。",
+        "sources": [
+          {
+            "label": "康方新闻 / 港交所自愿公告",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-08-12",
+        "title": "第三个适应症获批：一线鳞状 NSCLC，联合化疗",
+        "grades": [
+          "一手",
+          "推论"
+        ],
+        "body": "依据 HARMONi-6。研究组推断：获批晚于「2026-06-10 前批准」窗口，大概率不在 2026 年目录调整内，最早 2027 年。依沃西和卡度尼利现有协议 2026 年底到期，续约有降价风险。国家医保局 2026-07-14 形式审查名单中，依沃西通过条件为「目录内条件 1」（协议到期且不申请调整支付范围）。",
+        "sources": [
+          {
+            "label": "康方新闻 / 港交所自愿公告",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-08",
+        "title": "公司口径的使用规模上修",
+        "grades": [
+          "一手"
+        ],
+        "body": "这不是两套互相否定的数字，引用时写明时点。2026 年 8 月至 9 月，Summit 引用康方数据为临床用药超过 4000 例、中国商业化超过 70000 例；到 2026-10-08 前后，公司口径已是临床超过 5000 例、商业化超过 100000 例。",
+        "sources": [
+          {
+            "label": "康方 / Summit 公司口径（按时间点引用）",
+            "grade": "一手"
+          }
+        ]
+      }
+    ],
+    "grades_present": [
+      "一手",
+      "推论"
+    ]
+  },
+  {
+    "slug": "ivonescimab-esmo-2026",
+    "title": "依沃西与卡度尼利：ESMO 2026 早期研究",
+    "subtitle": "2026-10-23 已对照会议官方摘要逐项核对。LBA 级读出见各自条目。",
+    "kicker": "会议数据",
+    "group": "ivo",
+    "priority": 14,
+    "companies": [
+      "康方生物"
+    ],
+    "drugs": [
+      "依沃西",
+      "卡度尼利"
+    ],
+    "indications": [
+      "肾癌",
+      "胸腺癌",
+      "食管癌",
+      "胃癌",
+      "胰腺癌",
+      "胶质母细胞瘤",
+      "子宫内膜癌"
+    ],
+    "aliases": [
+      "3592O",
+      "4156RO",
+      "iTHYM",
+      "2908P",
+      "2898P",
+      "3161P",
+      "706P",
+      "1266P",
+      "2649P"
+    ],
+    "updated": "2026-10-26",
+    "status": "官方摘要已核对。iTHYM 会上数字与摘要一致。LBA8 HARMONi-GI1 见单独条目。",
+    "summary": "下列数字来自 ESMO 2026 官方摘要（2026-10-23 从会议在线日程抄录）。康方两篇前瞻公众号与其中大多数对得上；消化道「下篇」始终未找到。时间换算：2026-10-25 马德里已回到欧洲中部时间，北京比马德里早 7 小时。",
+    "timeline": [
+      {
+        "date": "2026-10-23",
+        "title": "官方摘要上线并完成逐项核对",
+        "grades": [
+          "一手"
+        ],
+        "body": "3592O：一线 IMDC 低危透明细胞肾癌单药（NCT06472895，郭军）。数据截止 2026-04-27；26 人入组、21 人可评估；中位随访 9.1 个月；ORR 57.1%（12 例部分缓解），DCR 95.2%；中位 PFS 未达到；12 个月和 18 个月 PFS 率均为 87.9%；3 级及以上 TRAE 26.9%；蛋白尿 42.3%，高血压 26.9%；无治疗相关死亡；推荐 II 期剂量 30 mg/kg。口头报告 10-25 09:32–09:42 马德里，合北京时间 16:32–16:42。康方 9-22 英文稿曾误写 3592RO。\n\n4156RO iTHYM：一线胸腺癌联合紫杉醇/卡铂（NCT06750952，中山肿瘤）。数据截止 2026-07-31；24 例；ORR 83.3%，DCR 100%；已评估的 19 例在 6 个月时均无进展（Simon 两阶段：24 例中 6 个月进展事件不超过 10 例即为成功）；中位随访 10.2 个月时 4 例进展；出血 37.5%，3 级蛋白尿 8.3%，3 级急性冠脉综合征 1 例导致停药。\n\n2020eP：一线胸腺癌（ChiCTR2400094398），7 例，ORR 85.7%，3 级及以上 TRAE 57.1%。\n\n2908P：一线食管鳞癌联合白蛋白紫杉醇/顺铂（NCT06489197），32 人入组、30 人可评估，中位随访 10.2 个月，ORR 73.3%，DCR 100%，中位 PFS 未达到，3 级及以上 TRAE 37.5%，食管瘘 1 例。\n\n2898P：二线胃癌联合低剂量放疗和白蛋白紫杉醇（NCT06791148），34 例，ORR 63.0%（17/27），3 例完全缓解，中位 PFS 7.7 个月；既往用过免疫检查点抑制剂的患者 ORR 62.5%；3 级及以上 TRAE 17.6%。摘要里「27 例评估、28 例可评疗效」自相矛盾。\n\n3161P：交界可切除胰腺癌新辅助联合 AG 方案（NCT06944106），26 例，ORR 44.4%（8/18）；13 例手术全部达到 R0（占治疗人群 50%）；没有主要病理缓解；3 级及以上 TRAE 26.9%。康方稿未提及没有主要病理缓解这一点。\n\n706P：复发胶质母细胞瘤联合剂量密集替莫唑胺，23 人入组、21 人可评估，ORR 71.4%；6 个月 PFS 率 84.6% 只在已完成 6 个周期的 13 例中计算，存在选择偏倚；TRAE 均为 1–2 级。\n\n1266P：纪念斯隆凯特琳癌症中心的子宫内膜癌单药（NCT06925724），18 人入组、16 人可评估，既往中位 3 线，全部为错配修复完整型；ORR 19%（3 例部分缓解），临床获益率 37.5%，中位 PFS 3.9 个月，通过第一阶段。摘要分子分型例数与 16 例不符，属原文笔误。Summit 称达到 ORR 主要终点并扩组。\n\n2649P：美国学者对 HARMONi-A、HARMONi-2、HARMONi-6 的荟萃分析，1249 例。任意级 VEGF 相关不良事件的相对危险度 2.09，3 级及以上 3.35，3 级及以上蛋白尿 8.54，咯血 2.89；3 级及以上出血、高血压、血栓未显著增加。\n\n2711P：依沃西脑转移汇总，HR 0.57（0.44–0.75）。",
+        "sources": [
+          {
+            "label": "ESMO 2026 官方摘要（会议在线日程）",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-23",
+        "title": "卡度尼利同期摘要",
+        "grades": [
+          "一手"
+        ],
+        "body": "2913P：卡度尼利联合曲妥珠单抗和 SOX，一线 HER2 阳性胃癌，39 例，ORR 79.5%，中位 PFS 14.0 个月。2996eP：卡度尼利联合 SOX，一线 HER2 阴性、CPS 小于 1 的胃癌，41 例，ORR 56.1%，中位 PFS 13.9 个月。3605P：卡度尼利联合仑伐替尼，免疫联合酪氨酸激酶抑制剂之后的肾癌，28 例，ORR 39.3%，中位 PFS 16.2 个月，中位随访 19.8 个月。3732P：卡度尼利联合安罗替尼，二线软组织肉瘤，ORR 35%。1628eP 为回顾性研究，正文写 140 例，同时又写成 48 加 98（等于 146），原文自相矛盾；康方稿「23 例入组」属公司笔误。",
+        "sources": [
+          {
+            "label": "ESMO 2026 官方摘要",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-26",
+        "title": "iTHYM 会上报告，数字与摘要一致",
+        "grades": [
+          "二手"
+        ],
+        "body": "医药魔方会议速递所列数字与 10-23 记录的官方摘要完全一致，并补充 Simon 两阶段成功标准为 24 例中 6 个月进展事件不超过 10 例。未见会上更新数字或公司会后稿。",
+        "sources": [
+          {
+            "label": "医药魔方会议速递",
+            "url": "https://bydrug.pharmcube.com/news/detail/befded32c85b1d50b48be4919b819ab7",
+            "grade": "二手"
+          }
+        ]
+      }
+    ],
+    "impact": {
+      "text": "这些多数是单臂、早期、例数有限的信号，不能和外推到注册结论。2649P 把 VEGF 相关不良事件的相对危险度量化出来，是需要记住的减分项。肾癌低危单药（3592O）和胸腺癌（iTHYM）是其中相对更完整的信号卡。一线 IMDC 中高危肾癌走的是另一条研究 SMT112-216，不要和 3592O 混在一起。",
+      "attribution": "研究组判断（第 3 期周报）"
+    },
+    "grades_present": [
+      "一手",
+      "二手"
+    ]
+  },
+  {
+    "slug": "ivonescimab-trials",
+    "title": "依沃西试验清单与公司口径",
+    "subtitle": "能逐条核对的注册性或 III 期目前是 17 项。公司口头的「超过 17」或「超过 18」比清单多出来的部分，还没有点名。",
+    "kicker": "清单",
+    "group": "ivo",
+    "priority": 16,
+    "companies": [
+      "康方生物",
+      "Summit"
+    ],
+    "drugs": [
+      "依沃西"
+    ],
+    "indications": [
+      "多瘤种"
+    ],
+    "aliases": [
+      "IIT",
+      "注册性"
+    ],
+    "updated": "2026-11-09",
+    "status": "II 至 III 期可核对 138 项。注册性或 III 期可核对 17 项。",
+    "summary": "公司关于「注册性或 III 期、国际多中心、头对头」的数字，要按时间线读，不是把不同月份的说法当成互相否定的口径冲突。能看清的主干是：试验在增加，公司数字大体上随之走高；同一周里出现回落，或「超过 17」和「超过 18」并用时，才需要单独说明。「60 项」是康方中报「超过 60 项联合疗法临床试验」（全阶段），不是 II 至 III 期数。「80 项」或「87 项」对不上任何一种严格口径。",
+    "timeline": [
+      {
+        "date": "2026-08-05",
+        "title": "康方新闻：HARMONi-GU1 是第 16 项注册性或 III 期、第 6 项国际多中心",
+        "grades": [
+          "一手"
+        ],
+        "body": "当时肺癌 8 项。2026-10-08 按登记库逐条核对，对得上 16 项。核实后的 II 至 III 期基线为 136 项（III 期 15 项、II/III 期 5 项、II 期 116 项）；严格口径 134 项（去掉已撤回的 NCT07038915，以及依沃西只是标准治疗可选药物的 NCT07076693）。另有 I/II 或 Ib/II 期 34 项不计入。",
+        "sources": [
+          {
+            "label": "康方新闻 2026-08-05；登记库核对 2026-10-08",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-30",
+        "title": "中报：注册性 II/III 期 17 项、头对头 8 项",
+        "grades": [
+          "一手",
+          "推论"
+        ],
+        "body": "这「第 17 项」在 HARMONi-10 出现之前没有对上具体试验。候选包括当时尚未在 ClinicalTrials.gov 查到登记的依沃西联合 Datroway 一线三阴性乳腺癌 III 期，或公司称作注册性 II 期的 AK130-202（胰腺癌）。均为推断。",
+        "sources": [
+          {
+            "label": "康方 2026 年中报",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-05",
+        "title": "公司稿改为 17 项注册性或 III 期、6 项国际多中心、7 项头对头",
+        "grades": [
+          "一手"
+        ],
+        "body": "头对头从中报的 8 项变成 7 项，更像计数口径调整，不是少开了一项。",
+        "sources": [
+          {
+            "label": "康方新闻 2026-10-05",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-09",
+        "title": "HARMONi-10 加入清单，可核对注册性或 III 期变为 17 项",
+        "grades": [
+          "一手"
+        ],
+        "body": "II 至 III 期 136 项增至 137 项，肺癌由 8 项变为 9 项。若把尚未登记的 Datroway 联用 III 期也算进去，公司口头的「18 项」才能对上，这一点是推断。",
+        "sources": [
+          {
+            "label": "CDE CTR20263641；试验清单更新",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-26",
+        "title": "同一天出现「超过 18 项」和「17 项」两种写法",
+        "grades": [
+          "一手"
+        ],
+        "body": "港交所稿写「超过 18 项 III 期、7 项国际多中心」；同日官网邀请函写「17 项注册性或 III 期，包括 7 项国际多中心」。国际多中心从 6 到 7，与 HARMONi-10（国际多中心）加入的时间相符，这一点是推断。「17」和「超过 18」同一天并存，差的那 1 项仍未点名。官网邀请函的 17 项写法与可核对清单一致。卡度尼利在邀请函中的口径为 13 项注册性或 III 期，其中 2 项为自主国际多中心。",
+        "sources": [
+          {
+            "label": "康方官网邀请函 2026-10-26",
+            "url": "https://www.akesobio.com/cn/media/akeso-news/20261026/",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-02",
+        "title": "公司稿稳定为超过 17 项 III 期、7 项国际多中心、7 项头对头",
+        "grades": [
+          "一手"
+        ],
+        "body": "11-05 稿沿用同一口径。11-04 《证券日报》专访夏瑜写「16 项 III 期、6 项国际多中心、7 项头对头」，比同一周公司稿少 1 项国际多中心，III 期也偏低，更像采访沿用了更早的口径，而不是试验被撤掉。\n\n头对头：公司口径后期稳定在 7 项（中报曾写 8 项）。按试验设计逐条核对，注册性头对头 PD-(L)1 共 9 项——对 K药 6 项（HARMONi-2、HARMONi-3、HARMONi-7、HN1、ILLUMINE、GU1），对 I药 2 项（GI1、HARMONi-10），外加已读出阳性的 HARMONi-6（对替雷利珠单抗）。差别出在「什么算头对头」的计数规则。",
+        "sources": [
+          {
+            "label": "康方新闻 2026-11-02 / 2026-11-05",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-09",
+        "title": "清单增至 138 项：纳入 MedSIR 二线肝细胞癌 II 期",
+        "grades": [
+          "一手"
+        ],
+        "body": "新增 NCT07917481，计划 44 人，计划 2027-03 开始。同期 HARMONi-GI3 入组目标由 600 调整为 900。2026-10-16 起按要求同时跟踪医院和学术组织发起的研究：当时经转载找到 ChiCTR2600134037（福建协和，单药新辅助可切除食管鳞癌）和 ChiCTR2600133939（上海东方医院，联合化疗诱导局部进展期胸腺癌）。西南肿瘤协作组 Lung-MAP 的 NCT07393555 实际于 2026-09-22 开始，不是 10 月「新登记」。",
+        "sources": [
+          {
+            "label": "NCT07917481",
+            "url": "https://clinicaltrials.gov/study/NCT07917481",
+            "grade": "一手"
+          }
+        ]
+      }
+    ],
+    "grades_present": [
+      "一手",
+      "推论"
+    ]
+  },
+  {
+    "slug": "smt112-216",
+    "title": "SMT112-216 / AK112-216（肾癌）",
+    "subtitle": "一线 IMDC 中高危透明细胞肾癌。依沃西单用或联合卡度尼利、伊匹木单抗，对照纳武利尤单抗联合伊匹木单抗。",
+    "kicker": "探索性 II 期",
+    "group": "ivo",
+    "priority": 13,
+    "companies": [
+      "康方生物",
+      "Summit"
+    ],
+    "drugs": [
+      "依沃西",
+      "卡度尼利"
+    ],
+    "indications": [
+      "肾癌"
+    ],
+    "aliases": [
+      "NCT07877194",
+      "CTR20263290",
+      "AK112-216"
+    ],
+    "updated": "2026-11-04",
+    "status": "Summit 于 2026-10-19 宣布开中心，第三季度称已开始入组。主要完成估计 2029-04-12。",
+    "summary": "这是随机 II 期，约 100 人，五组设计，主要终点是 ORR 和安全性。对照是纳武利尤单抗联合伊匹木单抗（O 药加 Y 药），不是「O 药加 I 药」——在中文语境里，I 药常被用来称度伐利尤单抗。它和 ESMO 3592O 的一线低危单药研究不是同一人群。",
+    "timeline": [
+      {
+        "date": "2026-09-04",
+        "title": "CDE CTR20263290 首次公示",
+        "grades": [
+          "一手"
+        ],
+        "body": "公示早于阿斯利康入股 Summit（2026-09-28 签约）。因此「阿斯利康入股后才提速」的因果不成立。",
+        "sources": [
+          {
+            "label": "CDE CTR20263290",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-16",
+        "title": "ClinicalTrials.gov 首次登记 NCT07877194",
+        "grades": [
+          "一手"
+        ],
+        "body": "Summit 申办，方案号 SMT112-216，尚未招募，计划 100 人，预计主要完成 2029-04-12。国内机构包括北京肿瘤医院和华西医院。",
+        "sources": [
+          {
+            "label": "NCT07877194",
+            "url": "https://clinicaltrials.gov/study/NCT07877194",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-19",
+        "title": "Summit 宣布全球 II 期开中心，康方同步发稿",
+        "grades": [
+          "一手"
+        ],
+        "body": "美中两地开中心。第三季度新闻稿称已开始入组。海外已有依沃西肾癌研究者发起研究：MD 安德森的 NCT06940518（二线及以上，与 Summit 合作，2025-07 开始）、City of Hope 的 NCT07226544（新辅助）；国内另有中山大学的 NCT07488572。Summit 与 Arcus 于 2026-07-22 签署临床合作，依沃西加入 ARC-20 新队列、与 casdatifan 联用，由 Arcus 申办，预计 2027 年中出数据；截至 2026-10-05，ARC-20（NCT05536141）尚未加入依沃西队列。",
+        "sources": [
+          {
+            "label": "Summit 新闻稿 2026-10-19",
+            "url": "https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Announces-Opening-of-Global-Phase-II-Study-of-Ivonescimab-Based-Regimens-in-Advanced-Clear-Cell-Renal-Cell-Carcinoma/default.aspx",
+            "grade": "一手"
+          }
+        ]
+      }
+    ],
+    "impact": {
+      "text": "这是依沃西少数直接走进 O 药地盘（肾癌一线，CheckMate-214 领地）的随机研究，但是 II 期、主要看缓解率和安全性。低危人群的单药信号在 3592O，中高危人群看 216，不要混读。",
+      "attribution": "研究组判断"
+    },
+    "grades_present": [
+      "一手"
+    ]
+  },
+  {
+    "slug": "cadonilimab",
+    "title": "卡度尼利（开坦尼）",
+    "subtitle": "PD-1/CTLA-4 四价双抗。中国已获批三个适应症，均已进入医保。关键 III 期的对照都是安慰剂联合化疗，不是对 PD-1 的头对头。",
+    "kicker": "已上市",
+    "group": "cado",
+    "priority": 15,
+    "companies": [
+      "康方生物"
+    ],
+    "drugs": [
+      "卡度尼利"
+    ],
+    "indications": [
+      "宫颈癌",
+      "胃癌"
+    ],
+    "aliases": [
+      "AK104",
+      "开坦尼",
+      "cadonilimab",
+      "COMPASSION-15",
+      "COMPASSION-16",
+      "COMPLUS-5"
+    ],
+    "updated": "2026-11-10",
+    "status": "三个适应症已获批并进医保。COMPLUS-5 的登记页预计主要完成日期在 2026-11，计划日期不等于读出。",
+    "summary": "卡度尼利（AK104，商品名开坦尼）是 PD-1/CTLA-4 四价双抗，IgG1 Fc-null。公司称在两靶点共表达处亲合力约高 10 倍。定位是另一条 IO2.0 骨架，主攻冷肿瘤或 PD-L1 低表达，与依沃西的「免疫加抗血管」互补。两项关键 III 期的人群都在中国。COMPASSION-15 期中和最终的中位 OS（14.1 和 13.9 个月）低于 2024 年 AACR 口头报告（15.0 对 10.8），以已发表数据为准。",
+    "timeline": [
+      {
+        "date": "2022-06",
+        "title": "附条件批准：二线及以后复发或转移宫颈癌，单药",
+        "grades": [
+          "一手"
+        ],
+        "body": "依据 COMPASSION-03 / AK104-201 的宫颈癌队列，ORR 约 32% 至 33%。精确获批日以国家药监局原件为准，此处按已核对材料记为 2022 年 6 月。",
+        "sources": [
+          {
+            "label": "Lancet Oncology 2023",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2024-09-30",
+        "title": "获批一线 HER2 阴性胃或胃食管结合部腺癌，联合化疗，全人群",
+        "grades": [
+          "一手"
+        ],
+        "body": "依据 COMPASSION-15，入组 610 人。期中分析（《Nature Medicine》，数据截止 2023-08-18）：OS 14.1 对 11.1 个月，HR 0.66；PFS 7.0 对 5.3 个月，HR 0.53；ORR 65.2% 对 48.9%；3 级及以上 TRAE 65.9% 对 53.6%。最终分析（ESMO 2025，中位随访 33.9 个月）：OS 13.9 对 11.1 个月，HR 0.61（0.51–0.73）；CPS≥5 的 HR 0.49；CPS<5 的 HR 0.76（0.59–0.99）。",
+        "sources": [
+          {
+            "label": "Nature Medicine（期中）",
+            "grade": "一手"
+          },
+          {
+            "label": "Annals of Oncology 2098MO（最终）",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2025-05-27",
+        "title": "获批一线持续、复发或转移宫颈癌，联合含铂化疗，可加或不加贝伐珠单抗",
+        "grades": [
+          "一手"
+        ],
+        "body": "依据 COMPASSION-16，入组 445 人。PFS 12.7 对 8.1 个月，HR 0.62（0.49–0.80）；OS 尚未达到对 22.8 个月，HR 0.64（0.48–0.86）。",
+        "sources": [
+          {
+            "label": "Lancet 2024",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-11",
+        "title": "其他后期研究和新的研究者发起试验",
+        "grades": [
+          "一手"
+        ],
+        "body": "COMPLUS-5：卡度尼利联合 AK109 与紫杉醇，用于免疫治疗后进展的胃癌（NCT06341335），506 人，预计主要完成 2026-11。此外还有：COMPASSION-33（围手术期胃癌）；纪念斯隆凯特琳癌症中心的 NCT07631000（联合 FLOT，II 期，37 人，预计 2029-05，是目前唯一的西方患者数据来源）；COMPASSION-22（肝癌术后辅助，2025-03 完成入组，登记页预计主要完成 2026-01-28，已过、尚未读出）；COMPASSION-28（PD-L1 阴性 NSCLC 对照替雷利珠单抗，对照的科学问题与 volrustomig 的 eVOLVE-Lung02 在 2026-08 因无效而中止几乎相同）；COMPASSION-30（局部晚期 NSCLC 巩固对照舒格利单抗，NCT06617416，预计主要完成 2026-10-28，计划日期不等于读出，截至 2026-11-10 未见读出）；COMPASSION-18（局部晚期宫颈癌）；COMPASSION-36（免疫治疗后进展的肝癌，全球注册性 II 期）；皮下剂型 NCT07449780。\n\n2026 年 11 月新见到的研究者发起研究：NCT07920224（协和 / 华中科技大学，联合呋喹替尼和白蛋白紫杉醇，二线胃癌 II 期，59 人）；NCT07909265（中国医学科学院肿瘤医院，联合仑伐替尼，肾癌 II 期，54 人）。",
+        "sources": [
+          {
+            "label": "NCT06341335（COMPLUS-5）",
+            "url": "https://clinicaltrials.gov/study/NCT06341335",
+            "grade": "一手"
+          }
+        ]
+      }
+    ],
+    "impact": {
+      "text": "卡度尼利在胃癌、宫颈癌已经有中国获批，但还没有头对头胜过 PD-1 的结果，也没有海外授权伙伴。一线胃癌的长期竞争，更可能来自 PD-(L)1×VEGF 进入胃癌，以及 CLDN18.2 等靶向，包括荣昌的 RC118 联合 RC148。齐鲁的 QL1706 则在宫颈癌一线和二线形成正面竞争。依沃西的注册性头对头几乎全对着 K药和 I药；对 O药没有 III 期。公司把卡度尼利的全球 III 期 COMPASSION-37 设计成直接针对 O药，详见该条目。这个分工并不稳：两药在胃癌可能互相挤占，竞品已经在胃癌对照纳武利尤单抗。",
+      "attribution": "研究组判断（卡度尼利评估及《K药来时的路》对话结论）"
+    },
+    "grades_present": [
+      "一手"
+    ]
+  },
+  {
+    "slug": "compassion-37",
+    "title": "COMPASSION-37",
+    "subtitle": "全球 III 期。卡度尼利联合 CAPOX，对照 CAPOX 加或不加纳武利尤单抗。唯一主要终点是总生存。",
+    "kicker": "全球 · 对位 O药",
+    "group": "cado",
+    "priority": 15,
+    "companies": [
+      "康方生物"
+    ],
+    "drugs": [
+      "卡度尼利"
+    ],
+    "indications": [
+      "胃癌"
+    ],
+    "aliases": [
+      "AK104-337"
+    ],
+    "updated": "2026-11-10",
+    "status": "双盲，计划 900 人。FDA 于 2025-12 准许。中报写 2026 年 6 月全面启动；登记页实际开始 2026-09-24，首例 2026-09-27。公司未披露期中计划或读出时间。",
+    "summary": "全球主要研究者包括 CheckMate-649 的牵头人 Janjigian。登记页预计主要完成 2029-08-18。科学背景：CheckMate-649 的纳武利尤单抗联合伊匹木单抗组，在 CPS≥5 的人群里 OS 未达显著（HR 0.89）；美国说明书已把一线胃癌的 PD-1 限于 PD-L1 阳性（据康方新闻稿）。公司从未正式说出「依沃西打 K药和 I药、卡度尼利打 O药」这句话，这是根据试验设计做的归纳。",
+    "timeline": [
+      {
+        "date": "2025-12",
+        "title": "FDA 准许该方案",
+        "grades": [
+          "一手"
+        ],
+        "body": "具体日期按已核对材料记为 2025 年 12 月。",
+        "sources": [
+          {
+            "label": "康方新闻稿",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-06",
+        "title": "中报称 2026 年 6 月全面启动",
+        "grades": [
+          "一手"
+        ],
+        "body": "与后来登记页上的实际开始日期不是互相否定，更像宣布启动与首例患者之间的时间差。",
+        "sources": [
+          {
+            "label": "康方 2026 年中报",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-07-14",
+        "title": "ClinicalTrials.gov 首次登记",
+        "grades": [
+          "一手"
+        ],
+        "body": "随后记录的实际开始日期为 2026-09-24，首例患者 2026-09-27。预计主要完成 2029-08-18。",
+        "sources": []
+      }
+    ],
+    "impact": {
+      "text": "研究组推断：2029 年之前公开疗效数据的可能性低；无进展生存和缓解率通常与总生存一起或更晚公布。可预期的是设计壁报和入组完成公告。若方案中设有期中 OS，最早可能落在 2028 年下半年到 2029 年上半年，且只有越过优效界值才会发顶线。依据是 COMPASSION-15（中国、安慰剂对照）从启动到期中达标约 26 个月，CheckMate-649 约 46 个月，本试验登记页预计主要完成为启动后约 35 个月。期中门槛可能高于 COMPASSION-15，因为对照含纳武利尤单抗。卡度尼利没有海外伙伴，是这条全球研究的现实约束。",
+      "attribution": "研究组判断（COMPASSION-37 期中专题）；其中时间表部分为推论"
+    },
+    "grades_present": [
+      "一手"
+    ]
+  },
+  {
+    "slug": "compassion-40",
+    "title": "COMPASSION-40",
+    "subtitle": "MSI-H / dMMR 结肠癌围手术期 III 期。",
+    "kicker": "围手术期",
+    "group": "cado",
+    "priority": 20,
+    "companies": [
+      "康方生物"
+    ],
+    "drugs": [
+      "卡度尼利"
+    ],
+    "indications": [
+      "结直肠癌",
+      "围手术期"
+    ],
+    "aliases": [
+      "NCT07412613",
+      "AK104-313"
+    ],
+    "updated": "2026-10-09",
+    "status": "康方 2026-10-09 称开始入组。登记页实际启动日期为 2026-04-15，中报已写上半年启动。",
+    "summary": "这更像一次重新宣传，而不是全新启动的研究。对话中的结论是：科学成功的概率不低，但中国已有信达的 IBI310 联合信迪利单抗（错配修复缺陷结肠癌新辅助领先约 3 年），商业上的边际有限。需要更正的一点：FDA 批准的阿替利珠单抗联合 FOLFOX 是辅助治疗标准，不是新辅助，因此不能写成「对照组单纯辅助化疗已经落后于免疫联合化疗的辅助标准」而不加区分。",
+    "timeline": [
+      {
+        "date": "2026-04-15",
+        "title": "登记页记录的实际启动日",
+        "grades": [
+          "一手"
+        ],
+        "body": "NCT07412613。中报已写 2026 年上半年启动。",
+        "sources": [
+          {
+            "label": "NCT07412613",
+            "url": "https://clinicaltrials.gov/study/NCT07412613",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-09",
+        "title": "康方宣布开始入组",
+        "grades": [
+          "一手"
+        ],
+        "body": "中英文稿分别发布。属新启动宣传，不是读出、获批或新的对外合作。",
+        "sources": [
+          {
+            "label": "康方新闻 2026-10-09",
+            "url": "https://www.akesobio.com/cn/media/akeso-news/20261009/",
+            "grade": "一手"
+          }
+        ]
+      }
+    ],
+    "impact": {
+      "text": "科学上值得做，商业上要面对已经领先的国内免疫新辅助方案。它不改变依沃西的全球注册主线。",
+      "attribution": "研究组判断（对话结论）"
+    },
+    "grades_present": [
+      "一手"
+    ]
+  },
+  {
+    "slug": "summit-az",
+    "title": "Summit 授权与阿斯利康入股",
+    "subtitle": "依沃西的海外权益在 Summit。阿斯利康 20 亿美元入股不含依沃西的商业权益。",
+    "kicker": "授权与股权",
+    "group": "partner",
+    "priority": 17,
+    "companies": [
+      "康方生物",
+      "Summit",
+      "阿斯利康"
+    ],
+    "drugs": [
+      "依沃西"
+    ],
+    "indications": [
+      "多瘤种"
+    ],
+    "aliases": [
+      "SMMT",
+      "Akeso Collaboration"
+    ],
+    "updated": "2026-11-04",
+    "status": "2022 年 12 月完成授权。阿斯利康投资于 2026-10-05 交割。",
+    "summary": "目前已知的跨国合作几乎都是各自供药、分担费用、各自保留权益的临床合作。没有任何一家获得依沃西的商业权益，阿斯利康入股 Summit 也不含依沃西权益。ADC 一方可以随时换伙伴。交易对价有两套口径，必须并列，以 10-K 为一手。",
+    "timeline": [
+      {
+        "date": "2022-12-08",
+        "title": "康方将美欧日等海外权益授给 Summit",
+        "grades": [
+          "一手"
+        ],
+        "body": "常用口径：首付 5 亿美元，总额最高 50 亿美元，外加两位数提成。Summit 2025 财年 10-K（2026-02-23）写的是：首期对价合计 5.15 亿美元（2023 年第一季度支付 5.00 亿，其中现金 4.749 亿、1000 万股 Summit 股票抵 2510 万美元；2024 年第三季度因区域扩至拉美、中东、非洲再付 1500 万）；或有付款最高 45.6 亿美元（监管里程碑 10.5 亿、商业 35.1 亿）；提成为低两位数。权益区域：北美、南美、欧洲、中东、非洲和日本。中国等区域仍归康方。",
+        "sources": [
+          {
+            "label": "Summit 2022-12 新闻稿",
+            "url": "https://www.sec.gov/Archives/edgar/data/1599298/000159929822000136/a2022_prx1208xivonescimaba.htm",
+            "grade": "一手"
+          },
+          {
+            "label": "Summit 10-K FY2025 Item 1",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-28",
+        "title": "阿斯利康签约认购 20 亿美元可转换优先股",
+        "grades": [
+          "一手"
+        ],
+        "body": "2026-10-05 完成交割。折合每股 18.3561 美元，约 1.09 亿股（最多 108955369 股，见 424B7）。持股约 12.0%，完全稀释约 10.6%。不含依沃西的任何商业权益。阿斯利康获优先认购权，以及第三方收购时的特定权利。配套临床合作包括：Sone-Ve（消化道，阿斯利康主导，共担费用、各自保留权益，谅解备忘录拟扩大到更多抗肿瘤药或 ADC）；Datroway（与第一三共，首发一线三阴性乳腺癌 III 期）。到账是 10-05 的事件，不是 11 月第一周的新事件。",
+        "sources": [
+          {
+            "label": "Summit：阿斯利康完成 20 亿美元股权投资",
+            "url": "https://smmttx.com/news/press-releases/news-details/2026/AstraZeneca-Completes-2-Billion-Equity-Investment-in-Summit-Therapeutics/default.aspx",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-04",
+        "title": "特别股东会通过法定普通股由 10 亿股增至 20 亿股",
+        "grades": [
+          "一手"
+        ],
+        "body": "赞成 658142561 票，反对 1983511 票，弃权 3134826 票，用于阿斯利康优先股转换。同日的 424B7 是阿斯利康控股公司登记转售，不是新发行。",
+        "sources": [
+          {
+            "label": "Summit 8-K 2026-11-04",
+            "url": "https://www.sec.gov/Archives/edgar/data/1599298/000159929826000088/smmt-20261104.htm",
+            "grade": "一手"
+          }
+        ]
+      }
+    ],
+    "impact": {
+      "text": "阿斯利康愿意出资，并把手上的 ADC 拿来和依沃西联用，是对依沃西作为公共骨架的加分；但它同时在推进自己的 rilvegostomig 联合 ADC，是两条骨架一起下注。海外经济利益主要归 Summit，康方拿里程碑和低两位数提成。",
+      "attribution": "研究组判断"
+    },
+    "grades_present": [
+      "一手"
+    ]
+  },
+  {
+    "slug": "adc-hs20093",
+    "title": "依沃西联合 HS-20093 / GSK'227",
+    "subtitle": "翰森与 GSK 的 B7-H3 ADC。这是依沃西首个由公司申办的 B7-H3 ADC 肺癌联用，目前还在 I 期。",
+    "kicker": "双抗 + ADC",
+    "group": "partner",
+    "priority": 12,
+    "companies": [
+      "康方生物",
+      "翰森制药",
+      "GSK"
+    ],
+    "drugs": [
+      "依沃西",
+      "HS-20093"
+    ],
+    "indications": [
+      "NSCLC"
+    ],
+    "aliases": [
+      "NCT07899086",
+      "GSK5764227",
+      "risvutatug rezetecan",
+      "GSK'227"
+    ],
+    "updated": "2026-11-10",
+    "status": "翰森申办的 NCT07899086 计划 2026-11-10 开始，截至 2026-11-10 仍尚未招募，最后更新 2026-10-27。I 期不计入依沃西 II 至 III 期清单。",
+    "summary": "HS-20093 即 GSK'227（risvutatug rezetecan，GSK5764227），靶点是 B7-H3。存在两条联用路径：Summit 与 GSK 的非独家 I/II 期，以及翰森在中国申办的 I 期。翰森同时把 HS-20093 与恒瑞 SHR-4610 做跨公司联用申报（小细胞肺癌），两边都在押。",
+    "timeline": [
+      {
+        "date": "2026-09-09",
+        "title": "Summit 与 GSK 的非独家 I/II 期开始",
+        "grades": [
+          "一手"
+        ],
+        "body": "登记号 NCT07602855。",
+        "sources": [
+          {
+            "label": "NCT07602855",
+            "url": "https://clinicaltrials.gov/study/NCT07602855",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-27",
+        "title": "翰森申办 NCT07899086 首次登记",
+        "grades": [
+          "一手"
+        ],
+        "body": "HS-20093 联合依沃西 20 mg/kg，可加或不加培美曲塞 / 白蛋白紫杉醇，用于晚期 NSCLC，I 期，非随机，计划 102 人。计划开始日期 2026-11-10。前几次日检曾漏记此项，第 4 期周报补报。GSK 自身的 III 期包括 EMBOLD（复发小细胞肺癌，NCT07099898）和转移性去势抵抗性前列腺癌（NCT07802704）等。",
+        "sources": [
+          {
+            "label": "NCT07899086",
+            "url": "https://clinicaltrials.gov/study/NCT07899086",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-10",
+        "title": "计划开始日当天，登记状态仍为尚未招募",
+        "grades": [
+          "一手"
+        ],
+        "body": "最后更新仍是 2026-10-27，估计开始日仍写 2026-11-10。",
+        "sources": [
+          {
+            "label": "NCT07899086",
+            "url": "https://clinicaltrials.gov/study/NCT07899086",
+            "grade": "一手"
+          }
+        ]
+      }
+    ],
+    "impact": {
+      "text": "小幅加分：依沃西的 B7-H3 ADC 伙伴在扩容，但现在仍是 I 期，没有疗效数据。翰森同时把同一款 ADC 拿去和恒瑞的 PD-(L)1×VEGF 资产申报联用，说明供药方并未单押依沃西。",
+      "attribution": "研究组判断（第 4 期周报）"
+    },
+    "grades_present": [
+      "一手"
+    ]
+  },
+  {
+    "slug": "adc-sys6043",
+    "title": "依沃西联合 SYS6043",
+    "subtitle": "与石药集团旗下巨石生物的临床合作。仅限中国大陆，瘤种未公开。",
+    "kicker": "双抗 + ADC",
+    "group": "partner",
+    "priority": 12,
+    "companies": [
+      "康方生物",
+      "石药集团"
+    ],
+    "drugs": [
+      "依沃西",
+      "SYS6043"
+    ],
+    "indications": [
+      "未披露"
+    ],
+    "aliases": [
+      "巨石生物"
+    ],
+    "updated": "2026-11-03",
+    "status": "2026-11-02 宣布合作。未见联用登记，未披露金额和具体瘤种。",
+    "summary": "SYS6043 是石药的 B7-H3 ADC。这是依沃西第二个与国内大型药企的 B7-H3 ADC 联用，前一个是翰森的 HS-20093。",
+    "timeline": [
+      {
+        "date": "2026-11-02",
+        "title": "康方官网宣布临床研究合作",
+        "grades": [
+          "一手"
+        ],
+        "body": "合作区域为中国大陆，适应症为双方约定的肿瘤，具体瘤种未公开。研究成果双方共有；III 期如何安排，由联合指导委员会结合数据和监管沟通再评估。未披露金额。港交所当天无康方公告，按须披露交易的标准看，此事未单独公告。石药自身的 III 期包括铂耐药卵巢癌 NCT07708753（2026-07 开始，招募中）和一线某瘤种对照研究者选择化疗的 NCT07879911（计划 2026-11-30 开始）。",
+        "sources": [
+          {
+            "label": "康方官网 2026-11-02",
+            "url": "https://www.akesobio.com/cn/media/akeso-news/20261102/",
+            "grade": "一手"
+          }
+        ]
+      }
+    ],
+    "impact": {
+      "text": "小幅加分：ADC 联用伙伴继续扩容，但仅限中国，也还没有登记和数据。",
+      "attribution": "研究组判断（2026-11-03 日检）"
+    },
+    "grades_present": [
+      "一手"
+    ]
+  },
+  {
+    "slug": "sone-ve",
+    "title": "Sone-Ve 与 CLARITY-Gastric 01",
+    "subtitle": "阿斯利康的 CLDN18.2 ADC，是依沃西消化道联用的伙伴药。单药 III 期已有总生存获益。",
+    "kicker": "伙伴药",
+    "group": "partner",
+    "priority": 19,
+    "companies": [
+      "阿斯利康",
+      "Summit"
+    ],
+    "drugs": [
+      "Sone-Ve",
+      "依沃西"
+    ],
+    "indications": [
+      "胃癌"
+    ],
+    "aliases": [
+      "sonesitatug vedotin",
+      "LBA7",
+      "CLARITY-Gastric"
+    ],
+    "updated": "2026-10-26",
+    "status": "与依沃西的临床合作「即将」启动，期别未披露；ClinicalTrials.gov 未见依沃西联用登记。",
+    "summary": "Sone-Ve（sonesitatug vedotin）是阿斯利康的 CLDN18.2 ADC。公开合作范围是消化道，未见乳腺癌。伙伴药自己先有总生存获益，给以后的联用打下基础，但与依沃西没有直接数据。",
+    "timeline": [
+      {
+        "date": "2026-10-25",
+        "title": "ESMO LBA7：CLARITY-Gastric 01",
+        "grades": [
+          "二手"
+        ],
+        "body": "二线及以后、CLDN18.2 阳性的胃或食管胃癌 III 期，532 人随机，中位随访 8.6 个月。三线及以后人群 OS 10.0 对 5.0 个月，HR 0.47（0.36–0.62）；意向性治疗人群 OS 10.6 对 6.4 个月，HR 0.58（0.47–0.73）。独立评审的 PFS 未达统计学显著。数字来自 Oncoletter 对主席论坛的转述，ESMO 幻灯原页当时未打开。曾有公众号把同场背靠背的研究误写成胰腺癌或胆道癌数据，已更正：与 HARMONi-GI1 同场的就是这项胃癌研究。",
+        "sources": [
+          {
+            "label": "Oncoletter 转述",
+            "url": "https://www.oncoletter.ch/de/Kongressbericht/2026/esmo-congress-2026/presidential-symposium-ii.html",
+            "grade": "二手"
+          }
+        ]
+      }
+    ],
+    "impact": {
+      "text": "对依沃西消化道 ADC 联用是加分：伙伴药单药已经做出总生存获益。联用本身还没有登记，更没有数据。",
+      "attribution": "研究组判断（2026-10-25 ESMO 跟进）"
+    },
+    "grades_present": [
+      "二手"
+    ]
+  },
+  {
+    "slug": "akeso-adc",
+    "title": "康方自研 ADC",
+    "subtitle": "AK146D1（TROP2/Nectin-4 双抗 ADC）和 AK138D1（HER3 ADC）已与依沃西联用进入早期临床。",
+    "kicker": "自研管线",
+    "group": "partner",
+    "priority": 21,
+    "companies": [
+      "康方生物"
+    ],
+    "drugs": [
+      "AK146D1",
+      "AK138D1",
+      "依沃西"
+    ],
+    "indications": [
+      "NSCLC",
+      "乳腺癌"
+    ],
+    "aliases": [
+      "AK157D1",
+      "AK158D1"
+    ],
+    "updated": "2026-10-08",
+    "status": "已有首例患者入组的 II 期或 Ib/II 期，尚无随机疗效数据。",
+    "summary": "康方把自研 ADC 接到依沃西上，是中国市场的闭环，也是对外授权的期权。它们目前都还没有可以拿来讨论疗效的随机数据。",
+    "timeline": [
+      {
+        "date": "2026-06-15",
+        "title": "AK138D1 联合或不联合依沃西的乳腺癌 Ib/II 期见诸新闻",
+        "grades": [
+          "一手",
+          "未核实"
+        ],
+        "body": "登记号 NCT07560124，尚未招募（以当时材料为准）。公司称在中国和澳大利亚的早期研究中未见间质性肺病。药物抗体比 8 这一说法来自二手，未核实。",
+        "sources": [
+          {
+            "label": "NCT07560124",
+            "url": "https://clinicaltrials.gov/study/NCT07560124",
+            "grade": "一手"
+          },
+          {
+            "label": "康方新闻 2026-06-15",
+            "url": "https://akesobio.com/cn/media/akeso-news/20260615/",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-07-20",
+        "title": "AK146D1 联合依沃西的 NSCLC II 期首例患者入组",
+        "grades": [
+          "一手"
+        ],
+        "body": "AK146D1 是 TROP2/Nectin-4 双抗 ADC，连接子为 MC-AAA，载荷为 DXd。乳腺癌 II 期 NCT07591090 的首例患者新闻发于 2026-08-10，实际开始日期为 2026-07-17。",
+        "sources": [
+          {
+            "label": "NCT07591090",
+            "url": "https://clinicaltrials.gov/study/NCT07591090",
+            "grade": "一手"
+          },
+          {
+            "label": "康方新闻 2026-08-10",
+            "url": "https://akesobio.com/cn/media/akeso-news/20260810/",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-08",
+        "title": "更早的 ADC：AK157D1 与 AK158D1",
+        "grades": [
+          "一手"
+        ],
+        "body": "AK157D1 是 B7-H3 ADC，2026 年 8 月获批 I 期。AK158D1 是 EGFR/TROP2 双抗 ADC，2026 年 7 月递交临床试验申请，9 月获批 I 期的标题已核对。",
+        "sources": [
+          {
+            "label": "康方公开披露",
+            "grade": "一手"
+          }
+        ]
+      }
+    ],
+    "grades_present": [
+      "一手",
+      "未核实"
+    ]
+  },
+  {
+    "slug": "adc-other",
+    "title": "其他依沃西 ADC 联用",
+    "subtitle": "百利 iza-bren、宜联 YL201、安领科 ALK201、荣昌维迪西妥单抗、吉利德戈沙妥珠单抗，以及 2025 年与辉瑞的 vedotin 合作。",
+    "kicker": "双抗 + ADC",
+    "group": "partner",
+    "priority": 22,
+    "companies": [
+      "康方生物",
+      "百利天恒",
+      "宜联生物",
+      "荣昌生物",
+      "Gilead"
+    ],
+    "drugs": [
+      "依沃西",
+      "iza-bren",
+      "YL201",
+      "维迪西妥单抗",
+      "戈沙妥珠单抗"
+    ],
+    "indications": [
+      "NSCLC",
+      "胃癌"
+    ],
+    "aliases": [
+      "BL-B01D1",
+      "PANKU-Lung05",
+      "PANKU-Lung06",
+      "NCT07208773",
+      "NCT07393555"
+    ],
+    "updated": "2026-11-10",
+    "status": "多数为早期或尚未招募。尚无依沃西联合 ADC 的公开随机或公司口径疗效数据。",
+    "summary": "没有自家 PD-(L)1×VEGF 的 ADC 持有方，会不会把依沃西当成首选联用骨架，是总问题里的一条。下面这些合作说明名单在变长，但不等于数据已经出现。",
+    "timeline": [
+      {
+        "date": "2025-02-24",
+        "title": "Summit 与辉瑞宣布多款 vedotin ADC 合作",
+        "grades": [
+          "一手",
+          "推论"
+        ],
+        "body": "ClinicalTrials.gov 上未找到辉瑞申办的依沃西联合辉瑞 ADC 试验。研究组推断，此事已被 tivunatamig 替代或搁置。辉瑞的 sigvotatug vedotin 在 SigVie-002（二线 NSCLC）于 2026-06-22 宣布总生存未达终点。",
+        "sources": [
+          {
+            "label": "Summit 2025-02-24 新闻稿",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-07-29",
+        "title": "安领科 ALK201 联合依沃西",
+        "grades": [
+          "一手"
+        ],
+        "body": "NCT07742956，鳞状 NSCLC II 期，尚未招募。国家药监局已批准临床试验申请。ALK201 为 FGFR2b ADC。",
+        "sources": [
+          {
+            "label": "康方新闻 2026-07-29",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-22",
+        "title": "西南肿瘤协作组 Lung-MAP 子研究实际开始",
+        "grades": [
+          "一手"
+        ],
+        "body": "NCT07393555：依沃西可加或不加戈沙妥珠单抗（ Trodelvy），II 期。2026-02-06 首次登记，市场转载称「新登记」并不准确。吉利德同时与 BioNTech 合作 ROSETTA Breast-01（pumitamig 联合 Trodelvy），是在多种骨架之间对冲。",
+        "sources": [
+          {
+            "label": "NCT07393555",
+            "url": "https://clinicaltrials.gov/study/NCT07393555",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-10",
+        "title": "宜联、百利、荣昌等联用的登记状态",
+        "grades": [
+          "一手"
+        ],
+        "body": "宜联 YL201（B7-H3 ADC）联合依沃西：NCT07208773 / CTR20253697，I/II 期，260 人，招募中。百利天恒 iza-bren（BL-B01D1，EGFR×HER3 双抗 ADC）在中国的 PANKU-Lung05 / Lung06（NCT07739199 / NCT07739186，II/III 期，尚未招募）联合「PD-1/VEGF 双抗」，即依沃西（部分核实）。同一款 ADC 在海外由百时美施贵宝推进，与 pumitamig 联用（NCT06618287）。iza-bren 自身的 PANKU-Lung01 PFS HR 0.40，国内上市申请 10-26 受理。荣昌维迪西妥单抗（RC48）联合依沃西为研究者发起研究 NCT06957561；荣昌另有自家 PD-1×VEGF 双抗 RC148，已授权艾伯维，是直接竞品。",
+        "sources": [
+          {
+            "label": "NCT07208773",
+            "url": "https://clinicaltrials.gov/study/NCT07208773",
+            "grade": "一手"
+          }
+        ]
+      }
+    ],
+    "impact": {
+      "text": "名单变长，是加分；但依沃西联合 ADC 至今没有公开的随机或公司口径疗效数据。首个公开的「PD-(L)1×VEGF 双抗联合 ADC」信号属于 pumitamig。有自家双抗的大药企，没有经济理由把骨架让给依沃西。",
+      "attribution": "研究组判断"
+    },
+    "grades_present": [
+      "一手",
+      "推论"
+    ]
+  },
+  {
+    "slug": "pumitamig",
+    "title": "pumitamig（BNT327 / BMS-986545）",
+    "subtitle": "BioNTech 与百时美施贵宝的 PD-L1×VEGF-A 双抗，原普米斯 PM8002。全球 7 项 III 期或 II/III 期，尚无 III 期读出。",
+    "kicker": "全球头号竞品",
+    "group": "competitor",
+    "priority": 6,
+    "companies": [
+      "BioNTech",
+      "百时美施贵宝"
+    ],
+    "drugs": [
+      "pumitamig"
+    ],
+    "indications": [
+      "NSCLC",
+      "小细胞肺癌",
+      "乳腺癌",
+      "胃癌",
+      "结直肠癌"
+    ],
+    "aliases": [
+      "BNT327",
+      "PM8002",
+      "BMS-986545",
+      "ROSETTA"
+    ],
+    "updated": "2026-11-03",
+    "status": "7 项全球关键研究在跑。第三方预计全球 PFS 最早 2028 年底或 2029 年。ROSETTA Breast-01 的 Trodelvy 修订见单独条目。",
+    "summary": "2025 年 6 月交易：首付 15 亿美元，2028 年前另有 20 亿美元非或有周年付款，里程碑最高 76 亿美元，总额最高 111 亿美元，全球利润 50 对 50。七项全球 III 期或 II/III 期（2026-10-08 的 ClinicalTrials.gov）：Lung-01（广泛期小细胞肺癌对照阿替利珠单抗联合依托泊苷/卡铂，621 人）、Lung-02（一线 NSCLC 对照帕博利珠单抗联合化疗，1580 人，由此前的 1260 上调）、Lung-201（同步放化疗后巩固对照度伐利尤单抗，850 人）、Lung-202（PD-L1≥50% 单药对照帕博利珠单抗，750 人）、Breast-01、CRC-203（对照贝伐珠单抗联合化疗，990 人）、Gastric-204（对照纳武利尤单抗联合化疗，690 人）。另有普米斯在中国的小细胞肺癌二线 III 期等。",
+    "timeline": [
+      {
+        "date": "2026-06",
+        "title": "ASCO：ROSETTA Lung-02 的 II 期部分",
+        "grades": [
+          "一手"
+        ],
+        "body": "40 例可评估，确认 ORR 62.5%；3 级及以上 TRAE 48.8%（与 pumitamig 相关 23.3%），出血 20.9%。III 期剂量为 1500 mg 每三周一次。",
+        "sources": [
+          {
+            "label": "ASCO 2026",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-25",
+        "title": "LBA76 ROSETTA Lung-107：免疫治疗后进展的 NSCLC",
+        "grades": [
+          "一手"
+        ],
+        "body": "全球单臂 II 期，pumitamig 联合多西他赛。数据截止 2026-07-10，50 例，中位随访仅 12.2 周；30 例可评估，确认 ORR 36.7%，疾病控制率 90.0%；PD-L1 TPS<1% 为 42.9%，1–49% 为 33.3%，≥50% 为 40.0%；鳞癌 57.1%，非鳞 30.4%；中位 PFS 6.9 个月（4.2–未达到），6 个月 PFS 率 63.3%。3 级及以上与 pumitamig 相关的 TRAE 18.0%，停药 8.0%；VEGF 相关 26.0%（3 级 4.0%）；出血 16.0%，均为 1–2 级。新闻稿中免疫相关不良事件为 22.0%、3 级及以上 10.0%，摘要转述为 30.0% 和 14.0%，两处不一致。百时美施贵宝首席医学官称考虑在二线做注册性研究。单臂、随访短，不能直接和 HARMONi 系列比较。",
+        "sources": [
+          {
+            "label": "BMS / BioNTech 新闻稿 2026-10-25",
+            "url": "https://news.bms.com/news/details/2026/BioNTech-and-Bristol-Myers-Squibb-Report-Encouraging-Global-Phase-2-data-for-Pumitamig-in-Advanced-NSCLC-After-Progression-on-Immunotherapy-Plus-Chemotherapy-2026-Efd6TrI0fv/default.aspx",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-24",
+        "title": "999O：联合 Elfe-D（B7-H3 ADC）",
+        "grades": [
+          "一手",
+          "二手"
+        ],
+        "body": "摘要版（数据截止 2026-04-08）：110 例、67 例可评估，未确认 ORR 36%，3 级及以上 TRAE 27%，无间质性肺病。会上更新（二手会议报道，未见公司会后稿）：安全性人群 142 例、疗效可评估 139 例，中位随访 6.3 个月；未确认 ORR 48.9%（40.4–57.5）；铂耐药卵巢癌 80.6%（31 例），宫颈癌 50.0%（22 例），肝癌 42.9%（21 例），头颈 38.5%（39 例），黑色素瘤 30.8%（26 例）。3 级及以上 TRAE 38.7%，因 TRAE 停药 3.5%；疑似间质性肺病 2 例（1 例排除、1 例待判定）。样本扩大后缓解率升高，3 级及以上 TRAE 也升高约 12 个百分点。\n\n世界肺癌大会 2026 还有联合 elfe-D 的肺癌数据：小细胞肺癌 71 例未确认 ORR 70.4%；一线 92.3%；二线 77.3% 或 76.2%（两处来源不一致）；3 级及以上 TRAE 23.3% 至 26.5%，间质性肺病或肺炎 2.9%，2 例可能与治疗相关的死亡。NSCLC 数据当时未成熟。联合 BNT325（TROP2 ADC）在一线三阴性乳腺癌的确认 ORR 为 76.7%（30 例，ESMO Breast 2026）。",
+        "sources": [
+          {
+            "label": "ESMO 2026 摘要 999O",
+            "grade": "一手"
+          },
+          {
+            "label": "obgy.cn / European Biotechnology 会上更新",
+            "url": "https://european-biotechnology.com/latest-news/esmo-2026-the-biggest-announcements-from-european-biopharma/",
+            "grade": "二手"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-26",
+        "title": "2393O：联合 FOLFIRI 用于二线神经内分泌肿瘤",
+        "grades": [
+          "二手"
+        ],
+        "body": "31 例，数据截止 2026-03-30，中位随访 7.1 个月。确认 ORR 40.0%，疾病控制率 86.7%，中位 PFS 5.5 个月，中位缓解持续 5.9 个月；6 个月和 12 个月 OS 率 82.8% 和 59.8%。3 级及以上 TRAE 80.6%，停药 16.1%；VEGF 相关任意级 77.4%、3 级及以上 19.4%；免疫相关不良事件 22.6%，无 3 级及以上；治疗相关死亡 1 例（颅内出血，伴疾病进展）。1951RO 脑转移亚组：小细胞肺癌颅内确认 ORR 38.2%（34 例），三阴性乳腺癌 42.9%（7 例）。",
+        "sources": [
+          {
+            "label": "Oncoletter 摘要转述",
+            "url": "https://oncoletter.ch/de/Kongressbericht/2026/esmo-congress-2026/nets-endocrine-tumours-pp.html",
+            "grade": "二手"
+          }
+        ]
+      }
+    ],
+    "impact": {
+      "text": "这是依沃西最直接的全球同行。七项 III 期覆盖肺癌、肠癌、胃癌和乳腺癌，胃癌那一项直接对照纳武利尤单抗联合化疗，而依沃西在 O 药地盘上还没有注册性头对头。联合 ADC 的早期信号属于 pumitamig 先拿出来，不是依沃西。这些都是竞争压力；它们是单臂或早期数据，不能拿来和 HARMONi 系列比谁优谁劣。依沃西的全球肺癌读出仍大约领先两年，前提是自己的全球数据先站住。",
+      "attribution": "研究组判断（第 3 期周报及后续日检）"
+    },
+    "grades_present": [
+      "一手",
+      "二手"
+    ]
+  },
+  {
+    "slug": "rosetta-breast-01",
+    "title": "ROSETTA Breast-01",
+    "subtitle": "pumitamig 计划把化疗换成 Trodelvy，用于一线 PD-L1 低或阴性的三阴性乳腺癌。方案修订尚待监管批准。",
+    "kicker": "双抗 + ADC",
+    "group": "competitor",
+    "priority": 9,
+    "companies": [
+      "BioNTech",
+      "百时美施贵宝",
+      "Gilead"
+    ],
+    "drugs": [
+      "pumitamig",
+      "戈沙妥珠单抗"
+    ],
+    "indications": [
+      "乳腺癌"
+    ],
+    "aliases": [
+      "NCT07173751",
+      "Trodelvy",
+      "SG"
+    ],
+    "updated": "2026-11-07",
+    "status": "截至 2026-11-07，登记页上的干预仍是化疗加安慰剂，未见戈沙妥珠单抗。原文是 pumitamig 自身的首个全球 III 期 ADC 联合，不是「全球首个 PD-(L)1 联合 ADC 的 III 期」。",
+    "summary": "NCT07173751，一线、PD-L1 低或阴性、不适合单抗 PD-(L)1 联合化疗的三阴性乳腺癌，约 558 人，首例 2025-10-30，主要完成估计 2029-12，主要终点为独立评审的 PFS 和 OS。没有 pumitamig 联合戈沙妥珠单抗的人体概念验证数据。最合理的修订推断是 pumitamig 联合戈沙妥珠单抗对照安慰剂联合戈沙妥珠单抗。",
+    "timeline": [
+      {
+        "date": "2026-06-24",
+        "title": "FDA 批准 Trodelvy 用于一线三阴性乳腺癌",
+        "grades": [
+          "一手"
+        ],
+        "body": "单药用于不适合 PD-(L)1 的患者（ASCENT-03，中位 PFS 9.7 对 6.9 个月，HR 0.62），以及联合帕博利珠单抗用于 CPS≥10 的患者（ASCENT-04）。",
+        "sources": [
+          {
+            "label": "FDA 批准公告",
+            "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-sacituzumab-govitecan-hziy-monotherapy-and-combination-pembrolizumab-first-line",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-22",
+        "title": "BioNTech 宣布拟将化疗替换为 Trodelvy",
+        "grades": [
+          "一手"
+        ],
+        "body": "等待监管批准。吉利德供药，BioNTech 继续申办。原文未写死新的对照臂。",
+        "sources": [
+          {
+            "label": "GlobeNewswire 镜像",
+            "url": "https://www.globenewswire.com/news-release/2026/10/22/3386151/0/en/biontech-advances-phase-3-clinical-trial-of-pumitamig-in-combination-with-gilead-s-trop2-directed-adc-sacituzumab-govitecan-in-triple-negative-breast-cancer.html",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-03",
+        "title": "BioNTech 三季报再次确认，登记页尚未改写",
+        "grades": [
+          "一手"
+        ],
+        "body": "6-K 和三季报 PDF 的原话是 first global Phase 3 clinical trial of pumitamig in combination with an ADC。ClinicalTrials.gov 在 11-03 和 11-07 查到的干预仍是化疗加安慰剂。",
+        "sources": [
+          {
+            "label": "BioNTech 6-K",
+            "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000072/form6-krosettabreastx0122o.htm",
+            "grade": "一手"
+          }
+        ]
+      }
+    ],
+    "impact": {
+      "text": "抬高了 CPS 小于 10 这一人群的对照门槛。双抗联合 ADC 的叙事如果被验证，对同类组合是偏利好的期权，但不是依沃西已经完成的验证。它与 HARMONi-BC1（中国、白蛋白紫杉醇对照、主要完成估计 2026-12）没有直接的读出冲突；依沃西肺癌主线的读出仍远早于这项研究。",
+      "attribution": "研究组判断（ROSETTA Breast-01 专项，2026-10-23）"
+    },
+    "grades_present": [
+      "一手"
+    ]
+  },
+  {
+    "slug": "tivunatamig",
+    "title": "tivunatamig（PF-08634404 / SSGJ-707）",
+    "subtitle": "辉瑞与三生制药的 PD-1×VEGF 双抗。中国已有对照替雷利珠单抗的随机 II 期数据，全球 III 期已启动。",
+    "kicker": "直接竞品",
+    "group": "competitor",
+    "priority": 10,
+    "companies": [
+      "辉瑞",
+      "三生制药"
+    ],
+    "drugs": [
+      "tivunatamig"
+    ],
+    "indications": [
+      "NSCLC"
+    ],
+    "aliases": [
+      "PF-08634404",
+      "SSGJ-707",
+      "Symbiotic-Lung-01",
+      "2660P"
+    ],
+    "updated": "2026-11-01",
+    "status": "辉瑞有 3 项 III 期和 2 项 II/III 期。三生中国 III 期对照帕博利珠单抗单药（NCT06980272，420 人）登记的主要完成日为 2026-07-30，尚未读出。",
+    "summary": "交易为首付 12.5 亿美元，另加 1 亿美元股权，里程碑最高 48 亿美元；中国权益期权最高 1.5 亿美元。这不是与依沃西的头对头。",
+    "timeline": [
+      {
+        "date": "2026-10-26",
+        "title": "ESMO 2660P：随机 II 期对照替雷利珠单抗联合化疗",
+        "grades": [
+          "一手",
+          "二手"
+        ],
+        "body": "数据截止 2026-02-28，261 例。非鳞癌确认 ORR 75.0% 对 44.7%，12 个月 PFS 率 56.0% 对 43.0%；鳞癌 82.5% 对 67.7%（白蛋白紫杉醇组确认 ORR 69.2%，见于 COSA 再报告摘要），12 个月 PFS 率 48.0% 对 24.5%。3 级及以上 TRAE 53.2% 对 47.9%，5 级 1.6% 对 4.2%；3 级及以上 VEGF 相关 7.9% 对 1.4%。会后二手报道的中位 PFS：非鳞 13.8 对 9.7 个月，鳞癌 13.6 对 8.3 个月。基线可测 ctDNA 且有配对样本的 126 例中，61.9% 在第三周期第一天清除，清除者中位 PFS 13.8 对 9.6 个月。辉瑞已在做 Symbiotic-Lung-01 III 期（NCT07222566，1410 人，对照帕博利珠单抗联合化疗），并计划与 Padcev 做尿路上皮癌 III 期，方向与 HARMONi-GU1 相同。",
+        "sources": [
+          {
+            "label": "ESMO 2026 摘要 2660P",
+            "grade": "一手"
+          },
+          {
+            "label": "BioPharm International 会后报道（中位 PFS）",
+            "url": "https://www.biopharminternational.com/view/3sbio-and-pfizer-s-pd-1-vegf-bispecific-shows-durable-pfs-gains-in-first-line-nsclc",
+            "grade": "二手"
+          }
+        ]
+      }
+    ],
+    "impact": {
+      "text": "减分，属于竞争压力。随机 II 期已经对着另一种国产 PD-1 联合化疗给出缓解率和 PFS 率，全球 III 期样本量与 HARMONi-3、pumitamig 的 Lung-02 同一量级。计划中的联合恩诺单抗 III 期会直接碰到 HARMONi-GU1。没有与依沃西的头对头，不能写成谁优谁劣。",
+      "attribution": "研究组判断"
+    },
+    "grades_present": [
+      "一手",
+      "二手"
+    ]
+  },
+  {
+    "slug": "sac-tmt",
+    "title": "sac-TMT 联合 K药",
+    "subtitle": "科伦与默沙东的 TROP2 ADC。OptiTROP-Lung06 已在一线 PD-L1 阴性非鳞 NSCLC 达到无进展生存终点，并同期发表于《新英格兰医学杂志》。",
+    "kicker": "K药骨架 + ADC",
+    "group": "competitor",
+    "priority": 7,
+    "companies": [
+      "科伦博泰",
+      "默沙东"
+    ],
+    "drugs": [
+      "sac-TMT",
+      "帕博利珠单抗"
+    ],
+    "indications": [
+      "NSCLC",
+      "子宫内膜癌"
+    ],
+    "aliases": [
+      "sacituzumab tirumotecan",
+      "OptiTROP-Lung06",
+      "OptiTROP-Lung05",
+      "TroFuse",
+      "LBA66"
+    ],
+    "updated": "2026-10-27",
+    "status": "TroFuse 系列约 17 项 III 期。科伦 2026-10-27 称 Lung06 已被 CDE 受理。TroFuse-005（子宫内膜癌）获 FDA 优先审评，PDUFA 2027-06-15。",
+    "summary": "这是「用 ADC 替掉化疗、搭在 K药上」的路径，和依沃西代表的「换掉 K药本身」不是同一件事，但抢的是 ADC2.0 组合里的免疫骨架位置。",
+    "timeline": [
+      {
+        "date": "2026-10-25",
+        "title": "ESMO LBA66 / NEJM：OptiTROP-Lung06",
+        "grades": [
+          "一手",
+          "二手"
+        ],
+        "body": "sac-TMT 联合帕博利珠单抗，对照化疗联合帕博利珠单抗，用于一线 PD-L1<1% 的非鳞 NSCLC，中国 III 期，455 人。数据截止 2026-06-09，中位随访 9.7 个月。独立评审的 PFS 15.0 对 5.7 个月，HR 0.49（0.36–0.65）；ORR 50.2% 对 47.3%；中位缓解持续 13.6 对 6.8 个月。OS 期中 HR 0.58（0.38–0.88），尚未成熟。Fierce 报道的安全性：3 级及以上 TEAE 47.6% 对 60.6%，口腔炎 51.1%（3 级 2.2%）。此前 OptiTROP-Lung05 在 PD-L1 阳性一线的 PFS HR 为 0.35（中国研究）。",
+        "sources": [
+          {
+            "label": "科伦博泰 PR Newswire 2026-10-25",
+            "url": "https://www.prnewswire.com/news-releases/the-results-of-phase-iii-optitrop-lung06-study-of-sacituzumab-tirumotecan-sac-tmt-presented-as-an-esmo-oral-presentation-and-simultaneously-published-in-the-new-england-journal-of-medicine-302918758.html",
+            "grade": "一手"
+          },
+          {
+            "label": "Fierce Pharma（安全性）",
+            "url": "https://www.fiercepharma.com/pharma/merck-kelun-workhorse-adc-posts-major-tumor-progression-benefit-pd-l1-negative-nsclc",
+            "grade": "二手"
+          }
+        ]
+      }
+    ],
+    "impact": {
+      "text": "短期减分。「ADC 替掉化疗、搭 K药」先在一线肺癌拿到 III 期阳性，抢占了 ADC2.0 组合里的免疫骨架位置；依沃西联合 ADC 目前还没有 III 期读出。与此同时，它也验证了「免疫联合 ADC、去掉化疗」这条路本身走得通。依沃西若在别的研究里换掉 K药，仍有机会，这一点是推论。默沙东在电话会中称，将重新思考 KEYNOTE-189，并说 sac-TMT 会同时与帕博利珠单抗和 PD-1/VEGF 联用。",
+      "attribution": "研究组判断（第 3 期周报）；其中「换掉 K药仍有机会」为推论"
+    },
+    "grades_present": [
+      "一手",
+      "二手"
+    ]
+  },
+  {
+    "slug": "rc148",
+    "title": "RC148 与 RC118 联合 RC148",
+    "subtitle": "荣昌的 PD-1×VEGF 双抗已授权艾伯维。与 CLDN18.2 ADC RC118 的联合，正在进入一线胃癌。",
+    "kicker": "国内竞品 · 双抗 + ADC",
+    "group": "competitor",
+    "priority": 11,
+    "companies": [
+      "荣昌生物",
+      "艾伯维"
+    ],
+    "drugs": [
+      "RC148",
+      "RC118"
+    ],
+    "indications": [
+      "胃癌",
+      "NSCLC"
+    ],
+    "aliases": [
+      "ABBV-1480",
+      "CTR20264047",
+      "NCT07416474"
+    ],
+    "updated": "2026-11-10",
+    "status": "中国已有 III 期。CTR20264047 于 2026-11-03 首次公示，2026-11-10 补记。CDE 原页尚未核对。",
+    "summary": "艾伯维与荣昌 2026-01 的授权：首付 6.5 亿美元。RC148 海外代号 ABBV-1480。一线胃癌这项研究是国内「自家双抗联合 ADC、去掉化疗」从后线走进一线的例子。",
+    "timeline": [
+      {
+        "date": "2026-01-12",
+        "title": "艾伯维获得 RC148 独家授权",
+        "grades": [
+          "一手"
+        ],
+        "body": "首付 6.5 亿美元，用于晚期实体瘤。",
+        "sources": [
+          {
+            "label": "艾伯维新闻稿 2026-01-12",
+            "url": "https://news.abbvie.com/2026-01-12-AbbVie-and-RemeGen-Announce-Exclusive-Licensing-Agreement-to-Develop-A-Novel-Bispecific-Antibody-for-Advanced-Solid-Tumors",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026",
+        "title": "ESMO 2669P：单药 20 mg/kg 用于一线 PD-L1 阳性",
+        "grades": [
+          "一手"
+        ],
+        "body": "ORR 61.9%，中位 PFS 15.21 个月，可评估 21 例（入组 22 例）。会议年份与摘要编号以官方日程为准，此处按已存档材料记录。中国 III 期包括 NCT07416474（招募中）、NCT07829549，以及 II/III 期 NCT07462143。",
+        "sources": [
+          {
+            "label": "ESMO 摘要 2669P",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-03",
+        "title": "CTR20264047 首次公示：RC118 联合 RC148 进入一线胃癌",
+        "grades": [
+          "二手"
+        ],
+        "body": "RC118 是 CLDN18.2 ADC，载荷为 MMAE。对照为替雷利珠单抗联合奥沙利铂和卡培他滨，用于一线 CLDN18.2 阳性、HER2 阴性的胃或胃食管结合部腺癌。随机、开放、II/III 期无缝设计，国内计划 160 例；II 期主要终点为研究者评估的 ORR，III 期为独立评审的 PFS。尚未招募。研究中心包括北京肿瘤医院和复旦大学附属中山医院。来源为摩熵镜像、医药魔方和 Insight 转载，CDE 原页未核。此前日检和周报漏记，2026-11-10 补报。\n\n前期依据：ESMO 2025 LBA83（NCT06038396）后线随机 II 期，每组 21 例，RC118 联合 RC148 对照 RC118 联合特瑞普利单抗，ORR 52.4% 对 33.3%，PFS HR 0.39（0.12–1.30），未达显著。",
+        "sources": [
+          {
+            "label": "摩熵 / 医药魔方 / Insight 转载 CTR20264047",
+            "grade": "二手"
+          }
+        ]
+      }
+    ],
+    "impact": {
+      "text": "一线胃癌是卡度尼利（COMPASSION-15 已获批）和依沃西多项胃癌研究者发起研究的阵地，会在 CLDN18.2 阳性亚群里正面竞争。对照是 PD-1 联合化疗，并不与康方的药头对头。这项研究只在国内、计划 160 人，短期内不影响依沃西的全球注册主线。趋势是：国内双抗联合 ADC、去掉化疗的方案，已经从后线推进到一线。康方公开的 ADC 联用（SYS6043、HS-20093）都还没进入胃癌 III 期。",
+      "attribution": "研究组判断（2026-11-10 日检）；其中关于短期不影响全球主线的表述为推论"
+    },
+    "grades_present": [
+      "一手",
+      "二手"
+    ]
+  },
+  {
+    "slug": "ql1706",
+    "title": "QL1706（齐倍安）",
+    "subtitle": "齐鲁制药的 PD-1 加 CTLA-4 组合抗体。已在二线宫颈癌获附条件批准，一线 III 期为阳性，补充申请已被受理。",
+    "kicker": "卡度尼利竞品",
+    "group": "competitor",
+    "priority": 18,
+    "companies": [
+      "齐鲁制药"
+    ],
+    "drugs": [
+      "QL1706"
+    ],
+    "indications": [
+      "宫颈癌"
+    ],
+    "aliases": [
+      "艾帕洛利托沃瑞利单抗",
+      "齐倍安",
+      "1240O",
+      "DUBHE-C-301"
+    ],
+    "updated": "2026-10-26",
+    "status": "一线宫颈癌补充申请已于 2026-05 获 CDE 受理。NSCLC、鼻咽癌、局限期小细胞肺癌等 III 期进行中。",
+    "summary": "QL1706 是 MabPair 形式的 PD-1 加 CTLA-4 组合抗体，不是双抗分子，但在宫颈癌一线和二线与卡度尼利正面竞争。一线 III 期的总生存数字，第 3 期周报曾只见到二手报道并标为未核实；后来用 ESMO 1240O 原文补上对照和风险比，属于核实升级，不是数字打架。",
+    "timeline": [
+      {
+        "date": "2024-09-30",
+        "title": "国家药监局附条件批准二线宫颈癌",
+        "grades": [
+          "一手"
+        ],
+        "body": "与卡度尼利首个适应症同一瘤种、同一后线位置。",
+        "sources": [
+          {
+            "label": "国家药监局公告",
+            "url": "https://www.nmpa.gov.cn/directory/web/nmpa/zhuanti/cxylqx/cxypxx/20240930101946184.html",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-05",
+        "title": "一线 III 期阳性，补充申请获受理",
+        "grades": [
+          "一手"
+        ],
+        "body": "ESMO 1240O：492 人，PFS HR 0.64；OS 30.95 对 21.78 个月，HR 0.73。公司新闻称一线宫颈癌 III 期的 PFS 和 OS 均为阳性，补充申请已获 CDE 受理。",
+        "sources": [
+          {
+            "label": "齐鲁制药新闻",
+            "url": "https://www.qilu-pharma.com/news_details/636.html",
+            "grade": "一手"
+          },
+          {
+            "label": "ESMO 1240O",
+            "grade": "一手"
+          }
+        ]
+      }
+    ],
+    "impact": {
+      "text": "直接冲击卡度尼利在宫颈癌的适应症。卡度尼利一线宫颈癌的对照是化疗，不是 QL1706，两边没有头对头。",
+      "attribution": "研究组判断"
+    },
+    "grades_present": [
+      "一手"
+    ]
+  },
+  {
+    "slug": "mk-2010",
+    "title": "MK-2010（LM-299）",
+    "subtitle": "默沙东与礼新医药（中国生物制药）的 PD-1×VEGF 四价双抗。目前没有 III 期。",
+    "kicker": "Keytruda 接班选项",
+    "group": "competitor",
+    "priority": 19,
+    "companies": [
+      "默沙东",
+      "礼新医药"
+    ],
+    "drugs": [
+      "MK-2010"
+    ],
+    "indications": [
+      "NSCLC"
+    ],
+    "aliases": [
+      "LM-299",
+      "NCT07785609",
+      "NCT07793942"
+    ],
+    "updated": "2026-11-02",
+    "status": "默沙东 2026-11-02 的管线表仍将其列为 II 期。ESMO 2026 没有摘要。",
+    "summary": "交易为首付 5.88 亿美元，里程碑最高 27 亿美元；2025 年 7 月技术转移触发 3 亿美元。它是 Keytruda 体系内部的接班选项之一，也已经开始和 sac-TMT 联用。",
+    "timeline": [
+      {
+        "date": "2026-04",
+        "title": "AACR 2026 CT057",
+        "grades": [
+          "一手"
+        ],
+        "body": "数据截止 2025-12-25，112 例。一线 PD-L1 阳性 NSCLC 未确认 ORR：20 mg/kg 为 55%（11 例），30 mg/kg 为 44%（9 例）；经治人群为 18% 和 22%。另一口径是 NSCLC 扩展队列：20 mg/kg 为 30%（10/33），30 mg/kg 为 28%（9/32）。引用必须带上分母和队列定义。",
+        "sources": [
+          {
+            "label": "AACR 2026 CT057",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-07",
+        "title": "联合 sac-TMT 的 II 期开始招募",
+        "grades": [
+          "一手"
+        ],
+        "body": "NCT07785609，计划 200 人。另一项 II 期 MK-2010-002（NCT07793942，480 人）计划于 2026-10-27 开始。",
+        "sources": [
+          {
+            "label": "NCT07785609",
+            "url": "https://clinicaltrials.gov/study/NCT07785609",
+            "grade": "一手"
+          }
+        ]
+      }
+    ],
+    "impact": {
+      "text": "默沙东没有把全部赌注押在「继续用 K药联合 ADC」上，也留着自己的 PD-1×VEGF。目前仍停在 II 期，对依沃西近端时间表的影响小于 pumitamig、tivunatamig 和 sac-TMT。",
+      "attribution": "研究组判断"
+    },
+    "grades_present": [
+      "一手"
+    ]
+  },
+  {
+    "slug": "domestic-pd1vegf",
+    "title": "其他已进临床的 PD-(L)1×VEGF",
+    "subtitle": "华海 HB0025、君实 JS207、复宏汉霖 HLX37、恒瑞 SHR-4610、基石 CS2009 等。",
+    "kicker": "国内同类",
+    "group": "competitor",
+    "priority": 23,
+    "companies": [
+      "华海药业",
+      "君实生物",
+      "复宏汉霖",
+      "恒瑞医药",
+      "基石药业"
+    ],
+    "drugs": [
+      "HB0025",
+      "JS207",
+      "HLX37",
+      "SHR-4610",
+      "CS2009"
+    ],
+    "indications": [
+      "NSCLC"
+    ],
+    "aliases": [
+      "NCT07902999",
+      "NCT07823348",
+      "NCT07865910"
+    ],
+    "updated": "2026-11-03",
+    "status": "多款已经进入 III 期或正在筹备全球 III 期。多数仍是单臂或小样本。",
+    "summary": "2026 年 4 月有二手统计称，全球约有 100 个 PD-(L)1×VEGF 项目，其中 26 个处于临床试验申请或更后阶段。下面只写入已经在登记库或公司公告里核实过、并且近期有变动的部分。",
+    "timeline": [
+      {
+        "date": "2026-10-25",
+        "title": "CS2009（基石药业 PD-1/VEGF/CTLA-4 三抗）2616RO",
+        "grades": [
+          "一手"
+        ],
+        "body": "港交所自愿公告确认研发方为基石药业。摘要（数据截止 2026-04-19，86 例）：一线 TPS≥50% 单药 ORR 81.3%（16 例）；一线鳞癌 TPS<50% 联合化疗 ORR 75.0%（8 例）。公告中更晚截止的数据：TPS≥50% 单药 30 mg/kg 的 ORR 为 100%（11/11），整体 87.5%（21/24）；一线鳞癌联合化疗 81.5%（22/27）；二线或三线联合多西他赛 55.6%（10/18）。NSCLC 3 级及以上 TRAE：单药 25.9%，联合化疗 52.4%。公司称正筹备全球 III 期并洽谈跨国合作。引用必须带上分母和截止日。",
+        "sources": [
+          {
+            "label": "基石药业港交所自愿公告 2026-10-25",
+            "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/1025/2026102500014_c.pdf",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-03",
+        "title": "恒瑞 SHR-4610 新的临床试验申请承办（二手）",
+        "grades": [
+          "二手",
+          "一手"
+        ],
+        "body": "pharmsea 转载 CDE：SHR-4610（CXSL2601208）于 11-03 承办，申报联用含多款 ADC，以及「联合注射用 HS-20093 用于小细胞肺癌」。靶点口径不一，动脉网称 PD-L1/VEGFR，pharmsea 称 PD-1/VEGF。恒瑞自己的 NCT07231211（SHR-4610 可加或不加瑞康曲妥珠单抗）为 I/II 期，招募中。华海 HB0025 已有 3 项 III 期，包括 2026-10-20 开始的 NCT07902999。君实 JS207 联合 JS007（CTLA-4）对照特瑞普利单抗联合贝伐珠单抗的 III 期 NCT07823348，2026-10 时尚末招募。复宏汉霖 HLX37 的 II/III 期 NCT07865910 计划 2026-11-30 开始。",
+        "sources": [
+          {
+            "label": "pharmsea 转载 CDE",
+            "url": "http://www.pharmsea.cn/open/reg/cn",
+            "grade": "二手"
+          }
+        ]
+      }
+    ],
+    "impact": {
+      "text": "赛道更拥挤，属于小幅减分。这些研究大多没有与依沃西的头对头，早期单臂数字不能外推。恒瑞把 SHR-4610 和翰森 HS-20093 写进同一份申报，说明 B7-H3 ADC 也在和多家双抗同时接触。",
+      "attribution": "研究组判断"
+    },
+    "grades_present": [
+      "一手",
+      "二手"
+    ]
+  },
+  {
+    "slug": "head-to-head-map",
+    "title": "依沃西的头对头地图",
+    "subtitle": "注册性头对头覆盖 K药和 I药，对 O药没有 III 期。已经读出的阳性包括对帕博利珠单抗、对替雷利珠单抗、对度伐利尤单抗。",
+    "kicker": "对照全景",
+    "group": "ivo",
+    "priority": 24,
+    "companies": [
+      "康方生物",
+      "Summit"
+    ],
+    "drugs": [
+      "依沃西",
+      "卡度尼利"
+    ],
+    "indications": [
+      "多瘤种"
+    ],
+    "aliases": [
+      "Keytruda",
+      "Opdivo",
+      "Imfinzi",
+      "头对头"
+    ],
+    "updated": "2026-11-10",
+    "status": "按 2026-10-09 对 ClinicalTrials.gov 185 条和 CDE 54 条逐条筛对照药，并纳入此后新登记的 HARMONi-10 与 EA2251。",
+    "summary": "依沃西的试验设计明显借鉴前人：HARMONi-2 类似 KEYNOTE-024 的筛人思路，HARMONi-9 接近 PACIFIC（但对照是安慰剂），HARMONi-10 和围手术期研究是向早期前移。不同在于，对照组往往是当前最强的 PD-(L)1 方案，难度比 2014 到 2018 年大得多。",
+    "timeline": [
+      {
+        "date": "2026-10-09",
+        "title": "逐条核对后的对照地图",
+        "grades": [
+          "一手"
+        ],
+        "body": "对帕博利珠单抗（K药）：6 项注册性加 2 项研究者发起研究。注册性为 HARMONi-2（阳性）、HARMONi-3（鳞癌期中 PFS 未显著）、HARMONi-7（招募中）、HARMONi-HN1（联合莱法利对照帕博利珠单抗，510 人，主要终点 OS）、ILLUMINE、HARMONi-GU1。研究者发起研究包括 NCT06814067（可切除头颈癌围手术期）和 EA2251（对照可选度伐或帕博利珠单抗）。\n\n对度伐利尤单抗（I药）：2 项 III 期加 1 项 II/III 期研究者发起研究，即 HARMONi-GI1（期中 OS 已达）、HARMONi-10（已公示、尚未在 ClinicalTrials.gov 出现）和 EA2251。HARMONi-9 是 ADRIATIC 场景，但对照安慰剂，不算头对头。\n\n对纳武利尤单抗（O药）：没有注册性头对头，只有 AK112-216 这一项随机 II 期（对照纳武利尤单抗联合伊匹木单抗）。胃癌、围手术期肺癌、黑色素瘤、食管辅助、肝癌、间皮瘤都没有依沃西的头对头。竞品反而在胃癌直接打纳武利尤单抗。\n\n对替雷利珠单抗：HARMONi-6 阳性；PANKU-Lung06 的对照含替雷利珠单抗。对信迪利单抗：AK112-209（Ib/II 期，对照信迪利单抗联合贝伐珠单抗类似物）。对阿替利珠单抗：没有任何依沃西对照研究；竞品有 ROSETTA Lung-01、辉瑞的 Symbiotic-Lung-04。",
+        "sources": [
+          {
+            "label": "ClinicalTrials.gov 与 CDE 逐条核对（2026-10-09）",
+            "grade": "一手"
+          }
+        ]
+      }
+    ],
+    "impact": {
+      "text": "在对三巨头的头对头上，依沃西覆盖了 K药和 I药两家，而且是唯一已经有阳性头对头 OS 数据的 PD-(L)1×VEGF 双抗（对帕博利珠单抗、对替雷利珠单抗；对度伐利尤单抗的 GI1 随后也已读出）。在 O药地盘上落后于 pumitamig 和 tivunatamig，卡度尼利被用来补这块。全球数据已经两次不顺：HARMONi 主分析 OS 的 p 值为 0.057，HARMONi-3 鳞癌期中 PFS 未显著。",
+      "attribution": "研究组判断（《K药来时的路》及头对头专项）"
+    },
+    "grades_present": [
+      "一手"
+    ]
+  }
+]

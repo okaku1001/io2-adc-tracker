@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-26",
+  "title": "胆道癌会上全文、港交所公告与早期研究报告",
+  "items": [
+    {
+      "entry": "harmoni-gi1",
+      "headline": "HARMONi-GI1 会上全文与港交所自愿公告",
+      "blurb": "公司稿确认疗效数字，并写明一线胆道癌已被拟纳入优先审评。出血等安全性见公司稿；部分 3/4 级不良事件总率仅见会议报道。",
+      "grades": [
+        "一手",
+        "二手"
+      ]
+    },
+    {
+      "entry": "ivonescimab-trials",
+      "headline": "官网邀请函将口径写作 17 项注册性或 III 期、7 项国际多中心",
+      "blurb": "与可核对清单的 17 项一致。同日港交所稿仍写「超过 18 项」。",
+      "grades": [
+        "一手"
+      ]
+    },
+    {
+      "entry": "ivonescimab-esmo-2026",
+      "headline": "iTHYM 胸腺癌会上报告，数字与摘要一致",
+      "blurb": "24 例，ORR 83.3%，DCR 100%，已评估的 19 例在 6 个月时均无进展。",
+      "grades": [
+        "一手",
+        "二手"
+      ]
+    },
+    {
+      "entry": "tivunatamig",
+      "headline": "tivunatamig 随机 II 期海报（2660P）",
+      "blurb": "对照替雷利珠单抗联合化疗。非鳞确认 ORR 75.0% 对 44.7%；鳞癌 82.5% 对 67.7%。辉瑞已在做全球 III 期，并计划联合恩诺单抗。",
+      "grades": [
+        "一手"
+      ]
+    },
+    {
+      "entry": "pumitamig",
+      "headline": "pumitamig 联合 FOLFIRI 用于二线神经内分泌肿瘤",
+      "blurb": "31 例，确认 ORR 40.0%，中位 PFS 5.5 个月，3 级及以上 TRAE 80.6%，治疗相关死亡 1 例。",
+      "grades": [
+        "二手"
+      ]
+    }
+  ],
+  "note": ""
+}
