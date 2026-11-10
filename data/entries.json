@@ -34,7 +34,7 @@
         "grades": [
           "一手"
         ],
-        "body": "HARMONi（NCT06396065）与中国 HARMONi-A 共用方案号 AK112-301，但是独立研究。入组人数有两套并列口径：深挖材料记 n=438，试验清单按登记页记 n=420，引用时以最新登记页或论文为准。\n\nPFS：中位随访 22.3 个月，中位 PFS 6.8 对 4.4 个月，HR 0.52（0.41–0.66），p<0.0001。主分析 OS（数据截止 2025-04）：中位 OS 16.8 对 14.0 个月，HR 0.79（0.62–1.01），p=0.057，未达显著。严重 TRAE 28%（61/218）对 15%（33/218）；TRAE 导致死亡 4 例对 5 例。",
+        "body": "HARMONi（NCT06396065）与中国 HARMONi-A 共用方案号 AK112-301，但是独立研究。见刊论文入组 438 例（每组 219）。ClinicalTrials.gov 截至 2026-07-28 更新仍登记实际入组 420 例，以论文为准。（更正日期 2026-11-11：此前两套口径并列；本次打开 Lancet Oncol 2026;27(9):1094-1109，PMID 42636833，确认随机入组 438 例。）\n\nPFS：中位随访 22.3 个月，中位 PFS 6.8 对 4.4 个月，HR 0.52（0.41–0.66），p<0.0001。主分析 OS：中位 OS 16.8 对 14.0 个月，HR 0.79（0.62–1.01），未达显著。论文摘要未写 p 值；Summit 2026-11-04 三季报称 a positive trend without achieving a statistically significant result。此前条目所记 p=0.057 来自所引 2026-09-15 8-K 附件，本次未能打开该原文，不再把该 p 值当作已核对数字。（更正日期 2026-11-11）\n\n严重 TRAE 28%（61/218）对 15%（33/218）；TRAE 导致死亡 4 例对 5 例。",
         "sources": [
           {
             "label": "Lancet Oncology（PFS）",
@@ -43,6 +43,11 @@
           {
             "label": "主分析 OS（2025-04 截止）",
             "grade": "一手"
+          },
+          {
+            "label": "Lancet Oncol 2026;27(9):1094-1109，PMID 42636833",
+            "grade": "一手",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42636833/"
           }
         ]
       },
@@ -81,7 +86,7 @@
         "grades": [
           "一手"
         ],
-        "body": "Summit 8-K 附件给出三次 OS 分析。亚洲患者数据仍锁定在 2025-04 截点。更新分析已提交 FDA。后续更新的 p 值均为名义 p 值。",
+        "body": "Summit 8-K 附件给出三次 OS 分析。亚洲患者数据仍锁定在 2025-04 截点。更新分析已提交 FDA。后续更新的 p 值均为名义 p 值。\n\n（更正日期 2026-11-11：2026-06 一行的 ITT HR 0.76（0.61–0.95，名义 p=0.0151）及西方亚组 HR 0.76（0.52–1.10）已用 Summit 2026-11-04 三季报核对。主分析 ITT 的 HR 0.79（0.62–1.01）与 Lancet Oncol 论文一致，论文摘要未写 p=0.057，表中已去掉该 p 值。2025-09 一行及主分析西方亚组数字仍引自所引 8-K，本次未打开原文。）",
         "table": {
           "headers": [
             "数据截止",
@@ -92,7 +97,7 @@
           "rows": [
             [
               "2025-04（主分析）",
-              "0.79（0.62–1.01），p=0.057",
+              "0.79（0.62–1.01），未达显著",
               "0.98（0.55–1.73）",
               "9.2 个月"
             ],
@@ -112,8 +117,13 @@
         },
         "sources": [
           {
-            "label": "Summit 8-K EX-99.1（2026-09-15，WCLC）",
+            "label": "Summit 8-K EX-99.1（2026-09-15，WCLC）（本次复核未打开 SEC 原文，未看到原文）",
             "grade": "一手"
+          },
+          {
+            "label": "Summit 三季报（公司官网，2026-11-04）",
+            "grade": "一手",
+            "url": "https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Reports-Financial-Results-and-Operational-Progress-for-the-Third-Quarter-and-Nine-Months-Ended-September-30-2026/default.aspx"
           }
         ]
       },
@@ -134,12 +144,17 @@
             "label": "Q3 新闻稿",
             "url": "https://www.sec.gov/Archives/edgar/data/1599298/000159929826000088/a2026_prx1105xq32026earn.htm",
             "grade": "一手"
+          },
+          {
+            "label": "Summit 三季报（公司官网，SEC 镜像未能打开时的一手副本）",
+            "grade": "一手",
+            "url": "https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Reports-Financial-Results-and-Operational-Progress-for-the-Third-Quarter-and-Nine-Months-Ended-September-30-2026/default.aspx"
           }
         ]
       }
     ],
     "impact": {
-      "text": "这是本季度最大的二元事件。说明书是否以及如何写 OS，决定依沃西以什么身份进入美国。它拿的是 EGFR 突变、TKI 之后的位置，不是一线、也不是对 K药的头对头。\n\n研究组根据 FDA「需要显著 OS」的原话和主分析 p=0.057 判断：出现 CRL、要求补充数据，或因审评新数据而延期的可能性都不低。这是推论，不是已经发生的监管决定。",
+      "text": "这是本季度最大的二元事件。说明书是否以及如何写 OS，决定依沃西以什么身份进入美国。它拿的是 EGFR 突变、TKI 之后的位置，不是一线、也不是对 K药的头对头。\n\n研究组根据 FDA「需要显著 OS」的原话和主分析 OS 未达显著（HR 0.79，0.62–1.01） 判断：出现 CRL、要求补充数据，或因审评新数据而延期的可能性都不低。这是推论，不是已经发生的监管决定。",
       "attribution": "研究组判断（知识库截至 2026-11-10；其中关于 CRL/延期可能性的表述标为推论，依据为深挖材料对 FDA 原话的解读）"
     },
     "grades_present": [
@@ -195,7 +210,8 @@
         "sources": [
           {
             "label": "JAMA 2026;336(4):306-314，PMID 42307937",
-            "grade": "一手"
+            "grade": "一手",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42307937/"
           },
           {
             "label": "康方新闻 2026-06-18",
@@ -231,11 +247,11 @@
     "aliases": [
       "NCT05499390",
       "CTR20222137",
-      "AK112-302"
+      "AK112-303"
     ],
     "updated": "2026-09-14",
     "status": "PFS 期中和预设 OS 期中均为阳性。最终 OS 仍待公布。中国已于 2025-04-25 获批该适应症。",
-    "summary": "HARMONi-2（NCT05499390 / CTR20222137）入组 398 人，是依沃西第一条对 K药单药的注册性头对头。PFS 期中：中位 PFS 11.14 对 5.82 个月，HR 0.51（P<0.0001）。预设 OS 期中（数据截止 2026-08-20，中位随访 36 个月，OS 事件 234 例，单侧 α=0.0141）：中位 OS 30.75 对 22.57 个月，HR 0.73（0.57–0.95），P=0.009。一手只称「预设期中分析」，不是「第二次期中」。",
+    "summary": "HARMONi-2（NCT05499390 / CTR20222137）入组 398 人，是依沃西第一条对 K药单药的注册性头对头。PFS 期中：中位 PFS 11.1 对 5.8 个月，HR 0.51（0.38–0.69），单侧 P<0.0001。预设 OS 期中（数据截止 2026-08-20，中位随访 36 个月，OS 事件 234 例，单侧 α=0.0141）：中位 OS 30.75 对 22.57 个月，HR 0.73（0.57–0.95），P=0.009。一手只称「预设期中分析」，不是「第二次期中」。",
     "timeline": [
       {
         "date": "2025-04-25",
@@ -257,11 +273,12 @@
         "grades": [
           "一手"
         ],
-        "body": "中位 PFS 11.14 对 5.82 个月，HR 0.51（P<0.0001）。严重 TRAE 29.9% 对 21.6%。见刊年份为 2025，具体月份以 Lancet 论文为准。",
+        "body": "中位 PFS 11.1 对 5.8 个月，分层 HR 0.51（95%CI 0.38–0.69），单侧 P<0.0001。3 级及以上 TRAE 29%（58 例）对 16%（31 例）。见刊为 Lancet 2025;405:839-849（2025-03-08）。（更正日期 2026-11-11：原文摘要为 11.1 对 5.8 个月，不是 11.14 对 5.82；安全性原文是 grade 3 or higher treatment-related adverse events 58 (29%) vs 31 (16%)，不是「严重 TRAE 29.9% 对 21.6%」。方案号以 ClinicalTrials.gov 的 AK112-303 为准，此前别名误写 AK112-302。）",
         "sources": [
           {
             "label": "Lancet 2025;405:839-849，PMID 40057343",
-            "grade": "一手"
+            "grade": "一手",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/40057343/"
           }
         ]
       },
@@ -271,15 +288,20 @@
         "grades": [
           "一手"
         ],
-        "body": "数据截止 2026-08-20，中位随访 36 个月，OS 事件 234 例，单侧 α=0.0141。中位 OS 30.75 对 22.57 个月（有的基线报告四舍五入写成 30.8 对 22.6，引用推荐带一位小数的原文）。HR 0.73（0.57–0.95），P=0.009。2 年 OS 率 57.9% 对 48.0%，3 年 45.0% 对 33.1%。鳞癌亚组 HR 0.65（0.45–0.95），非鳞 HR 0.79（0.55–1.14）；PD-L1 1–49% 亚组 OS HR 0.85（0.61–1.18）。最终 OS 仍待公布。",
+        "body": "数据截止 2026-08-20，中位随访 36 个月，OS 事件 234 例，单侧 α=0.0141。中位 OS 30.75 对 22.57 个月（有的基线报告四舍五入写成 30.8 对 22.6，引用推荐带一位小数的原文）。HR 0.73（0.57–0.95），P=0.009。2 年 OS 率 57.9% 对 48.0%，3 年 45.0% 对 33.1%。鳞癌亚组 HR 0.65（0.45–0.95），非鳞 HR 0.79（0.55–1.14）；PD-L1 1–49% 亚组 OS HR 0.85（0.61–1.18）。最终 OS 仍待公布。\n\n（更正日期 2026-11-11：HR 0.73（0.57–0.95）、P=0.009 及「预设期中分析」已用 Summit 2026-11-04 三季报核对。中位 OS 30.75 对 22.57、234 例事件、单侧 α=0.0141、2 年/3 年 OS 率及组织学、PD-L1 亚组数字仍引自 JTO 摘要/8-K，本次未打开原文，保留并标注未看到原文。）",
         "sources": [
           {
-            "label": "JTO 摘要 doi:10.1016/j.jtho.2026.104254",
+            "label": "JTO 摘要 doi:10.1016/j.jtho.2026.104254（本次复核未打开摘要全文/8-K 原文，未看到原文）",
             "grade": "一手"
           },
           {
-            "label": "Summit 8-K 2026-09-14",
+            "label": "Summit 8-K 2026-09-14（本次复核未打开摘要全文/8-K 原文，未看到原文）",
             "grade": "一手"
+          },
+          {
+            "label": "Summit 三季报（公司官网，核对 OS HR 0.73、p=0.009 及「protocol-specified interim」表述）",
+            "grade": "一手",
+            "url": "https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Reports-Financial-Results-and-Operational-Progress-for-the-Third-Quarter-and-Nine-Months-Ended-September-30-2026/default.aspx"
           }
         ]
       }
@@ -326,7 +348,8 @@
         "sources": [
           {
             "label": "Lancet 2025;406:2078-2088，PMID 41125109",
-            "grade": "一手"
+            "grade": "一手",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/41125109/"
           }
         ]
       },
@@ -336,14 +359,15 @@
         "grades": [
           "一手"
         ],
-        "body": "数据截止 2026-02-27，中位随访 21.4 个月；有效性边界为单侧 P<0.0049。中位 OS 27.9 对 23.7 个月，HR 0.66（0.50–0.87），单侧 P=0.0017。PD-L1<1% 的 HR 0.64（0.43–0.96），PD-L1≥1% 的 HR 0.68（0.46–0.99）。3 级及以上 TRAE 69% 对 59%，3 级及以上出血 3% 对 1%。\n\n路演还披露了最终 PFS：12.48 对 8.31 个月，HR 0.72（P=0.003），中位随访 17.02 个月。说明书原文未看到，数字来自康方 2026 年中期路演第 14 页。",
+        "body": "数据截止 2026-02-27，中位随访 21.4 个月；有效性边界为单侧 P<0.0049。中位 OS 27.9 对 23.7 个月，HR 0.66（0.50–0.87），单侧 P=0.0017。论文摘要写总生存获益在关键亚组中总体一致，但未给出 PD-L1 分层 HR。（更正日期 2026-11-11：删去摘要未见、全文未开放因而无法核对的 PD-L1<1% HR 0.64（0.43–0.96）和 PD-L1≥1% HR 0.68（0.46–0.99）。）\n\n3 级及以上 TRAE 69% 对 59%，3 级及以上出血 3% 对 1%。\n\n路演还披露了最终 PFS：12.48 对 8.31 个月，HR 0.72（P=0.003），中位随访 17.02 个月。说明书原文未看到，数字来自康方 2026 年中期路演第 14 页。",
         "sources": [
           {
             "label": "Lancet 2026;407:2620-2629，PMID 42218899",
-            "grade": "一手"
+            "grade": "一手",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/42218899/"
           },
           {
-            "label": "康方 2026H1 路演 p.14（最终 PFS）",
+            "label": "康方 2026H1 路演 p.14（最终 PFS）（本次复核未打开路演原文，未看到原文）",
             "grade": "一手"
           }
         ]
@@ -410,11 +434,11 @@
         "body": "Summit 在 HARMONi-2（PFS HR 0.51）和 HARMONi-6（PFS HR 0.60）都在计划内期中 PFS 获益之后，为鳞癌队列增加了一次期中 PFS 分析，以便更早与监管沟通，并称最初把 PFS 作为主要终点是基于 HARMONi-2。公司称该期中分析分配了「minimal alpha」（第一季度财报原话）。实际读出未达显著。当时 OS 尚不成熟，公司称可能无法沟通 OS。股价当日跌幅见二手报道，本站不记录行情。",
         "sources": [
           {
-            "label": "Summit 第一季度财报（minimal alpha）",
+            "label": "Summit 第一季度财报（minimal alpha）（本次复核未打开该原文，未看到原文）",
             "grade": "一手"
           },
           {
-            "label": "Fierce 2026-05-01（期中结果的市场报道）",
+            "label": "Fierce 2026-05-01（期中结果的市场报道）（本次复核未打开该原文，未看到原文）",
             "grade": "二手"
           }
         ]
@@ -428,11 +452,11 @@
         "body": "上季度宣布按鳞癌、非鳞分别分析 PFS 与 OS。入组口径在同一天的文件里不完全一致，需要并列：10-Q / 8-K 写鳞癌「2026 年一季度完成入组」、非鳞「2026 年二季度完成入组」；同日电话会则说「已完成鳞状队列筛查，末例受试者将在未来几周内随机入组」，非鳞「仍预计今年下半年完成入组」。公司未在后续文件里解释这一字面差别。\n\n事件驱动流程的正确读法是：入组完成之后，等待该队列预设的 PFS 事件数；事件数达到，才做该队列的主要 PFS 分析。鳞癌队列在同一时点还安排一次计划内早期 OS 期中分析。第二季度指引：鳞癌主要 PFS 事件数预计 2026 年下半年达到；独立于 PFS 的鳞癌 OS 期中计划在 2027 年上半年；非鳞 PFS 事件数预计 2027 年上半年达到。ClinicalTrials.gov（2026-10-08 更新）状态为 ACTIVE_NOT_RECRUITING，主要完成估计 2028-12-31。",
         "sources": [
           {
-            "label": "Summit Q2 10-Q / 8-K（2026-07-23）",
+            "label": "Summit Q2 10-Q / 8-K（2026-07-23）（本次复核未打开 10-Q/电话会原文，未看到原文）",
             "grade": "一手"
           },
           {
-            "label": "Summit Q2 电话会",
+            "label": "Summit Q2 电话会（本次复核未打开 10-Q/电话会原文，未看到原文）",
             "grade": "一手"
           }
         ]
@@ -450,6 +474,11 @@
             "label": "Summit Q3 8-K / 新闻稿（2026-11-04）",
             "url": "https://www.sec.gov/Archives/edgar/data/1599298/000159929826000088/a2026_prx1105xq32026earn.htm",
             "grade": "一手"
+          },
+          {
+            "label": "Summit 三季报（公司官网）",
+            "grade": "一手",
+            "url": "https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Reports-Financial-Results-and-Operational-Progress-for-the-Third-Quarter-and-Nine-Months-Ended-September-30-2026/default.aspx"
           }
         ]
       }
@@ -661,6 +690,11 @@
             "label": "Summit Q3 新闻稿",
             "url": "https://www.sec.gov/Archives/edgar/data/1599298/000159929826000088/a2026_prx1105xq32026earn.htm",
             "grade": "一手"
+          },
+          {
+            "label": "Summit 三季报（公司官网）",
+            "grade": "一手",
+            "url": "https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Reports-Financial-Results-and-Operational-Progress-for-the-Third-Quarter-and-Nine-Months-Ended-September-30-2026/default.aspx"
           }
         ]
       }
@@ -703,12 +737,13 @@
         "date": "2026-10-09",
         "title": "CDE 首次公示",
         "grades": [
-          "一手"
+          "一手",
+          "未核实"
         ],
-        "body": "目标入组国内 342 人、国际 830 人。按 CDE 惯例，「国际」是全球总数（含中国），也就是全球约 830、中国约 342（约 41%），不是 342 加 830。主要终点为独立评审委员会评估的 PFS；次要终点包括 OS、ORR、至远处转移时间、安全性和生活质量。PD-L1 必须已知，但不限阳性。排除序贯放化疗、既往抗 PD-(L)1、既往抗血管、出血倾向、未控制高血压、间质性肺病等。主要研究者为于金明、陈昶。方案号是四位数，与 Summit 全球研究同一体系，全球申办方可能是 Summit，这一点是推断。\n\n竞品镜像：pumitamig 的 ROSETTA Lung-201（NCT07361497，850 人，开放，独立评审 PFS，2026-03-16 开始，主要完成估计 2030-09）比 HARMONi-10 大约早七个月。",
+        "body": "目标入组国内 342 人、国际 830 人。按 CDE 惯例，「国际」是全球总数（含中国），也就是全球约 830、中国约 342（约 41%），不是 342 加 830。主要终点为独立评审委员会评估的 PFS；次要终点包括 OS、ORR、至远处转移时间、安全性和生活质量。PD-L1 必须已知，但不限阳性。排除序贯放化疗、既往抗 PD-(L)1、既往抗血管、出血倾向、未控制高血压、间质性肺病等。主要研究者为于金明、陈昶。方案号是四位数，与 Summit 全球研究同一体系，全球申办方可能是 Summit，这一点是推断。\n\n竞品镜像：pumitamig 的 ROSETTA Lung-201（NCT07361497，850 人，开放，独立评审 PFS，2026-03-16 开始，主要完成估计 2030-09）比 HARMONi-10 大约早七个月。\n\n（更正日期 2026-11-11：本次未能打开 CDE CTR20263641 原页，国内 342 / 国际 830、放疗剂量、主要研究者等细节未能复核。截至 2026-11-11 检索 ClinicalTrials.gov，HARMONi-10 / AK112-3010 仍无登记，这一条已复核。上述 CTR 细节保留，来源降为未核实并标注未看到原文。）",
         "sources": [
           {
-            "label": "CDE CTR20263641 公示",
+            "label": "CDE CTR20263641 公示（本次复核 CDE/CTR 原页被拦截，未看到原文）",
             "grade": "一手"
           }
         ]
@@ -728,7 +763,8 @@
       "attribution": "研究组整理；风险讨论来自 HARMONi-10 专项分析作者，不是公司原文"
     },
     "grades_present": [
-      "一手"
+      "一手",
+      "未核实"
     ]
   },
   {
@@ -772,6 +808,11 @@
             "label": "NCT06767514",
             "url": "https://clinicaltrials.gov/study/NCT06767514",
             "grade": "一手"
+          },
+          {
+            "label": "Summit 三季报（公司官网）",
+            "grade": "一手",
+            "url": "https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Reports-Financial-Results-and-Operational-Progress-for-the-Third-Quarter-and-Nine-Months-Ended-September-30-2026/default.aspx"
           }
         ]
       }
@@ -816,6 +857,11 @@
             "label": "Summit Q3 新闻稿",
             "url": "https://www.sec.gov/Archives/edgar/data/1599298/000159929826000088/a2026_prx1105xq32026earn.htm",
             "grade": "一手"
+          },
+          {
+            "label": "Summit 三季报（公司官网）",
+            "grade": "一手",
+            "url": "https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Reports-Financial-Results-and-Operational-Progress-for-the-Third-Quarter-and-Nine-Months-Ended-September-30-2026/default.aspx"
           }
         ]
       },
@@ -927,6 +973,11 @@
             "label": "FDA：帕博利珠单抗联合恩诺单抗",
             "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-pembrolizumab-or-pembrolizumab-and-berahyaluronidase-alfa-pmph-each-enfortumab-vedotin",
             "grade": "一手"
+          },
+          {
+            "label": "Summit 三季报（公司官网）",
+            "grade": "一手",
+            "url": "https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Reports-Financial-Results-and-Operational-Progress-for-the-Third-Quarter-and-Nine-Months-Ended-September-30-2026/default.aspx"
           }
         ]
       }
@@ -1291,12 +1342,13 @@
         "date": "2026-10-23",
         "title": "官方摘要上线并完成逐项核对",
         "grades": [
-          "一手"
+          "一手",
+          "未核实"
         ],
         "body": "3592O：一线 IMDC 低危透明细胞肾癌单药（NCT06472895，郭军）。数据截止 2026-04-27；26 人入组、21 人可评估；中位随访 9.1 个月；ORR 57.1%（12 例部分缓解），DCR 95.2%；中位 PFS 未达到；12 个月和 18 个月 PFS 率均为 87.9%；3 级及以上 TRAE 26.9%；蛋白尿 42.3%，高血压 26.9%；无治疗相关死亡；推荐 II 期剂量 30 mg/kg。口头报告 10-25 09:32–09:42 马德里，合北京时间 16:32–16:42。康方 9-22 英文稿曾误写 3592RO。\n\n4156RO iTHYM：一线胸腺癌联合紫杉醇/卡铂（NCT06750952，中山肿瘤）。数据截止 2026-07-31；24 例；ORR 83.3%，DCR 100%；已评估的 19 例在 6 个月时均无进展（Simon 两阶段：24 例中 6 个月进展事件不超过 10 例即为成功）；中位随访 10.2 个月时 4 例进展；出血 37.5%，3 级蛋白尿 8.3%，3 级急性冠脉综合征 1 例导致停药。\n\n2020eP：一线胸腺癌（ChiCTR2400094398），7 例，ORR 85.7%，3 级及以上 TRAE 57.1%。\n\n2908P：一线食管鳞癌联合白蛋白紫杉醇/顺铂（NCT06489197），32 人入组、30 人可评估，中位随访 10.2 个月，ORR 73.3%，DCR 100%，中位 PFS 未达到，3 级及以上 TRAE 37.5%，食管瘘 1 例。\n\n2898P：二线胃癌联合低剂量放疗和白蛋白紫杉醇（NCT06791148），34 例，ORR 63.0%（17/27），3 例完全缓解，中位 PFS 7.7 个月；既往用过免疫检查点抑制剂的患者 ORR 62.5%；3 级及以上 TRAE 17.6%。摘要里「27 例评估、28 例可评疗效」自相矛盾。\n\n3161P：交界可切除胰腺癌新辅助联合 AG 方案（NCT06944106），26 例，ORR 44.4%（8/18）；13 例手术全部达到 R0（占治疗人群 50%）；没有主要病理缓解；3 级及以上 TRAE 26.9%。康方稿未提及没有主要病理缓解这一点。\n\n706P：复发胶质母细胞瘤联合剂量密集替莫唑胺，23 人入组、21 人可评估，ORR 71.4%；6 个月 PFS 率 84.6% 只在已完成 6 个周期的 13 例中计算，存在选择偏倚；TRAE 均为 1–2 级。\n\n1266P：纪念斯隆凯特琳癌症中心的子宫内膜癌单药（NCT06925724），18 人入组、16 人可评估，既往中位 3 线，全部为错配修复完整型；ORR 19%（3 例部分缓解），临床获益率 37.5%，中位 PFS 3.9 个月，通过第一阶段。摘要分子分型例数与 16 例不符，属原文笔误。Summit 称达到 ORR 主要终点并扩组。\n\n2649P：美国学者对 HARMONi-A、HARMONi-2、HARMONi-6 的荟萃分析，1249 例。任意级 VEGF 相关不良事件的相对危险度 2.09，3 级及以上 3.35，3 级及以上蛋白尿 8.54，咯血 2.89；3 级及以上出血、高血压、血栓未显著增加。\n\n2711P：依沃西脑转移汇总，HR 0.57（0.44–0.75）。",
         "sources": [
           {
-            "label": "ESMO 2026 官方摘要（会议在线日程）",
+            "label": "ESMO 2026 官方摘要（会议在线日程）（本次复核未能打开 ESMO 官方摘要页，未看到原文）",
             "grade": "一手"
           }
         ]
@@ -1305,12 +1357,13 @@
         "date": "2026-10-23",
         "title": "卡度尼利同期摘要",
         "grades": [
-          "一手"
+          "一手",
+          "未核实"
         ],
         "body": "2913P：卡度尼利联合曲妥珠单抗和 SOX，一线 HER2 阳性胃癌，39 例，ORR 79.5%，中位 PFS 14.0 个月。2996eP：卡度尼利联合 SOX，一线 HER2 阴性、CPS 小于 1 的胃癌，41 例，ORR 56.1%，中位 PFS 13.9 个月。3605P：卡度尼利联合仑伐替尼，免疫联合酪氨酸激酶抑制剂之后的肾癌，28 例，ORR 39.3%，中位 PFS 16.2 个月，中位随访 19.8 个月。3732P：卡度尼利联合安罗替尼，二线软组织肉瘤，ORR 35%。1628eP 为回顾性研究，正文写 140 例，同时又写成 48 加 98（等于 146），原文自相矛盾；康方稿「23 例入组」属公司笔误。",
         "sources": [
           {
-            "label": "ESMO 2026 官方摘要",
+            "label": "ESMO 2026 官方摘要（本次复核未能打开 ESMO 官方摘要页，未看到原文）",
             "grade": "一手"
           }
         ]
@@ -1337,7 +1390,8 @@
     },
     "grades_present": [
       "一手",
-      "二手"
+      "二手",
+      "未核实"
     ]
   },
   {
@@ -1503,12 +1557,13 @@
         "date": "2026-09-04",
         "title": "CDE CTR20263290 首次公示",
         "grades": [
-          "一手"
+          "一手",
+          "未核实"
         ],
         "body": "公示早于阿斯利康入股 Summit（2026-09-28 签约）。因此「阿斯利康入股后才提速」的因果不成立。",
         "sources": [
           {
-            "label": "CDE CTR20263290",
+            "label": "CDE CTR20263290（本次复核 CDE 原页被拦截，未看到原文）",
             "grade": "一手"
           }
         ]
@@ -1540,6 +1595,11 @@
             "label": "Summit 新闻稿 2026-10-19",
             "url": "https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Announces-Opening-of-Global-Phase-II-Study-of-Ivonescimab-Based-Regimens-in-Advanced-Clear-Cell-Renal-Cell-Carcinoma/default.aspx",
             "grade": "一手"
+          },
+          {
+            "label": "Summit 三季报（公司官网，称 SMT112-216 has begun enrollment）",
+            "grade": "一手",
+            "url": "https://smmttx.com/news/press-releases/news-details/2026/Summit-Therapeutics-Reports-Financial-Results-and-Operational-Progress-for-the-Third-Quarter-and-Nine-Months-Ended-September-30-2026/default.aspx"
           }
         ]
       }
@@ -1575,7 +1635,8 @@
       "cadonilimab",
       "COMPASSION-15",
       "COMPASSION-16",
-      "COMPLUS-5"
+      "COMPLUS-5",
+      "NCT05008783"
     ],
     "updated": "2026-11-10",
     "status": "三个适应症已获批并进医保。COMPLUS-5 的登记页预计主要完成日期在 2026-11，计划日期不等于读出。",
@@ -1592,6 +1653,11 @@
           {
             "label": "Lancet Oncology 2023",
             "grade": "一手"
+          },
+          {
+            "label": "Lancet Oncol 2023;24:1134-1146，PMID 37797632",
+            "grade": "一手",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/37797632/"
           }
         ]
       },
@@ -1608,8 +1674,13 @@
             "grade": "一手"
           },
           {
-            "label": "Annals of Oncology 2098MO（最终）",
+            "label": "Annals of Oncology 2098MO（最终）（本次复核未打开该摘要原文，未看到原文）",
             "grade": "一手"
+          },
+          {
+            "label": "Nature Medicine 2025;31(4):1163-1170，PMID 39843940（COMPASSION-15 期中）",
+            "grade": "一手",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/39843940/"
           }
         ]
       },
@@ -1624,6 +1695,11 @@
           {
             "label": "Lancet 2024",
             "grade": "一手"
+          },
+          {
+            "label": "Lancet 2024;404:1668-1676，PMID 39426385",
+            "grade": "一手",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/39426385/"
           }
         ]
       },
@@ -1668,10 +1744,11 @@
       "胃癌"
     ],
     "aliases": [
-      "AK104-337"
+      "NCT07700979",
+      "AK104-311"
     ],
     "updated": "2026-11-10",
-    "status": "双盲，计划 900 人。FDA 于 2025-12 准许。中报写 2026 年 6 月全面启动；登记页实际开始 2026-09-24，首例 2026-09-27。公司未披露期中计划或读出时间。",
+    "status": "双盲，计划 900 人。FDA 于 2025-12 准许。中报写 2026 年 6 月全面启动；登记页实际开始 2026-09-24。公司未披露期中计划或读出时间。（更正日期 2026-11-11：登记号为 NCT07700979，方案号 AK104-311，不是此前写的 AK104-337；登记页未见「首例 2026-09-27」，已删去该日期。）",
     "summary": "全球主要研究者包括 CheckMate-649 的牵头人 Janjigian。登记页预计主要完成 2029-08-18。科学背景：CheckMate-649 的纳武利尤单抗联合伊匹木单抗组，在 CPS≥5 的人群里 OS 未达显著（HR 0.89）；美国说明书已把一线胃癌的 PD-1 限于 PD-L1 阳性（据康方新闻稿）。公司从未正式说出「依沃西打 K药和 I药、卡度尼利打 O药」这句话，这是根据试验设计做的归纳。",
     "timeline": [
       {
@@ -1708,8 +1785,14 @@
         "grades": [
           "一手"
         ],
-        "body": "随后记录的实际开始日期为 2026-09-24，首例患者 2026-09-27。预计主要完成 2029-08-18。",
-        "sources": []
+        "body": "登记号 NCT07700979，方案号 AK104-311。四重设盲。随后记录的实际开始日期为 2026-09-24。预计主要完成 2029-08-18，唯一主要终点为总生存，计划 900 人。（更正日期 2026-11-11：此前未写 NCT 号，并把方案号写成 AK104-337；ClinicalTrials.gov 登记的方案号是 AK104-311。此前写的首例 2026-09-27 未见登记页记载，已删除。）",
+        "sources": [
+          {
+            "label": "NCT07700979",
+            "url": "https://clinicaltrials.gov/study/NCT07700979",
+            "grade": "一手"
+          }
+        ]
       }
     ],
     "impact": {
@@ -1819,12 +1902,12 @@
         "body": "常用口径：首付 5 亿美元，总额最高 50 亿美元，外加两位数提成。Summit 2025 财年 10-K（2026-02-23）写的是：首期对价合计 5.15 亿美元（2023 年第一季度支付 5.00 亿，其中现金 4.749 亿、1000 万股 Summit 股票抵 2510 万美元；2024 年第三季度因区域扩至拉美、中东、非洲再付 1500 万）；或有付款最高 45.6 亿美元（监管里程碑 10.5 亿、商业 35.1 亿）；提成为低两位数。权益区域：北美、南美、欧洲、中东、非洲和日本。中国等区域仍归康方。",
         "sources": [
           {
-            "label": "Summit 2022-12 新闻稿",
+            "label": "Summit 2022-12 新闻稿（本次复核 SEC 返回 403，未看到原文）",
             "url": "https://www.sec.gov/Archives/edgar/data/1599298/000159929822000136/a2022_prx1208xivonescimaba.htm",
             "grade": "一手"
           },
           {
-            "label": "Summit 10-K FY2025 Item 1",
+            "label": "Summit 10-K FY2025 Item 1（本次复核 SEC 返回 403，未看到原文）",
             "grade": "一手"
           }
         ]
@@ -1850,10 +1933,10 @@
         "grades": [
           "一手"
         ],
-        "body": "赞成 658142561 票，反对 1983511 票，弃权 3134826 票，用于阿斯利康优先股转换。同日的 424B7 是阿斯利康控股公司登记转售，不是新发行。",
+        "body": "赞成 658142561 票，反对 1983511 票，弃权 3134826 票，用于阿斯利康优先股转换。同日的 424B7 是阿斯利康控股公司登记转售，不是新发行。（更正日期 2026-11-11：表决票数未能打开 8-K 原文复核，数字保留并标注未看到原文。）",
         "sources": [
           {
-            "label": "Summit 8-K 2026-11-04",
+            "label": "Summit 8-K 2026-11-04（本次复核 SEC 返回 403，未看到原文）",
             "url": "https://www.sec.gov/Archives/edgar/data/1599298/000159929826000088/smmt-20261104.htm",
             "grade": "一手"
           }
@@ -2386,7 +2469,7 @@
         "body": "单药用于不适合 PD-(L)1 的患者（ASCENT-03，中位 PFS 9.7 对 6.9 个月，HR 0.62），以及联合帕博利珠单抗用于 CPS≥10 的患者（ASCENT-04）。",
         "sources": [
           {
-            "label": "FDA 批准公告",
+            "label": "FDA 批准公告（本次复核 FDA 页返回 500，未看到原文）",
             "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-sacituzumab-govitecan-hziy-monotherapy-and-combination-pembrolizumab-first-line",
             "grade": "一手"
           }
@@ -2401,7 +2484,7 @@
         "body": "等待监管批准。吉利德供药，BioNTech 继续申办。原文未写死新的对照臂。",
         "sources": [
           {
-            "label": "GlobeNewswire 镜像",
+            "label": "GlobeNewswire 镜像（本次复核该链接被拦截，未看到原文）",
             "url": "https://www.globenewswire.com/news-release/2026/10/22/3386151/0/en/biontech-advances-phase-3-clinical-trial-of-pumitamig-in-combination-with-gilead-s-trop2-directed-adc-sacituzumab-govitecan-in-triple-negative-breast-cancer.html",
             "grade": "一手"
           }
@@ -2413,10 +2496,10 @@
         "grades": [
           "一手"
         ],
-        "body": "6-K 和三季报 PDF 的原话是 first global Phase 3 clinical trial of pumitamig in combination with an ADC。ClinicalTrials.gov 在 11-03 和 11-07 查到的干预仍是化疗加安慰剂。",
+        "body": "6-K 和三季报 PDF 的原话是 first global Phase 3 clinical trial of pumitamig in combination with an ADC。ClinicalTrials.gov 在 11-03 和 11-07 查到的干预仍是化疗加安慰剂。（更正日期 2026-11-11：本次打开 NCT07173751，截至 2026-10-30 更新，干预仍为 pumitamig 联合研究者选择化疗对照安慰剂联合化疗，未见戈沙妥珠单抗。BioNTech 6-K / GlobeNewswire 原文本次未能打开。）",
         "sources": [
           {
-            "label": "BioNTech 6-K",
+            "label": "BioNTech 6-K（本次复核该链接被拦截，未看到原文）",
             "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000072/form6-krosettabreastx0122o.htm",
             "grade": "一手"
           }
@@ -2533,7 +2616,7 @@
             "grade": "一手"
           },
           {
-            "label": "Fierce Pharma（安全性）",
+            "label": "Fierce Pharma（安全性）（本次复核该页返回 403，未看到原文）",
             "url": "https://www.fiercepharma.com/pharma/merck-kelun-workhorse-adc-posts-major-tumor-progression-benefit-pd-l1-negative-nsclc",
             "grade": "二手"
           }
@@ -2665,7 +2748,7 @@
         "body": "与卡度尼利首个适应症同一瘤种、同一后线位置。",
         "sources": [
           {
-            "label": "国家药监局公告",
+            "label": "国家药监局公告（本次复核国家药监局页返回 412，未看到原文；齐鲁新闻写「2024年9月获批」）",
             "url": "https://www.nmpa.gov.cn/directory/web/nmpa/zhuanti/cxylqx/cxypxx/20240930101946184.html",
             "grade": "一手"
           }
@@ -2677,7 +2760,7 @@
         "grades": [
           "一手"
         ],
-        "body": "ESMO 1240O：492 人，PFS HR 0.64；OS 30.95 对 21.78 个月，HR 0.73。公司新闻称一线宫颈癌 III 期的 PFS 和 OS 均为阳性，补充申请已获 CDE 受理。",
+        "body": "ESMO 1240O：492 人，PFS HR 0.64；OS 30.95 对 21.78 个月，HR 0.73。公司新闻称一线宫颈癌 III 期的 PFS 和 OS 均为阳性，补充申请已获 CDE 受理。（更正日期 2026-11-11：齐鲁新闻确认入组 492 例、一线补充申请已获 CDE 受理、PFS 与 OS 均为阳性；PFS HR 0.64 及 OS 30.95 对 21.78 个月、HR 0.73 仍引自 ESMO 1240O，本次未打开该摘要。）",
         "sources": [
           {
             "label": "齐鲁制药新闻",
@@ -2685,7 +2768,7 @@
             "grade": "一手"
           },
           {
-            "label": "ESMO 1240O",
+            "label": "ESMO 1240O（本次复核未打开 ESMO 1240O 原文，未看到原文）",
             "grade": "一手"
           }
         ]
@@ -2745,7 +2828,7 @@
         "grades": [
           "一手"
         ],
-        "body": "NCT07785609，计划 200 人。另一项 II 期 MK-2010-002（NCT07793942，480 人）计划于 2026-10-27 开始。",
+        "body": "NCT07785609，计划 200 人。另一项 II 期 MK-2010-002（NCT07793942，480 人）登记页实际开始日期为 2026-10-21（ACTUAL），截至 2026-11-05 更新时为招募中。（更正日期 2026-11-11：此前写作计划 2026-10-27 开始。）",
         "sources": [
           {
             "label": "NCT07785609",
@@ -2821,7 +2904,7 @@
         "body": "pharmsea 转载 CDE：SHR-4610（CXSL2601208）于 11-03 承办，申报联用含多款 ADC，以及「联合注射用 HS-20093 用于小细胞肺癌」。靶点口径不一，动脉网称 PD-L1/VEGFR，pharmsea 称 PD-1/VEGF。恒瑞自己的 NCT07231211（SHR-4610 可加或不加瑞康曲妥珠单抗）为 I/II 期，招募中。华海 HB0025 已有 3 项 III 期，包括 2026-10-20 开始的 NCT07902999。君实 JS207 联合 JS007（CTLA-4）对照特瑞普利单抗联合贝伐珠单抗的 III 期 NCT07823348，2026-10 时尚末招募。复宏汉霖 HLX37 的 II/III 期 NCT07865910 计划 2026-11-30 开始。",
         "sources": [
           {
-            "label": "pharmsea 转载 CDE",
+            "label": "pharmsea 转载 CDE（本次复核该页失败，未看到原文）",
             "url": "http://www.pharmsea.cn/open/reg/cn",
             "grade": "二手"
           }
