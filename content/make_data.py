@@ -40,6 +40,19 @@ def main():
         e["grades_present"] = grades_in(e)
         e.setdefault("aliases", [])
 
+
+    canonical = DATA / "entries.json"
+    if canonical.exists() and "--force-from-modules" not in sys.argv:
+        print(
+            "data/entries.json already exists and was fact-checked on 2026-11-11."
+        )
+        print(
+            "Refusing to overwrite it from content/*.py (that would restore pre-check numbers)."
+        )
+        print("Edit data/entries.json directly, then run python3 build.py.")
+        print("Pass --force-from-modules only if you intentionally regenerate from modules.")
+        raise SystemExit(0)
+
     DATA.mkdir(parents=True, exist_ok=True)
     daily_dir = DATA / "daily"
     daily_dir.mkdir(exist_ok=True)

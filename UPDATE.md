@@ -32,3 +32,8 @@ GitHub Pages 从 `main` 根目录发布。推送后等 Actions 或 Pages 构建�
 - 「事件数预计达到」「登记页预计主要完成」「拟纳入」都不是「已经读出」或「已经获批」。
 - 不写入股价、融资细节、持仓或买卖建议。
 - 不把内部路径、密钥或未公开的工作流程写进仓库。
+
+## 2026-11-11 原文复核之后
+
+临床数字以 `data/entries.json` 为准。不要运行 `python3 content/make_data.py` 覆盖它，除非先确认 `content/*.py` 已含本次更正，并显式加上 `--force-from-modules`。日常更新按上面的办法直接改 `entries.json` 再 `python3 build.py`。
+
