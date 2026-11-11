@@ -410,6 +410,7 @@ def home(entries, dailies, site):
         ("卡度尼利", [e for e in entries if e.get("group") == "cado"]),
         ("联用与伙伴", [e for e in entries if e.get("group") == "partner"]),
         ("竞品与对照", [e for e in entries if e.get("group") == "competitor"]),
+        ("政策与规则", [e for e in entries if e.get("group") == "policy"]),
     ]
     group_html = []
     for title, ents in groups:
@@ -458,7 +459,7 @@ def home(entries, dailies, site):
 def about_page(site):
     body = f"""<header class="hero read">
   <h1>关于本站</h1>
-  <p class="lede">这是一份公开的临床动态整理，关注 IO2.0（以 PD-(L)1×VEGF 双抗为代表）和 ADC2.0 组合，中心是康方生物的依沃西与卡度尼利，以及它们的授权伙伴、联用药和直接竞品。</p>
+  <p class="lede">这是一份公开的临床动态整理，关注 IO2.0（以 PD-(L)1×VEGF 双抗为代表）和 ADC2.0 组合，中心是康方生物的依沃西与卡度尼利，以及它们的授权伙伴、联用药和直接竞品。影响这一赛道合作或商务发展的政策、交易规则，核实后也会单独成条收入。</p>
 </header>
 <div class="read">
   <p>同一条试验、同一个药、同一件监管事项只保留一个条目。新进展并进原条目的时间线，不按日期拆成互不相干的短讯。每日动态页只作索引，指回这些条目。</p>

@@ -798,6 +798,105 @@
     ]
   },
   {
+    "slug": "coins-outbound-pharma",
+    "title": "美国财政部 COINS 对外投资拟议规则（生物医药）",
+    "subtitle": "征求意见稿拟把生物技术纳入对外投资安全项目，书面意见须于 2026-12-07 前提交。这是拟议规则，不是已经生效的禁令。",
+    "kicker": "政策 · 拟议规则",
+    "group": "policy",
+    "priority": 8,
+    "companies": [],
+    "drugs": [],
+    "indications": [],
+    "aliases": [
+      "COINS",
+      "NPRM",
+      "OISP",
+      "对外投资",
+      "财政部",
+      "药物化合物",
+      "RA Capital"
+    ],
+    "updated": "2026-11-11",
+    "status": "征求意见中。书面意见须于 2026-12-07 前提交。最终实施规则尚未发布，生效日也尚未确定。",
+    "summary": "美国财政部于 2026 年 10 月 22 日发布征求意见稿，拟落实 COINS 法，并把生物技术写入对外投资安全项目的拟议规则。草案把「药物化合物」列入拟禁止技术。《联邦公报》正式件的刊登日期是 10 月 26 日，书面意见须于 12 月 7 日前提交。最终规则尚未发布，不能写成已经生效的禁令。",
+    "timeline": [
+      {
+        "date": "2026-10-22",
+        "title": "财政部发布征求意见稿，拟把生物技术写入对外投资规则",
+        "grades": [
+          "一手"
+        ],
+        "body": "美国财政部当天发布新闻稿，宣布就落实《综合对外投资国家安全法》（COINS Act）发布拟议规则通知（NPRM），对现有对外投资安全项目（OISP）提出更新。COINS 法是作为 2026 财年《国防授权法》的一部分通过的。新闻稿写明，除半导体、人工智能、量子信息、高性能计算与超级计算、高超声速等法定技术类别外，财政部长已把生物技术加入这份拟议规则。财政部同时说明，NPRM 之后还会发布最终实施规则，并由最终规则确定项目生效日。\n\n草案拟议的「被覆盖的国家安全交易」包括：取得被覆盖外国人士的股权或或有股权；向被覆盖外国人士提供贷款或类似债权，且该安排将赋予美方贷款人某些具有股权投资特征、而不属于普通贷款的财务或治理权利；与关注国家的人设立合资，且美方在进入时知道该合资将从事或计划从事拟禁止或须通报的技术；以及或有权益或债务转成股权等。现有项目中的关注国家包括中国（含香港、澳门）。草案还拟增加俄罗斯、伊朗、古巴、朝鲜，以及马杜罗治下的委内瑞拉；这是拟议扩大，不是已经生效的名单。\n\n草案没有给 “joint venture”（合资）下法律定义，改用日常英语含义：双方出资和/或出资产，并分担盈亏。财政部并写明，进入此类合资不一定要新设实体。\n\n在拟禁止技术中，拟议 § 851.226(r)(4) 列入「药物化合物」（pharmaceutical compound），举例包括小分子、聚合物、疫苗、血液及血液成分、过敏原、细胞与基因治疗，以及单克隆抗体或其他重组治疗蛋白，及其递送机制。财政部在前言中还征求意见：这一范围是否以及如何应收窄，以便聚焦先进或前沿技术。\n\n草案的例外交易清单里有：在证券交易场所或场外市场交易的证券、对投资公司发行证券的投资、过去 12 个月合计不超过 5 万美元的交易（这条仅豁免通报义务）、次级交易、普通或行政商务交易等。草案没有把「药品授权许可」单独列为一项例外。次级交易中的合同安排，条文写明不包括技术转让或技术知识转让合同。「普通或行政商务交易」在草案中没有另行定义；财政部说明，法律把定义留给规则，并欢迎就何谓此类交易提交意见。",
+        "sources": [
+          {
+            "label": "美国财政部新闻稿（2026-10-22）",
+            "url": "https://home.treasury.gov/news/press-releases/sb0667",
+            "grade": "一手"
+          },
+          {
+            "label": "财政部 NPRM 文本（COINS-NPRM.pdf）",
+            "url": "https://home.treasury.gov/system/files/206/COINS-NPRM.pdf",
+            "grade": "一手"
+          },
+          {
+            "label": "财政部对外投资安全项目页",
+            "url": "https://home.treasury.gov/policy-issues/international/outbound-investment-program",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-26",
+        "title": "《联邦公报》刊登正式件，书面意见截止 12 月 7 日",
+        "grades": [
+          "一手"
+        ],
+        "body": "《联邦公报》当天刊登该拟议规则的正式文本（2026-21786）。正式件的 DATES 写明，书面意见须于 2026 年 12 月 7 日前提交。规则的对外发布日以财政部 10 月 22 日新闻稿为准；正式件的刊登日是 10 月 26 日。",
+        "sources": [
+          {
+            "label": "Federal Register 正式件（FR 2026-21786）",
+            "url": "https://www.govinfo.gov/content/pkg/FR-2026-10-26/pdf/2026-21786.pdf",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-04",
+        "title": "RA Capital 公开将提交的意见书",
+        "grades": [
+          "一手"
+        ],
+        "body": "RA Capital 在其网站公开了一份意见书，署名作者为 Peter Kolchinsky、Tess Cameron。页上写明，这份意见将于 2026 年 12 月 7 日正式提交，目前还不是 Regulations.gov 上的已提交评论，并仍在接受联署。\n\n信中的解读是：按他们的理解，草案看起来允许美国公司以首付款、现金里程碑和销售分成，向中国公司授权引进候选药；但授予股权，以及联合开发或联合商业化，有可能被解释为被禁止的「合资」。他们要求澄清，以少数股权做授权引进的新公司（NewCo）安排仍可进行，并主张把普通药物排除在外或收窄范围。\n\n联署名单已对照 RA 公开的原文页。除 RA Capital 外，页上出现的机构还包括 Foresite Capital、Third Rock Ventures、Deep Track Capital、Forbion、Venrock、Mountainfield Venture Partners，以及其他公司和投资人；完整名单以原页为准，页上写明仍在接受联署。",
+        "sources": [
+          {
+            "label": "RA Capital 公开意见书（2026-11-04）",
+            "url": "https://www.racap.com/rapport/comment-from-ra-capital-and-peers-to-treasury-on-its-proposal-to-add-biotech-to-coins",
+            "grade": "一手"
+          }
+        ]
+      },
+      {
+        "date": "2026-11-10",
+        "title": "Fierce Biotech 报道该草案及业内解读",
+        "grades": [
+          "二手"
+        ],
+        "body": "Fierce Biotech（Angus Liu）当天报道了这份征求意见稿和 RA 等的意见。报道把「单纯现金授权不受影响」「股权、联合开发、合资界定模糊可能影响交易」作为律师和 RA 的解读。这一点与 RA 原页和草案文本相符。但「现金授权不受影响」并不是财政部原文写明的豁免，只是业内和意见书的解读，不能写成规则已经明确排除这类交易。",
+        "sources": [
+          {
+            "label": "Fierce Biotech，Angus Liu（2026-11-10）",
+            "url": "https://www.fiercebiotech.com/biotech/treasury-coins-act-proposal-pharmaceuticals-china-newco-legal-maze-biotech-vc-warnings",
+            "grade": "二手"
+          }
+        ]
+      }
+    ],
+    "grades_present": [
+      "一手",
+      "二手"
+    ]
+  },
+  {
     "slug": "harmoni-7",
     "title": "HARMONi-7",
     "subtitle": "一线 PD-L1≥50% 的 NSCLC，依沃西单药对照帕博利珠单抗单药。",
