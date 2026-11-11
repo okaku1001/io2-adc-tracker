@@ -11,7 +11,8 @@
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 
 </head>
-<body>
+<body class="page-entries">
+
 <a class="skip" href="#main">跳到正文</a>
 <header class="site-header">
   <div class="header-inner">
@@ -33,348 +34,390 @@
   </div>
 </header>
 <main id="main" class="wrap">
-<header class="hero read">
+<header class="hero">
   <h1>条目</h1>
   <p class="lede">按药、试验或事件线组织。同一条线的新旧进展写在同一页，按时间往下读。</p>
 </header>
 <div class="filters">
   <div class="search-box"><input id="entry-search" type="search" placeholder="搜索药名、试验名、适应症或公司" aria-label="搜索条目"></div>
-  <div><p class="muted" style="margin:0 0 .35rem">公司</p><div class="filter-row"><button class="filter-btn" type="button" data-key="company" data-val="全部" aria-pressed="true">全部</button><button class="filter-btn" type="button" data-key="company" data-val="康方生物" aria-pressed="false">康方生物</button><button class="filter-btn" type="button" data-key="company" data-val="Summit" aria-pressed="false">Summit</button><button class="filter-btn" type="button" data-key="company" data-val="BioNTech" aria-pressed="false">BioNTech</button><button class="filter-btn" type="button" data-key="company" data-val="百时美施贵宝" aria-pressed="false">百时美施贵宝</button><button class="filter-btn" type="button" data-key="company" data-val="科伦博泰" aria-pressed="false">科伦博泰</button><button class="filter-btn" type="button" data-key="company" data-val="默沙东" aria-pressed="false">默沙东</button><button class="filter-btn" type="button" data-key="company" data-val="辉瑞" aria-pressed="false">辉瑞</button><button class="filter-btn" type="button" data-key="company" data-val="阿斯利康" aria-pressed="false">阿斯利康</button><button class="filter-btn" type="button" data-key="company" data-val="Gilead" aria-pressed="false">Gilead</button><button class="filter-btn" type="button" data-key="company" data-val="三生制药" aria-pressed="false">三生制药</button><button class="filter-btn" type="button" data-key="company" data-val="荣昌生物" aria-pressed="false">荣昌生物</button><button class="filter-btn" type="button" data-key="company" data-val="艾伯维" aria-pressed="false">艾伯维</button><button class="filter-btn" type="button" data-key="company" data-val="翰森制药" aria-pressed="false">翰森制药</button><button class="filter-btn" type="button" data-key="company" data-val="GSK" aria-pressed="false">GSK</button><button class="filter-btn" type="button" data-key="company" data-val="石药集团" aria-pressed="false">石药集团</button><button class="filter-btn" type="button" data-key="company" data-val="齐鲁制药" aria-pressed="false">齐鲁制药</button><button class="filter-btn" type="button" data-key="company" data-val="礼新医药" aria-pressed="false">礼新医药</button><button class="filter-btn" type="button" data-key="company" data-val="百利天恒" aria-pressed="false">百利天恒</button><button class="filter-btn" type="button" data-key="company" data-val="宜联生物" aria-pressed="false">宜联生物</button><button class="filter-btn" type="button" data-key="company" data-val="华海药业" aria-pressed="false">华海药业</button><button class="filter-btn" type="button" data-key="company" data-val="君实生物" aria-pressed="false">君实生物</button><button class="filter-btn" type="button" data-key="company" data-val="复宏汉霖" aria-pressed="false">复宏汉霖</button><button class="filter-btn" type="button" data-key="company" data-val="恒瑞医药" aria-pressed="false">恒瑞医药</button><button class="filter-btn" type="button" data-key="company" data-val="基石药业" aria-pressed="false">基石药业</button></div></div>
-  <div><p class="muted" style="margin:0 0 .35rem">药物</p><div class="filter-row"><button class="filter-btn" type="button" data-key="drug" data-val="全部" aria-pressed="true">全部</button><button class="filter-btn" type="button" data-key="drug" data-val="依沃西" aria-pressed="false">依沃西</button><button class="filter-btn" type="button" data-key="drug" data-val="pumitamig" aria-pressed="false">pumitamig</button><button class="filter-btn" type="button" data-key="drug" data-val="sac-TMT" aria-pressed="false">sac-TMT</button><button class="filter-btn" type="button" data-key="drug" data-val="帕博利珠单抗" aria-pressed="false">帕博利珠单抗</button><button class="filter-btn" type="button" data-key="drug" data-val="恩诺单抗" aria-pressed="false">恩诺单抗</button><button class="filter-btn" type="button" data-key="drug" data-val="Datroway" aria-pressed="false">Datroway</button><button class="filter-btn" type="button" data-key="drug" data-val="戈沙妥珠单抗" aria-pressed="false">戈沙妥珠单抗</button><button class="filter-btn" type="button" data-key="drug" data-val="tivunatamig" aria-pressed="false">tivunatamig</button><button class="filter-btn" type="button" data-key="drug" data-val="RC148" aria-pressed="false">RC148</button><button class="filter-btn" type="button" data-key="drug" data-val="RC118" aria-pressed="false">RC118</button><button class="filter-btn" type="button" data-key="drug" data-val="HS-20093" aria-pressed="false">HS-20093</button><button class="filter-btn" type="button" data-key="drug" data-val="SYS6043" aria-pressed="false">SYS6043</button><button class="filter-btn" type="button" data-key="drug" data-val="卡度尼利" aria-pressed="false">卡度尼利</button><button class="filter-btn" type="button" data-key="drug" data-val="QL1706" aria-pressed="false">QL1706</button><button class="filter-btn" type="button" data-key="drug" data-val="莱法利" aria-pressed="false">莱法利</button><button class="filter-btn" type="button" data-key="drug" data-val="MK-2010" aria-pressed="false">MK-2010</button><button class="filter-btn" type="button" data-key="drug" data-val="Sone-Ve" aria-pressed="false">Sone-Ve</button><button class="filter-btn" type="button" data-key="drug" data-val="AK146D1" aria-pressed="false">AK146D1</button><button class="filter-btn" type="button" data-key="drug" data-val="AK138D1" aria-pressed="false">AK138D1</button><button class="filter-btn" type="button" data-key="drug" data-val="iza-bren" aria-pressed="false">iza-bren</button><button class="filter-btn" type="button" data-key="drug" data-val="YL201" aria-pressed="false">YL201</button><button class="filter-btn" type="button" data-key="drug" data-val="维迪西妥单抗" aria-pressed="false">维迪西妥单抗</button><button class="filter-btn" type="button" data-key="drug" data-val="HB0025" aria-pressed="false">HB0025</button><button class="filter-btn" type="button" data-key="drug" data-val="JS207" aria-pressed="false">JS207</button><button class="filter-btn" type="button" data-key="drug" data-val="HLX37" aria-pressed="false">HLX37</button><button class="filter-btn" type="button" data-key="drug" data-val="SHR-4610" aria-pressed="false">SHR-4610</button><button class="filter-btn" type="button" data-key="drug" data-val="CS2009" aria-pressed="false">CS2009</button></div></div>
-  <div><p class="muted" style="margin:0 0 .35rem">适应症</p><div class="filter-row"><button class="filter-btn" type="button" data-key="indication" data-val="全部" aria-pressed="true">全部</button><button class="filter-btn" type="button" data-key="indication" data-val="NSCLC" aria-pressed="false">NSCLC</button><button class="filter-btn" type="button" data-key="indication" data-val="胆道癌" aria-pressed="false">胆道癌</button><button class="filter-btn" type="button" data-key="indication" data-val="小细胞肺癌" aria-pressed="false">小细胞肺癌</button><button class="filter-btn" type="button" data-key="indication" data-val="乳腺癌" aria-pressed="false">乳腺癌</button><button class="filter-btn" type="button" data-key="indication" data-val="胃癌" aria-pressed="false">胃癌</button><button class="filter-btn" type="button" data-key="indication" data-val="结直肠癌" aria-pressed="false">结直肠癌</button><button class="filter-btn" type="button" data-key="indication" data-val="子宫内膜癌" aria-pressed="false">子宫内膜癌</button><button class="filter-btn" type="button" data-key="indication" data-val="尿路上皮癌" aria-pressed="false">尿路上皮癌</button><button class="filter-btn" type="button" data-key="indication" data-val="围手术期" aria-pressed="false">围手术期</button><button class="filter-btn" type="button" data-key="indication" data-val="未披露" aria-pressed="false">未披露</button><button class="filter-btn" type="button" data-key="indication" data-val="肾癌" aria-pressed="false">肾癌</button><button class="filter-btn" type="button" data-key="indication" data-val="胸腺癌" aria-pressed="false">胸腺癌</button><button class="filter-btn" type="button" data-key="indication" data-val="食管癌" aria-pressed="false">食管癌</button><button class="filter-btn" type="button" data-key="indication" data-val="胰腺癌" aria-pressed="false">胰腺癌</button><button class="filter-btn" type="button" data-key="indication" data-val="胶质母细胞瘤" aria-pressed="false">胶质母细胞瘤</button><button class="filter-btn" type="button" data-key="indication" data-val="宫颈癌" aria-pressed="false">宫颈癌</button><button class="filter-btn" type="button" data-key="indication" data-val="多瘤种" aria-pressed="false">多瘤种</button><button class="filter-btn" type="button" data-key="indication" data-val="头颈癌" aria-pressed="false">头颈癌</button></div></div>
+  <details class="filter-panel">
+    <summary>筛选公司、药物、适应症</summary>
+    <div class="filter-groups">
+      <div><p class="filter-label">公司</p><div class="filter-row"><button class="filter-btn" type="button" data-key="company" data-val="全部" aria-pressed="true">全部</button><button class="filter-btn" type="button" data-key="company" data-val="康方生物" aria-pressed="false">康方生物</button><button class="filter-btn" type="button" data-key="company" data-val="Summit" aria-pressed="false">Summit</button><button class="filter-btn" type="button" data-key="company" data-val="BioNTech" aria-pressed="false">BioNTech</button><button class="filter-btn" type="button" data-key="company" data-val="百时美施贵宝" aria-pressed="false">百时美施贵宝</button><button class="filter-btn" type="button" data-key="company" data-val="科伦博泰" aria-pressed="false">科伦博泰</button><button class="filter-btn" type="button" data-key="company" data-val="默沙东" aria-pressed="false">默沙东</button><button class="filter-btn" type="button" data-key="company" data-val="辉瑞" aria-pressed="false">辉瑞</button><button class="filter-btn" type="button" data-key="company" data-val="阿斯利康" aria-pressed="false">阿斯利康</button><button class="filter-btn" type="button" data-key="company" data-val="Gilead" aria-pressed="false">Gilead</button><button class="filter-btn" type="button" data-key="company" data-val="三生制药" aria-pressed="false">三生制药</button><button class="filter-btn" type="button" data-key="company" data-val="荣昌生物" aria-pressed="false">荣昌生物</button><button class="filter-btn" type="button" data-key="company" data-val="艾伯维" aria-pressed="false">艾伯维</button><button class="filter-btn" type="button" data-key="company" data-val="翰森制药" aria-pressed="false">翰森制药</button><button class="filter-btn" type="button" data-key="company" data-val="GSK" aria-pressed="false">GSK</button><button class="filter-btn" type="button" data-key="company" data-val="石药集团" aria-pressed="false">石药集团</button><button class="filter-btn" type="button" data-key="company" data-val="齐鲁制药" aria-pressed="false">齐鲁制药</button><button class="filter-btn" type="button" data-key="company" data-val="礼新医药" aria-pressed="false">礼新医药</button><button class="filter-btn" type="button" data-key="company" data-val="百利天恒" aria-pressed="false">百利天恒</button><button class="filter-btn" type="button" data-key="company" data-val="宜联生物" aria-pressed="false">宜联生物</button><button class="filter-btn" type="button" data-key="company" data-val="华海药业" aria-pressed="false">华海药业</button><button class="filter-btn" type="button" data-key="company" data-val="君实生物" aria-pressed="false">君实生物</button><button class="filter-btn" type="button" data-key="company" data-val="复宏汉霖" aria-pressed="false">复宏汉霖</button><button class="filter-btn" type="button" data-key="company" data-val="恒瑞医药" aria-pressed="false">恒瑞医药</button><button class="filter-btn" type="button" data-key="company" data-val="基石药业" aria-pressed="false">基石药业</button></div></div>
+      <div><p class="filter-label">药物</p><div class="filter-row"><button class="filter-btn" type="button" data-key="drug" data-val="全部" aria-pressed="true">全部</button><button class="filter-btn" type="button" data-key="drug" data-val="依沃西" aria-pressed="false">依沃西</button><button class="filter-btn" type="button" data-key="drug" data-val="pumitamig" aria-pressed="false">pumitamig</button><button class="filter-btn" type="button" data-key="drug" data-val="sac-TMT" aria-pressed="false">sac-TMT</button><button class="filter-btn" type="button" data-key="drug" data-val="帕博利珠单抗" aria-pressed="false">帕博利珠单抗</button><button class="filter-btn" type="button" data-key="drug" data-val="恩诺单抗" aria-pressed="false">恩诺单抗</button><button class="filter-btn" type="button" data-key="drug" data-val="Datroway" aria-pressed="false">Datroway</button><button class="filter-btn" type="button" data-key="drug" data-val="戈沙妥珠单抗" aria-pressed="false">戈沙妥珠单抗</button><button class="filter-btn" type="button" data-key="drug" data-val="tivunatamig" aria-pressed="false">tivunatamig</button><button class="filter-btn" type="button" data-key="drug" data-val="RC148" aria-pressed="false">RC148</button><button class="filter-btn" type="button" data-key="drug" data-val="RC118" aria-pressed="false">RC118</button><button class="filter-btn" type="button" data-key="drug" data-val="HS-20093" aria-pressed="false">HS-20093</button><button class="filter-btn" type="button" data-key="drug" data-val="SYS6043" aria-pressed="false">SYS6043</button><button class="filter-btn" type="button" data-key="drug" data-val="卡度尼利" aria-pressed="false">卡度尼利</button><button class="filter-btn" type="button" data-key="drug" data-val="QL1706" aria-pressed="false">QL1706</button><button class="filter-btn" type="button" data-key="drug" data-val="莱法利" aria-pressed="false">莱法利</button><button class="filter-btn" type="button" data-key="drug" data-val="MK-2010" aria-pressed="false">MK-2010</button><button class="filter-btn" type="button" data-key="drug" data-val="Sone-Ve" aria-pressed="false">Sone-Ve</button><button class="filter-btn" type="button" data-key="drug" data-val="AK146D1" aria-pressed="false">AK146D1</button><button class="filter-btn" type="button" data-key="drug" data-val="AK138D1" aria-pressed="false">AK138D1</button><button class="filter-btn" type="button" data-key="drug" data-val="iza-bren" aria-pressed="false">iza-bren</button><button class="filter-btn" type="button" data-key="drug" data-val="YL201" aria-pressed="false">YL201</button><button class="filter-btn" type="button" data-key="drug" data-val="维迪西妥单抗" aria-pressed="false">维迪西妥单抗</button><button class="filter-btn" type="button" data-key="drug" data-val="HB0025" aria-pressed="false">HB0025</button><button class="filter-btn" type="button" data-key="drug" data-val="JS207" aria-pressed="false">JS207</button><button class="filter-btn" type="button" data-key="drug" data-val="HLX37" aria-pressed="false">HLX37</button><button class="filter-btn" type="button" data-key="drug" data-val="SHR-4610" aria-pressed="false">SHR-4610</button><button class="filter-btn" type="button" data-key="drug" data-val="CS2009" aria-pressed="false">CS2009</button></div></div>
+      <div><p class="filter-label">适应症</p><div class="filter-row"><button class="filter-btn" type="button" data-key="indication" data-val="全部" aria-pressed="true">全部</button><button class="filter-btn" type="button" data-key="indication" data-val="NSCLC" aria-pressed="false">NSCLC</button><button class="filter-btn" type="button" data-key="indication" data-val="胆道癌" aria-pressed="false">胆道癌</button><button class="filter-btn" type="button" data-key="indication" data-val="小细胞肺癌" aria-pressed="false">小细胞肺癌</button><button class="filter-btn" type="button" data-key="indication" data-val="乳腺癌" aria-pressed="false">乳腺癌</button><button class="filter-btn" type="button" data-key="indication" data-val="胃癌" aria-pressed="false">胃癌</button><button class="filter-btn" type="button" data-key="indication" data-val="结直肠癌" aria-pressed="false">结直肠癌</button><button class="filter-btn" type="button" data-key="indication" data-val="子宫内膜癌" aria-pressed="false">子宫内膜癌</button><button class="filter-btn" type="button" data-key="indication" data-val="尿路上皮癌" aria-pressed="false">尿路上皮癌</button><button class="filter-btn" type="button" data-key="indication" data-val="围手术期" aria-pressed="false">围手术期</button><button class="filter-btn" type="button" data-key="indication" data-val="未披露" aria-pressed="false">未披露</button><button class="filter-btn" type="button" data-key="indication" data-val="肾癌" aria-pressed="false">肾癌</button><button class="filter-btn" type="button" data-key="indication" data-val="胸腺癌" aria-pressed="false">胸腺癌</button><button class="filter-btn" type="button" data-key="indication" data-val="食管癌" aria-pressed="false">食管癌</button><button class="filter-btn" type="button" data-key="indication" data-val="胰腺癌" aria-pressed="false">胰腺癌</button><button class="filter-btn" type="button" data-key="indication" data-val="胶质母细胞瘤" aria-pressed="false">胶质母细胞瘤</button><button class="filter-btn" type="button" data-key="indication" data-val="宫颈癌" aria-pressed="false">宫颈癌</button><button class="filter-btn" type="button" data-key="indication" data-val="多瘤种" aria-pressed="false">多瘤种</button><button class="filter-btn" type="button" data-key="indication" data-val="头颈癌" aria-pressed="false">头颈癌</button></div></div>
+    </div>
+  </details>
 </div>
-<div class="grid"><a class="card" data-entry-card href="harmoni-fda.html"
+<div class="entry-list"><a class="entry-row" data-entry-card href="harmoni-fda.html"
               data-companies="康方生物|Summit"
               data-drugs="依沃西"
               data-indications="NSCLC"
               data-search="依沃西美国 BLA（HARMONi） EGFR 突变非鳞 NSCLC、三代 TKI 之后，依沃西联合化疗。PDUFA 日为 2026-11-14。 依沃西（AK112 / ivonescimab / SMT112，商品名依达方）递交美国上市的依据，是 Summit 申办的全球 III 期 HARMONi，不是中国的 HARMONi-A，也不是一线头对头 K药的适应症。PFS 显著；主分析 OS 未达显著。FDA 书面指出，该适应症获批需要统计学显著的 OS，本研究的 PFS 可能不足以支持上市。之后几次 OS 更新给出的是名义 p 值，不能替代预设检验。 FDA 已于 2026-01-29 受理 BLA，PDUFA 2026-11-14。截至 2026-11-10，所查未见 CRL、延期或咨询会披露。 康方生物 Summit 依沃西 NSCLC SMT112 AK112 ivonescimab 依达方 PDUFA HARMONi">
-  <p class="card-kicker">监管 · 全球 HARMONi</p>
-  <h3>依沃西美国 BLA（HARMONi）</h3>
-  <p>EGFR 突变非鳞 NSCLC、三代 TKI 之后，依沃西联合化疗。PDUFA 日为 2026-11-14。</p>
+  <p class="kicker">监管 · 全球 HARMONi</p>
+  <h3 class="entry-title">依沃西美国 BLA（HARMONi）</h3>
+  <p class="entry-sub">EGFR 突变非鳞 NSCLC、三代 TKI 之后，依沃西联合化疗。PDUFA 日为 2026-11-14。</p>
+  <p class="entry-meta"><time datetime="2026-11-11">2026年11月11日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">NSCLC</span></div>
-</a><a class="card" data-entry-card href="harmoni-3.html"
+</a><a class="entry-row" data-entry-card href="harmoni-3.html"
               data-companies="康方生物|Summit"
               data-drugs="依沃西"
               data-indications="NSCLC"
               data-search="HARMONi-3 全球一线转移性 NSCLC，依沃西联合化疗对照帕博利珠单抗联合化疗。两个组织学队列分别分析。 HARMONi-3（NCT05899608 / CTR20232457，方案号 SMT112-3003 / AK112-3003）计划入组约 1600 例（鳞癌约 600，非鳞约 1000）。两个组织学队列分别进行主要终点 PFS 与 OS 的分析，「如同同一方案下的两项独立研究」。对照是帕博利珠单抗联合化疗，对应 KEYNOTE-189（非鳞）和 KEYNOTE-407（鳞癌）的领地。目前唯一读出是 2026-04-30 鳞癌队列期中 PFS 未达显著。 两个队列均已入组完成。鳞癌队列主要 PFS 分析所需事件数预计 2026 年第四季度达到，同时做一次计划内早期 OS 期中分析。这是事件数预计达到，不是数据公布日。 康方生物 Summit 依沃西 NSCLC NCT05899608 CTR20232457 SMT112-3003 AK112-3003">
-  <p class="card-kicker">全球注册主线</p>
-  <h3>HARMONi-3</h3>
-  <p>全球一线转移性 NSCLC，依沃西联合化疗对照帕博利珠单抗联合化疗。两个组织学队列分别分析。</p>
+  <p class="kicker">全球注册主线</p>
+  <h3 class="entry-title">HARMONi-3</h3>
+  <p class="entry-sub">全球一线转移性 NSCLC，依沃西联合化疗对照帕博利珠单抗联合化疗。两个组织学队列分别分析。</p>
+  <p class="entry-meta"><time datetime="2026-11-11">2026年11月11日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">NSCLC</span></div>
-</a><a class="card" data-entry-card href="harmoni-2.html"
+</a><a class="entry-row" data-entry-card href="harmoni-2.html"
               data-companies="康方生物"
               data-drugs="依沃西"
               data-indications="NSCLC"
               data-search="HARMONi-2 中国 III 期。一线 PD-L1 阳性（TPS≥1%）NSCLC，依沃西单药对照帕博利珠单抗（K药）单药。 HARMONi-2（NCT05499390 / CTR20222137）入组 398 人，是依沃西第一条对 K药单药的注册性头对头。PFS 期中：中位 PFS 11.1 对 5.8 个月，HR 0.51（0.38–0.69），单侧 P&lt;0.0001。预设 OS 期中（数据截止 2026-08-20，中位随访 36 个月，OS 事件 234 例，单侧 α=0.0141）：中位 OS 30.8 对 22.6 个月，HR 0.73（0.57–0.95），P=0.009。一手只称「预设期中分析」，不是「第二次期中」。 PFS 期中和预设 OS 期中均为阳性。最终 OS 仍待公布。中国已于 2025-04-25 获批该适应症。 康方生物 依沃西 NSCLC NCT05499390 CTR20222137 AK112-303">
-  <p class="card-kicker">头对头 K药 · 已获批</p>
-  <h3>HARMONi-2</h3>
-  <p>中国 III 期。一线 PD-L1 阳性（TPS≥1%）NSCLC，依沃西单药对照帕博利珠单抗（K药）单药。</p>
+  <p class="kicker">头对头 K药 · 已获批</p>
+  <h3 class="entry-title">HARMONi-2</h3>
+  <p class="entry-sub">中国 III 期。一线 PD-L1 阳性（TPS≥1%）NSCLC，依沃西单药对照帕博利珠单抗（K药）单药。</p>
+  <p class="entry-meta"><time datetime="2026-11-11">2026年11月11日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">NSCLC</span></div>
-</a><a class="card" data-entry-card href="harmoni-gi1.html"
+</a><a class="entry-row" data-entry-card href="harmoni-gi1.html"
               data-companies="康方生物"
               data-drugs="依沃西"
               data-indications="胆道癌"
               data-search="HARMONi-GI1（一线胆道癌） 中国 III 期。依沃西联合吉西他滨/顺铂，对照度伐利尤单抗（I药）联合吉西他滨/顺铂。优先审评已正式纳入。 HARMONi-GI1（NCT06591520 / CTR20243164，AK112-309）是双盲研究，入组 682 人（依沃西 340 / 度伐 342）。公众号文章曾误写 632，已更正。这是依沃西第一个肺癌以外、对现行 PD-L1 标准方案的 OS 阳性 III 期，但是仅中国人群、且为期中分析。 期中分析 OS、PFS、ORR 均达到。NMPA CDE 已将一线胆道癌纳入优先审评（公司 2026-11-05 宣布）。美国确认路径是 EA2251。 康方生物 依沃西 胆道癌 AK112-309 NCT06591520 CTR20243164 LBA8 BTC">
-  <p class="card-kicker">头对头 I药 · 非肺癌 OS</p>
-  <h3>HARMONi-GI1（一线胆道癌）</h3>
-  <p>中国 III 期。依沃西联合吉西他滨/顺铂，对照度伐利尤单抗（I药）联合吉西他滨/顺铂。优先审评已正式纳入。</p>
+  <p class="kicker">头对头 I药 · 非肺癌 OS</p>
+  <h3 class="entry-title">HARMONi-GI1（一线胆道癌）</h3>
+  <p class="entry-sub">中国 III 期。依沃西联合吉西他滨/顺铂，对照度伐利尤单抗（I药）联合吉西他滨/顺铂。优先审评已正式纳入。</p>
+  <p class="entry-meta"><time datetime="2026-11-06">2026年11月6日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">胆道癌</span></div>
-</a><a class="card" data-entry-card href="harmoni-6.html"
+</a><a class="entry-row" data-entry-card href="harmoni-6.html"
               data-companies="康方生物"
               data-drugs="依沃西"
               data-indications="NSCLC"
               data-search="HARMONi-6 中国 III 期。一线鳞状 NSCLC，依沃西联合化疗对照替雷利珠单抗联合化疗。 HARMONi-6（NCT05840016 / CTR20231272）入组 532 人。PFS 期中：11.1 对 6.9 个月，HR 0.60（0.46–0.78）。路演披露的最终 PFS：12.48 对 8.31 个月，HR 0.72（P=0.003），中位随访 17.02 个月；说明书原文有条目记为未看到，数字来自路演。首次计划内 OS（数据截止 2026-02-27，中位随访 21.4 个月）：中位 OS 27.9 对 23.7 个月，HR 0.66（0.50–0.87），单侧 P=0.0017。 PFS 与首次计划内 OS 均为阳性。中国已于 2026-08-12 获批该适应症。 康方生物 依沃西 NSCLC NCT05840016 CTR20231272">
-  <p class="card-kicker">头对头替雷利珠 · 已获批</p>
-  <h3>HARMONi-6</h3>
-  <p>中国 III 期。一线鳞状 NSCLC，依沃西联合化疗对照替雷利珠单抗联合化疗。</p>
+  <p class="kicker">头对头替雷利珠 · 已获批</p>
+  <h3 class="entry-title">HARMONi-6</h3>
+  <p class="entry-sub">中国 III 期。一线鳞状 NSCLC，依沃西联合化疗对照替雷利珠单抗联合化疗。</p>
+  <p class="entry-meta"><time datetime="2026-11-11">2026年11月11日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">NSCLC</span></div>
-</a><a class="card" data-entry-card href="harmoni-a.html"
+</a><a class="entry-row" data-entry-card href="harmoni-a.html"
               data-companies="康方生物"
               data-drugs="依沃西"
               data-indications="NSCLC"
               data-search="HARMONi-A 中国 III 期。EGFR-TKI 治疗进展的 EGFR 突变非鳞 NSCLC，依沃西联合化疗对照安慰剂联合化疗。 HARMONi-A（NCT05184712 / CTR20213079）入组 322 人。最终 OS：中位随访 32.5 个月，中位 OS 16.8 对 14.1 个月，分层 HR 0.74（95%CI 0.58–0.95），P=0.02；30 个月 OS 率 29.1% 对 18.4%；3 级及以上 TEAE 67.1% 对 54.7%。全球 HARMONi 研究同一适应症，但是独立试验，OS 结果不能互相替代。 已读出最终 OS，并作为 2024-05-24 中国首个获批适应症的依据。 康方生物 依沃西 NSCLC AK112-301 NCT05184712 CTR20213079">
-  <p class="card-kicker">已获批 · 中国</p>
-  <h3>HARMONi-A</h3>
-  <p>中国 III 期。EGFR-TKI 治疗进展的 EGFR 突变非鳞 NSCLC，依沃西联合化疗对照安慰剂联合化疗。</p>
+  <p class="kicker">已获批 · 中国</p>
+  <h3 class="entry-title">HARMONi-A</h3>
+  <p class="entry-sub">中国 III 期。EGFR-TKI 治疗进展的 EGFR 突变非鳞 NSCLC，依沃西联合化疗对照安慰剂联合化疗。</p>
+  <p class="entry-meta"><time datetime="2026-06-18">2026年6月18日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">NSCLC</span></div>
-</a><a class="card" data-entry-card href="ea2251.html"
+</a><a class="entry-row" data-entry-card href="ea2251.html"
               data-companies="康方生物|Summit"
               data-drugs="依沃西"
               data-indications="胆道癌"
               data-search="EA2251（美国一线胆道癌） Summit 与 ECOG-ACRIN 合作。依沃西联合吉西他滨/顺铂，对照 K药或 I药联合吉西他滨/顺铂。 这是 HARMONi-GI1 之后的海外确认路径。美国、开放、随机 II/III 期，主要终点 OS，估计入组约 336 人。对照可以是帕博利珠单抗或度伐利尤单抗，均联合吉西他滨/顺铂。 ClinicalTrials.gov 预计 2027-01-11 开始、2028-12-31 主要完成。Summit 称开中心预计 2026 年第四季度，并称 registration-enabling。 康方生物 Summit 依沃西 胆道癌 NCT07765433 ECOG-ACRIN">
-  <p class="card-kicker">海外确认路径</p>
-  <h3>EA2251（美国一线胆道癌）</h3>
-  <p>Summit 与 ECOG-ACRIN 合作。依沃西联合吉西他滨/顺铂，对照 K药或 I药联合吉西他滨/顺铂。</p>
+  <p class="kicker">海外确认路径</p>
+  <h3 class="entry-title">EA2251（美国一线胆道癌）</h3>
+  <p class="entry-sub">Summit 与 ECOG-ACRIN 合作。依沃西联合吉西他滨/顺铂，对照 K药或 I药联合吉西他滨/顺铂。</p>
+  <p class="entry-meta"><time datetime="2026-11-04">2026年11月4日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">胆道癌</span></div>
-</a><a class="card" data-entry-card href="pumitamig.html"
+</a><a class="entry-row" data-entry-card href="pumitamig.html"
               data-companies="BioNTech|百时美施贵宝"
               data-drugs="pumitamig"
               data-indications="NSCLC|小细胞肺癌|乳腺癌|胃癌|结直肠癌"
               data-search="pumitamig（BNT327 / BMS-986545） BioNTech 与百时美施贵宝的 PD-L1×VEGF-A 双抗，原普米斯 PM8002。全球 7 项 III 期或 II/III 期，尚无 III 期读出。 2025 年 6 月交易：首付 15 亿美元，2028 年前另有 20 亿美元非或有周年付款，里程碑最高 76 亿美元，总额最高 111 亿美元，全球利润 50 对 50。七项全球 III 期或 II/III 期（2026-10-08 的 ClinicalTrials.gov）：Lung-01（广泛期小细胞肺癌对照阿替利珠单抗联合依托泊苷/卡铂，621 人）、Lung-02（一线 NSCLC 对照帕博利珠单抗联合化疗，1580 人，由此前的 1260 上调）、Lung-201（同步放化疗后巩固对照度伐利尤单抗，850 人）、Lung-202（PD-L1≥50% 单药对照帕博利珠单抗，750 人）、Breast-01、CRC-203（对照贝伐珠单抗联合化疗，990 人）、Gastric-204（对照纳武利尤单抗联合化疗，690 人）。另有普米斯在中国的小细胞肺癌二线 III 期等。 7 项全球关键研究在跑。第三方预计全球 PFS 最早 2028 年底或 2029 年。ROSETTA Breast-01 的 Trodelvy 修订见单独条目。 BioNTech 百时美施贵宝 pumitamig NSCLC 小细胞肺癌 乳腺癌 胃癌 结直肠癌 BNT327 PM8002 BMS-986545 ROSETTA">
-  <p class="card-kicker">全球头号竞品</p>
-  <h3>pumitamig（BNT327 / BMS-986545）</h3>
-  <p>BioNTech 与百时美施贵宝的 PD-L1×VEGF-A 双抗，原普米斯 PM8002。全球 7 项 III 期或 II/III 期，尚无 III 期读出。</p>
+  <p class="kicker">全球头号竞品</p>
+  <h3 class="entry-title">pumitamig（BNT327 / BMS-986545）</h3>
+  <p class="entry-sub">BioNTech 与百时美施贵宝的 PD-L1×VEGF-A 双抗，原普米斯 PM8002。全球 7 项 III 期或 II/III 期，尚无 III 期读出。</p>
+  <p class="entry-meta"><time datetime="2026-11-03">2026年11月3日</time></p>
   <div class="card-foot"><span class="chip">pumitamig</span><span class="chip">NSCLC</span><span class="chip">小细胞肺癌</span></div>
-</a><a class="card" data-entry-card href="harmoni-10.html"
+</a><a class="entry-row" data-entry-card href="harmoni-10.html"
               data-companies="康方生物|Summit"
               data-drugs="依沃西"
               data-indications="NSCLC"
               data-search="HARMONi-10 不可切除 III 期 NSCLC，同步放化疗后未进展，依沃西对照度伐利尤单抗做巩固。 HARMONi-10（CTR20263641，方案号 AK112-3010）针对同步放化疗（至少 2 周期含铂化疗同步放疗，60–66 Gy）后未进展的不可切除 III 期 NSCLC。开放、随机、国际多中心，设数据监察委员会。主要终点是独立评审的 PFS。这是依沃西第二项头对头度伐的 III 期（第一项是 HARMONi-GI1）。 CDE 于 2026-10-09 首次公示。截至 2026-11-10 仍无 ClinicalTrials.gov 登记。剂量、疗程、随机比例、分层因素、是否排除 EGFR/ALK 均未公开。 康方生物 Summit 依沃西 NSCLC CTR20263641 AK112-3010 PACIFIC">
-  <p class="card-kicker">头对头 I药 · 巩固治疗</p>
-  <h3>HARMONi-10</h3>
-  <p>不可切除 III 期 NSCLC，同步放化疗后未进展，依沃西对照度伐利尤单抗做巩固。</p>
+  <p class="kicker">头对头 I药 · 巩固治疗</p>
+  <h3 class="entry-title">HARMONi-10</h3>
+  <p class="entry-sub">不可切除 III 期 NSCLC，同步放化疗后未进展，依沃西对照度伐利尤单抗做巩固。</p>
+  <p class="entry-meta"><time datetime="2026-11-10">2026年11月10日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">NSCLC</span></div>
-</a><a class="card" data-entry-card href="sac-tmt.html"
+</a><a class="entry-row" data-entry-card href="sac-tmt.html"
               data-companies="科伦博泰|默沙东"
               data-drugs="sac-TMT|帕博利珠单抗"
               data-indications="NSCLC|子宫内膜癌"
               data-search="sac-TMT 联合 K药 科伦与默沙东的 TROP2 ADC。OptiTROP-Lung06 已在一线 PD-L1 阴性非鳞 NSCLC 达到无进展生存终点，并同期发表于《新英格兰医学杂志》。 这是「用 ADC 替掉化疗、搭在 K药上」的路径，和依沃西代表的「换掉 K药本身」不是同一件事，但抢的是 ADC2.0 组合里的免疫骨架位置。 TroFuse 系列约 17 项 III 期。科伦 2026-10-27 称 Lung06 已被 CDE 受理。TroFuse-005（子宫内膜癌）获 FDA 优先审评，PDUFA 2027-06-15。 科伦博泰 默沙东 sac-TMT 帕博利珠单抗 NSCLC 子宫内膜癌 sacituzumab tirumotecan OptiTROP-Lung06 OptiTROP-Lung05 TroFuse LBA66">
-  <p class="card-kicker">K药骨架 + ADC</p>
-  <h3>sac-TMT 联合 K药</h3>
-  <p>科伦与默沙东的 TROP2 ADC。OptiTROP-Lung06 已在一线 PD-L1 阴性非鳞 NSCLC 达到无进展生存终点，并同期发表于《新英格兰医学杂志》。</p>
+  <p class="kicker">K药骨架 + ADC</p>
+  <h3 class="entry-title">sac-TMT 联合 K药</h3>
+  <p class="entry-sub">科伦与默沙东的 TROP2 ADC。OptiTROP-Lung06 已在一线 PD-L1 阴性非鳞 NSCLC 达到无进展生存终点，并同期发表于《新英格兰医学杂志》。</p>
+  <p class="entry-meta"><time datetime="2026-11-11">2026年11月11日</time></p>
   <div class="card-foot"><span class="chip">sac-TMT</span><span class="chip">帕博利珠单抗</span><span class="chip">NSCLC</span><span class="chip">子宫内膜癌</span></div>
-</a><a class="card" data-entry-card href="harmoni-gu1.html"
+</a><a class="entry-row" data-entry-card href="harmoni-gu1.html"
               data-companies="康方生物|Summit|辉瑞"
               data-drugs="依沃西|恩诺单抗"
               data-indications="尿路上皮癌"
               data-search="HARMONi-GU1 一线局部晚期或转移性尿路上皮癌，依沃西联合恩诺单抗对照帕博利珠单抗联合恩诺单抗。 HARMONi-GU1（NCT07815665）是 II/III 期，计划 800 人。这是依沃西已经启动的注册性「双抗 + ADC」研究，对照是已经获批的 K药联合恩诺单抗。恩诺单抗（Padcev）由辉瑞 / 安斯泰来持有。康方称「联合辉瑞维恩妥尤单抗」；Summit 新闻稿未写与辉瑞的正式供药合作。 2026-09-10 开始，招募中。第三季度称 II 期部分已开中心入组。中国登记原页尚未看到。 康方生物 Summit 辉瑞 依沃西 恩诺单抗 尿路上皮癌 NCT07815665 Padcev EV">
-  <p class="card-kicker">双抗 + ADC · 注册性</p>
-  <h3>HARMONi-GU1</h3>
-  <p>一线局部晚期或转移性尿路上皮癌，依沃西联合恩诺单抗对照帕博利珠单抗联合恩诺单抗。</p>
+  <p class="kicker">双抗 + ADC · 注册性</p>
+  <h3 class="entry-title">HARMONi-GU1</h3>
+  <p class="entry-sub">一线局部晚期或转移性尿路上皮癌，依沃西联合恩诺单抗对照帕博利珠单抗联合恩诺单抗。</p>
+  <p class="entry-meta"><time datetime="2026-11-04">2026年11月4日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">恩诺单抗</span><span class="chip">尿路上皮癌</span></div>
-</a><a class="card" data-entry-card href="ivonescimab-perioperative.html"
+</a><a class="entry-row" data-entry-card href="ivonescimab-perioperative.html"
               data-companies="康方生物"
               data-drugs="依沃西"
               data-indications="NSCLC|围手术期"
               data-search="依沃西围手术期 可切除 NSCLC 的中国 II 期全文于 2026-11-04 发表。看数字时必须先分清完成手术人群和全分析集。 试验编号 AK112-205（NCT05247684 / CTR20220028），赵等人发表于《Nature Medicine》，期刊页标注 Published: 2026-11-04。中国两个中心，开放、非随机，入组 90 人。公司稿主推完成手术人群；与 KEYNOTE-671、CheckMate-816 等 III 期并排看时，应用全分析集。中位无事件生存尚未成熟，总生存未报。 II 期全文已发表。截至 2026-11-06，ClinicalTrials.gov 上依沃西围手术期仍以这条 II 期和若干研究者发起研究为主；康方列举的十七项 III 期未点名围手术。论文自己要求更大的随机 III 期。 康方生物 依沃西 NSCLC 围手术期 AK112-205 NCT05247684 CTR20220028 Nature Medicine">
-  <p class="card-kicker">II 期全文</p>
-  <h3>依沃西围手术期</h3>
-  <p>可切除 NSCLC 的中国 II 期全文于 2026-11-04 发表。看数字时必须先分清完成手术人群和全分析集。</p>
+  <p class="kicker">II 期全文</p>
+  <h3 class="entry-title">依沃西围手术期</h3>
+  <p class="entry-sub">可切除 NSCLC 的中国 II 期全文于 2026-11-04 发表。看数字时必须先分清完成手术人群和全分析集。</p>
+  <p class="entry-meta"><time datetime="2026-11-07">2026年11月7日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">NSCLC</span><span class="chip">围手术期</span></div>
-</a><a class="card" data-entry-card href="coins-outbound-pharma.html"
+</a><a class="entry-row" data-entry-card href="coins-outbound-pharma.html"
               data-companies=""
               data-drugs=""
               data-indications=""
               data-search="美国财政部 COINS 对外投资拟议规则（生物医药） 征求意见稿拟把生物技术纳入对外投资安全项目，书面意见须于 2026-12-07 前提交。这是拟议规则，不是已经生效的禁令。 美国财政部于 2026 年 10 月 22 日发布征求意见稿，拟落实 COINS 法，并把生物技术写入对外投资安全项目的拟议规则。草案把「药物化合物」列入拟禁止技术。《联邦公报》正式件的刊登日期是 10 月 26 日，书面意见须于 12 月 7 日前提交。最终规则尚未发布，不能写成已经生效的禁令。 征求意见中。书面意见须于 2026-12-07 前提交。最终实施规则尚未发布，生效日也尚未确定。    COINS NPRM OISP 对外投资 财政部 药物化合物 RA Capital">
-  <p class="card-kicker">政策 · 拟议规则</p>
-  <h3>美国财政部 COINS 对外投资拟议规则（生物医药）</h3>
-  <p>征求意见稿拟把生物技术纳入对外投资安全项目，书面意见须于 2026-12-07 前提交。这是拟议规则，不是已经生效的禁令。</p>
+  <p class="kicker">政策 · 拟议规则</p>
+  <h3 class="entry-title">美国财政部 COINS 对外投资拟议规则（生物医药）</h3>
+  <p class="entry-sub">征求意见稿拟把生物技术纳入对外投资安全项目，书面意见须于 2026-12-07 前提交。这是拟议规则，不是已经生效的禁令。</p>
+  <p class="entry-meta"><time datetime="2026-11-11">2026年11月11日</time></p>
   <div class="card-foot"></div>
-</a><a class="card" data-entry-card href="harmoni-bc1.html"
+</a><a class="entry-row" data-entry-card href="harmoni-bc1.html"
               data-companies="康方生物|Summit|阿斯利康"
               data-drugs="依沃西|Datroway"
               data-indications="乳腺癌"
               data-search="HARMONi-BC1 与依沃西乳腺癌 中国 III 期 HARMONi-BC1 已在做；与第一三共 / 阿斯利康的 Datroway 联用 III 期仍在计划中。 依沃西在乳腺癌有两条线。一条是康方申办的中国 III 期 HARMONi-BC1：依沃西联合白蛋白紫杉醇，对照安慰剂联合白蛋白紫杉醇，用于一线三阴性乳腺癌。另一条是 2026-10-02 宣布、计划由阿斯利康或第一三共申办的依沃西联合 Datroway III 期，同样以一线三阴性乳腺癌为首发适应症。合作宣布不等于试验已经启动。 HARMONi-BC1 招募中，主要完成估计 2026-12。依沃西联合 Datroway 的一线三阴性乳腺癌 III 期截至 2026-11-10 仍未在 ClinicalTrials.gov 查到登记。 康方生物 Summit 阿斯利康 依沃西 Datroway 乳腺癌 NCT06767527 AK112-308 TNBC Dato-DXd">
-  <p class="card-kicker">乳腺癌</p>
-  <h3>HARMONi-BC1 与依沃西乳腺癌</h3>
-  <p>中国 III 期 HARMONi-BC1 已在做；与第一三共 / 阿斯利康的 Datroway 联用 III 期仍在计划中。</p>
+  <p class="kicker">乳腺癌</p>
+  <h3 class="entry-title">HARMONi-BC1 与依沃西乳腺癌</h3>
+  <p class="entry-sub">中国 III 期 HARMONi-BC1 已在做；与第一三共 / 阿斯利康的 Datroway 联用 III 期仍在计划中。</p>
+  <p class="entry-meta"><time datetime="2026-11-10">2026年11月10日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">Datroway</span><span class="chip">乳腺癌</span></div>
-</a><a class="card" data-entry-card href="rosetta-breast-01.html"
+</a><a class="entry-row" data-entry-card href="rosetta-breast-01.html"
               data-companies="BioNTech|百时美施贵宝|Gilead"
               data-drugs="pumitamig|戈沙妥珠单抗"
               data-indications="乳腺癌"
               data-search="ROSETTA Breast-01 pumitamig 计划把化疗换成 Trodelvy，用于一线 PD-L1 低或阴性的三阴性乳腺癌。方案修订尚待监管批准。 NCT07173751，一线、PD-L1 低或阴性、不适合单抗 PD-(L)1 联合化疗的三阴性乳腺癌，约 558 人，首例 2025-10-30，主要完成估计 2029-12，主要终点为独立评审的 PFS 和 OS。没有 pumitamig 联合戈沙妥珠单抗的人体概念验证数据。最合理的修订推断是 pumitamig 联合戈沙妥珠单抗对照安慰剂联合戈沙妥珠单抗。 截至 2026-11-07，登记页上的干预仍是化疗加安慰剂，未见戈沙妥珠单抗。原文是 pumitamig 自身的首个全球 III 期 ADC 联合，不是「全球首个 PD-(L)1 联合 ADC 的 III 期」。 BioNTech 百时美施贵宝 Gilead pumitamig 戈沙妥珠单抗 乳腺癌 NCT07173751 Trodelvy SG">
-  <p class="card-kicker">双抗 + ADC</p>
-  <h3>ROSETTA Breast-01</h3>
-  <p>pumitamig 计划把化疗换成 Trodelvy，用于一线 PD-L1 低或阴性的三阴性乳腺癌。方案修订尚待监管批准。</p>
+  <p class="kicker">双抗 + ADC</p>
+  <h3 class="entry-title">ROSETTA Breast-01</h3>
+  <p class="entry-sub">pumitamig 计划把化疗换成 Trodelvy，用于一线 PD-L1 低或阴性的三阴性乳腺癌。方案修订尚待监管批准。</p>
+  <p class="entry-meta"><time datetime="2026-11-11">2026年11月11日</time></p>
   <div class="card-foot"><span class="chip">pumitamig</span><span class="chip">戈沙妥珠单抗</span><span class="chip">乳腺癌</span></div>
-</a><a class="card" data-entry-card href="harmoni-7.html"
+</a><a class="entry-row" data-entry-card href="harmoni-7.html"
               data-companies="康方生物|Summit"
               data-drugs="依沃西"
               data-indications="NSCLC"
               data-search="HARMONi-7 一线 PD-L1≥50% 的 NSCLC，依沃西单药对照帕博利珠单抗单药。 HARMONi-7（NCT06767514）计划入组 780 人，是依沃西在高表达人群里对 K药单药的全球头对头，和已经读出的中国 HARMONi-2 形成对照。 仍在入组。第三季度预计 2027 年完成入组。ClinicalTrials.gov 主要完成估计 2028-04。 康方生物 Summit 依沃西 NSCLC NCT06767514">
-  <p class="card-kicker">全球 · 头对头 K药</p>
-  <h3>HARMONi-7</h3>
-  <p>一线 PD-L1≥50% 的 NSCLC，依沃西单药对照帕博利珠单抗单药。</p>
+  <p class="kicker">全球 · 头对头 K药</p>
+  <h3 class="entry-title">HARMONi-7</h3>
+  <p class="entry-sub">一线 PD-L1≥50% 的 NSCLC，依沃西单药对照帕博利珠单抗单药。</p>
+  <p class="entry-meta"><time datetime="2026-11-04">2026年11月4日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">NSCLC</span></div>
-</a><a class="card" data-entry-card href="tivunatamig.html"
+</a><a class="entry-row" data-entry-card href="tivunatamig.html"
               data-companies="辉瑞|三生制药"
               data-drugs="tivunatamig"
               data-indications="NSCLC"
               data-search="tivunatamig（PF-08634404 / SSGJ-707） 辉瑞与三生制药的 PD-1×VEGF 双抗。中国已有对照替雷利珠单抗的随机 II 期数据，全球 III 期已启动。 交易为首付 12.5 亿美元，另加 1 亿美元股权，里程碑最高 48 亿美元；中国权益期权最高 1.5 亿美元。这不是与依沃西的头对头。 辉瑞有 3 项 III 期和 2 项 II/III 期。三生中国 III 期对照帕博利珠单抗单药（NCT06980272，420 人）登记的主要完成日为 2026-07-30，尚未读出。 辉瑞 三生制药 tivunatamig NSCLC PF-08634404 SSGJ-707 Symbiotic-Lung-01 2660P">
-  <p class="card-kicker">直接竞品</p>
-  <h3>tivunatamig（PF-08634404 / SSGJ-707）</h3>
-  <p>辉瑞与三生制药的 PD-1×VEGF 双抗。中国已有对照替雷利珠单抗的随机 II 期数据，全球 III 期已启动。</p>
+  <p class="kicker">直接竞品</p>
+  <h3 class="entry-title">tivunatamig（PF-08634404 / SSGJ-707）</h3>
+  <p class="entry-sub">辉瑞与三生制药的 PD-1×VEGF 双抗。中国已有对照替雷利珠单抗的随机 II 期数据，全球 III 期已启动。</p>
+  <p class="entry-meta"><time datetime="2026-11-01">2026年11月1日</time></p>
   <div class="card-foot"><span class="chip">tivunatamig</span><span class="chip">NSCLC</span></div>
-</a><a class="card" data-entry-card href="harmoni-gi3.html"
+</a><a class="entry-row" data-entry-card href="harmoni-gi3.html"
               data-companies="康方生物|Summit"
               data-drugs="依沃西"
               data-indications="结直肠癌"
               data-search="HARMONi-GI3 一线转移性结直肠癌，依沃西对照贝伐珠单抗联合 FOLFOX。 HARMONi-GI3（NCT07228832）把依沃西放到一线肠癌，对照是贝伐珠单抗联合 FOLFOX。入组快于预期，样本量在第三季度上调。 仍在招募。计划例数已由 600 调整为 900，预计 2027 年第三季度完成入组。 康方生物 Summit 依沃西 结直肠癌 NCT07228832">
-  <p class="card-kicker">全球 · 肠癌</p>
-  <h3>HARMONi-GI3</h3>
-  <p>一线转移性结直肠癌，依沃西对照贝伐珠单抗联合 FOLFOX。</p>
+  <p class="kicker">全球 · 肠癌</p>
+  <h3 class="entry-title">HARMONi-GI3</h3>
+  <p class="entry-sub">一线转移性结直肠癌，依沃西对照贝伐珠单抗联合 FOLFOX。</p>
+  <p class="entry-meta"><time datetime="2026-11-05">2026年11月5日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">结直肠癌</span></div>
-</a><a class="card" data-entry-card href="rc148.html"
+</a><a class="entry-row" data-entry-card href="rc148.html"
               data-companies="荣昌生物|艾伯维"
               data-drugs="RC148|RC118"
               data-indications="胃癌|NSCLC"
               data-search="RC148 与 RC118 联合 RC148 荣昌的 PD-1×VEGF 双抗已授权艾伯维。与 CLDN18.2 ADC RC118 的联合，正在进入一线胃癌。 艾伯维与荣昌 2026-01 的授权：首付 6.5 亿美元。RC148 海外代号 ABBV-1480。一线胃癌这项研究是国内「自家双抗联合 ADC、去掉化疗」从后线走进一线的例子。 中国已有 III 期。CTR20264047 于 2026-11-03 首次公示，2026-11-10 补记。CDE 原页尚未核对。 荣昌生物 艾伯维 RC148 RC118 胃癌 NSCLC ABBV-1480 CTR20264047 NCT07416474">
-  <p class="card-kicker">国内竞品 · 双抗 + ADC</p>
-  <h3>RC148 与 RC118 联合 RC148</h3>
-  <p>荣昌的 PD-1×VEGF 双抗已授权艾伯维。与 CLDN18.2 ADC RC118 的联合，正在进入一线胃癌。</p>
+  <p class="kicker">国内竞品 · 双抗 + ADC</p>
+  <h3 class="entry-title">RC148 与 RC118 联合 RC148</h3>
+  <p class="entry-sub">荣昌的 PD-1×VEGF 双抗已授权艾伯维。与 CLDN18.2 ADC RC118 的联合，正在进入一线胃癌。</p>
+  <p class="entry-meta"><time datetime="2026-11-10">2026年11月10日</time></p>
   <div class="card-foot"><span class="chip">RC148</span><span class="chip">RC118</span><span class="chip">胃癌</span><span class="chip">NSCLC</span></div>
-</a><a class="card" data-entry-card href="adc-hs20093.html"
+</a><a class="entry-row" data-entry-card href="adc-hs20093.html"
               data-companies="康方生物|翰森制药|GSK"
               data-drugs="依沃西|HS-20093"
               data-indications="NSCLC"
               data-search="依沃西联合 HS-20093 / GSK&#x27;227 翰森与 GSK 的 B7-H3 ADC。这是依沃西首个由公司申办的 B7-H3 ADC 肺癌联用，目前还在 I 期。 HS-20093 即 GSK&#x27;227（risvutatug rezetecan，GSK5764227），靶点是 B7-H3。存在两条联用路径：Summit 与 GSK 的非独家 I/II 期，以及翰森在中国申办的 I 期。翰森同时把 HS-20093 与恒瑞 SHR-4610 做跨公司联用申报（小细胞肺癌），两边都在押。 翰森申办的 NCT07899086 计划 2026-11-10 开始，截至 2026-11-10 仍尚未招募，最后更新 2026-10-27。I 期不计入依沃西 II 至 III 期清单。 康方生物 翰森制药 GSK 依沃西 HS-20093 NSCLC NCT07899086 GSK5764227 risvutatug rezetecan GSK&#x27;227">
-  <p class="card-kicker">双抗 + ADC</p>
-  <h3>依沃西联合 HS-20093 / GSK&#x27;227</h3>
-  <p>翰森与 GSK 的 B7-H3 ADC。这是依沃西首个由公司申办的 B7-H3 ADC 肺癌联用，目前还在 I 期。</p>
+  <p class="kicker">双抗 + ADC</p>
+  <h3 class="entry-title">依沃西联合 HS-20093 / GSK&#x27;227</h3>
+  <p class="entry-sub">翰森与 GSK 的 B7-H3 ADC。这是依沃西首个由公司申办的 B7-H3 ADC 肺癌联用，目前还在 I 期。</p>
+  <p class="entry-meta"><time datetime="2026-11-10">2026年11月10日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">HS-20093</span><span class="chip">NSCLC</span></div>
-</a><a class="card" data-entry-card href="adc-sys6043.html"
+</a><a class="entry-row" data-entry-card href="adc-sys6043.html"
               data-companies="康方生物|石药集团"
               data-drugs="依沃西|SYS6043"
               data-indications="未披露"
               data-search="依沃西联合 SYS6043 与石药集团旗下巨石生物的临床合作。仅限中国大陆，瘤种未公开。 SYS6043 是石药的 B7-H3 ADC。这是依沃西第二个与国内大型药企的 B7-H3 ADC 联用，前一个是翰森的 HS-20093。 2026-11-02 宣布合作。未见联用登记，未披露金额和具体瘤种。 康方生物 石药集团 依沃西 SYS6043 未披露 巨石生物">
-  <p class="card-kicker">双抗 + ADC</p>
-  <h3>依沃西联合 SYS6043</h3>
-  <p>与石药集团旗下巨石生物的临床合作。仅限中国大陆，瘤种未公开。</p>
+  <p class="kicker">双抗 + ADC</p>
+  <h3 class="entry-title">依沃西联合 SYS6043</h3>
+  <p class="entry-sub">与石药集团旗下巨石生物的临床合作。仅限中国大陆，瘤种未公开。</p>
+  <p class="entry-meta"><time datetime="2026-11-03">2026年11月3日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">SYS6043</span><span class="chip">未披露</span></div>
-</a><a class="card" data-entry-card href="ivonescimab-china.html"
+</a><a class="entry-row" data-entry-card href="ivonescimab-china.html"
               data-companies="康方生物"
               data-drugs="依沃西"
               data-indications="NSCLC"
               data-search="依沃西：分子、中国获批与医保 中国已获批三个肺癌适应症。用药例数和公司口径要按时间点来读。 依沃西是 PD-1×VEGF 四价双抗（Tetrabody）。公司表述：在 VEGF 存在时，对 PD-1 的亲合力上升；Fc 段做了 L234A/L235A 突变，去除 FcγR 和 C1q 结合。一线胆道癌的优先审评见 HARMONi-GI1 条目，不在本页重复展开。 三个肺癌适应症已获批。前两个已进医保；2026-08-12 获批的鳞状 NSCLC，研究组推断大概率不在 2026 年目录调整内。 康方生物 依沃西 NSCLC 依达方 AK112 ivonescimab">
-  <p class="card-kicker">已上市</p>
-  <h3>依沃西：分子、中国获批与医保</h3>
-  <p>中国已获批三个肺癌适应症。用药例数和公司口径要按时间点来读。</p>
+  <p class="kicker">已上市</p>
+  <h3 class="entry-title">依沃西：分子、中国获批与医保</h3>
+  <p class="entry-sub">中国已获批三个肺癌适应症。用药例数和公司口径要按时间点来读。</p>
+  <p class="entry-meta"><time datetime="2026-11-10">2026年11月10日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">NSCLC</span></div>
-</a><a class="card" data-entry-card href="smt112-216.html"
+</a><a class="entry-row" data-entry-card href="smt112-216.html"
               data-companies="康方生物|Summit"
               data-drugs="依沃西|卡度尼利"
               data-indications="肾癌"
               data-search="SMT112-216 / AK112-216（肾癌） 一线 IMDC 中高危透明细胞肾癌。依沃西单用或联合卡度尼利、伊匹木单抗，对照纳武利尤单抗联合伊匹木单抗。 这是随机 II 期，约 100 人，五组设计，主要终点是 ORR 和安全性。对照是纳武利尤单抗联合伊匹木单抗（O 药加 Y 药），不是「O 药加 I 药」——在中文语境里，I 药常被用来称度伐利尤单抗。它和 ESMO 3592O 的一线低危单药研究不是同一人群。 Summit 于 2026-10-19 宣布开中心，第三季度称已开始入组。主要完成估计 2029-04-12。 康方生物 Summit 依沃西 卡度尼利 肾癌 NCT07877194 CTR20263290 AK112-216">
-  <p class="card-kicker">探索性 II 期</p>
-  <h3>SMT112-216 / AK112-216（肾癌）</h3>
-  <p>一线 IMDC 中高危透明细胞肾癌。依沃西单用或联合卡度尼利、伊匹木单抗，对照纳武利尤单抗联合伊匹木单抗。</p>
+  <p class="kicker">探索性 II 期</p>
+  <h3 class="entry-title">SMT112-216 / AK112-216（肾癌）</h3>
+  <p class="entry-sub">一线 IMDC 中高危透明细胞肾癌。依沃西单用或联合卡度尼利、伊匹木单抗，对照纳武利尤单抗联合伊匹木单抗。</p>
+  <p class="entry-meta"><time datetime="2026-11-04">2026年11月4日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">卡度尼利</span><span class="chip">肾癌</span></div>
-</a><a class="card" data-entry-card href="ivonescimab-esmo-2026.html"
+</a><a class="entry-row" data-entry-card href="ivonescimab-esmo-2026.html"
               data-companies="康方生物"
               data-drugs="依沃西|卡度尼利"
               data-indications="肾癌|胸腺癌|食管癌|胃癌|胰腺癌|胶质母细胞瘤|子宫内膜癌"
               data-search="依沃西与卡度尼利：ESMO 2026 早期研究 2026-10-23 已对照会议官方摘要逐项核对。LBA 级读出见各自条目。 下列数字来自 ESMO 2026 官方摘要（2026-10-23 从会议在线日程抄录）。康方两篇前瞻公众号与其中大多数对得上；消化道「下篇」始终未找到。时间换算：2026-10-25 马德里已回到欧洲中部时间，北京比马德里早 7 小时。 官方摘要已核对。iTHYM 会上数字与摘要一致。LBA8 HARMONi-GI1 见单独条目。 康方生物 依沃西 卡度尼利 肾癌 胸腺癌 食管癌 胃癌 胰腺癌 胶质母细胞瘤 子宫内膜癌 3592O 4156RO iTHYM 2908P 2898P 3161P 706P 1266P 2649P">
-  <p class="card-kicker">会议数据</p>
-  <h3>依沃西与卡度尼利：ESMO 2026 早期研究</h3>
-  <p>2026-10-23 已对照会议官方摘要逐项核对。LBA 级读出见各自条目。</p>
+  <p class="kicker">会议数据</p>
+  <h3 class="entry-title">依沃西与卡度尼利：ESMO 2026 早期研究</h3>
+  <p class="entry-sub">2026-10-23 已对照会议官方摘要逐项核对。LBA 级读出见各自条目。</p>
+  <p class="entry-meta"><time datetime="2026-10-26">2026年10月26日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">卡度尼利</span><span class="chip">肾癌</span><span class="chip">胸腺癌</span></div>
-</a><a class="card" data-entry-card href="compassion-37.html"
+</a><a class="entry-row" data-entry-card href="compassion-37.html"
               data-companies="康方生物"
               data-drugs="卡度尼利"
               data-indications="胃癌"
               data-search="COMPASSION-37 全球 III 期。卡度尼利联合 CAPOX，对照 CAPOX 加或不加纳武利尤单抗。唯一主要终点是总生存。 全球主要研究者包括 CheckMate-649 的牵头人 Janjigian。登记页预计主要完成 2029-08-18。科学背景：CheckMate-649 的纳武利尤单抗联合伊匹木单抗组，在 CPS≥5 的人群里 OS 未达显著（HR 0.89）；美国说明书已把一线胃癌的 PD-1 限于 PD-L1 阳性（据康方新闻稿）。公司从未正式说出「依沃西打 K药和 I药、卡度尼利打 O药」这句话，这是根据试验设计做的归纳。 双盲，计划 900 人。FDA 于 2025-12 准许。中报写 2026 年 6 月全面启动；登记页实际开始 2026-09-24。公司未披露期中计划或读出时间。（更正日期 2026-11-11：登记号为 NCT07700979，方案号 AK104-311，不是此前写的 AK104-337；登记页未见「首例 2026-09-27」，已删去该日期。） 康方生物 卡度尼利 胃癌 NCT07700979 AK104-311">
-  <p class="card-kicker">全球 · 对位 O药</p>
-  <h3>COMPASSION-37</h3>
-  <p>全球 III 期。卡度尼利联合 CAPOX，对照 CAPOX 加或不加纳武利尤单抗。唯一主要终点是总生存。</p>
+  <p class="kicker">全球 · 对位 O药</p>
+  <h3 class="entry-title">COMPASSION-37</h3>
+  <p class="entry-sub">全球 III 期。卡度尼利联合 CAPOX，对照 CAPOX 加或不加纳武利尤单抗。唯一主要终点是总生存。</p>
+  <p class="entry-meta"><time datetime="2026-11-10">2026年11月10日</time></p>
   <div class="card-foot"><span class="chip">卡度尼利</span><span class="chip">胃癌</span></div>
-</a><a class="card" data-entry-card href="cadonilimab.html"
+</a><a class="entry-row" data-entry-card href="cadonilimab.html"
               data-companies="康方生物"
               data-drugs="卡度尼利"
               data-indications="宫颈癌|胃癌"
               data-search="卡度尼利（开坦尼） PD-1/CTLA-4 四价双抗。中国已获批三个适应症，均已进入医保。关键 III 期的对照都是安慰剂联合化疗，不是对 PD-1 的头对头。 卡度尼利（AK104，商品名开坦尼）是 PD-1/CTLA-4 四价双抗，IgG1 Fc-null。公司称在两靶点共表达处亲合力约高 10 倍。定位是另一条 IO2.0 骨架，主攻冷肿瘤或 PD-L1 低表达，与依沃西的「免疫加抗血管」互补。两项关键 III 期的人群都在中国。COMPASSION-15 期中和最终的中位 OS（14.1 和 13.9 个月）低于 2024 年 AACR 口头报告（15.0 对 10.8），以已发表数据为准。 三个适应症已获批并进医保。COMPLUS-5 的登记页预计主要完成日期在 2026-11，计划日期不等于读出。 康方生物 卡度尼利 宫颈癌 胃癌 AK104 开坦尼 cadonilimab COMPASSION-15 COMPASSION-16 COMPLUS-5 NCT05008783">
-  <p class="card-kicker">已上市</p>
-  <h3>卡度尼利（开坦尼）</h3>
-  <p>PD-1/CTLA-4 四价双抗。中国已获批三个适应症，均已进入医保。关键 III 期的对照都是安慰剂联合化疗，不是对 PD-1 的头对头。</p>
+  <p class="kicker">已上市</p>
+  <h3 class="entry-title">卡度尼利（开坦尼）</h3>
+  <p class="entry-sub">PD-1/CTLA-4 四价双抗。中国已获批三个适应症，均已进入医保。关键 III 期的对照都是安慰剂联合化疗，不是对 PD-1 的头对头。</p>
+  <p class="entry-meta"><time datetime="2026-11-11">2026年11月11日</time></p>
   <div class="card-foot"><span class="chip">卡度尼利</span><span class="chip">宫颈癌</span><span class="chip">胃癌</span></div>
-</a><a class="card" data-entry-card href="ivonescimab-trials.html"
+</a><a class="entry-row" data-entry-card href="ivonescimab-trials.html"
               data-companies="康方生物|Summit"
               data-drugs="依沃西"
               data-indications="多瘤种"
               data-search="依沃西试验清单与公司口径 能逐条核对的注册性或 III 期目前是 17 项。公司口头的「超过 17」或「超过 18」比清单多出来的部分，还没有点名。 公司关于「注册性或 III 期、国际多中心、头对头」的数字，要按时间线读，不是把不同月份的说法当成互相否定的口径冲突。能看清的主干是：试验在增加，公司数字大体上随之走高；同一周里出现回落，或「超过 17」和「超过 18」并用时，才需要单独说明。「60 项」是康方中报「超过 60 项联合疗法临床试验」（全阶段），不是 II 至 III 期数。「80 项」或「87 项」对不上任何一种严格口径。 II 至 III 期可核对 138 项。注册性或 III 期可核对 17 项。 康方生物 Summit 依沃西 多瘤种 IIT 注册性">
-  <p class="card-kicker">清单</p>
-  <h3>依沃西试验清单与公司口径</h3>
-  <p>能逐条核对的注册性或 III 期目前是 17 项。公司口头的「超过 17」或「超过 18」比清单多出来的部分，还没有点名。</p>
+  <p class="kicker">清单</p>
+  <h3 class="entry-title">依沃西试验清单与公司口径</h3>
+  <p class="entry-sub">能逐条核对的注册性或 III 期目前是 17 项。公司口头的「超过 17」或「超过 18」比清单多出来的部分，还没有点名。</p>
+  <p class="entry-meta"><time datetime="2026-11-09">2026年11月9日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">多瘤种</span></div>
-</a><a class="card" data-entry-card href="summit-az.html"
+</a><a class="entry-row" data-entry-card href="summit-az.html"
               data-companies="康方生物|Summit|阿斯利康"
               data-drugs="依沃西"
               data-indications="多瘤种"
               data-search="Summit 授权与阿斯利康入股 依沃西的海外权益在 Summit。阿斯利康 20 亿美元入股不含依沃西的商业权益。 目前已知的跨国合作几乎都是各自供药、分担费用、各自保留权益的临床合作。没有任何一家获得依沃西的商业权益，阿斯利康入股 Summit 也不含依沃西权益。ADC 一方可以随时换伙伴。交易对价有两套口径，必须并列，以 10-K 为一手。 2022 年 12 月完成授权。阿斯利康投资于 2026-10-05 交割。 康方生物 Summit 阿斯利康 依沃西 多瘤种 SMMT Akeso Collaboration">
-  <p class="card-kicker">授权与股权</p>
-  <h3>Summit 授权与阿斯利康入股</h3>
-  <p>依沃西的海外权益在 Summit。阿斯利康 20 亿美元入股不含依沃西的商业权益。</p>
+  <p class="kicker">授权与股权</p>
+  <h3 class="entry-title">Summit 授权与阿斯利康入股</h3>
+  <p class="entry-sub">依沃西的海外权益在 Summit。阿斯利康 20 亿美元入股不含依沃西的商业权益。</p>
+  <p class="entry-meta"><time datetime="2026-11-11">2026年11月11日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">多瘤种</span></div>
-</a><a class="card" data-entry-card href="ql1706.html"
+</a><a class="entry-row" data-entry-card href="ql1706.html"
               data-companies="齐鲁制药"
               data-drugs="QL1706"
               data-indications="宫颈癌"
               data-search="QL1706（齐倍安） 齐鲁制药的 PD-1 加 CTLA-4 组合抗体。已在二线宫颈癌获附条件批准，一线 III 期为阳性，补充申请已被受理。 QL1706 是 MabPair 形式的 PD-1 加 CTLA-4 组合抗体，不是双抗分子，但在宫颈癌一线和二线与卡度尼利正面竞争。一线 III 期的总生存数字，第 3 期周报曾只见到二手报道并标为未核实；后来用齐鲁制药 2026-10-27 新闻（披露 ESMO 2026 口头报告）补上对照、中位值和风险比，属于核实升级，不是数字打架。ESMO 官方摘要页本次仍未打开。 一线宫颈癌补充申请已于 2026-05 获 CDE 受理。NSCLC、鼻咽癌、局限期小细胞肺癌等 III 期进行中。 齐鲁制药 QL1706 宫颈癌 艾帕洛利托沃瑞利单抗 齐倍安 1240O DUBHE-C-301">
-  <p class="card-kicker">卡度尼利竞品</p>
-  <h3>QL1706（齐倍安）</h3>
-  <p>齐鲁制药的 PD-1 加 CTLA-4 组合抗体。已在二线宫颈癌获附条件批准，一线 III 期为阳性，补充申请已被受理。</p>
+  <p class="kicker">卡度尼利竞品</p>
+  <h3 class="entry-title">QL1706（齐倍安）</h3>
+  <p class="entry-sub">齐鲁制药的 PD-1 加 CTLA-4 组合抗体。已在二线宫颈癌获附条件批准，一线 III 期为阳性，补充申请已被受理。</p>
+  <p class="entry-meta"><time datetime="2026-11-11">2026年11月11日</time></p>
   <div class="card-foot"><span class="chip">QL1706</span><span class="chip">宫颈癌</span></div>
-</a><a class="card" data-entry-card href="other-harmoni.html"
+</a><a class="entry-row" data-entry-card href="other-harmoni.html"
               data-companies="康方生物|Summit"
               data-drugs="依沃西|莱法利"
               data-indications="NSCLC|头颈癌|胰腺癌"
               data-search="其他注册性 HARMONi 与 ILLUMINE HARMONi-8A、HARMONi-9、HARMONi-HN1、HARMONi-GI2、HARMONi-GI6 以及 GORTEC 主办的 ILLUMINE。 除了已经单独成条的研究，截至 2026-11-10 还能逐条对应的注册性或 III 期还包括：HARMONi-8A（联合多西他赛）、HARMONi-9（局限期小细胞肺癌巩固，对照安慰剂而不是度伐，560 人）、HARMONi-GI2（联合或不联合莱法利，胰腺癌，999 人）、HARMONi-GI6、HARMONi-HN1，以及 GORTEC 主办的 ILLUMINE。 均为已纳入可核对清单的注册性或 III 期研究。HARMONi-9 的期别在 Summit 管线页与登记库不一致。 康方生物 Summit 依沃西 莱法利 NSCLC 头颈癌 胰腺癌 ILLUMINE HARMONi-8A HARMONi-9 HARMONi-HN1 HARMONi-GI2 HARMONi-GI6 NCT07264075">
-  <p class="card-kicker">注册性试验</p>
-  <h3>其他注册性 HARMONi 与 ILLUMINE</h3>
-  <p>HARMONi-8A、HARMONi-9、HARMONi-HN1、HARMONi-GI2、HARMONi-GI6 以及 GORTEC 主办的 ILLUMINE。</p>
+  <p class="kicker">注册性试验</p>
+  <h3 class="entry-title">其他注册性 HARMONi 与 ILLUMINE</h3>
+  <p class="entry-sub">HARMONi-8A、HARMONi-9、HARMONi-HN1、HARMONi-GI2、HARMONi-GI6 以及 GORTEC 主办的 ILLUMINE。</p>
+  <p class="entry-meta"><time datetime="2026-11-10">2026年11月10日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">莱法利</span><span class="chip">NSCLC</span><span class="chip">头颈癌</span></div>
-</a><a class="card" data-entry-card href="mk-2010.html"
+</a><a class="entry-row" data-entry-card href="mk-2010.html"
               data-companies="默沙东|礼新医药"
               data-drugs="MK-2010"
               data-indications="NSCLC"
               data-search="MK-2010（LM-299） 默沙东与礼新医药（中国生物制药）的 PD-1×VEGF 四价双抗。目前没有 III 期。 交易为首付 5.88 亿美元，里程碑最高 27 亿美元；2025 年 7 月技术转移触发 3 亿美元。它是 Keytruda 体系内部的接班选项之一，也已经开始和 sac-TMT 联用。 默沙东 2026-11-02 的管线表仍将其列为 II 期。ESMO 2026 没有摘要。 默沙东 礼新医药 MK-2010 NSCLC LM-299 NCT07785609 NCT07793942">
-  <p class="card-kicker">Keytruda 接班选项</p>
-  <h3>MK-2010（LM-299）</h3>
-  <p>默沙东与礼新医药（中国生物制药）的 PD-1×VEGF 四价双抗。目前没有 III 期。</p>
+  <p class="kicker">Keytruda 接班选项</p>
+  <h3 class="entry-title">MK-2010（LM-299）</h3>
+  <p class="entry-sub">默沙东与礼新医药（中国生物制药）的 PD-1×VEGF 四价双抗。目前没有 III 期。</p>
+  <p class="entry-meta"><time datetime="2026-11-02">2026年11月2日</time></p>
   <div class="card-foot"><span class="chip">MK-2010</span><span class="chip">NSCLC</span></div>
-</a><a class="card" data-entry-card href="sone-ve.html"
+</a><a class="entry-row" data-entry-card href="sone-ve.html"
               data-companies="阿斯利康|Summit"
               data-drugs="Sone-Ve|依沃西"
               data-indications="胃癌"
               data-search="Sone-Ve 与 CLARITY-Gastric 01 阿斯利康的 CLDN18.2 ADC，是依沃西消化道联用的伙伴药。单药 III 期已有总生存获益。 Sone-Ve（sonesitatug vedotin）是阿斯利康的 CLDN18.2 ADC。公开合作范围是消化道，未见乳腺癌。伙伴药自己先有总生存获益，给以后的联用打下基础，但与依沃西没有直接数据。 与依沃西的临床合作「即将」启动，期别未披露；ClinicalTrials.gov 未见依沃西联用登记。 阿斯利康 Summit Sone-Ve 依沃西 胃癌 sonesitatug vedotin LBA7 CLARITY-Gastric">
-  <p class="card-kicker">伙伴药</p>
-  <h3>Sone-Ve 与 CLARITY-Gastric 01</h3>
-  <p>阿斯利康的 CLDN18.2 ADC，是依沃西消化道联用的伙伴药。单药 III 期已有总生存获益。</p>
+  <p class="kicker">伙伴药</p>
+  <h3 class="entry-title">Sone-Ve 与 CLARITY-Gastric 01</h3>
+  <p class="entry-sub">阿斯利康的 CLDN18.2 ADC，是依沃西消化道联用的伙伴药。单药 III 期已有总生存获益。</p>
+  <p class="entry-meta"><time datetime="2026-10-26">2026年10月26日</time></p>
   <div class="card-foot"><span class="chip">Sone-Ve</span><span class="chip">依沃西</span><span class="chip">胃癌</span></div>
-</a><a class="card" data-entry-card href="compassion-40.html"
+</a><a class="entry-row" data-entry-card href="compassion-40.html"
               data-companies="康方生物"
               data-drugs="卡度尼利"
               data-indications="结直肠癌|围手术期"
               data-search="COMPASSION-40 MSI-H / dMMR 结肠癌围手术期 III 期。 这更像一次重新宣传，而不是全新启动的研究。对话中的结论是：科学成功的概率不低，但中国已有信达的 IBI310 联合信迪利单抗（错配修复缺陷结肠癌新辅助领先约 3 年），商业上的边际有限。需要更正的一点：FDA 批准的阿替利珠单抗联合 FOLFOX 是辅助治疗标准，不是新辅助，因此不能写成「对照组单纯辅助化疗已经落后于免疫联合化疗的辅助标准」而不加区分。 康方 2026-10-09 称开始入组。登记页实际启动日期为 2026-04-15，中报已写上半年启动。 康方生物 卡度尼利 结直肠癌 围手术期 NCT07412613 AK104-313">
-  <p class="card-kicker">围手术期</p>
-  <h3>COMPASSION-40</h3>
-  <p>MSI-H / dMMR 结肠癌围手术期 III 期。</p>
+  <p class="kicker">围手术期</p>
+  <h3 class="entry-title">COMPASSION-40</h3>
+  <p class="entry-sub">MSI-H / dMMR 结肠癌围手术期 III 期。</p>
+  <p class="entry-meta"><time datetime="2026-10-09">2026年10月9日</time></p>
   <div class="card-foot"><span class="chip">卡度尼利</span><span class="chip">结直肠癌</span><span class="chip">围手术期</span></div>
-</a><a class="card" data-entry-card href="akeso-adc.html"
+</a><a class="entry-row" data-entry-card href="akeso-adc.html"
               data-companies="康方生物"
               data-drugs="AK146D1|AK138D1|依沃西"
               data-indications="NSCLC|乳腺癌"
               data-search="康方自研 ADC AK146D1（TROP2/Nectin-4 双抗 ADC）和 AK138D1（HER3 ADC）已与依沃西联用进入早期临床。 康方把自研 ADC 接到依沃西上，是中国市场的闭环，也是对外授权的期权。它们目前都还没有可以拿来讨论疗效的随机数据。 已有首例患者入组的 II 期或 Ib/II 期，尚无随机疗效数据。 康方生物 AK146D1 AK138D1 依沃西 NSCLC 乳腺癌 AK157D1 AK158D1">
-  <p class="card-kicker">自研管线</p>
-  <h3>康方自研 ADC</h3>
-  <p>AK146D1（TROP2/Nectin-4 双抗 ADC）和 AK138D1（HER3 ADC）已与依沃西联用进入早期临床。</p>
+  <p class="kicker">自研管线</p>
+  <h3 class="entry-title">康方自研 ADC</h3>
+  <p class="entry-sub">AK146D1（TROP2/Nectin-4 双抗 ADC）和 AK138D1（HER3 ADC）已与依沃西联用进入早期临床。</p>
+  <p class="entry-meta"><time datetime="2026-10-08">2026年10月8日</time></p>
   <div class="card-foot"><span class="chip">AK146D1</span><span class="chip">AK138D1</span><span class="chip">依沃西</span><span class="chip">NSCLC</span><span class="chip">乳腺癌</span></div>
-</a><a class="card" data-entry-card href="adc-other.html"
+</a><a class="entry-row" data-entry-card href="adc-other.html"
               data-companies="康方生物|百利天恒|宜联生物|荣昌生物|Gilead"
               data-drugs="依沃西|iza-bren|YL201|维迪西妥单抗|戈沙妥珠单抗"
               data-indications="NSCLC|胃癌"
               data-search="其他依沃西 ADC 联用 百利 iza-bren、宜联 YL201、安领科 ALK201、荣昌维迪西妥单抗、吉利德戈沙妥珠单抗，以及 2025 年与辉瑞的 vedotin 合作。 没有自家 PD-(L)1×VEGF 的 ADC 持有方，会不会把依沃西当成首选联用骨架，是总问题里的一条。下面这些合作说明名单在变长，但不等于数据已经出现。 多数为早期或尚未招募。尚无依沃西联合 ADC 的公开随机或公司口径疗效数据。 康方生物 百利天恒 宜联生物 荣昌生物 Gilead 依沃西 iza-bren YL201 维迪西妥单抗 戈沙妥珠单抗 NSCLC 胃癌 BL-B01D1 PANKU-Lung05 PANKU-Lung06 NCT07208773 NCT07393555">
-  <p class="card-kicker">双抗 + ADC</p>
-  <h3>其他依沃西 ADC 联用</h3>
-  <p>百利 iza-bren、宜联 YL201、安领科 ALK201、荣昌维迪西妥单抗、吉利德戈沙妥珠单抗，以及 2025 年与辉瑞的 vedotin 合作。</p>
+  <p class="kicker">双抗 + ADC</p>
+  <h3 class="entry-title">其他依沃西 ADC 联用</h3>
+  <p class="entry-sub">百利 iza-bren、宜联 YL201、安领科 ALK201、荣昌维迪西妥单抗、吉利德戈沙妥珠单抗，以及 2025 年与辉瑞的 vedotin 合作。</p>
+  <p class="entry-meta"><time datetime="2026-11-10">2026年11月10日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">iza-bren</span><span class="chip">YL201</span><span class="chip">NSCLC</span><span class="chip">胃癌</span></div>
-</a><a class="card" data-entry-card href="domestic-pd1vegf.html"
+</a><a class="entry-row" data-entry-card href="domestic-pd1vegf.html"
               data-companies="华海药业|君实生物|复宏汉霖|恒瑞医药|基石药业"
               data-drugs="HB0025|JS207|HLX37|SHR-4610|CS2009"
               data-indications="NSCLC"
               data-search="其他已进临床的 PD-(L)1×VEGF 华海 HB0025、君实 JS207、复宏汉霖 HLX37、恒瑞 SHR-4610、基石 CS2009 等。 2026 年 4 月有二手统计称，全球约有 100 个 PD-(L)1×VEGF 项目，其中 26 个处于临床试验申请或更后阶段。下面只写入已经在登记库或公司公告里核实过、并且近期有变动的部分。 多款已经进入 III 期或正在筹备全球 III 期。多数仍是单臂或小样本。 华海药业 君实生物 复宏汉霖 恒瑞医药 基石药业 HB0025 JS207 HLX37 SHR-4610 CS2009 NSCLC NCT07902999 NCT07823348 NCT07865910">
-  <p class="card-kicker">国内同类</p>
-  <h3>其他已进临床的 PD-(L)1×VEGF</h3>
-  <p>华海 HB0025、君实 JS207、复宏汉霖 HLX37、恒瑞 SHR-4610、基石 CS2009 等。</p>
+  <p class="kicker">国内同类</p>
+  <h3 class="entry-title">其他已进临床的 PD-(L)1×VEGF</h3>
+  <p class="entry-sub">华海 HB0025、君实 JS207、复宏汉霖 HLX37、恒瑞 SHR-4610、基石 CS2009 等。</p>
+  <p class="entry-meta"><time datetime="2026-11-03">2026年11月3日</time></p>
   <div class="card-foot"><span class="chip">HB0025</span><span class="chip">JS207</span><span class="chip">HLX37</span><span class="chip">NSCLC</span></div>
-</a><a class="card" data-entry-card href="head-to-head-map.html"
+</a><a class="entry-row" data-entry-card href="head-to-head-map.html"
               data-companies="康方生物|Summit"
               data-drugs="依沃西|卡度尼利"
               data-indications="多瘤种"
               data-search="依沃西的头对头地图 注册性头对头覆盖 K药和 I药，对 O药没有 III 期。已经读出的阳性包括对帕博利珠单抗、对替雷利珠单抗、对度伐利尤单抗。 依沃西的试验设计明显借鉴前人：HARMONi-2 类似 KEYNOTE-024 的筛人思路，HARMONi-9 接近 PACIFIC（但对照是安慰剂），HARMONi-10 和围手术期研究是向早期前移。不同在于，对照组往往是当前最强的 PD-(L)1 方案，难度比 2014 到 2018 年大得多。 按 2026-10-09 对 ClinicalTrials.gov 185 条和 CDE 54 条逐条筛对照药，并纳入此后新登记的 HARMONi-10 与 EA2251。 康方生物 Summit 依沃西 卡度尼利 多瘤种 Keytruda Opdivo Imfinzi 头对头">
-  <p class="card-kicker">对照全景</p>
-  <h3>依沃西的头对头地图</h3>
-  <p>注册性头对头覆盖 K药和 I药，对 O药没有 III 期。已经读出的阳性包括对帕博利珠单抗、对替雷利珠单抗、对度伐利尤单抗。</p>
+  <p class="kicker">对照全景</p>
+  <h3 class="entry-title">依沃西的头对头地图</h3>
+  <p class="entry-sub">注册性头对头覆盖 K药和 I药，对 O药没有 III 期。已经读出的阳性包括对帕博利珠单抗、对替雷利珠单抗、对度伐利尤单抗。</p>
+  <p class="entry-meta"><time datetime="2026-11-10">2026年11月10日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">卡度尼利</span><span class="chip">多瘤种</span></div>
 </a></div>
 <p id="filter-empty" class="empty-note hidden">没有符合筛选的条目。</p>
@@ -383,7 +426,7 @@
 <footer class="site-footer">
   <div class="footer-inner">
     <p>本站为公开信息整理，不构成投资建议。数字均来自已核对的一手或已标注来源，不代表康方、Summit 或其他公司立场。</p>
-    <p>资料截至 2026-11-11（北京时间）。页面生成：2026-11-11 08:36（北京时间，UTC+8）。</p>
+    <p>资料截至 2026-11-11（北京时间）。页面生成：2026-11-11 08:49（北京时间，UTC+8）。</p>
     <p class="footer-links">
       <a href="../feed.xml">RSS</a>
       <a href="../about.html">方法与来源说明</a>

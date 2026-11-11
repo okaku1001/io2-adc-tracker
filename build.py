@@ -151,10 +151,18 @@ def footer_html(prefix: str, site: dict) -> str:
 </footer>"""
 
 
-def page(title: str, prefix: str, current: str, site: dict, body: str, extra_head: str = "") -> str:
+def page(title: str, prefix: str, current: str, site: dict, body: str, extra_head: str = "", body_class: str = "", skips=None) -> str:
     full = title if title == site["title"] else f"{title} · {site['title']}"
     css = rel_to(prefix, "css/style.css")
     js = rel_to(prefix, "js/app.js")
+    skip_links = ['<a class="skip" href="#main">跳到正文</a>']
+    if skips:
+        for href, label in skips:
+            skip_links.append(f'<a class="skip" href="{html.escape(href)}">{html.escape(label)}</a>')
+    progress = ""
+    if body_class == "page-entry":
+        progress = '<div class="read-progress" aria-hidden="true"><span></span></div>'
+    body_attr = f' class="{html.escape(body_class)}"' if body_class else ""
     return f"""<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -168,8 +176,9 @@ def page(title: str, prefix: str, current: str, site: dict, body: str, extra_hea
 <link rel="icon" href="{rel_to(prefix, 'favicon.svg')}" type="image/svg+xml">
 {extra_head}
 </head>
-<body>
-<a class="skip" href="#main">跳到正文</a>
+<body{body_attr}>
+{progress}
+{"".join(skip_links)}
 {nav_html(prefix, current, site)}
 <main id="main" class="wrap">
 {body}
@@ -212,6 +221,11 @@ def entry_url(slug: str, prefix: str = "") -> str:
     return rel_to(prefix, f"entries/{slug}.html")
 
 
+def event_anchor(date: str, index: int) -> str:
+    safe = re.sub(r"[^0-9A-Za-z-]+", "-", str(date)).strip("-")
+    return f"ev-{safe}-{index}"
+
+
 def render_entry(entry: dict, site: dict) -> str:
     companies = chips(entry.get("companies", []))
     drugs = chips(entry.get("drugs", []))
@@ -224,16 +238,28 @@ def render_entry(entry: dict, site: dict) -> str:
         parts = (str(s) + "-01-01").split("-")[:3]
         return tuple(int(x) for x in parts)
 
+    events = sorted(entry.get("timeline", []), key=lambda item: date_key(item["date"]))
     timeline_html = []
-    for ev in sorted(entry.get("timeline", []), key=lambda item: date_key(item["date"])):
+    toc_items = []
+    for i, ev in enumerate(events):
+        eid = event_anchor(ev["date"], i)
         grades = "".join(badge(g) for g in ev.get("grades", []))
-        timeline_html.append(f"""<li>
+        timeline_html.append(f"""<li id="{html.escape(eid)}">
   <div class="t-date">{html.escape(fmt_date(ev['date']))} {grades}</div>
   <h2>{html.escape(ev['title'])}</h2>
   {md_blocks(ev.get('body', ''))}
   {render_table(ev.get('table'))}
   {render_sources(ev.get('sources', []))}
 </li>""")
+        toc_items.append(
+            f'<li><a href="#{html.escape(eid)}"><span class="toc-date">{html.escape(fmt_date(ev["date"]))}</span><span class="toc-title">{html.escape(ev["title"])}</span></a></li>'
+        )
+    toc_html = ""
+    if toc_items:
+        toc_html = f"""<nav class="toc" aria-label="本页时间线">
+  <p class="toc-label">本页时间线</p>
+  <ol>{''.join(toc_items)}</ol>
+</nav>"""
     impact = entry.get("impact") or {}
     impact_html = ""
     if impact.get("text"):
@@ -242,21 +268,32 @@ def render_entry(entry: dict, site: dict) -> str:
   {md_blocks(impact['text'])}
   <p class="attr">{html.escape(impact.get('attribution', '研究组判断'))}</p>
 </aside>"""
-    body = f"""<article class="read entry-header">
-  <p class="kicker">{html.escape(entry.get('kicker', '临床条目'))}</p>
-  <h1>{html.escape(entry['title'])}</h1>
-  <p class="lede muted">{md_inline(entry.get('subtitle', ''))}</p>
-  <div class="card-foot">{companies}{drugs}{inds}{''.join(labels)}</div>
-  <p class="status-line"><span>当前状态　</span>{md_inline(entry.get('status', ''))}</p>
-</article>
-<section class="read summary">{md_blocks(entry.get('summary', ''))}</section>
-<ol class="read timeline">
+    status = entry.get("status", "")
+    status_html = ""
+    if status:
+        status_html = f"""<section class="status-box" aria-labelledby="status-heading">
+  <h2 id="status-heading" class="status-label">当前状态</h2>
+  <p class="status-text">{md_inline(status)}</p>
+</section>"""
+    skips = [("#timeline", "跳到时间线")] if events else None
+    body = f"""<article class="entry-layout">
+  <header class="entry-header">
+    <p class="kicker">{html.escape(entry.get('kicker', '临床条目'))}</p>
+    <h1>{html.escape(entry['title'])}</h1>
+    <p class="lede muted">{md_inline(entry.get('subtitle', ''))}</p>
+    <div class="card-foot">{companies}{drugs}{inds}{''.join(labels)}</div>
+  </header>
+  {status_html}
+  <section class="summary">{md_blocks(entry.get('summary', ''))}</section>
+  {toc_html}
+  <ol class="timeline" id="timeline">
 {''.join(timeline_html)}
-</ol>
-<div class="read">{impact_html}</div>
-<p class="read muted" style="margin-top:1.6rem">最后写入本条目的资料日期：{html.escape(fmt_date(entry.get('updated', site.get('source_as_of', '2026-11-10'))))}。</p>
+  </ol>
+  {impact_html}
+  <p class="entry-updated muted">最后写入本条目的资料日期：{html.escape(fmt_date(entry.get('updated', site.get('source_as_of', '2026-11-10'))))}。</p>
+</article>
 """
-    return page(entry["title"], "../", "entries", site, body)
+    return page(entry["title"], "../", "entries", site, body, body_class="page-entry", skips=skips)
 
 
 def unique(seq):
@@ -295,32 +332,41 @@ def entries_index(entries, site):
                 " ".join(e.get("aliases", [])),
             ]
         )
+        updated = e.get("updated") or site.get("source_as_of", "2026-11-10")
+        sub = e.get("subtitle") or ""
+        sub_html = f'<p class="entry-sub">{html.escape(sub)}</p>' if sub else ""
         cards.append(
-            f"""<a class="card" data-entry-card href="{html.escape(e['slug'])}.html"
+            f"""<a class="entry-row" data-entry-card href="{html.escape(e['slug'])}.html"
               data-companies="{'|'.join(e.get('companies', []))}"
               data-drugs="{'|'.join(e.get('drugs', []))}"
               data-indications="{'|'.join(e.get('indications', []))}"
               data-search="{html.escape(search)}">
-  <p class="card-kicker">{html.escape(e.get('kicker', ''))}</p>
-  <h3>{html.escape(e['title'])}</h3>
-  <p>{html.escape(e.get('subtitle', ''))}</p>
+  <p class="kicker">{html.escape(e.get('kicker', ''))}</p>
+  <h3 class="entry-title">{html.escape(e['title'])}</h3>
+  {sub_html}
+  <p class="entry-meta"><time datetime="{html.escape(updated)}">{html.escape(fmt_date(updated))}</time></p>
   <div class="card-foot">{chips(e.get('drugs', [])[:3])}{chips(e.get('indications', [])[:2])}</div>
 </a>"""
         )
-    body = f"""<header class="hero read">
+    body = f"""<header class="hero">
   <h1>条目</h1>
   <p class="lede">按药、试验或事件线组织。同一条线的新旧进展写在同一页，按时间往下读。</p>
 </header>
 <div class="filters">
   <div class="search-box"><input id="entry-search" type="search" placeholder="搜索药名、试验名、适应症或公司" aria-label="搜索条目"></div>
-  <div><p class="muted" style="margin:0 0 .35rem">公司</p><div class="filter-row">{btns('company', companies)}</div></div>
-  <div><p class="muted" style="margin:0 0 .35rem">药物</p><div class="filter-row">{btns('drug', drugs)}</div></div>
-  <div><p class="muted" style="margin:0 0 .35rem">适应症</p><div class="filter-row">{btns('indication', inds)}</div></div>
+  <details class="filter-panel">
+    <summary>筛选公司、药物、适应症</summary>
+    <div class="filter-groups">
+      <div><p class="filter-label">公司</p><div class="filter-row">{btns('company', companies)}</div></div>
+      <div><p class="filter-label">药物</p><div class="filter-row">{btns('drug', drugs)}</div></div>
+      <div><p class="filter-label">适应症</p><div class="filter-row">{btns('indication', inds)}</div></div>
+    </div>
+  </details>
 </div>
-<div class="grid">{''.join(cards)}</div>
+<div class="entry-list">{''.join(cards)}</div>
 <p id="filter-empty" class="empty-note hidden">没有符合筛选的条目。</p>
 """
-    return page("条目", "../", "entries", site, body)
+    return page("条目", "../", "entries", site, body, body_class="page-entries")
 
 
 def daily_page(day, entries_by_slug, site):
@@ -333,8 +379,8 @@ def daily_page(day, entries_by_slug, site):
         link = f'<a href="{href}">{html.escape(title)}</a>' if href else html.escape(title)
         items.append(
             f"""<article class="day-item">
-  <p class="t-date">{grades}</p>
   <h2>{link}</h2>
+  <p class="day-grades">{grades}</p>
   {md_blocks(it.get('blurb', ''))}
 </article>"""
         )
@@ -346,15 +392,17 @@ def daily_page(day, entries_by_slug, site):
         content = '<div class="empty-note"><p>本日无新增重大临床动态。</p></div>'
     else:
         content = extra + "".join(items)
-    body = f"""<header class="hero read">
-  <p class="kicker">每日动态</p>
-  <h1>{fmt_date(day['date'])}</h1>
-  <p class="lede">{html.escape(day.get('title', ''))}</p>
-</header>
-<div class="read">{content}</div>
-<p class="read muted"><a href="index.html">全部日期</a></p>
+    body = f"""<article class="brief">
+  <header class="brief-header">
+    <p class="kicker">每日动态</p>
+    <h1>{fmt_date(day['date'])}</h1>
+    <p class="lede">{html.escape(day.get('title', ''))}</p>
+  </header>
+  {content}
+  <p class="brief-back muted"><a href="index.html">全部日期</a></p>
+</article>
 """
-    return page(fmt_date(day["date"]), "../", "daily", site, body)
+    return page(fmt_date(day["date"]), "../", "daily", site, body, body_class="page-daily")
 
 
 def daily_index(dailies, site):
@@ -366,44 +414,89 @@ def daily_index(dailies, site):
         cards.append(
             f'<a class="{cls}" href="{d["date"]}.html"><strong>{d["date"]}</strong><span class="n">{html.escape(label)}</span></a>'
         )
-    body = f"""<header class="hero read">
+    body = f"""<header class="hero">
   <h1>每日动态</h1>
   <p class="lede">每天只作索引，详情在对应条目里按时间线更新。安静的日子也会记下：查过、没有新的监管决定或 III 期读出。</p>
 </header>
 <div class="cal">{''.join(cards)}</div>
 """
-    return page("每日动态", "../", "daily", site, body)
+    return page("每日动态", "../", "daily", site, body, body_class="page-daily-index")
 
 
 def home(entries, dailies, site):
     upcoming = site.get("upcoming", [])
     up_html = []
     for u in upcoming:
+        detail = u.get("detail") or ""
+        detail_html = f'<p class="rail-detail">{html.escape(detail)}</p>' if detail else ""
         up_html.append(
-            f"""<article class="card">
-  <p class="card-kicker">{html.escape(u.get('when', ''))}</p>
-  <h3>{html.escape(u.get('title', ''))}</h3>
-  <p>{html.escape(u.get('detail', ''))}</p>
-</article>"""
+            f"""<li>
+  <p class="when">{html.escape(u.get('when', ''))}</p>
+  <div>
+    <p class="rail-title">{html.escape(u.get('title', ''))}</p>
+    {detail_html}
+  </div>
+</li>"""
         )
-    recent = []
-    count = 0
+
+    recent_items = []
     for d in dailies:
         for it in d.get("items", []):
             slug = it.get("entry")
             href = f"entries/{slug}.html" if slug else f"daily/{d['date']}.html"
-            recent.append(
-                f"""<a class="card" href="{href}">
-  <p class="card-kicker">{d['date']}</p>
-  <h3>{html.escape(it.get('headline', ''))}</h3>
-  <p>{html.escape(it.get('blurb', '')[:140])}{'…' if len(it.get('blurb', '')) > 140 else ''}</p>
-</a>"""
+            recent_items.append(
+                {
+                    "date": d["date"],
+                    "href": href,
+                    "headline": it.get("headline", ""),
+                    "blurb": it.get("blurb", ""),
+                }
             )
-            count += 1
-            if count >= 8:
+            if len(recent_items) >= 8:
                 break
-        if count >= 8:
+        if len(recent_items) >= 8:
             break
+
+    lead_html = ""
+    list_html = ""
+    if recent_items:
+        lead = recent_items[0]
+        blurb = lead.get("blurb") or ""
+        blurb_html = f'<p class="lead-blurb">{html.escape(blurb)}</p>' if blurb else ""
+        lead_html = f"""<a class="lead" href="{html.escape(lead['href'])}">
+  <p class="lead-date">{html.escape(lead['date'])}</p>
+  <h3 class="lead-title">{html.escape(lead['headline'])}</h3>
+  {blurb_html}
+</a>"""
+        rest = []
+        for it in recent_items[1:]:
+            extra = f'<p class="story-blurb">{html.escape(it["blurb"])}</p>' if it.get("blurb") else ""
+            rest.append(
+                f"""<li>
+  <a class="story-item" href="{html.escape(it['href'])}">
+    <time datetime="{html.escape(it['date'])}">{html.escape(it['date'])}</time>
+    <span class="story-title">{html.escape(it['headline'])}</span>
+    {extra}
+  </a>
+</li>"""
+            )
+        if rest:
+            list_html = f'<ul class="story-list">{"".join(rest)}</ul>'
+
+    news_block = ""
+    if lead_html or list_html:
+        news_block = f"""<section class="briefing-news" aria-labelledby="recent-h">
+  <div class="section-h"><h2 id="recent-h">最近动态</h2><a href="daily/index.html">全部日期</a></div>
+  {lead_html}
+  {list_html}
+</section>"""
+
+    up_block = ""
+    if up_html:
+        up_block = f"""<aside class="briefing-rail" aria-labelledby="upcoming-h">
+  <div class="section-h"><h2 id="upcoming-h">即将到来</h2></div>
+  <ul class="date-rail">{''.join(up_html)}</ul>
+</aside>"""
 
     groups = [
         ("依沃西主线", [e for e in entries if e.get("group") == "ivo"]),
@@ -416,18 +509,31 @@ def home(entries, dailies, site):
     for title, ents in groups:
         if not ents:
             continue
-        cards = []
+        rows = []
         for e in ents:
-            cards.append(
-                f"""<a class="card" href="entries/{e['slug']}.html">
-  <p class="card-kicker">{html.escape(e.get('kicker', ''))}</p>
-  <h3>{html.escape(e['title'])}</h3>
-  <p>{html.escape(e.get('subtitle', ''))}</p>
-</a>"""
+            prio = e.get("priority", 99)
+            pcls = " is-priority" if isinstance(prio, int) and prio <= 3 else ""
+            sub = e.get("subtitle") or ""
+            sub_html = f'<p class="catalog-sub">{html.escape(sub)}</p>' if sub else ""
+            rows.append(
+                f"""<li>
+  <a class="catalog-row{pcls}" href="entries/{html.escape(e['slug'])}.html">
+    <p class="kicker">{html.escape(e.get('kicker', ''))}</p>
+    <h4 class="catalog-title">{html.escape(e['title'])}</h4>
+    {sub_html}
+  </a>
+</li>"""
             )
         group_html.append(
-            f'<section><div class="section-h"><h2>{html.escape(title)}</h2></div><div class="grid">{"".join(cards)}</div></section>'
+            f'<section class="catalog-group"><h3>{html.escape(title)}</h3><ul class="catalog-list">{"".join(rows)}</ul></section>'
         )
+
+    catalog_block = ""
+    if group_html:
+        catalog_block = f"""<section class="catalog" aria-labelledby="catalog-h">
+  <div class="section-h"><h2 id="catalog-h">条目总览</h2><a href="entries/index.html">筛选条目</a></div>
+  {''.join(group_html)}
+</section>"""
 
     banner = site.get("banner") or {}
     banner_html = ""
@@ -437,23 +543,19 @@ def home(entries, dailies, site):
   <p>{html.escape(banner.get('text', ''))}</p>
 </aside>"""
 
-    body = f"""<header class="hero">
+    body = f"""<header class="masthead">
   <h1>{html.escape(site['title'])}</h1>
   <p class="lede">{html.escape(site['tagline'])}</p>
   <p class="meta-row"><span>资料截至 {html.escape(site.get('source_as_of', '2026-11-10'))}（北京时间）</span><span>生成于 {html.escape(site['generated'])}（北京时间）</span></p>
 </header>
+<div class="home-board">
+{news_block}
+{up_block}
 {banner_html}
-<section>
-  <div class="section-h"><h2>即将到来</h2></div>
-  <div class="grid">{''.join(up_html)}</div>
-</section>
-<section>
-  <div class="section-h"><h2>最近动态</h2><a href="daily/index.html">全部日期</a></div>
-  <div class="grid">{''.join(recent)}</div>
-</section>
-{''.join(group_html)}
+{catalog_block}
+</div>
 """
-    return page(site["title"], "", "home", site, body)
+    return page(site["title"], "", "home", site, body, body_class="page-home")
 
 
 def about_page(site):
@@ -476,7 +578,7 @@ def about_page(site):
   <p class="muted">资料截至 {html.escape(site.get('source_as_of', '2026-11-10'))}（北京时间）。页面生成：{html.escape(site['generated'])}（北京时间，UTC+8）。</p>
 </div>
 """
-    return page("关于", "", "about", site, body)
+    return page("关于", "", "about", site, body, body_class="page-about")
 
 
 def write(path: Path, text: str):

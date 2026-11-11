@@ -26,6 +26,69 @@
     });
   }
 
+  const progress = document.querySelector(".read-progress span");
+  if (progress) {
+    const updateProgress = function () {
+      const doc = document.documentElement;
+      const max = doc.scrollHeight - window.innerHeight;
+      const p = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
+      progress.style.transform = "scaleX(" + p + ")";
+    };
+    updateProgress();
+    window.addEventListener("scroll", updateProgress, { passive: true });
+    window.addEventListener("resize", updateProgress);
+  }
+
+  const toc = document.querySelector(".toc");
+  if (toc) {
+    const links = Array.prototype.slice.call(toc.querySelectorAll('a[href^="#"]'));
+    const targets = links
+      .map(function (a) {
+        return document.getElementById((a.getAttribute("href") || "").slice(1));
+      })
+      .filter(Boolean);
+
+    const setCurrent = function (id) {
+      links.forEach(function (a) {
+        const on = a.getAttribute("href") === "#" + id;
+        a.classList.toggle("is-current", on);
+        if (on) a.setAttribute("aria-current", "location");
+        else a.removeAttribute("aria-current");
+      });
+    };
+
+    if (targets.length) {
+      setCurrent(targets[0].id);
+    }
+    if (targets.length && "IntersectionObserver" in window) {
+      const vis = {};
+      const io = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (en) {
+            vis[en.target.id] = en.isIntersecting;
+          });
+          let current = null;
+          targets.forEach(function (t) {
+            if (vis[t.id] && !current) current = t.id;
+          });
+          if (!current) {
+            for (let i = targets.length - 1; i >= 0; i--) {
+              if (targets[i].getBoundingClientRect().top <= 140) {
+                current = targets[i].id;
+                break;
+              }
+            }
+          }
+          if (current) setCurrent(current);
+        },
+        { rootMargin: "-18% 0px -62% 0px", threshold: 0 }
+      );
+      targets.forEach(function (t) {
+        io.observe(t);
+      });
+    }
+  }
+
   const search = document.getElementById("entry-search");
   const buttons = document.querySelectorAll(".filter-btn");
   const cards = document.querySelectorAll("[data-entry-card]");
