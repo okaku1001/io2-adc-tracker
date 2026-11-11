@@ -69,7 +69,7 @@ ENTRIES.append({
     "drugs": ["pumitamig", "戈沙妥珠单抗"],
     "indications": ["乳腺癌"],
     "aliases": ["NCT07173751", "Trodelvy", "SG"],
-    "updated": "2026-11-07",
+    "updated": "2026-11-11",
     "status": "截至 2026-11-07，登记页上的干预仍是化疗加安慰剂，未见戈沙妥珠单抗。原文是 pumitamig 自身的首个全球 III 期 ADC 联合，不是「全球首个 PD-(L)1 联合 ADC 的 III 期」。",
     "summary": "NCT07173751，一线、PD-L1 低或阴性、不适合单抗 PD-(L)1 联合化疗的三阴性乳腺癌，约 558 人，首例 2025-10-30，主要完成估计 2029-12，主要终点为独立评审的 PFS 和 OS。没有 pumitamig 联合戈沙妥珠单抗的人体概念验证数据。最合理的修订推断是 pumitamig 联合戈沙妥珠单抗对照安慰剂联合戈沙妥珠单抗。",
     "timeline": [
@@ -77,27 +77,30 @@ ENTRIES.append({
             "date": "2026-06-24",
             "title": "FDA 批准 Trodelvy 用于一线三阴性乳腺癌",
             "grades": ["一手"],
-            "body": "单药用于不适合 PD-(L)1 的患者（ASCENT-03，中位 PFS 9.7 对 6.9 个月，HR 0.62），以及联合帕博利珠单抗用于 CPS≥10 的患者（ASCENT-04）。",
+            "body": "单药用于不适合 PD-(L)1 的患者（ASCENT-03，中位 PFS 9.7（8.1–11.1）对 6.9（5.6–8.2）个月，HR 0.62（0.50–0.77），P<0.0001），以及联合帕博利珠单抗用于 CPS≥10 的患者（ASCENT-04）。数字来自 DailyMed / openFDA 说明书（生效 2026-06-24，DailyMed 发布 2026-06-29）。",
             "sources": [
-                {"label": "FDA 批准公告", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-sacituzumab-govitecan-hziy-monotherapy-and-combination-pembrolizumab-first-line", "grade": "一手"}
+                {"label": "DailyMed / openFDA Trodelvy 说明书（setid 57a597d2-03f0-472e-b148-016d7169169d，生效 2026-06-24）", "url": "https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=57a597d2-03f0-472e-b148-016d7169169d", "grade": "一手"},
+                {"label": "FDA 批准公告页（脚本访问曾返回 500，需浏览器核原件）", "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-sacituzumab-govitecan-tnbc", "grade": "一手"}
             ]
         },
         {
             "date": "2026-10-22",
             "title": "BioNTech 宣布拟将化疗替换为 Trodelvy",
             "grades": ["一手"],
-            "body": "等待监管批准。吉利德供药，BioNTech 继续申办。原文未写死新的对照臂。",
+            "body": "BioNTech 2026-10-22 公司新闻并同步提交 6-K：与吉利德达成临床合作及供药协议，计划在获得监管批准后，把 ROSETTA Breast-01 的化疗替换为戈沙妥珠单抗（Trodelvy），「to ensure that patients are receiving the latest standard of care treatment」。吉利德供药，BioNTech 继续申办并主导试验。原文写将 evolve / adapt 该试验以评估 pumitamig 联合 sacituzumab govitecan，并称这将是 pumitamig 首个全球 III 期 ADC 联合研究；未写死新的对照臂具体组成。",
             "sources": [
-                {"label": "GlobeNewswire 镜像", "url": "https://www.globenewswire.com/news-release/2026/10/22/3386151/0/en/biontech-advances-phase-3-clinical-trial-of-pumitamig-in-combination-with-gilead-s-trop2-directed-adc-sacituzumab-govitecan-in-triple-negative-breast-cancer.html", "grade": "一手"}
+                {"label": "BioNTech 公司新闻 2026-10-22", "url": "https://www.biontech.com/int/en/home/mediaroom/news/press-releases/2026/10/BioNTech-Advances-Phase-3-Clinical-Trial-of-Pumitamig-in-Combination-with-Gilead-s-TROP2-Directed-ADC-Sacituzumab-Govitecan-in-Triple-Negative-Breast-Cancer.html", "grade": "一手"},
+                {"label": "BioNTech 6-K（2026-10-22，附件即为上述新闻稿）", "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000072/form6-krosettabreastx0122o.htm", "grade": "一手"}
             ]
         },
         {
             "date": "2026-11-03",
             "title": "BioNTech 三季报再次确认，登记页尚未改写",
             "grades": ["一手"],
-            "body": "6-K 和三季报 PDF 的原话是 first global Phase 3 clinical trial of pumitamig in combination with an ADC。ClinicalTrials.gov 在 11-03 和 11-07 查到的干预仍是化疗加安慰剂。",
+            "body": "6-K 和三季报 PDF 的原话是 first global Phase 3 clinical trial of pumitamig in combination with an ADC。ClinicalTrials.gov 在 11-03 和 11-07 查到的干预仍是化疗加安慰剂。（更正日期 2026-11-11：续核打开 BioNTech 2026-10-22 公司新闻与 6-K。NCT07173751 截至 2026-10-30 更新，干预仍为 pumitamig 联合研究者选择化疗对照安慰剂联合化疗，未见戈沙妥珠单抗，与公司「等待监管批准后再改方案」的表述一致。）",
             "sources": [
-                {"label": "BioNTech 6-K", "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000072/form6-krosettabreastx0122o.htm", "grade": "一手"}
+                {"label": "BioNTech 6-K（2026-10-22）", "url": "https://www.sec.gov/Archives/edgar/data/1776985/000177698526000072/form6-krosettabreastx0122o.htm", "grade": "一手"},
+                {"label": "NCT07173751", "url": "https://clinicaltrials.gov/study/NCT07173751", "grade": "一手"}
             ]
         }
     ],
@@ -150,7 +153,7 @@ ENTRIES.append({
     "drugs": ["sac-TMT", "帕博利珠单抗"],
     "indications": ["NSCLC", "子宫内膜癌"],
     "aliases": ["sacituzumab tirumotecan", "OptiTROP-Lung06", "OptiTROP-Lung05", "TroFuse", "LBA66"],
-    "updated": "2026-10-27",
+    "updated": "2026-11-11",
     "status": "TroFuse 系列约 17 项 III 期。科伦 2026-10-27 称 Lung06 已被 CDE 受理。TroFuse-005（子宫内膜癌）获 FDA 优先审评，PDUFA 2027-06-15。",
     "summary": "这是「用 ADC 替掉化疗、搭在 K药上」的路径，和依沃西代表的「换掉 K药本身」不是同一件事，但抢的是 ADC2.0 组合里的免疫骨架位置。",
     "timeline": [
@@ -158,10 +161,11 @@ ENTRIES.append({
             "date": "2026-10-25",
             "title": "ESMO LBA66 / NEJM：OptiTROP-Lung06",
             "grades": ["一手", "二手"],
-            "body": "sac-TMT 联合帕博利珠单抗，对照化疗联合帕博利珠单抗，用于一线 PD-L1<1% 的非鳞 NSCLC，中国 III 期，455 人。数据截止 2026-06-09，中位随访 9.7 个月。独立评审的 PFS 15.0 对 5.7 个月，HR 0.49（0.36–0.65）；ORR 50.2% 对 47.3%；中位缓解持续 13.6 对 6.8 个月。OS 期中 HR 0.58（0.38–0.88），尚未成熟。Fierce 报道的安全性：3 级及以上 TEAE 47.6% 对 60.6%，口腔炎 51.1%（3 级 2.2%）。此前 OptiTROP-Lung05 在 PD-L1 阳性一线的 PFS HR 为 0.35（中国研究）。",
+            "body": "sac-TMT 联合帕博利珠单抗，对照化疗联合帕博利珠单抗，用于一线 PD-L1<1% 的非鳞 NSCLC，中国 III 期，455 人。数据截止 2026-06-09，中位随访 9.7 个月。独立评审的 PFS 15.0 对 5.7 个月，HR 0.49（0.36–0.65）；ORR 50.2% 对 47.3%；中位缓解持续 13.6 对 6.8 个月。OS 期中 HR 0.58（0.38–0.88），两组中位 OS 均未达到。科伦 2026-10-25 新闻称安全性与各单药已知特征总体一致，未见新的安全性信号；联合组 3 级及以上 TEAE、导致降剂量或永久停药的 TEAE 发生率低于对照组，两组间质性肺病/肺炎发生率相似。Fierce 报道的具体安全性数字（3 级及以上 TEAE 47.6% 对 60.6%，口腔炎 51.1%、其中 3 级 2.2%）本次仍未打开该页。研究结果同步发表于《新英格兰医学杂志》（PMID 42929694，2026-10-25；全文非开放获取）。此前 OptiTROP-Lung05 在 PD-L1 阳性一线的 PFS HR 为 0.35（中国研究）。",
             "sources": [
-                {"label": "科伦博泰 PR Newswire 2026-10-25", "url": "https://www.prnewswire.com/news-releases/the-results-of-phase-iii-optitrop-lung06-study-of-sacituzumab-tirumotecan-sac-tmt-presented-as-an-esmo-oral-presentation-and-simultaneously-published-in-the-new-england-journal-of-medicine-302918758.html", "grade": "一手"},
-                {"label": "Fierce Pharma（安全性）", "url": "https://www.fiercepharma.com/pharma/merck-kelun-workhorse-adc-posts-major-tumor-progression-benefit-pd-l1-negative-nsclc", "grade": "二手"}
+                {"label": "科伦博泰 PR Newswire 2026-10-25", "url": "https://www.prnewswire.com/apac/zh/news-releases/esmooptitrop-lung06sac-tmtpfs-302918756.html", "grade": "一手"},
+                {"label": "NEJM 2026-10-25，PMID 42929694，DOI 10.1056/NEJMoa2611280", "url": "https://pubmed.ncbi.nlm.nih.gov/42929694/", "grade": "一手"},
+                {"label": "Fierce Pharma（安全性具体百分比）（本次复核该页返回 403，未看到原文）", "url": "https://www.fiercepharma.com/pharma/merck-kelun-workhorse-adc-posts-major-tumor-progression-benefit-pd-l1-negative-nsclc", "grade": "二手"}
             ]
         }
     ],
@@ -229,9 +233,9 @@ ENTRIES.append({
     "drugs": ["QL1706"],
     "indications": ["宫颈癌"],
     "aliases": ["艾帕洛利托沃瑞利单抗", "齐倍安", "1240O", "DUBHE-C-301"],
-    "updated": "2026-10-26",
+    "updated": "2026-11-11",
     "status": "一线宫颈癌补充申请已于 2026-05 获 CDE 受理。NSCLC、鼻咽癌、局限期小细胞肺癌等 III 期进行中。",
-    "summary": "QL1706 是 MabPair 形式的 PD-1 加 CTLA-4 组合抗体，不是双抗分子，但在宫颈癌一线和二线与卡度尼利正面竞争。一线 III 期的总生存数字，第 3 期周报曾只见到二手报道并标为未核实；后来用 ESMO 1240O 原文补上对照和风险比，属于核实升级，不是数字打架。",
+    "summary": "QL1706 是 MabPair 形式的 PD-1 加 CTLA-4 组合抗体，不是双抗分子，但在宫颈癌一线和二线与卡度尼利正面竞争。一线 III 期的总生存数字，第 3 期周报曾只见到二手报道并标为未核实；后来用齐鲁制药 2026-10-27 新闻（披露 ESMO 2026 口头报告）补上对照、中位值和风险比，属于核实升级，不是数字打架。ESMO 官方摘要页本次仍未打开。",
     "timeline": [
         {
             "date": "2024-09-30",
@@ -239,17 +243,28 @@ ENTRIES.append({
             "grades": ["一手"],
             "body": "与卡度尼利首个适应症同一瘤种、同一后线位置。",
             "sources": [
-                {"label": "国家药监局公告", "url": "https://www.nmpa.gov.cn/directory/web/nmpa/zhuanti/cxylqx/cxypxx/20240930101946184.html", "grade": "一手"}
+                {"label": "国家药监局公告页（脚本访问返回 412，需浏览器核原件）", "url": "https://www.nmpa.gov.cn/directory/web/nmpa/zhuanti/cxylqx/cxypxx/20240930101946184.html", "grade": "一手"},
+                {"label": "齐鲁制药新闻 2026-10-27（公司称 2024 年 9 月获附条件批准）", "url": "https://www.qilu-pharma.com/news_details/735.html", "grade": "一手"}
             ]
         },
         {
             "date": "2026-05",
             "title": "一线 III 期阳性，补充申请获受理",
             "grades": ["一手"],
-            "body": "ESMO 1240O：492 人，PFS HR 0.64；OS 30.95 对 21.78 个月，HR 0.73。公司新闻称一线宫颈癌 III 期的 PFS 和 OS 均为阳性，补充申请已获 CDE 受理。",
+            "body": "齐鲁制药称一线治疗持续、复发或转移性宫颈癌的补充申请已于 2026 年 5 月获 CDE 受理。当时条目把 ESMO 1240O 的疗效数字一并记在 2026-05；完整数字由公司在 2026-10-27 新闻中随 ESMO 2026 年会口头报告公布，见下一条。",
             "sources": [
                 {"label": "齐鲁制药新闻", "url": "https://www.qilu-pharma.com/news_details/636.html", "grade": "一手"},
-                {"label": "ESMO 1240O", "grade": "一手"}
+                {"label": "齐鲁制药新闻 2026-10-27（公司称一线 sNDA 已于 2026 年 5 月获 CDE 受理）", "url": "https://www.qilu-pharma.com/news_details/735.html", "grade": "一手"}
+            ]
+        },
+        {
+            "date": "2026-10",
+            "title": "ESMO 2026 口头报告一线 III 期完整数据（DUBHE-C-301）",
+            "grades": ["一手"],
+            "body": "齐鲁制药 2026-10-27 新闻称，ESMO 2026 年会上口头报告 DUBHE-C-301。数据截止 2026-01-16，共 492 例随机（QL1706 组 243、对照 249）。中位 PFS 12.35（9.53–15.21）对 7.75（6.51–8.31）个月，HR 0.64（0.51–0.81），P=0.0001；中位 OS 30.95（24.94–NE）对 21.78（18.14–25.69）个月，HR 0.73（0.57–0.93），P=0.0101。3 级及以上 TRAE 80.6% 对 75.9%。主要终点为 BICR PFS 与 OS。条目原记摘要号 1240O；本次打开的是公司新闻，未打开 ESMO 官方摘要页核对编号。\n\n（更正日期 2026-11-11：PFS HR 0.64 及 OS 30.95 对 21.78、HR 0.73 已用齐鲁 2026-10-27 新闻核对，并补上中位 PFS 对照值和置信区间。披露时间以公司所说的 ESMO 2026 年会为准，不再记在 2026-05。）",
+            "sources": [
+                {"label": "齐鲁制药新闻 2026-10-27", "url": "https://www.qilu-pharma.com/news_details/735.html", "grade": "一手"},
+                {"label": "ESMO 2026 官方摘要（条目原记 1240O；本次未打开官方摘要页，未看到原文）", "grade": "一手"}
             ]
         }
     ],

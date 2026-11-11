@@ -12,7 +12,7 @@ ENTRIES.append({
     "drugs": ["卡度尼利"],
     "indications": ["宫颈癌", "胃癌"],
     "aliases": ["AK104", "开坦尼", "cadonilimab", "COMPASSION-15", "COMPASSION-16", "COMPLUS-5"],
-    "updated": "2026-11-10",
+    "updated": "2026-11-11",
     "status": "三个适应症已获批并进医保。COMPLUS-5 的登记页预计主要完成日期在 2026-11，计划日期不等于读出。",
     "summary": "卡度尼利（AK104，商品名开坦尼）是 PD-1/CTLA-4 四价双抗，IgG1 Fc-null。公司称在两靶点共表达处亲合力约高 10 倍。定位是另一条 IO2.0 骨架，主攻冷肿瘤或 PD-L1 低表达，与依沃西的「免疫加抗血管」互补。两项关键 III 期的人群都在中国。COMPASSION-15 期中和最终的中位 OS（14.1 和 13.9 个月）低于 2024 年 AACR 口头报告（15.0 对 10.8），以已发表数据为准。",
     "timeline": [
@@ -29,10 +29,11 @@ ENTRIES.append({
             "date": "2024-09-30",
             "title": "获批一线 HER2 阴性胃或胃食管结合部腺癌，联合化疗，全人群",
             "grades": ["一手"],
-            "body": "依据 COMPASSION-15，入组 610 人。期中分析（《Nature Medicine》，数据截止 2023-08-18）：OS 14.1 对 11.1 个月，HR 0.66；PFS 7.0 对 5.3 个月，HR 0.53；ORR 65.2% 对 48.9%；3 级及以上 TRAE 65.9% 对 53.6%。最终分析（ESMO 2025，中位随访 33.9 个月）：OS 13.9 对 11.1 个月，HR 0.61（0.51–0.73）；CPS≥5 的 HR 0.49；CPS<5 的 HR 0.76（0.59–0.99）。",
+            "body": "依据 COMPASSION-15，入组 610 人。期中分析（《Nature Medicine》，数据截止 2023-08-18）：OS 14.1 对 11.1 个月，HR 0.66；PFS 7.0 对 5.3 个月，HR 0.53；ORR 65.2% 对 48.9%；3 级及以上 TRAE 65.9% 对 53.6%。最终分析（ESMO 2025 摘要 2098MO，数据截止 2024-12-06，中位随访 33.87 个月）：ITT OS 13.9（12.0–16.8）对 11.1（10.2–12.2）个月，HR 0.61（0.51–0.73），P<0.001；CPS≥5 的中位 OS 16.8 对 10.8 个月，HR 0.49（0.36–0.65）；CPS<5 的中位 OS 13.2 对 11.3 个月，HR 0.76（0.59–0.99），P=0.019。最终 PFS 7.0（6.7–8.4）对 5.3（4.5–5.6）个月，HR 0.51（0.42–0.62）。3 级及以上 TRAE 66.9%（204/305）对 53.6%（163/305）。",
             "sources": [
                 {"label": "Nature Medicine（期中）", "grade": "一手"},
-                {"label": "Annals of Oncology 2098MO（最终）", "grade": "一手"}
+                {"label": "Annals of Oncology 2098MO（ESMO 2025 最终分析）", "url": "https://www.annalsofoncology.org/article/S0923-7534(25)03639-7/fulltext", "grade": "一手"},
+                {"label": "Nature Medicine 2025;31(4):1163-1170，PMID 39843940（COMPASSION-15 期中）", "grade": "一手", "url": "https://pubmed.ncbi.nlm.nih.gov/39843940/"}
             ]
         },
         {
