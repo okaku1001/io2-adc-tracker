@@ -5,13 +5,25 @@
   <link>https://okaku1001.github.io/io2-adc-tracker/</link>
   <description>以康方生物为中心，记录依沃西、卡度尼利及其战略竞品与伙伴的核心临床变动。同一条试验只保留一个条目，每日动态是索引。</description>
   <language>zh-cn</language>
-  <lastBuildDate>2026-11-13 08:24 +0800</lastBuildDate>
+  <lastBuildDate>2026-11-13 08:36 +0800</lastBuildDate>
   <item>
+  <title>AK146D1 首次人体 I 期登记扩充卡度尼利、依沃西联用组，计划入组调至 166 例</title>
+  <link>https://okaku1001.github.io/io2-adc-tracker/entries/akeso-adc.html</link>
+  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/akeso-adc.html#2026-11-13</guid>
+  <pubDate>2026-11-13</pubDate>
+  <description>康方申办的 NCT06929663（方案号 AK146D1-102）仍在招募，实际开始日期仍为 2025-07-02。对照 11-12 晨间登记快照，当时只列单药、计划入组 48 例（估计），估计主要完成日期为 2026-11-05。11-12 发布的更新（提交日 11-06）把简称和正式标题改为单药及联合卡度尼利或依沃西，试验组现为三组，计划入组改为 166 例（估计），估计主要完成日期改为 2028-06-30。登记页未见结果；港交所和公司官网未见对应说明。估计完成日期不等于已经读出。</description>
+</item><item>
   <title>Crescent 三季报：CR-002 已给首例，CR-001 读出时点仍为 2027 年</title>
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/crescent-cr001.html</link>
   <guid>https://okaku1001.github.io/io2-adc-tracker/entries/crescent-cr001.html#2026-11-13</guid>
   <pubDate>2026-11-13</pubDate>
   <description>截至 2026-09-30 现金 2.894 亿美元，公司称可支撑运营至 2028 年下半年。CR-002（PD-L1 ADC）全球 I/II 期 APOLLO 已在 11 月上旬完成首例患者给药，初步数据时点为 2027 年下半年。CR-001（PD-1×VEGF 双抗，大中华区科伦博泰代号 SKB118）单药初步数据仍计划 2027 年一季度读出（含一线 NSCLC 最多 12 例缓解率），化疗联用及与 sac-TMT 联用数据仍计划 2027 年年中。人体疗效数据尚未读出。站上原先没有独立条目，现新建一条管线，不把三季报拆成孤立新闻。</description>
+</item><item>
+  <title>卡度尼利脑膜转移研究者发起试验登记状态改为招募中</title>
+  <link>https://okaku1001.github.io/io2-adc-tracker/entries/cadonilimab.html</link>
+  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/cadonilimab.html#2026-11-13</guid>
+  <pubDate>2026-11-13</pubDate>
+  <description>NCT06762080 为广州医科大学申办、复旦大学附属金山医院合作的 I/II 期，鞘内给予卡度尼利联合培美曲塞，计划入组 39 例（估计），不是康方或 Summit 申办。对照 11-12 晨间快照，当时状态为在研、暂不招募，估计完成日期为 2026-10-30；11-12 更新后改为招募中，估计主要完成日期改为 2027-12-30。实际开始日期仍为 2025-03-07。登记页未见结果。计划日期不等于读出。</description>
 </item><item>
   <title>BioNTech 以 2.05 亿美元购买一张 FDA 优先审评券，未指定用于哪个药</title>
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/pumitamig.html</link>
@@ -240,18 +252,6 @@
   <guid>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-bc1.html#2026-10-12</guid>
   <pubDate>2026-10-12</pubDate>
   <description>合作本身由 Summit、阿斯利康和第一三共于 10-02 宣布。截至后来多次核验，ClinicalTrials.gov 上仍无对应 III 期登记。</description>
-</item><item>
-  <title>CDE 首次公示 HARMONi-10</title>
-  <link>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-10.html</link>
-  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-10.html#2026-10-09</guid>
-  <pubDate>2026-10-09</pubDate>
-  <description>不可切除 III 期 NSCLC 同步放化疗后巩固，依沃西对照度伐利尤单抗。目标入组国内 342 人、国际 830 人（国际为全球总数，含中国）。主要终点为独立评审的无进展生存。</description>
-</item><item>
-  <title>康方宣布 COMPASSION-40 开始入组</title>
-  <link>https://okaku1001.github.io/io2-adc-tracker/entries/compassion-40.html</link>
-  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/compassion-40.html#2026-10-09</guid>
-  <pubDate>2026-10-09</pubDate>
-  <description>MSI-H / dMMR 结肠癌围手术期 III 期。登记页实际启动日期为 2026-04-15，中报已写上半年启动，更像重新宣传。</description>
 </item>
 </channel>
 </rss>
