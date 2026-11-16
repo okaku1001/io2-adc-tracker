@@ -3,18 +3,13 @@
   "tagline": "以康方生物为中心，记录依沃西、卡度尼利及其战略竞品与伙伴的核心临床变动。同一条试验只保留一个条目，每日动态是索引。",
   "base_url": "https://okaku1001.github.io/io2-adc-tracker",
   "repo_url": "https://github.com/okaku1001/io2-adc-tracker",
-  "source_as_of": "2026-11-13",
+  "source_as_of": "2026-11-16",
   "disclaimer": "本站为公开信息整理，不构成投资建议。数字均来自已核对的一手或已标注来源，不代表康方、Summit 或其他公司立场。",
   "banner": {
-    "title": "近端节点：FDA PDUFA 2026-11-14",
-    "text": "适应症是依沃西联合化疗，用于 EGFR 突变非鳞 NSCLC、三代 TKI 之后。不是一线，也不是对 K药的头对头。截至 2026-11-13，所查未见 CRL、延期或咨询会披露。"
+    "title": "Summit 宣布依沃西 HARMONi BLA 收到 FDA 完整回复函",
+    "text": "2026-11-15 公司官网新闻稿：该 BLA 不能以现有形式获批。公司转述 FDA：缺乏统计学显著的 OS 改善时尚未建立充分有效性证据，无显著 OS 时 PFS 获益不足以支持批准所需的正向获益风险。完整回复函原文未见公开。适应症是 EGFR 突变非鳞 NSCLC、三代 TKI 之后，依沃西联合化疗，不是一线，也不是对 K药的头对头。"
   },
   "upcoming": [
-    {
-      "when": "2026-11-14",
-      "title": "依沃西美国 BLA 的 PDUFA 日",
-      "detail": "依据全球 HARMONi。FDA 书面要求该适应症需要统计学显著的 OS。主分析 OS 未达显著（HR 0.79，0.62–1.01，公司稿 p=0.057；2025-09-07 公司稿写明显著界值为 p=0.0448）；后续更新为名义 p 值。"
-    },
     {
       "when": "2026-12-07",
       "title": "COINS 拟议规则书面意见截止",

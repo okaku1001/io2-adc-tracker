@@ -5,8 +5,38 @@
   <link>https://okaku1001.github.io/io2-adc-tracker/</link>
   <description>以康方生物为中心，记录依沃西、卡度尼利及其战略竞品与伙伴的核心临床变动。同一条试验只保留一个条目，每日动态是索引。</description>
   <language>zh-cn</language>
-  <lastBuildDate>2026-11-13 08:36 +0800</lastBuildDate>
+  <lastBuildDate>2026-11-16 08:32 +0800</lastBuildDate>
   <item>
+  <title>Summit 宣布 FDA 就依沃西 HARMONi BLA 发出完整回复函（CRL）</title>
+  <link>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-fda.html</link>
+  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-fda.html#2026-11-15</guid>
+  <pubDate>2026-11-15</pubDate>
+  <description>2026-11-15 公司官网新闻稿：该 BLA 不能以现有形式获批。公司转述 FDA：缺乏统计学显著的 OS 改善时尚未建立充分有效性证据，无显著 OS 时 PFS 获益不足以支持批准所需的正向获益风险。完整回复函原文未见公开。适应症是 EGFR 突变非鳞 NSCLC、三代 TKI 之后，依沃西联合化疗，不是一线，也不是对 K药的头对头。稿件所写事后分析全人群、亚洲和西方 OS HR 均为 0.76，但未给出置信区间、p 值或数据截止，不能与此前几次分析拼接。截至 11-16 早间，SEC 未见对应 8-K，康方亦未见对应公告。</description>
+</item><item>
+  <title>2026 年版医保目录载明依沃西两项支付范围，一线鳞状 NSCLC 未列入该条</title>
+  <link>https://okaku1001.github.io/io2-adc-tracker/entries/ivonescimab-china.html</link>
+  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/ivonescimab-china.html#2026-11-14</guid>
+  <pubDate>2026-11-14</pubDate>
+  <description>国家医保局、人力资源社会保障部 11-14 发布的 2026 年版目录，自 2027-01-01 执行。依沃西单抗注射液为协议期内谈判药品、乙类第 279 号，协议期 2027-01-01 至 2028-12-31，支付范围限 EGFR-TKI 治疗后进展的 EGFR 突变阳性非鳞 NSCLC，以及 PD-L1 TPS≥1%、EGFR 阴性和 ALK 阴性的局部晚期或转移性 NSCLC 一线治疗。2026-08-12 获批的一线鳞状 NSCLC 未出现在该条支付范围中。未见公司说明，也未对照 2025 年版目录，不写成首次纳入或续约。支付标准带“*”标识，不公布。</description>
+</item><item>
+  <title>2026 年版医保目录载明卡度尼利三项支付范围与协议期</title>
+  <link>https://okaku1001.github.io/io2-adc-tracker/entries/cadonilimab.html</link>
+  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/cadonilimab.html#2026-11-14</guid>
+  <pubDate>2026-11-14</pubDate>
+  <description>卡度尼利单抗注射液为协议期内谈判药品、乙类第 280 号，协议期 2027-01-01 至 2028-12-31，支付范围限含铂化疗失败后的复发或转移性宫颈癌，一线持续、复发或转移性宫颈癌（联合紫杉醇和铂类，可加或不加贝伐珠单抗），以及一线局部晚期不可切除或转移性胃或胃食管结合部腺癌（联合含氟尿嘧啶类和铂类化疗）。未见公司说明，也未对照 2025 年版目录，不写成首次纳入或续约。支付标准带“*”标识，不公布。</description>
+</item><item>
+  <title>依沃西 II 至 III 期可核对清单增至 139 项</title>
+  <link>https://okaku1001.github.io/io2-adc-tracker/entries/ivonescimab-trials.html</link>
+  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/ivonescimab-trials.html#2026-11-14</guid>
+  <pubDate>2026-11-14</pubDate>
+  <description>ClinicalTrials.gov 于 11-13 首次发布贵州医科大学申办的研究者发起 II 期 NCT07936578：依沃西联合同步放化疗治疗晚期 NSCLC，计划入组 40 例（估计），尚未招募，申办方不是康方或 Summit。注册性或 III 期仍为 17 项。</description>
+</item><item>
+  <title>ARC-20 登记页首次列出依沃西联合 casdatifan 队列</title>
+  <link>https://okaku1001.github.io/io2-adc-tracker/entries/smt112-216.html</link>
+  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/smt112-216.html#2026-11-14</guid>
+  <pubDate>2026-11-14</pubDate>
+  <description>Arcus 申办的 NCT05536141 在 11-13 的更新中，剂量扩展阶段新增第 12 队列（口服 casdatifan 联合依沃西），合作方现列为 Summit 与 AVEO。双方已于 2026-07-22 宣布该合作，初步数据预期 2027 年中；此前登记页截至 2026-10-05 尚未加入依沃西队列。登记页未见结果。</description>
+</item><item>
   <title>AK146D1 首次人体 I 期登记扩充卡度尼利、依沃西联用组，计划入组调至 166 例</title>
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/akeso-adc.html</link>
   <guid>https://okaku1001.github.io/io2-adc-tracker/entries/akeso-adc.html#2026-11-13</guid>
@@ -216,42 +246,6 @@
   <guid>https://okaku1001.github.io/io2-adc-tracker/entries/ea2251.html#2026-10-21</guid>
   <pubDate>2026-10-21</pubDate>
   <description>美国一线晚期胆道癌 II/III 期，依沃西联合化疗对照 K药或 I药联合化疗，主要终点总生存，约 336 人。登记页 8-14 已出现，此次是合作宣布。Summit 称开中心预计第四季度，并称 registration-enabling。</description>
-</item><item>
-  <title>Summit 宣布 SMT112-216 全球开中心</title>
-  <link>https://okaku1001.github.io/io2-adc-tracker/entries/smt112-216.html</link>
-  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/smt112-216.html#2026-10-19</guid>
-  <pubDate>2026-10-19</pubDate>
-  <description>美中两地。对照是纳武利尤单抗联合伊匹木单抗。康方同日发英文稿。</description>
-</item><item>
-  <title>SMT112-216 在 ClinicalTrials.gov 首次登记</title>
-  <link>https://okaku1001.github.io/io2-adc-tracker/entries/smt112-216.html</link>
-  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/smt112-216.html#2026-10-16</guid>
-  <pubDate>2026-10-16</pubDate>
-  <description>NCT07877194，Summit 申办，一线 IMDC 中高危透明细胞肾癌，约 100 人，五组设计。CDE 公示其实早在 9-04，已在清单中。</description>
-</item><item>
-  <title>补记两项中国研究者发起研究</title>
-  <link>https://okaku1001.github.io/io2-adc-tracker/entries/ivonescimab-trials.html</link>
-  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/ivonescimab-trials.html#2026-10-16</guid>
-  <pubDate>2026-10-16</pubDate>
-  <description>ChiCTR2600134037（福建协和，单药新辅助可切除食管鳞癌）和 ChiCTR2600133939（上海东方医院，胸腺癌诱导）。西南肿瘤协作组 Lung-MAP 的 NCT07393555 实际于 9-22 开始，不是当月新登记。</description>
-</item><item>
-  <title>一线胆道癌 II 期数据发表于《Journal of Hepatology》</title>
-  <link>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-gi1.html</link>
-  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-gi1.html#2026-10-13</guid>
-  <pubDate>2026-10-13</pubDate>
-  <description>依沃西联合吉西他滨/顺铂，30 例，ORR 66.7%，DCR 100%，中位 PFS 8.5 个月，中位 OS 16.8 个月。HARMONi-GI1 详细数据当时仍待 ESMO 主席论坛。</description>
-</item><item>
-  <title>阿斯利康 20 亿美元入股已于 10-05 交割</title>
-  <link>https://okaku1001.github.io/io2-adc-tracker/entries/summit-az.html</link>
-  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/summit-az.html#2026-10-12</guid>
-  <pubDate>2026-10-12</pubDate>
-  <description>持股约 12.0%，完全稀释约 10.6%，不含依沃西商业权益。配套临床合作包括 Sone-Ve 和 Datroway。</description>
-</item><item>
-  <title>康方中文稿确认依沃西联合 Datroway 全球 III 期拟首发一线三阴性乳腺癌</title>
-  <link>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-bc1.html</link>
-  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-bc1.html#2026-10-12</guid>
-  <pubDate>2026-10-12</pubDate>
-  <description>合作本身由 Summit、阿斯利康和第一三共于 10-02 宣布。截至后来多次核验，ClinicalTrials.gov 上仍无对应 III 期登记。</description>
 </item>
 </channel>
 </rss>
