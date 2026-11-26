@@ -240,6 +240,50 @@
     }
   }
 
+
+  const guide = document.querySelector(".guide-modules");
+  if (guide) {
+    const headerOffset = 80;
+
+    function openAncestors(el) {
+      let node = el;
+      while (node) {
+        if (node.tagName === "DETAILS") node.open = true;
+        node = node.parentElement;
+      }
+    }
+
+    function revealHash() {
+      const id = (location.hash || "").replace(/^#/, "");
+      if (!id) return;
+      const el = document.getElementById(id);
+      if (!el || !guide.contains(el)) return;
+      openAncestors(el);
+      window.requestAnimationFrame(function () {
+        const top = el.getBoundingClientRect().top + window.scrollY - headerOffset;
+        window.scrollTo(0, Math.max(0, top));
+      });
+    }
+
+    guide.querySelectorAll("details.guide-mod").forEach(function (d) {
+      d.addEventListener("toggle", function () {
+        if (!d.id) return;
+        if (d.open) {
+          if (location.hash !== "#" + d.id) {
+            history.replaceState(null, "", "#" + d.id);
+          }
+        } else if (location.hash === "#" + d.id) {
+          const parent = d.parentElement && d.parentElement.closest("details.guide-mod");
+          const next = parent && parent.id ? "#" + parent.id : location.pathname + location.search;
+          history.replaceState(null, "", next);
+        }
+      });
+    });
+
+    window.addEventListener("hashchange", revealHash);
+    revealHash();
+  }
+
   const search = document.getElementById("entry-search");
   const buttons = document.querySelectorAll(".filter-btn");
   const cards = document.querySelectorAll("[data-entry-card]");

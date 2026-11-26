@@ -445,63 +445,167 @@ def render_guide_row(entry: dict, prefix: str, compact: bool, extra_class: str =
   </a>"""
 
 
+def entry_latest_iso(entry: dict) -> str:
+    dates = []
+    if entry.get("updated"):
+        dates.append(str(entry["updated"]))
+    for ev in entry.get("timeline") or []:
+        if ev.get("date"):
+            dates.append(str(ev["date"]))
+    if not dates:
+        return ""
+    return max(dates, key=date_key)
+
+
+def gather_section_entries(section: dict, by_slug: dict):
+    """Preserve layout item order. Return hubs as dicts with entry and cluster children."""
+    hubs = []
+    all_entries = []
+    seen = set()
+    for item in section.get("items", []):
+        slug = item.get("slug")
+        entry = by_slug.get(slug)
+        if not entry:
+            continue
+        clusters = []
+        child_entries = []
+        for cluster in item.get("clusters", []):
+            children = []
+            for child_slug in cluster.get("slugs", []):
+                if child_slug == slug:
+                    continue
+                child = by_slug.get(child_slug)
+                if not child:
+                    continue
+                children.append(child)
+                if child_slug not in seen:
+                    seen.add(child_slug)
+                    all_entries.append(child)
+            children = sort_by_recency(children)
+            if children:
+                clusters.append((cluster.get("title", ""), children))
+                child_entries.extend(children)
+        if slug not in seen:
+            seen.add(slug)
+            all_entries.append(entry)
+        hubs.append(
+            {
+                "item": item,
+                "entry": entry,
+                "clusters": clusters,
+                "children": child_entries,
+            }
+        )
+    return hubs, all_entries
+
+
+def latest_among(entries) -> str:
+    dates = [entry_latest_iso(e) for e in entries if e]
+    dates = [d for d in dates if d]
+    if not dates:
+        return ""
+    return max(dates, key=date_key)
+
+
+def section_count_label(section_id: str, hub_count: int) -> str:
+    if section_id == "approved":
+        return f"{hub_count} 个品种"
+    return f"{hub_count} 条"
+
+
+def render_latest_meta(iso: str) -> str:
+    if not iso:
+        return ""
+    return f'<time datetime="{html.escape(iso)}">最新 {html.escape(fmt_date(iso))}</time>'
+
+
+def render_guide_index(layout: dict, entries, prefix: str) -> str:
+    """Compact home directory: section modules link to the full guide."""
+    by_slug = {e["slug"]: e for e in entries}
+    rows = []
+    for section in layout.get("sections", []):
+        hubs, all_entries = gather_section_entries(section, by_slug)
+        if not hubs:
+            continue
+        sid = section.get("id") or ""
+        href = rel_to(prefix, f"pipeline.html#{sid}")
+        count = section_count_label(sid, len(hubs))
+        latest = render_latest_meta(latest_among(all_entries))
+        rows.append(
+            f'<a class="guide-index-row" href="{html.escape(href)}">'
+            f'<span class="guide-mod-name">{html.escape(section.get("title", ""))}</span>'
+            f'<span class="guide-mod-meta"><span>{html.escape(count)}</span>{latest}</span>'
+            f"</a>"
+        )
+    if not rows:
+        return ""
+    return f'<nav class="guide-index" aria-label="管线与竞争分块">{"".join(rows)}</nav>'
+
+
 def render_guide(layout: dict, entries, prefix: str, compact: bool = False) -> str:
+    if compact:
+        return render_guide_index(layout, entries, prefix)
     by_slug = {e["slug"]: e for e in entries}
     sections_html = []
     for section in layout.get("sections", []):
-        hubs = []
-        for item in section.get("items", []):
-            slug = item.get("slug")
-            entry = by_slug.get(slug)
-            if not entry:
-                continue
+        hubs, all_entries = gather_section_entries(section, by_slug)
+        if not hubs:
+            continue
+        sid = section.get("id") or ""
+        count = section_count_label(sid, len(hubs))
+        latest = render_latest_meta(latest_among(all_entries))
+        hub_html = []
+        for hub in hubs:
+            entry = hub["entry"]
+            slug = entry["slug"]
             clusters_html = []
-            for cluster in item.get("clusters", []):
-                rows = []
-                children = []
-                for child_slug in cluster.get("slugs", []):
-                    if child_slug == slug:
-                        continue
-                    child = by_slug.get(child_slug)
-                    if not child:
-                        continue
-                    children.append(child)
-                for child in sort_by_recency(children):
-                    rows.append(f"<li>{render_guide_row(child, prefix, compact)}</li>")
-                if not rows:
-                    continue
+            for title, children in hub["clusters"]:
+                rows = [f"<li>{render_guide_row(child, prefix, False)}</li>" for child in children]
                 clusters_html.append(
                     f'<div class="guide-cluster">'
-                    f'<h4>{html.escape(cluster.get("title", ""))}</h4>'
+                    f'<h4>{html.escape(title)}</h4>'
                     f'<ul class="catalog-list">{"".join(rows)}</ul>'
                     f"</div>"
                 )
             status = entry_status_line(entry)
             status_html = f'<p class="guide-status">{html.escape(status)}</p>' if status else ""
-            hub_id = html.escape(slug)
-            hubs.append(
-                f'''<article class="guide-hub" id="{hub_id}">
-  <a class="guide-hub-head catalog-row" href="{html.escape(entry_url(slug, prefix))}">
-    <p class="kicker">{html.escape(entry.get("kicker", ""))}</p>
-    <h4 class="catalog-title">{html.escape(entry["title"])}</h4>
+            child_n = len(hub["children"])
+            if child_n:
+                hub_count = f"<span>{child_n} 条相关</span>"
+            else:
+                hub_count = ""
+            hub_latest = render_latest_meta(latest_among([entry] + hub["children"]))
+            kicker = html.escape(entry.get("kicker", ""))
+            kicker_html = f'<span class="kicker">{kicker}</span>' if kicker else ""
+            open_href = html.escape(entry_url(slug, prefix))
+            hub_html.append(
+                f'''<details class="guide-mod is-hub" id="{html.escape(slug)}">
+  <summary class="guide-mod-head">
+    {kicker_html}
+    <span class="guide-mod-name">{html.escape(entry["title"])}</span>
+    <span class="guide-mod-meta">{hub_count}{hub_latest}</span>
+  </summary>
+  <div class="guide-mod-body">
     {status_html}
-  </a>
-  {"".join(clusters_html)}
-</article>'''
+    <p class="guide-open-entry"><a href="{open_href}">打开该条目</a></p>
+    {"".join(clusters_html)}
+  </div>
+</details>'''
             )
-        if not hubs:
-            continue
-        sid = html.escape(section.get("id") or "")
         sections_html.append(
-            f'<section class="guide-section" id="{sid}">'
-            f'<h3>{html.escape(section.get("title", ""))}</h3>'
-            f'{"".join(hubs)}'
-            f"</section>"
+            f'''<details class="guide-mod is-section" id="{html.escape(sid)}">
+  <summary class="guide-mod-head">
+    <span class="guide-mod-name">{html.escape(section.get("title", ""))}</span>
+    <span class="guide-mod-meta"><span>{html.escape(count)}</span>{latest}</span>
+  </summary>
+  <div class="guide-mod-body">
+    {"".join(hub_html)}
+  </div>
+</details>'''
         )
     if not sections_html:
         return ""
-    compact_cls = " is-compact" if compact else ""
-    return f'<div class="guide{compact_cls}">{"".join(sections_html)}</div>'
+    return f'<div class="guide guide-modules">{"".join(sections_html)}</div>'
 
 
 def render_related(entry: dict, layout: dict, entries, prefix: str) -> str:
@@ -917,19 +1021,12 @@ def pipeline_page(entries, site, layout=None):
     layout = layout or {}
     title = layout.get("page_title") or "管线与竞争"
     intro = layout.get("intro") or ""
-    toc = []
-    for section in layout.get("sections", []):
-        sid = section.get("id")
-        stitle = section.get("title")
-        if sid and stitle:
-            toc.append(f'<a href="#{html.escape(sid)}">{html.escape(stitle)}</a>')
-    toc_html = f'<nav class="guide-toc" aria-label="本页分节">{"".join(toc)}</nav>' if toc else ""
     intro_html = f'<p class="lede">{html.escape(intro)}</p>' if intro else ""
     body = f"""<header class="hero">
   <h1>{html.escape(title)}</h1>
   {intro_html}
+  <p class="lede guide-how">先点大类模块，再点品种。默认收起，避免一条长卷往下拉。</p>
 </header>
-{toc_html}
 {render_guide(layout, entries, "", compact=False)}
 <p class="guide-foot"><a href="entries/index.html">筛选全部条目</a> · <a href="index.html">返回首页最近动态</a></p>
 """
