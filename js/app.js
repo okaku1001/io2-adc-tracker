@@ -284,6 +284,202 @@
     revealHash();
   }
 
+
+  function prefersReducedMotion() {
+    return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  }
+
+  document.querySelectorAll(".situation-more").forEach(function (box) {
+    const btn = box.querySelector(".situation-more-toggle");
+    const panel = box.querySelector(".situation-more-body");
+    if (!btn || !panel) return;
+    const n = (panel.querySelectorAll("li") || []).length;
+    const labelClosed = "还有 " + n + " 条";
+    btn.addEventListener("click", function () {
+      const open = box.classList.contains("is-open");
+      if (open) {
+        btn.setAttribute("aria-expanded", "false");
+        btn.textContent = labelClosed;
+        if (prefersReducedMotion()) {
+          box.classList.remove("is-open", "is-leaving");
+          panel.hidden = true;
+          return;
+        }
+        box.classList.add("is-leaving");
+        window.setTimeout(function () {
+          box.classList.remove("is-open", "is-leaving");
+          panel.hidden = true;
+        }, 480);
+      } else {
+        panel.hidden = false;
+        box.classList.remove("is-leaving");
+        box.classList.add("is-open");
+        btn.setAttribute("aria-expanded", "true");
+        btn.textContent = "收起";
+      }
+    });
+  });
+
+  (function initBriefing() {
+    const root = document.querySelector("[data-briefing]");
+    if (!root) return;
+    const beats = Array.prototype.slice.call(root.querySelectorAll(".briefing-beat"));
+    if (!beats.length) return;
+    const homeHref = root.getAttribute("data-home") || "index.html";
+    const reduced = prefersReducedMotion();
+    const live = root.querySelector("[data-briefing-status]");
+    const overview = document.querySelector("[data-briefing-panel]");
+    const ovBtn = document.querySelector("[data-briefing-overview]");
+    const ovClose = document.querySelector("[data-briefing-overview-close]");
+    document.body.classList.add("briefing-js");
+    if (ovBtn) ovBtn.hidden = false;
+    beats.forEach(function (b, i) { if (i !== 0) b.classList.remove("is-current"); });
+    if (beats[0]) beats[0].classList.add("is-current");
+
+    let index = 0;
+    let busy = false;
+
+    function overviewOpen() {
+      return overview && !overview.hidden;
+    }
+
+    function setOverview(open) {
+      if (!overview) return;
+      overview.hidden = !open;
+      if (ovBtn) ovBtn.setAttribute("aria-expanded", open ? "true" : "false");
+    }
+
+    function show(to, dir) {
+      if (to < 0) return;
+      if (to >= beats.length) {
+        window.location.href = homeHref;
+        return;
+      }
+      if (to === index || busy) return;
+      const from = index;
+      const outgoing = beats[from];
+      const incoming = beats[to];
+      index = to;
+      if (live) live.textContent = (to + 1) + " / " + beats.length;
+      const id = incoming.id;
+      if (id && location.hash !== "#" + id) {
+        history.replaceState(null, "", "#" + id);
+      }
+      if (reduced) {
+        outgoing.classList.remove("is-current", "is-leave-next", "is-leave-prev", "is-enter-next", "is-enter-prev");
+        incoming.classList.add("is-current");
+        incoming.classList.remove("is-leave-next", "is-leave-prev", "is-enter-next", "is-enter-prev");
+        return;
+      }
+      busy = true;
+      outgoing.classList.remove("is-current", "is-enter-next", "is-enter-prev");
+      outgoing.classList.add(dir > 0 ? "is-leave-next" : "is-leave-prev");
+      incoming.classList.add("is-current", dir > 0 ? "is-enter-next" : "is-enter-prev");
+      window.setTimeout(function () {
+        outgoing.classList.remove("is-leave-next", "is-leave-prev");
+        incoming.classList.remove("is-enter-next", "is-enter-prev");
+        busy = false;
+      }, 640);
+    }
+
+    function parseHash() {
+      const raw = (location.hash || "").replace(/^#/, "");
+      if (!raw) return 0;
+      const el = document.getElementById(raw);
+      if (!el) return 0;
+      const i = beats.indexOf(el);
+      return i >= 0 ? i : 0;
+    }
+
+    const start = parseHash();
+    if (start !== 0) {
+      beats[0].classList.remove("is-current");
+      beats[start].classList.add("is-current");
+      index = start;
+      if (live) live.textContent = (start + 1) + " / " + beats.length;
+    }
+
+    window.addEventListener("hashchange", function () {
+      const i = parseHash();
+      if (i === index) return;
+      show(i, i >= index ? 1 : -1);
+    });
+
+    function isInteractive(el) {
+      return el && el.closest && el.closest("a, button, input, textarea, select, [data-briefing-panel]");
+    }
+
+    window.addEventListener("keydown", function (e) {
+      if (e.altKey || e.ctrlKey || e.metaKey) return;
+      const k = e.key;
+      if (k === "Escape") {
+        if (overviewOpen()) {
+          e.preventDefault();
+          setOverview(false);
+        }
+        return;
+      }
+      if (k === "o" || k === "O") {
+        e.preventDefault();
+        setOverview(!overviewOpen());
+        return;
+      }
+      if (overviewOpen()) return;
+      if (k === "ArrowRight" || k === " " || k === "Spacebar" || k === "PageDown" || k === "ArrowDown") {
+        e.preventDefault();
+        show(index + 1, 1);
+      } else if (k === "ArrowLeft" || k === "PageUp" || k === "ArrowUp") {
+        e.preventDefault();
+        show(index - 1, -1);
+      } else if (k === "Home") {
+        e.preventDefault();
+        show(0, -1);
+      } else if (k === "End") {
+        e.preventDefault();
+        show(beats.length - 1, 1);
+      }
+    });
+
+    root.addEventListener("click", function (e) {
+      if (overviewOpen()) return;
+      if (isInteractive(e.target)) return;
+      const rect = root.getBoundingClientRect();
+      const mid = rect.top + rect.height / 2;
+      if (e.clientY < mid) show(index - 1, -1);
+      else show(index + 1, 1);
+    });
+
+    if (ovBtn) {
+      ovBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        setOverview(!overviewOpen());
+      });
+    }
+    if (ovClose) {
+      ovClose.addEventListener("click", function (e) {
+        e.preventDefault();
+        setOverview(false);
+      });
+    }
+    if (overview) {
+      overview.addEventListener("click", function (e) {
+        if (e.target === overview) setOverview(false);
+      });
+      overview.querySelectorAll("a[href^='#']").forEach(function (a) {
+        a.addEventListener("click", function (e) {
+          const id = (a.getAttribute("href") || "").slice(1);
+          const el = document.getElementById(id);
+          const i = beats.indexOf(el);
+          if (i < 0) return;
+          e.preventDefault();
+          setOverview(false);
+          const dir = i >= index ? 1 : -1;
+          show(i, dir);
+        });
+      });
+    }
+  })();
+
   const search = document.getElementById("entry-search");
   const buttons = document.querySelectorAll(".filter-btn");
   const cards = document.querySelectorAll("[data-entry-card]");

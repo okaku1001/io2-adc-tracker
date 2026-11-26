@@ -648,6 +648,64 @@ def pick_board_slugs(section: dict, by_slug: dict) -> list[str]:
     return chosen
 
 
+
+_LOCK_TOKEN = re.compile(
+    r"(?:NCT\d+|EU\s*CT\s*[\d-]+|BLA\s*\d+|"
+    r"\d{4}\s*年\s*\d{1,2}\s*月(?:\s*\d{1,2}\s*日)?|"
+    r"\d{1,2}\s*月\s*\d{1,2}\s*日|"
+    r"[A-Za-z][A-Za-z0-9'’./_-]+|"
+    r"\d{4}-\d{2}-\d{2})"
+)
+
+
+def lock_tokens(text: str) -> str:
+    """Escape text and keep Latin names, registry IDs and ISO dates from breaking mid-token."""
+    text = text or ""
+    parts = []
+    last = 0
+    for m in _LOCK_TOKEN.finditer(text):
+        parts.append(html.escape(text[last:m.start()]))
+        parts.append(f'<span class="nw">{html.escape(m.group(0))}</span>')
+        last = m.end()
+    parts.append(html.escape(text[last:]))
+    return "".join(parts)
+
+
+def typographic_html(text: str) -> str:
+    """Escape like lock_tokens, and prefer wrapping after punctuation."""
+    return re.sub(r"([，。；、：！？])", r"\1<wbr>", lock_tokens(text))
+
+
+def situation_rows(slugs, by_slug, prefix: str) -> str:
+    rows = []
+    for slug in slugs:
+        entry = by_slug.get(slug)
+        if not entry:
+            continue
+        status = entry_board_line(entry)
+        status_html = (
+            f'<span class="board-status">{html.escape(status)}</span>' if status else ""
+        )
+        rows.append(
+            "<li>"
+            f'<a href="{html.escape(entry_url(slug, prefix))}">'
+            f'<span class="board-name">{html.escape(board_display_name(entry))}</span>'
+            f"{status_html}"
+            "</a></li>"
+        )
+    return "".join(rows)
+
+
+def section_rest_slugs(section: dict, by_slug: dict, featured) -> list:
+    featured_set = set(featured)
+    rest = []
+    for item in section.get("items") or []:
+        slug = item.get("slug")
+        if slug and slug in by_slug and slug not in BOARD_SKIP and slug not in featured_set and slug not in rest:
+            rest.append(slug)
+    return rest
+
+
 def render_situation_board(layout: dict, entries, prefix: str) -> str:
     by_slug = {e["slug"]: e for e in entries}
     mods = []
@@ -658,24 +716,24 @@ def render_situation_board(layout: dict, entries, prefix: str) -> str:
         sid = section.get("id") or ""
         label = BOARD_LABELS.get(sid) or section.get("title") or ""
         href = rel_to(prefix, f"pipeline.html#{sid}")
-        rows = []
-        for slug in slugs:
-            entry = by_slug[slug]
-            status = entry_board_line(entry)
-            status_html = (
-                f'<span class="board-status">{html.escape(status)}</span>' if status else ""
-            )
-            rows.append(
-                "<li>"
-                f'<a href="{html.escape(entry_url(slug, prefix))}">'
-                f'<span class="board-name">{html.escape(board_display_name(entry))}</span>'
-                f"{status_html}"
-                "</a></li>"
+        rows = situation_rows(slugs, by_slug, prefix)
+        more_html = ""
+        rest = section_rest_slugs(section, by_slug, slugs)
+        if rest:
+            more_id = f"board-more-{sid}"
+            more_html = (
+                f'<div class="situation-more">'
+                f'<button type="button" class="situation-more-toggle" aria-expanded="false" aria-controls="{html.escape(more_id)}">'
+                f"还有 {len(rest)} 条</button>"
+                f'<div class="situation-more-body" id="{html.escape(more_id)}" hidden>'
+                f'<ul class="situation-list">{situation_rows(rest, by_slug, prefix)}</ul>'
+                f"</div></div>"
             )
         mods.append(
             f'<section class="situation-mod" aria-labelledby="board-{html.escape(sid)}">'
             f'<h3 id="board-{html.escape(sid)}"><a href="{html.escape(href)}">{html.escape(label)}</a></h3>'
-            f'<ul class="situation-list">{"".join(rows)}</ul>'
+            f'<ul class="situation-list">{rows}</ul>'
+            f"{more_html}"
             "</section>"
         )
     if not mods:
@@ -1105,10 +1163,10 @@ def home(entries, dailies, site, layout=None):
     if recent_items:
         lead = recent_items[0]
         blurb = lead.get("blurb") or ""
-        blurb_html = f'<p class="lead-blurb">{html.escape(blurb)}</p>' if blurb else ""
+        blurb_html = f'<p class="lead-blurb">{typographic_html(blurb)}</p>' if blurb else ""
         lead_html = f"""<a class="lead" href="{html.escape(lead['href'])}">
   <p class="lead-date">{html.escape(lead['date'])}</p>
-  <h3 class="lead-title">{html.escape(lead['headline'])}</h3>
+  <h3 class="lead-title">{lock_tokens(lead.get("headline") or "")}</h3>
   {blurb_html}
 </a>"""
         rest = []
@@ -1129,8 +1187,14 @@ def home(entries, dailies, site, layout=None):
     news_block = ""
     list_block = ""
     if lead_html or list_html:
+        brief_link = ""
+        if dailies and (dailies[0].get("items") or []):
+            brief_link = '<a class="briefing-entry" href="briefing.html">今日简报</a>'
         news_block = f"""<section class="briefing-news" aria-labelledby="recent-h">
-  <div class="section-h"><h2 id="recent-h">最近动态</h2><a href="daily/index.html">全部日期</a></div>
+  <div class="section-h">
+    <h2 id="recent-h">最近动态</h2>
+    <p class="section-links">{brief_link}<a href="daily/index.html">全部日期</a></p>
+  </div>
   {lead_html}
 </section>"""
     list_block = f'<div class="briefing-list">{list_html}</div>' if list_html else ""
@@ -1212,6 +1276,89 @@ def about_page(site):
     return page("关于", "", "about", site, body, body_class="page-about")
 
 
+def briefing_page(dailies, site):
+    """Optional one-beat reader for the latest day's already-published items."""
+    day = None
+    for d in dailies or []:
+        if d.get("items"):
+            day = d
+            break
+    if not day:
+        body = (
+            '<header class="hero read">'
+            "<h1>今日简报</h1>"
+            '<p class="lede">今天还没有已核进展。</p>'
+            "</header>"
+            '<p><a href="index.html">返回首页</a></p>'
+        )
+        return page("今日简报", "", "briefing", site, body, body_class="page-briefing")
+
+    date = day.get("date") or ""
+    items = day.get("items") or []
+    beats = []
+    # Cover states only verified results (date and count). Do not use the
+    # daily title: those lines are often work notes such as 补建 or 补核.
+    cover_lede = f"{date}，{len(items)} 条已核进展。"
+    hint = "空格或点下半屏到下一条，点上半屏回到上一条。读完后会回到首页。"
+    beats.append(
+        '<section class="briefing-beat is-cover is-current" id="s0" data-beat="0">'
+        '<p class="kicker">今日简报</p>'
+        f'<h2 class="briefing-title">{html.escape(date)}</h2>'
+        f'<p class="briefing-count">{html.escape(cover_lede)}</p>'
+        f'<p class="briefing-hint">{typographic_html(hint)}</p>'
+        "</section>"
+    )
+    for i, it in enumerate(items, start=1):
+        slug = it.get("entry")
+        href = f"entries/{slug}.html" if slug else f"daily/{date}.html"
+        blurb = it.get("blurb") or ""
+        blurb_html = f'<p class="briefing-blurb">{typographic_html(blurb)}</p>' if blurb else ""
+        beats.append(
+            f'<section class="briefing-beat" id="s{i}" data-beat="{i}">'
+            f'<p class="kicker">{html.escape(date)} · {i} / {len(items)}</p>'
+            f'<h2 class="briefing-title">{typographic_html(it.get("headline") or "")}</h2>'
+            f"{blurb_html}"
+            f'<p class="briefing-open"><a href="{html.escape(href)}">打开该条目</a></p>'
+            "</section>"
+        )
+    end_i = len(items) + 1
+    beats.append(
+        f'<section class="briefing-beat is-end" id="s{end_i}" data-beat="{end_i}">'
+        '<p class="kicker">今日简报</p>'
+        f'<h2 class="briefing-title">{html.escape(date)} 的已核进展已经读完</h2>'
+        '<p class="briefing-blurb">可以回到首页继续看局面图，或打开完整的每日动态。</p>'
+        '<p class="briefing-open"><a class="briefing-home" href="index.html">返回首页</a>'
+        f'<a href="{html.escape("daily/" + date + ".html")}">当日全部条目</a></p>'
+        "</section>"
+    )
+    overview_items = ['<li><a href="#s0">封面</a></li>']
+    for i, it in enumerate(items, start=1):
+        overview_items.append(
+            f'<li><a href="#s{i}"><span class="ov-num">{i}</span> {typographic_html(it.get("headline") or "")}</a></li>'
+        )
+    overview_items.append(f'<li><a href="#s{end_i}">返回首页</a></li>')
+    body = (
+        '<header class="briefing-bar">'
+        f'<p class="briefing-bar-title">今日简报 · {html.escape(date)}</p>'
+        '<p class="section-links">'
+        '<a href="index.html">返回首页</a>'
+        '<button type="button" class="briefing-overview-btn" data-briefing-overview hidden>总览</button>'
+        "</p></header>"
+        '<p class="briefing-noscript">没有脚本时，下面按原顺序列出当天已核进展，也可以直接<a href="index.html">返回首页</a>。</p>'
+        f'<div class="briefing-deck" data-briefing data-home="index.html" data-count="{len(beats)}">'
+        f'<p class="briefing-live" data-briefing-status aria-live="polite">1 / {len(beats)}</p>'
+        f"{''.join(beats)}"
+        "</div>"
+        '<div class="briefing-overview" data-briefing-panel hidden>'
+        '<div class="briefing-overview-panel">'
+        '<div class="section-h"><h2 id="briefing-ov">全部页</h2>'
+        '<button type="button" data-briefing-overview-close>关闭</button></div>'
+        f'<ol class="briefing-ov-list">{"".join(overview_items)}</ol>'
+        "</div></div>"
+    )
+    return page("今日简报", "", "briefing", site, body, body_class="page-briefing")
+
+
 def write(path: Path, text: str):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(text, encoding="utf-8")
@@ -1268,6 +1415,7 @@ def main():
     by_slug = {e["slug"]: e for e in entries}
 
     write(OUT / "index.html", home(entries, dailies, site, layout))
+    write(OUT / "briefing.html", briefing_page(dailies, site))
     write(OUT / "pipeline.html", pipeline_page(entries, site, layout))
     write(OUT / "about.html", about_page(site))
     write(OUT / "entries" / "index.html", entries_index(entries, site, layout))
@@ -1282,7 +1430,7 @@ def main():
         OUT / "robots.txt",
         f"User-agent: *\nAllow: /\nSitemap: {site['base_url']}/sitemap.xml\n",
     )
-    urls = ["/", "/pipeline.html", "/about.html", "/entries/", "/daily/", "/feed.xml"]
+    urls = ["/", "/briefing.html", "/pipeline.html", "/about.html", "/entries/", "/daily/", "/feed.xml"]
     urls += [f"/entries/{e['slug']}.html" for e in entries]
     urls += [f"/daily/{d['date']}.html" for d in dailies]
     sm = ["<?xml version='1.0' encoding='UTF-8'?>", '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
