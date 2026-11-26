@@ -28,7 +28,7 @@
     </a>
     <nav class="nav" aria-label="主导航">
       <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-label="打开菜单">☰</button>
-      <div class="nav-links"><a href="../index.html">首页</a><a href="../entries/index.html" aria-current="page">条目</a><a href="../daily/index.html">每日动态</a><a href="../about.html">关于</a></div>
+      <div class="nav-links"><a href="../index.html">首页</a><a href="../pipeline.html" class="nav-guide">管线与竞争</a><a href="../entries/index.html" aria-current="page">条目</a><a href="../daily/index.html">每日动态</a><a href="../about.html">关于</a></div>
       <button class="icon-btn" id="theme-toggle" type="button" aria-label="切换深浅色">◐</button>
     </nav>
   </div>
@@ -36,13 +36,14 @@
 <main id="main" class="wrap">
 <header class="hero">
   <h1>条目</h1>
-  <p class="lede">按药、试验或事件线组织。同一条线的新旧进展写在同一页，按时间往下读。</p>
+  <p class="lede">按药、试验或事件线组织。同一条线的新旧进展写在同一页，按时间往下读。按品种看竞争关系，请走「管线与竞争」。</p>
 </header>
 <div class="filters">
   <div class="search-box"><input id="entry-search" type="search" placeholder="搜索药名、试验名、适应症或公司" aria-label="搜索条目"></div>
   <details class="filter-panel">
-    <summary>筛选公司、药物、适应症</summary>
+    <summary>筛选分类、公司、药物、适应症</summary>
     <div class="filter-groups">
+      <div><p class="filter-label">分类</p><div class="filter-row"><button class="filter-btn" type="button" data-key="group" data-val="全部" aria-pressed="true">全部</button><button class="filter-btn" type="button" data-key="group" data-val="ivo" aria-pressed="false">依沃西</button><button class="filter-btn" type="button" data-key="group" data-val="cado" aria-pressed="false">卡度尼利</button><button class="filter-btn" type="button" data-key="group" data-val="akeso-other" aria-pressed="false">康方其他品种与平台</button><button class="filter-btn" type="button" data-key="group" data-val="partner" aria-pressed="false">合作与联用</button><button class="filter-btn" type="button" data-key="group" data-val="competitor" aria-pressed="false">竞争与对照</button><button class="filter-btn" type="button" data-key="group" data-val="policy" aria-pressed="false">政策与规则</button></div></div>
       <div><p class="filter-label">公司</p><div class="filter-row"><button class="filter-btn" type="button" data-key="company" data-val="全部" aria-pressed="true">全部</button><button class="filter-btn" type="button" data-key="company" data-val="康方生物" aria-pressed="false">康方生物</button><button class="filter-btn" type="button" data-key="company" data-val="Summit" aria-pressed="false">Summit</button><button class="filter-btn" type="button" data-key="company" data-val="BioNTech" aria-pressed="false">BioNTech</button><button class="filter-btn" type="button" data-key="company" data-val="百时美施贵宝" aria-pressed="false">百时美施贵宝</button><button class="filter-btn" type="button" data-key="company" data-val="科伦博泰" aria-pressed="false">科伦博泰</button><button class="filter-btn" type="button" data-key="company" data-val="默沙东" aria-pressed="false">默沙东</button><button class="filter-btn" type="button" data-key="company" data-val="辉瑞" aria-pressed="false">辉瑞</button><button class="filter-btn" type="button" data-key="company" data-val="阿斯利康" aria-pressed="false">阿斯利康</button><button class="filter-btn" type="button" data-key="company" data-val="Gilead" aria-pressed="false">Gilead</button><button class="filter-btn" type="button" data-key="company" data-val="三生制药" aria-pressed="false">三生制药</button><button class="filter-btn" type="button" data-key="company" data-val="荣昌生物" aria-pressed="false">荣昌生物</button><button class="filter-btn" type="button" data-key="company" data-val="艾伯维" aria-pressed="false">艾伯维</button><button class="filter-btn" type="button" data-key="company" data-val="翰森制药" aria-pressed="false">翰森制药</button><button class="filter-btn" type="button" data-key="company" data-val="GSK" aria-pressed="false">GSK</button><button class="filter-btn" type="button" data-key="company" data-val="石药集团" aria-pressed="false">石药集团</button><button class="filter-btn" type="button" data-key="company" data-val="齐鲁制药" aria-pressed="false">齐鲁制药</button><button class="filter-btn" type="button" data-key="company" data-val="礼新医药" aria-pressed="false">礼新医药</button><button class="filter-btn" type="button" data-key="company" data-val="正大天晴康方" aria-pressed="false">正大天晴康方</button><button class="filter-btn" type="button" data-key="company" data-val="济川药业" aria-pressed="false">济川药业</button><button class="filter-btn" type="button" data-key="company" data-val="百利天恒" aria-pressed="false">百利天恒</button><button class="filter-btn" type="button" data-key="company" data-val="宜联生物" aria-pressed="false">宜联生物</button><button class="filter-btn" type="button" data-key="company" data-val="Crescent Biopharma" aria-pressed="false">Crescent Biopharma</button><button class="filter-btn" type="button" data-key="company" data-val="华海药业" aria-pressed="false">华海药业</button><button class="filter-btn" type="button" data-key="company" data-val="君实生物" aria-pressed="false">君实生物</button><button class="filter-btn" type="button" data-key="company" data-val="复宏汉霖" aria-pressed="false">复宏汉霖</button><button class="filter-btn" type="button" data-key="company" data-val="恒瑞医药" aria-pressed="false">恒瑞医药</button><button class="filter-btn" type="button" data-key="company" data-val="基石药业" aria-pressed="false">基石药业</button></div></div>
       <div><p class="filter-label">药物</p><div class="filter-row"><button class="filter-btn" type="button" data-key="drug" data-val="全部" aria-pressed="true">全部</button><button class="filter-btn" type="button" data-key="drug" data-val="依沃西" aria-pressed="false">依沃西</button><button class="filter-btn" type="button" data-key="drug" data-val="pumitamig" aria-pressed="false">pumitamig</button><button class="filter-btn" type="button" data-key="drug" data-val="sac-TMT" aria-pressed="false">sac-TMT</button><button class="filter-btn" type="button" data-key="drug" data-val="帕博利珠单抗" aria-pressed="false">帕博利珠单抗</button><button class="filter-btn" type="button" data-key="drug" data-val="恩诺单抗" aria-pressed="false">恩诺单抗</button><button class="filter-btn" type="button" data-key="drug" data-val="Datroway" aria-pressed="false">Datroway</button><button class="filter-btn" type="button" data-key="drug" data-val="戈沙妥珠单抗" aria-pressed="false">戈沙妥珠单抗</button><button class="filter-btn" type="button" data-key="drug" data-val="tivunatamig" aria-pressed="false">tivunatamig</button><button class="filter-btn" type="button" data-key="drug" data-val="RC148" aria-pressed="false">RC148</button><button class="filter-btn" type="button" data-key="drug" data-val="RC118" aria-pressed="false">RC118</button><button class="filter-btn" type="button" data-key="drug" data-val="HS-20093" aria-pressed="false">HS-20093</button><button class="filter-btn" type="button" data-key="drug" data-val="SYS6043" aria-pressed="false">SYS6043</button><button class="filter-btn" type="button" data-key="drug" data-val="卡度尼利" aria-pressed="false">卡度尼利</button><button class="filter-btn" type="button" data-key="drug" data-val="pulocimab" aria-pressed="false">pulocimab</button><button class="filter-btn" type="button" data-key="drug" data-val="AK109" aria-pressed="false">AK109</button><button class="filter-btn" type="button" data-key="drug" data-val="莱法利" aria-pressed="false">莱法利</button><button class="filter-btn" type="button" data-key="drug" data-val="QL1706" aria-pressed="false">QL1706</button><button class="filter-btn" type="button" data-key="drug" data-val="古莫奇" aria-pressed="false">古莫奇</button><button class="filter-btn" type="button" data-key="drug" data-val="MK-2010" aria-pressed="false">MK-2010</button><button class="filter-btn" type="button" data-key="drug" data-val="Sone-Ve" aria-pressed="false">Sone-Ve</button><button class="filter-btn" type="button" data-key="drug" data-val="派安普利" aria-pressed="false">派安普利</button><button class="filter-btn" type="button" data-key="drug" data-val="曼多奇" aria-pressed="false">曼多奇</button><button class="filter-btn" type="button" data-key="drug" data-val="依若奇" aria-pressed="false">依若奇</button><button class="filter-btn" type="button" data-key="drug" data-val="AK146D1" aria-pressed="false">AK146D1</button><button class="filter-btn" type="button" data-key="drug" data-val="AK138D1" aria-pressed="false">AK138D1</button><button class="filter-btn" type="button" data-key="drug" data-val="伊努西" aria-pressed="false">伊努西</button><button class="filter-btn" type="button" data-key="drug" data-val="iza-bren" aria-pressed="false">iza-bren</button><button class="filter-btn" type="button" data-key="drug" data-val="YL201" aria-pressed="false">YL201</button><button class="filter-btn" type="button" data-key="drug" data-val="维迪西妥单抗" aria-pressed="false">维迪西妥单抗</button><button class="filter-btn" type="button" data-key="drug" data-val="AK130" aria-pressed="false">AK130</button><button class="filter-btn" type="button" data-key="drug" data-val="CR-001" aria-pressed="false">CR-001</button><button class="filter-btn" type="button" data-key="drug" data-val="CR-002" aria-pressed="false">CR-002</button><button class="filter-btn" type="button" data-key="drug" data-val="HB0025" aria-pressed="false">HB0025</button><button class="filter-btn" type="button" data-key="drug" data-val="JS207" aria-pressed="false">JS207</button><button class="filter-btn" type="button" data-key="drug" data-val="HLX37" aria-pressed="false">HLX37</button><button class="filter-btn" type="button" data-key="drug" data-val="SHR-4610" aria-pressed="false">SHR-4610</button><button class="filter-btn" type="button" data-key="drug" data-val="CS2009" aria-pressed="false">CS2009</button><button class="filter-btn" type="button" data-key="drug" data-val="AK139" aria-pressed="false">AK139</button><button class="filter-btn" type="button" data-key="drug" data-val="AK129" aria-pressed="false">AK129</button><button class="filter-btn" type="button" data-key="drug" data-val="AK131" aria-pressed="false">AK131</button><button class="filter-btn" type="button" data-key="drug" data-val="AK132" aria-pressed="false">AK132</button><button class="filter-btn" type="button" data-key="drug" data-val="AK137" aria-pressed="false">AK137</button><button class="filter-btn" type="button" data-key="drug" data-val="AK135" aria-pressed="false">AK135</button><button class="filter-btn" type="button" data-key="drug" data-val="AK150" aria-pressed="false">AK150</button><button class="filter-btn" type="button" data-key="drug" data-val="AK152" aria-pressed="false">AK152</button><button class="filter-btn" type="button" data-key="drug" data-val="AK154" aria-pressed="false">AK154</button></div></div>
       <div><p class="filter-label">适应症</p><div class="filter-row"><button class="filter-btn" type="button" data-key="indication" data-val="全部" aria-pressed="true">全部</button><button class="filter-btn" type="button" data-key="indication" data-val="NSCLC" aria-pressed="false">NSCLC</button><button class="filter-btn" type="button" data-key="indication" data-val="胆道癌" aria-pressed="false">胆道癌</button><button class="filter-btn" type="button" data-key="indication" data-val="小细胞肺癌" aria-pressed="false">小细胞肺癌</button><button class="filter-btn" type="button" data-key="indication" data-val="乳腺癌" aria-pressed="false">乳腺癌</button><button class="filter-btn" type="button" data-key="indication" data-val="胃癌" aria-pressed="false">胃癌</button><button class="filter-btn" type="button" data-key="indication" data-val="结直肠癌" aria-pressed="false">结直肠癌</button><button class="filter-btn" type="button" data-key="indication" data-val="子宫内膜癌" aria-pressed="false">子宫内膜癌</button><button class="filter-btn" type="button" data-key="indication" data-val="尿路上皮癌" aria-pressed="false">尿路上皮癌</button><button class="filter-btn" type="button" data-key="indication" data-val="围手术期" aria-pressed="false">围手术期</button><button class="filter-btn" type="button" data-key="indication" data-val="未披露" aria-pressed="false">未披露</button><button class="filter-btn" type="button" data-key="indication" data-val="肾癌" aria-pressed="false">肾癌</button><button class="filter-btn" type="button" data-key="indication" data-val="胸腺癌" aria-pressed="false">胸腺癌</button><button class="filter-btn" type="button" data-key="indication" data-val="食管癌" aria-pressed="false">食管癌</button><button class="filter-btn" type="button" data-key="indication" data-val="胰腺癌" aria-pressed="false">胰腺癌</button><button class="filter-btn" type="button" data-key="indication" data-val="胶质母细胞瘤" aria-pressed="false">胶质母细胞瘤</button><button class="filter-btn" type="button" data-key="indication" data-val="宫颈癌" aria-pressed="false">宫颈癌</button><button class="filter-btn" type="button" data-key="indication" data-val="胃食管结合部腺癌" aria-pressed="false">胃食管结合部腺癌</button><button class="filter-btn" type="button" data-key="indication" data-val="多瘤种" aria-pressed="false">多瘤种</button><button class="filter-btn" type="button" data-key="indication" data-val="头颈部鳞癌" aria-pressed="false">头颈部鳞癌</button><button class="filter-btn" type="button" data-key="indication" data-val="急性髓系白血病" aria-pressed="false">急性髓系白血病</button><button class="filter-btn" type="button" data-key="indication" data-val="骨髓增生异常综合征" aria-pressed="false">骨髓增生异常综合征</button><button class="filter-btn" type="button" data-key="indication" data-val="头颈癌" aria-pressed="false">头颈癌</button><button class="filter-btn" type="button" data-key="indication" data-val="银屑病" aria-pressed="false">银屑病</button><button class="filter-btn" type="button" data-key="indication" data-val="强直性脊柱炎" aria-pressed="false">强直性脊柱炎</button><button class="filter-btn" type="button" data-key="indication" data-val="鼻咽癌" aria-pressed="false">鼻咽癌</button><button class="filter-btn" type="button" data-key="indication" data-val="肝细胞癌" aria-pressed="false">肝细胞癌</button><button class="filter-btn" type="button" data-key="indication" data-val="鳞状非小细胞肺癌" aria-pressed="false">鳞状非小细胞肺癌</button><button class="filter-btn" type="button" data-key="indication" data-val="经典型霍奇金淋巴瘤" aria-pressed="false">经典型霍奇金淋巴瘤</button><button class="filter-btn" type="button" data-key="indication" data-val="特应性皮炎" aria-pressed="false">特应性皮炎</button><button class="filter-btn" type="button" data-key="indication" data-val="晚期实体瘤" aria-pressed="false">晚期实体瘤</button><button class="filter-btn" type="button" data-key="indication" data-val="原发性高胆固醇血症" aria-pressed="false">原发性高胆固醇血症</button><button class="filter-btn" type="button" data-key="indication" data-val="混合型高脂血症" aria-pressed="false">混合型高脂血症</button><button class="filter-btn" type="button" data-key="indication" data-val="杂合子家族性高胆固醇血症" aria-pressed="false">杂合子家族性高胆固醇血症</button><button class="filter-btn" type="button" data-key="indication" data-val="实体瘤" aria-pressed="false">实体瘤</button><button class="filter-btn" type="button" data-key="indication" data-val="哮喘" aria-pressed="false">哮喘</button><button class="filter-btn" type="button" data-key="indication" data-val="慢性自发性荨麻疹" aria-pressed="false">慢性自发性荨麻疹</button><button class="filter-btn" type="button" data-key="indication" data-val="过敏性鼻炎" aria-pressed="false">过敏性鼻炎</button><button class="filter-btn" type="button" data-key="indication" data-val="慢性鼻窦炎伴鼻息肉" aria-pressed="false">慢性鼻窦炎伴鼻息肉</button><button class="filter-btn" type="button" data-key="indication" data-val="结节性痒疹" aria-pressed="false">结节性痒疹</button><button class="filter-btn" type="button" data-key="indication" data-val="慢性阻塞性肺疾病" aria-pressed="false">慢性阻塞性肺疾病</button><button class="filter-btn" type="button" data-key="indication" data-val="化疗诱导周围神经病变" aria-pressed="false">化疗诱导周围神经病变</button><button class="filter-btn" type="button" data-key="indication" data-val="阿尔茨海默病" aria-pressed="false">阿尔茨海默病</button></div></div>
@@ -50,6 +51,7 @@
   </details>
 </div>
 <div class="entry-list"><a class="entry-row" data-entry-card href="harmoni-fda.html"
+              data-group="ivo"
               data-companies="康方生物|Summit"
               data-drugs="依沃西"
               data-indications="NSCLC"
@@ -60,6 +62,7 @@
   <p class="entry-meta"><time datetime="2026-11-16">2026年11月16日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">NSCLC</span></div>
 </a><a class="entry-row" data-entry-card href="harmoni-3.html"
+              data-group="ivo"
               data-companies="康方生物|Summit"
               data-drugs="依沃西"
               data-indications="NSCLC"
@@ -70,6 +73,7 @@
   <p class="entry-meta"><time datetime="2026-11-11">2026年11月11日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">NSCLC</span></div>
 </a><a class="entry-row" data-entry-card href="harmoni-2.html"
+              data-group="ivo"
               data-companies="康方生物"
               data-drugs="依沃西"
               data-indications="NSCLC"
@@ -80,6 +84,7 @@
   <p class="entry-meta"><time datetime="2026-11-11">2026年11月11日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">NSCLC</span></div>
 </a><a class="entry-row" data-entry-card href="harmoni-gi1.html"
+              data-group="ivo"
               data-companies="康方生物"
               data-drugs="依沃西"
               data-indications="胆道癌"
@@ -90,6 +95,7 @@
   <p class="entry-meta"><time datetime="2026-11-17">2026年11月17日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">胆道癌</span></div>
 </a><a class="entry-row" data-entry-card href="harmoni-6.html"
+              data-group="ivo"
               data-companies="康方生物"
               data-drugs="依沃西"
               data-indications="NSCLC"
@@ -100,6 +106,7 @@
   <p class="entry-meta"><time datetime="2026-11-14">2026年11月14日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">NSCLC</span></div>
 </a><a class="entry-row" data-entry-card href="harmoni-a.html"
+              data-group="ivo"
               data-companies="康方生物"
               data-drugs="依沃西"
               data-indications="NSCLC"
@@ -110,6 +117,7 @@
   <p class="entry-meta"><time datetime="2026-06-18">2026年6月18日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">NSCLC</span></div>
 </a><a class="entry-row" data-entry-card href="ea2251.html"
+              data-group="ivo"
               data-companies="康方生物|Summit"
               data-drugs="依沃西"
               data-indications="胆道癌"
@@ -120,6 +128,7 @@
   <p class="entry-meta"><time datetime="2026-11-04">2026年11月4日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">胆道癌</span></div>
 </a><a class="entry-row" data-entry-card href="pumitamig.html"
+              data-group="competitor"
               data-companies="BioNTech|百时美施贵宝"
               data-drugs="pumitamig"
               data-indications="NSCLC|小细胞肺癌|乳腺癌|胃癌|结直肠癌"
@@ -130,6 +139,7 @@
   <p class="entry-meta"><time datetime="2026-11-12">2026年11月12日</time></p>
   <div class="card-foot"><span class="chip">pumitamig</span><span class="chip">NSCLC</span><span class="chip">小细胞肺癌</span></div>
 </a><a class="entry-row" data-entry-card href="harmoni-10.html"
+              data-group="ivo"
               data-companies="康方生物|Summit"
               data-drugs="依沃西"
               data-indications="NSCLC"
@@ -140,6 +150,7 @@
   <p class="entry-meta"><time datetime="2026-11-19">2026年11月19日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">NSCLC</span></div>
 </a><a class="entry-row" data-entry-card href="sac-tmt.html"
+              data-group="competitor"
               data-companies="科伦博泰|默沙东"
               data-drugs="sac-TMT|帕博利珠单抗"
               data-indications="NSCLC|子宫内膜癌"
@@ -150,6 +161,7 @@
   <p class="entry-meta"><time datetime="2026-11-11">2026年11月11日</time></p>
   <div class="card-foot"><span class="chip">sac-TMT</span><span class="chip">帕博利珠单抗</span><span class="chip">NSCLC</span><span class="chip">子宫内膜癌</span></div>
 </a><a class="entry-row" data-entry-card href="harmoni-gu1.html"
+              data-group="ivo"
               data-companies="康方生物|Summit|辉瑞"
               data-drugs="依沃西|恩诺单抗"
               data-indications="尿路上皮癌"
@@ -160,6 +172,7 @@
   <p class="entry-meta"><time datetime="2026-11-13">2026年11月13日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">恩诺单抗</span><span class="chip">尿路上皮癌</span></div>
 </a><a class="entry-row" data-entry-card href="ivonescimab-perioperative.html"
+              data-group="ivo"
               data-companies="康方生物"
               data-drugs="依沃西"
               data-indications="NSCLC|围手术期"
@@ -170,6 +183,7 @@
   <p class="entry-meta"><time datetime="2026-11-07">2026年11月7日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">NSCLC</span><span class="chip">围手术期</span></div>
 </a><a class="entry-row" data-entry-card href="coins-outbound-pharma.html"
+              data-group="policy"
               data-companies=""
               data-drugs=""
               data-indications=""
@@ -180,6 +194,7 @@
   <p class="entry-meta"><time datetime="2026-11-11">2026年11月11日</time></p>
   <div class="card-foot"></div>
 </a><a class="entry-row" data-entry-card href="harmoni-bc1.html"
+              data-group="ivo"
               data-companies="康方生物|Summit|阿斯利康"
               data-drugs="依沃西|Datroway"
               data-indications="乳腺癌"
@@ -190,6 +205,7 @@
   <p class="entry-meta"><time datetime="2026-11-26">2026年11月26日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">Datroway</span><span class="chip">乳腺癌</span></div>
 </a><a class="entry-row" data-entry-card href="rosetta-breast-01.html"
+              data-group="competitor"
               data-companies="BioNTech|百时美施贵宝|Gilead"
               data-drugs="pumitamig|戈沙妥珠单抗"
               data-indications="乳腺癌"
@@ -200,6 +216,7 @@
   <p class="entry-meta"><time datetime="2026-11-11">2026年11月11日</time></p>
   <div class="card-foot"><span class="chip">pumitamig</span><span class="chip">戈沙妥珠单抗</span><span class="chip">乳腺癌</span></div>
 </a><a class="entry-row" data-entry-card href="harmoni-7.html"
+              data-group="ivo"
               data-companies="康方生物|Summit"
               data-drugs="依沃西"
               data-indications="NSCLC"
@@ -210,6 +227,7 @@
   <p class="entry-meta"><time datetime="2026-11-26">2026年11月26日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">NSCLC</span></div>
 </a><a class="entry-row" data-entry-card href="tivunatamig.html"
+              data-group="competitor"
               data-companies="辉瑞|三生制药"
               data-drugs="tivunatamig"
               data-indications="NSCLC"
@@ -220,6 +238,7 @@
   <p class="entry-meta"><time datetime="2026-11-01">2026年11月1日</time></p>
   <div class="card-foot"><span class="chip">tivunatamig</span><span class="chip">NSCLC</span></div>
 </a><a class="entry-row" data-entry-card href="harmoni-gi3.html"
+              data-group="ivo"
               data-companies="康方生物|Summit"
               data-drugs="依沃西"
               data-indications="结直肠癌"
@@ -230,6 +249,7 @@
   <p class="entry-meta"><time datetime="2026-11-26">2026年11月26日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">结直肠癌</span></div>
 </a><a class="entry-row" data-entry-card href="rc148.html"
+              data-group="competitor"
               data-companies="荣昌生物|艾伯维"
               data-drugs="RC148|RC118"
               data-indications="胃癌|NSCLC"
@@ -240,6 +260,7 @@
   <p class="entry-meta"><time datetime="2026-11-10">2026年11月10日</time></p>
   <div class="card-foot"><span class="chip">RC148</span><span class="chip">RC118</span><span class="chip">胃癌</span><span class="chip">NSCLC</span></div>
 </a><a class="entry-row" data-entry-card href="adc-hs20093.html"
+              data-group="partner"
               data-companies="康方生物|翰森制药|GSK"
               data-drugs="依沃西|HS-20093"
               data-indications="NSCLC"
@@ -250,6 +271,7 @@
   <p class="entry-meta"><time datetime="2026-11-10">2026年11月10日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">HS-20093</span><span class="chip">NSCLC</span></div>
 </a><a class="entry-row" data-entry-card href="adc-sys6043.html"
+              data-group="partner"
               data-companies="康方生物|石药集团"
               data-drugs="依沃西|SYS6043"
               data-indications="未披露"
@@ -260,6 +282,7 @@
   <p class="entry-meta"><time datetime="2026-11-03">2026年11月3日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">SYS6043</span><span class="chip">未披露</span></div>
 </a><a class="entry-row" data-entry-card href="ivonescimab-china.html"
+              data-group="ivo"
               data-companies="康方生物"
               data-drugs="依沃西"
               data-indications="NSCLC"
@@ -270,6 +293,7 @@
   <p class="entry-meta"><time datetime="2026-11-17">2026年11月17日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">NSCLC</span></div>
 </a><a class="entry-row" data-entry-card href="smt112-216.html"
+              data-group="ivo"
               data-companies="康方生物|Summit"
               data-drugs="依沃西|卡度尼利"
               data-indications="肾癌"
@@ -280,6 +304,7 @@
   <p class="entry-meta"><time datetime="2026-11-13">2026年11月13日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">卡度尼利</span><span class="chip">肾癌</span></div>
 </a><a class="entry-row" data-entry-card href="nhc-innovative-drug-use-18.html"
+              data-group="policy"
               data-companies="康方生物"
               data-drugs="依沃西|卡度尼利"
               data-indications=""
@@ -290,6 +315,7 @@
   <p class="entry-meta"><time datetime="2026-11-12">2026年11月12日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">卡度尼利</span></div>
 </a><a class="entry-row" data-entry-card href="ivonescimab-esmo-2026.html"
+              data-group="ivo"
               data-companies="康方生物"
               data-drugs="依沃西|卡度尼利"
               data-indications="肾癌|胸腺癌|食管癌|胃癌|胰腺癌|胶质母细胞瘤|子宫内膜癌"
@@ -300,6 +326,7 @@
   <p class="entry-meta"><time datetime="2026-10-26">2026年10月26日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">卡度尼利</span><span class="chip">肾癌</span><span class="chip">胸腺癌</span></div>
 </a><a class="entry-row" data-entry-card href="compassion-37.html"
+              data-group="cado"
               data-companies="康方生物"
               data-drugs="卡度尼利"
               data-indications="胃癌"
@@ -310,6 +337,7 @@
   <p class="entry-meta"><time datetime="2026-11-10">2026年11月10日</time></p>
   <div class="card-foot"><span class="chip">卡度尼利</span><span class="chip">胃癌</span></div>
 </a><a class="entry-row" data-entry-card href="cadonilimab.html"
+              data-group="cado"
               data-companies="康方生物"
               data-drugs="卡度尼利"
               data-indications="宫颈癌|胃癌"
@@ -320,6 +348,7 @@
   <p class="entry-meta"><time datetime="2026-11-26">2026年11月26日</time></p>
   <div class="card-foot"><span class="chip">卡度尼利</span><span class="chip">宫颈癌</span><span class="chip">胃癌</span></div>
 </a><a class="entry-row" data-entry-card href="pulocimab.html"
+              data-group="akeso-other"
               data-companies="康方生物"
               data-drugs="pulocimab|AK109"
               data-indications="胃癌|胃食管结合部腺癌"
@@ -330,6 +359,7 @@
   <p class="entry-meta"><time datetime="2026-11-26">2026年11月26日</time></p>
   <div class="card-foot"><span class="chip">pulocimab</span><span class="chip">AK109</span><span class="chip">胃癌</span><span class="chip">胃食管结合部腺癌</span></div>
 </a><a class="entry-row" data-entry-card href="ivonescimab-trials.html"
+              data-group="ivo"
               data-companies="康方生物|Summit"
               data-drugs="依沃西"
               data-indications="多瘤种"
@@ -340,6 +370,7 @@
   <p class="entry-meta"><time datetime="2026-11-26">2026年11月26日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">多瘤种</span></div>
 </a><a class="entry-row" data-entry-card href="summit-az.html"
+              data-group="partner"
               data-companies="康方生物|Summit|阿斯利康"
               data-drugs="依沃西"
               data-indications="多瘤种"
@@ -350,6 +381,7 @@
   <p class="entry-meta"><time datetime="2026-11-11">2026年11月11日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">多瘤种</span></div>
 </a><a class="entry-row" data-entry-card href="ligufalimab.html"
+              data-group="akeso-other"
               data-companies="康方生物"
               data-drugs="莱法利|依沃西"
               data-indications="头颈部鳞癌|胰腺癌|急性髓系白血病|骨髓增生异常综合征"
@@ -360,6 +392,7 @@
   <p class="entry-meta"><time datetime="2026-11-26">2026年11月26日</time></p>
   <div class="card-foot"><span class="chip">莱法利</span><span class="chip">依沃西</span><span class="chip">头颈部鳞癌</span><span class="chip">胰腺癌</span></div>
 </a><a class="entry-row" data-entry-card href="ql1706.html"
+              data-group="competitor"
               data-companies="齐鲁制药"
               data-drugs="QL1706"
               data-indications="宫颈癌"
@@ -370,6 +403,7 @@
   <p class="entry-meta"><time datetime="2026-11-11">2026年11月11日</time></p>
   <div class="card-foot"><span class="chip">QL1706</span><span class="chip">宫颈癌</span></div>
 </a><a class="entry-row" data-entry-card href="other-harmoni.html"
+              data-group="ivo"
               data-companies="康方生物|Summit"
               data-drugs="依沃西|莱法利"
               data-indications="NSCLC|头颈癌|胰腺癌"
@@ -380,6 +414,7 @@
   <p class="entry-meta"><time datetime="2026-11-26">2026年11月26日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">莱法利</span><span class="chip">NSCLC</span><span class="chip">头颈癌</span></div>
 </a><a class="entry-row" data-entry-card href="gumokimab.html"
+              data-group="akeso-other"
               data-companies="康方生物"
               data-drugs="古莫奇"
               data-indications="银屑病|强直性脊柱炎"
@@ -390,6 +425,7 @@
   <p class="entry-meta"><time datetime="2026-11-16">2026年11月16日</time></p>
   <div class="card-foot"><span class="chip">古莫奇</span><span class="chip">银屑病</span><span class="chip">强直性脊柱炎</span></div>
 </a><a class="entry-row" data-entry-card href="mk-2010.html"
+              data-group="competitor"
               data-companies="默沙东|礼新医药"
               data-drugs="MK-2010"
               data-indications="NSCLC"
@@ -400,6 +436,7 @@
   <p class="entry-meta"><time datetime="2026-11-02">2026年11月2日</time></p>
   <div class="card-foot"><span class="chip">MK-2010</span><span class="chip">NSCLC</span></div>
 </a><a class="entry-row" data-entry-card href="sone-ve.html"
+              data-group="partner"
               data-companies="阿斯利康|Summit"
               data-drugs="Sone-Ve|依沃西"
               data-indications="胃癌"
@@ -410,6 +447,7 @@
   <p class="entry-meta"><time datetime="2026-10-26">2026年10月26日</time></p>
   <div class="card-foot"><span class="chip">Sone-Ve</span><span class="chip">依沃西</span><span class="chip">胃癌</span></div>
 </a><a class="entry-row" data-entry-card href="penpulimab.html"
+              data-group="akeso-other"
               data-companies="康方生物|正大天晴康方"
               data-drugs="派安普利"
               data-indications="鼻咽癌|肝细胞癌|鳞状非小细胞肺癌|经典型霍奇金淋巴瘤"
@@ -420,6 +458,7 @@
   <p class="entry-meta"><time datetime="2025-12-26">2025年12月26日</time></p>
   <div class="card-foot"><span class="chip">派安普利</span><span class="chip">鼻咽癌</span><span class="chip">肝细胞癌</span></div>
 </a><a class="entry-row" data-entry-card href="compassion-40.html"
+              data-group="cado"
               data-companies="康方生物"
               data-drugs="卡度尼利"
               data-indications="结直肠癌|围手术期"
@@ -430,6 +469,7 @@
   <p class="entry-meta"><time datetime="2026-10-09">2026年10月9日</time></p>
   <div class="card-foot"><span class="chip">卡度尼利</span><span class="chip">结直肠癌</span><span class="chip">围手术期</span></div>
 </a><a class="entry-row" data-entry-card href="manfidokimab.html"
+              data-group="akeso-other"
               data-companies="康方生物"
               data-drugs="曼多奇"
               data-indications="特应性皮炎"
@@ -440,6 +480,7 @@
   <p class="entry-meta"><time datetime="2026-02-26">2026年2月26日</time></p>
   <div class="card-foot"><span class="chip">曼多奇</span><span class="chip">特应性皮炎</span></div>
 </a><a class="entry-row" data-entry-card href="ebdarokimab.html"
+              data-group="akeso-other"
               data-companies="康方生物"
               data-drugs="依若奇"
               data-indications="银屑病"
@@ -450,6 +491,7 @@
   <p class="entry-meta"><time datetime="2025-04-18">2025年4月18日</time></p>
   <div class="card-foot"><span class="chip">依若奇</span><span class="chip">银屑病</span></div>
 </a><a class="entry-row" data-entry-card href="akeso-adc.html"
+              data-group="partner"
               data-companies="康方生物"
               data-drugs="AK146D1|AK138D1|依沃西|卡度尼利"
               data-indications="NSCLC|乳腺癌|晚期实体瘤"
@@ -460,6 +502,7 @@
   <p class="entry-meta"><time datetime="2026-11-16">2026年11月16日</time></p>
   <div class="card-foot"><span class="chip">AK146D1</span><span class="chip">AK138D1</span><span class="chip">依沃西</span><span class="chip">NSCLC</span><span class="chip">乳腺癌</span></div>
 </a><a class="entry-row" data-entry-card href="ebronucimab.html"
+              data-group="akeso-other"
               data-companies="康方生物|济川药业"
               data-drugs="伊努西"
               data-indications="原发性高胆固醇血症|混合型高脂血症|杂合子家族性高胆固醇血症"
@@ -470,6 +513,7 @@
   <p class="entry-meta"><time datetime="2026-02-03">2026年2月3日</time></p>
   <div class="card-foot"><span class="chip">伊努西</span><span class="chip">原发性高胆固醇血症</span><span class="chip">混合型高脂血症</span></div>
 </a><a class="entry-row" data-entry-card href="adc-other.html"
+              data-group="partner"
               data-companies="康方生物|百利天恒|宜联生物|荣昌生物|Gilead"
               data-drugs="依沃西|iza-bren|YL201|维迪西妥单抗|戈沙妥珠单抗"
               data-indications="NSCLC|胃癌"
@@ -480,6 +524,7 @@
   <p class="entry-meta"><time datetime="2026-11-17">2026年11月17日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">iza-bren</span><span class="chip">YL201</span><span class="chip">NSCLC</span><span class="chip">胃癌</span></div>
 </a><a class="entry-row" data-entry-card href="ak130.html"
+              data-group="akeso-other"
               data-companies="康方生物"
               data-drugs="AK130"
               data-indications="胆道癌|实体瘤"
@@ -490,6 +535,7 @@
   <p class="entry-meta"><time datetime="2026-11-26">2026年11月26日</time></p>
   <div class="card-foot"><span class="chip">AK130</span><span class="chip">胆道癌</span><span class="chip">实体瘤</span></div>
 </a><a class="entry-row" data-entry-card href="crescent-cr001.html"
+              data-group="competitor"
               data-companies="Crescent Biopharma|科伦博泰"
               data-drugs="CR-001|CR-002"
               data-indications="NSCLC|实体瘤"
@@ -500,6 +546,7 @@
   <p class="entry-meta"><time datetime="2026-11-13">2026年11月13日</time></p>
   <div class="card-foot"><span class="chip">CR-001</span><span class="chip">CR-002</span><span class="chip">NSCLC</span><span class="chip">实体瘤</span></div>
 </a><a class="entry-row" data-entry-card href="domestic-pd1vegf.html"
+              data-group="competitor"
               data-companies="华海药业|君实生物|复宏汉霖|恒瑞医药|基石药业"
               data-drugs="HB0025|JS207|HLX37|SHR-4610|CS2009"
               data-indications="NSCLC"
@@ -510,6 +557,7 @@
   <p class="entry-meta"><time datetime="2026-11-03">2026年11月3日</time></p>
   <div class="card-foot"><span class="chip">HB0025</span><span class="chip">JS207</span><span class="chip">HLX37</span><span class="chip">NSCLC</span></div>
 </a><a class="entry-row" data-entry-card href="ak139.html"
+              data-group="akeso-other"
               data-companies="康方生物"
               data-drugs="AK139"
               data-indications="哮喘|特应性皮炎|慢性自发性荨麻疹|过敏性鼻炎|慢性鼻窦炎伴鼻息肉|结节性痒疹|慢性阻塞性肺疾病"
@@ -520,6 +568,7 @@
   <p class="entry-meta"><time datetime="2026-11-26">2026年11月26日</time></p>
   <div class="card-foot"><span class="chip">AK139</span><span class="chip">哮喘</span><span class="chip">特应性皮炎</span></div>
 </a><a class="entry-row" data-entry-card href="head-to-head-map.html"
+              data-group="ivo"
               data-companies="康方生物|Summit"
               data-drugs="依沃西|卡度尼利"
               data-indications="多瘤种"
@@ -530,6 +579,7 @@
   <p class="entry-meta"><time datetime="2026-11-10">2026年11月10日</time></p>
   <div class="card-foot"><span class="chip">依沃西</span><span class="chip">卡度尼利</span><span class="chip">多瘤种</span></div>
 </a><a class="entry-row" data-entry-card href="akeso-platforms.html"
+              data-group="akeso-other"
               data-companies="康方生物"
               data-drugs=""
               data-indications=""
@@ -540,6 +590,7 @@
   <p class="entry-meta"><time datetime="2026-11-26">2026年11月26日</time></p>
   <div class="card-foot"></div>
 </a><a class="entry-row" data-entry-card href="akeso-early.html"
+              data-group="akeso-other"
               data-companies="康方生物"
               data-drugs="AK129|AK131|AK132|AK137|AK135|AK150|AK152|AK154"
               data-indications="实体瘤|经典型霍奇金淋巴瘤|化疗诱导周围神经病变|阿尔茨海默病"
@@ -556,7 +607,7 @@
 <footer class="site-footer">
   <div class="footer-inner">
     <p>本站为公开信息整理，不构成投资建议。数字均来自已核对的一手或已标注来源，不代表康方、Summit 或其他公司立场。</p>
-    <p>资料截至 2026-11-26（北京时间）。页面生成：2026-11-26 15:55（北京时间，UTC+8）。</p>
+    <p>资料截至 2026-11-26（北京时间）。页面生成：2026-11-26 16:36（北京时间，UTC+8）。</p>
     <p class="footer-links">
       <a href="../feed.xml">RSS</a>
       <a href="../about.html">方法与来源说明</a>

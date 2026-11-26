@@ -55,6 +55,13 @@ def load_dailies():
     return days
 
 
+def load_layout():
+    path = DATA / "layout.json"
+    if not path.exists():
+        return {}
+    return load_json(path)
+
+
 def md_inline(text: str) -> str:
     if not text:
         return ""
@@ -106,16 +113,20 @@ def rel_to(prefix: str, target: str) -> str:
 
 
 def nav_html(prefix: str, current: str, site: dict, toc_launch: bool = False) -> str:
+    layout = load_layout()
+    guide_label = layout.get("nav_label") or "管线与竞争"
     links = [
-        ("index.html", "首页", "home"),
-        ("entries/index.html", "条目", "entries"),
-        ("daily/index.html", "每日动态", "daily"),
-        ("about.html", "关于", "about"),
+        ("index.html", "首页", "home", ""),
+        ("pipeline.html", guide_label, "pipeline", "nav-guide"),
+        ("entries/index.html", "条目", "entries", ""),
+        ("daily/index.html", "每日动态", "daily", ""),
+        ("about.html", "关于", "about", ""),
     ]
     items = []
-    for href, label, key in links:
+    for href, label, key, cls in links:
         cur = ' aria-current="page"' if key == current else ""
-        items.append(f'<a href="{rel_to(prefix, href)}"{cur}>{label}</a>')
+        class_attr = f' class="{cls}"' if cls else ""
+        items.append(f'<a href="{rel_to(prefix, href)}"{class_attr}{cur}>{html.escape(label)}</a>')
     toc_btn = ""
     if toc_launch:
         toc_btn = (
@@ -227,12 +238,190 @@ def entry_url(slug: str, prefix: str = "") -> str:
     return rel_to(prefix, f"entries/{slug}.html")
 
 
+def layout_item_map(layout: dict) -> dict:
+    found = {}
+    for section in layout.get("sections", []):
+        for item in section.get("items", []):
+            slug = item.get("slug")
+            if slug:
+                found[slug] = item
+    return found
+
+
+def collect_layout_slugs(layout: dict):
+    slugs = []
+    seen = set()
+
+    def add(slug):
+        if slug and slug not in seen:
+            seen.add(slug)
+            slugs.append(slug)
+
+    for section in layout.get("sections", []):
+        for item in section.get("items", []):
+            add(item.get("slug"))
+            for cluster in item.get("clusters", []):
+                for slug in cluster.get("slugs", []):
+                    add(slug)
+            extra = item.get("related_extra") or {}
+            for kind_slugs in extra.values():
+                for slug in kind_slugs:
+                    add(slug)
+    return slugs
+
+
+def warn_layout(layout: dict, entries):
+    by_slug = {e["slug"]: e for e in entries}
+    listed = collect_layout_slugs(layout)
+    missing = [s for s in listed if s not in by_slug]
+    uncovered = [e["slug"] for e in entries if e["slug"] not in set(listed)]
+    if missing:
+        print("layout missing entries:", ", ".join(missing))
+    if uncovered:
+        print("entries not in layout:", ", ".join(uncovered))
+
+
+def related_groups_for(item: dict, layout: dict, hub_slug: str = ""):
+    kinds = layout.get("cluster_kinds") or {}
+    grouped = {}
+    order = []
+
+    def add(kind, slug):
+        if not kind or not slug or slug == hub_slug:
+            return
+        if kind not in grouped:
+            grouped[kind] = []
+            order.append(kind)
+        if slug not in grouped[kind]:
+            grouped[kind].append(slug)
+
+    for cluster in item.get("clusters", []):
+        kind = kinds.get(cluster.get("title", ""), "试验")
+        for slug in cluster.get("slugs", []):
+            add(kind, slug)
+    extra = item.get("related_extra") or {}
+    for kind, slugs in extra.items():
+        for slug in slugs:
+            add(kind, slug)
+    return [(kind, grouped[kind]) for kind in order]
+
+
+def entry_status_line(entry: dict) -> str:
+    return (entry.get("subtitle") or entry.get("status") or entry.get("title") or "").strip()
+
+
+def render_guide_row(entry: dict, prefix: str, compact: bool, extra_class: str = "") -> str:
+    sub = "" if compact else entry_status_line(entry)
+    sub_html = f'<p class="catalog-sub">{html.escape(sub)}</p>' if sub else ""
+    cls = f"catalog-row{(' ' + extra_class) if extra_class else ''}"
+    return f"""<a class="{cls}" href="{html.escape(entry_url(entry['slug'], prefix))}">
+    <p class="kicker">{html.escape(entry.get('kicker', ''))}</p>
+    <h4 class="catalog-title">{html.escape(entry['title'])}</h4>
+    {sub_html}
+  </a>"""
+
+
+def render_guide(layout: dict, entries, prefix: str, compact: bool = False) -> str:
+    by_slug = {e["slug"]: e for e in entries}
+    sections_html = []
+    for section in layout.get("sections", []):
+        hubs = []
+        for item in section.get("items", []):
+            slug = item.get("slug")
+            entry = by_slug.get(slug)
+            if not entry:
+                continue
+            clusters_html = []
+            for cluster in item.get("clusters", []):
+                rows = []
+                for child_slug in cluster.get("slugs", []):
+                    if child_slug == slug:
+                        continue
+                    child = by_slug.get(child_slug)
+                    if not child:
+                        continue
+                    rows.append(f"<li>{render_guide_row(child, prefix, compact)}</li>")
+                if not rows:
+                    continue
+                clusters_html.append(
+                    f'<div class="guide-cluster">'
+                    f'<h4>{html.escape(cluster.get("title", ""))}</h4>'
+                    f'<ul class="catalog-list">{"".join(rows)}</ul>'
+                    f"</div>"
+                )
+            status = entry_status_line(entry)
+            status_html = f'<p class="guide-status">{html.escape(status)}</p>' if status else ""
+            hub_id = html.escape(slug)
+            hubs.append(
+                f'''<article class="guide-hub" id="{hub_id}">
+  <a class="guide-hub-head catalog-row" href="{html.escape(entry_url(slug, prefix))}">
+    <p class="kicker">{html.escape(entry.get("kicker", ""))}</p>
+    <h4 class="catalog-title">{html.escape(entry["title"])}</h4>
+    {status_html}
+  </a>
+  {"".join(clusters_html)}
+</article>'''
+            )
+        if not hubs:
+            continue
+        sid = html.escape(section.get("id") or "")
+        sections_html.append(
+            f'<section class="guide-section" id="{sid}">'
+            f'<h3>{html.escape(section.get("title", ""))}</h3>'
+            f'{"".join(hubs)}'
+            f"</section>"
+        )
+    if not sections_html:
+        return ""
+    compact_cls = " is-compact" if compact else ""
+    return f'<div class="guide{compact_cls}">{"".join(sections_html)}</div>'
+
+
+def render_related(entry: dict, layout: dict, entries, prefix: str) -> str:
+    item = layout_item_map(layout).get(entry["slug"])
+    if not item:
+        return ""
+    groups = related_groups_for(item, layout, hub_slug=entry["slug"])
+    if not groups:
+        return ""
+    by_slug = {e["slug"]: e for e in entries}
+    blocks = []
+    for kind, slugs in groups:
+        lis = []
+        for slug in slugs:
+            child = by_slug.get(slug)
+            if not child:
+                continue
+            kicker = html.escape(child.get("kicker", ""))
+            kicker_html = f'<span class="kicker">{kicker}</span>' if kicker else ""
+            lis.append(
+                f'<li><a href="{html.escape(entry_url(slug, prefix))}">{kicker_html}'
+                f'<span class="related-title">{html.escape(child["title"])}</span></a></li>'
+            )
+        if lis:
+            blocks.append(
+                f"<h3>{html.escape(kind)}</h3><ul class=\"related-list\">{''.join(lis)}</ul>"
+            )
+    if not blocks:
+        return ""
+    guide_href = rel_to(prefix, f"pipeline.html#{entry['slug']}")
+    more = '<p class="related-more"><a href="' + html.escape(guide_href) + '">在「管线与竞争」中查看</a></p>'
+    return (
+        '<section class="related" aria-labelledby="related-h">'
+        '<h2 id="related-h">相关条目</h2>'
+        + "".join(blocks)
+        + more
+        + "</section>"
+    )
+
+
+
 def event_anchor(date: str, index: int) -> str:
     safe = re.sub(r"[^0-9A-Za-z-]+", "-", str(date)).strip("-")
     return f"ev-{safe}-{index}"
 
 
-def render_entry(entry: dict, site: dict) -> str:
+def render_entry(entry: dict, site: dict, layout: dict, entries) -> str:
     companies = chips(entry.get("companies", []))
     drugs = chips(entry.get("drugs", []))
     inds = chips(entry.get("indications", []))
@@ -290,6 +479,7 @@ def render_entry(entry: dict, site: dict) -> str:
     skips = [("#timeline", "跳到时间线")] if events else None
     if toc_items:
         skips = (skips or []) + [("#entry-toc", "本页时间线目录")]
+    related_html = render_related(entry, layout or {}, entries or [], "../")
     body = f"""<article class="entry-layout">
   <header class="entry-header">
     <p class="kicker">{html.escape(entry.get('kicker', '临床条目'))}</p>
@@ -304,6 +494,7 @@ def render_entry(entry: dict, site: dict) -> str:
 {''.join(timeline_html)}
   </ol>
   {impact_html}
+  {related_html}
   <p class="entry-updated muted">最后写入本条目的资料日期：{html.escape(fmt_date(entry.get('updated', site.get('source_as_of', '2026-11-10'))))}。</p>
 </article>
 """
@@ -319,7 +510,20 @@ def unique(seq):
     return out
 
 
-def entries_index(entries, site):
+def entries_index(entries, site, layout=None):
+    layout = layout or {}
+    group_labels = layout.get("group_labels") or {
+        "ivo": "依沃西",
+        "cado": "卡度尼利",
+        "akeso-other": "康方其他品种与平台",
+        "partner": "合作与联用",
+        "competitor": "竞争与对照",
+        "policy": "政策与规则",
+    }
+    group_order = unique(
+        [g for g in group_labels if any(e.get("group") == g for e in entries)]
+        + [e.get("group") for e in entries if e.get("group")]
+    )
     companies = unique(c for e in entries for c in e.get("companies", []))
     drugs = unique(d for e in entries for d in e.get("drugs", []))
     inds = unique(i for e in entries for i in e.get("indications", []))
@@ -351,6 +555,7 @@ def entries_index(entries, site):
         sub_html = f'<p class="entry-sub">{html.escape(sub)}</p>' if sub else ""
         cards.append(
             f"""<a class="entry-row" data-entry-card href="{html.escape(e['slug'])}.html"
+              data-group="{html.escape(e.get('group', ''))}"
               data-companies="{'|'.join(e.get('companies', []))}"
               data-drugs="{'|'.join(e.get('drugs', []))}"
               data-indications="{'|'.join(e.get('indications', []))}"
@@ -362,15 +567,21 @@ def entries_index(entries, site):
   <div class="card-foot">{chips(e.get('drugs', [])[:3])}{chips(e.get('indications', [])[:2])}</div>
 </a>"""
         )
+    group_btns = '<button class="filter-btn" type="button" data-key="group" data-val="全部" aria-pressed="true">全部</button>'
+    group_btns += "".join(
+        f'<button class="filter-btn" type="button" data-key="group" data-val="{html.escape(g)}" aria-pressed="false">{html.escape(group_labels.get(g, g))}</button>'
+        for g in group_order
+    )
     body = f"""<header class="hero">
   <h1>条目</h1>
-  <p class="lede">按药、试验或事件线组织。同一条线的新旧进展写在同一页，按时间往下读。</p>
+  <p class="lede">按药、试验或事件线组织。同一条线的新旧进展写在同一页，按时间往下读。按品种看竞争关系，请走「管线与竞争」。</p>
 </header>
 <div class="filters">
   <div class="search-box"><input id="entry-search" type="search" placeholder="搜索药名、试验名、适应症或公司" aria-label="搜索条目"></div>
   <details class="filter-panel">
-    <summary>筛选公司、药物、适应症</summary>
+    <summary>筛选分类、公司、药物、适应症</summary>
     <div class="filter-groups">
+      <div><p class="filter-label">分类</p><div class="filter-row">{group_btns}</div></div>
       <div><p class="filter-label">公司</p><div class="filter-row">{btns('company', companies)}</div></div>
       <div><p class="filter-label">药物</p><div class="filter-row">{btns('drug', drugs)}</div></div>
       <div><p class="filter-label">适应症</p><div class="filter-row">{btns('indication', inds)}</div></div>
@@ -437,7 +648,7 @@ def daily_index(dailies, site):
     return page("每日动态", "../", "daily", site, body, body_class="page-daily-index")
 
 
-def home(entries, dailies, site):
+def home(entries, dailies, site, layout=None):
     upcoming = site.get("upcoming", [])
 
     def rail_lis(items, passed: bool) -> str:
@@ -531,42 +742,21 @@ def home(entries, dailies, site):
         )
     up_block = f'<div class="briefing-rails">{"".join(rails)}</div>' if rails else ""
 
-    groups = [
-        ("依沃西主线", [e for e in entries if e.get("group") == "ivo"]),
-        ("卡度尼利", [e for e in entries if e.get("group") == "cado"]),
-        ("康方其他管线", [e for e in entries if e.get("group") == "akeso-other"]),
-        ("联用与伙伴", [e for e in entries if e.get("group") == "partner"]),
-        ("竞品与对照", [e for e in entries if e.get("group") == "competitor"]),
-        ("政策与规则", [e for e in entries if e.get("group") == "policy"]),
-    ]
-    group_html = []
-    for title, ents in groups:
-        if not ents:
-            continue
-        rows = []
-        for e in ents:
-            prio = e.get("priority", 99)
-            pcls = " is-priority" if isinstance(prio, int) and prio <= 3 else ""
-            sub = e.get("subtitle") or ""
-            sub_html = f'<p class="catalog-sub">{html.escape(sub)}</p>' if sub else ""
-            rows.append(
-                f"""<li>
-  <a class="catalog-row{pcls}" href="entries/{html.escape(e['slug'])}.html">
-    <p class="kicker">{html.escape(e.get('kicker', ''))}</p>
-    <h4 class="catalog-title">{html.escape(e['title'])}</h4>
-    {sub_html}
-  </a>
-</li>"""
-            )
-        group_html.append(
-            f'<section class="catalog-group"><h3>{html.escape(title)}</h3><ul class="catalog-list">{"".join(rows)}</ul></section>'
-        )
-
+    layout = layout or {}
+    guide_html = render_guide(layout, entries, "", compact=True)
     catalog_block = ""
-    if group_html:
-        catalog_block = f"""<section class="catalog" aria-labelledby="catalog-h">
-  <div class="section-h"><h2 id="catalog-h">条目总览</h2><a href="entries/index.html">筛选条目</a></div>
-  {''.join(group_html)}
+    if guide_html:
+        section_title = html.escape(layout.get("home_section_title") or "管线与竞争")
+        home_intro = layout.get("home_intro") or ""
+        intro_html = f'<p class="guide-intro">{html.escape(home_intro)}</p>' if home_intro else ""
+        catalog_block = f"""<section class="catalog guide-home" aria-labelledby="catalog-h">
+  <div class="section-h">
+    <h2 id="catalog-h">{section_title}</h2>
+    <a class="guide-jump" href="pipeline.html">完整导览</a>
+  </div>
+  {intro_html}
+  {guide_html}
+  <p class="guide-foot"><a href="pipeline.html">打开完整「管线与竞争」导览</a> · <a href="entries/index.html">筛选全部条目</a></p>
 </section>"""
 
     banner = site.get("banner") or {}
@@ -580,6 +770,7 @@ def home(entries, dailies, site):
     body = f"""<header class="masthead">
   <h1>{html.escape(site['title'])}</h1>
   <p class="lede">{html.escape(site['tagline'])}</p>
+  <p class="lede read-path">先看最近动态和即将到来的日期，再按「<a href="pipeline.html">管线与竞争</a>」查阅品种与已挂上的相关条目。</p>
   <p class="meta-row"><span>资料截至 {html.escape(site.get('source_as_of', '2026-11-10'))}（北京时间）</span><span>生成于 {html.escape(site['generated'])}（北京时间）</span></p>
 </header>
 <div class="home-board">
@@ -592,12 +783,36 @@ def home(entries, dailies, site):
     return page(site["title"], "", "home", site, body, body_class="page-home")
 
 
+def pipeline_page(entries, site, layout=None):
+    layout = layout or {}
+    title = layout.get("page_title") or "管线与竞争"
+    intro = layout.get("intro") or ""
+    toc = []
+    for section in layout.get("sections", []):
+        sid = section.get("id")
+        stitle = section.get("title")
+        if sid and stitle:
+            toc.append(f'<a href="#{html.escape(sid)}">{html.escape(stitle)}</a>')
+    toc_html = f'<nav class="guide-toc" aria-label="本页分节">{"".join(toc)}</nav>' if toc else ""
+    intro_html = f'<p class="lede">{html.escape(intro)}</p>' if intro else ""
+    body = f"""<header class="hero">
+  <h1>{html.escape(title)}</h1>
+  {intro_html}
+</header>
+{toc_html}
+{render_guide(layout, entries, "", compact=False)}
+<p class="guide-foot"><a href="entries/index.html">筛选全部条目</a> · <a href="index.html">返回首页最近动态</a></p>
+"""
+    return page(title, "", "pipeline", site, body, body_class="page-pipeline")
+
+
 def about_page(site):
     body = f"""<header class="hero read">
   <h1>关于本站</h1>
   <p class="lede">这是一份公开的临床动态整理。覆盖范围以康方生物已公布的全部成药、管线和平台技术为底盘，再延伸到全球能与之形成竞争或合作的具体管线与药物。不再只聚焦依沃西与卡度尼利。影响相关合作或商务发展的政策、交易规则，核实后也会单独成条收入。不把再鼎、亚盛、金斯瑞、百济、信达、恒瑞、君实、荣昌等公司的整条管线无差别并入，也不把与康方不构成竞争或合作的全球公司整线搬进来，只收与康方已公布成药、管线或平台相关的具体品种。本站覆盖仍在按已核材料补全，不表示已经穷尽。</p>
 </header>
 <div class="read">
+  <p>阅读时可先看首页的「最近动态」和「即将到来」，再进入「管线与竞争」按康方品种查看已挂上的试验、竞争与合作。条目时间线仍是完整正文。</p>
   <p>同一条试验、同一个药、同一件监管事项只保留一个条目。新进展并进原条目的时间线，不按日期拆成互不相干的短讯。每日动态页只作索引，指回这些条目。</p>
   <p>数字都带来源和日期。公司或会议上不同时点给出的口径，写成轨迹：哪一天怎么说、后来改成了什么、现在以哪一版为准。没有头对头比较时，不写「优于」或「低于」。跨试验数字只并置，并说明不可比。</p>
   <p>来源分成四类，条目里会看得见：</p>
@@ -667,13 +882,16 @@ def main():
     site = site_meta()
     entries = load_entries()
     dailies = load_dailies()
+    layout = load_layout()
+    warn_layout(layout, entries)
     by_slug = {e["slug"]: e for e in entries}
 
-    write(OUT / "index.html", home(entries, dailies, site))
+    write(OUT / "index.html", home(entries, dailies, site, layout))
+    write(OUT / "pipeline.html", pipeline_page(entries, site, layout))
     write(OUT / "about.html", about_page(site))
-    write(OUT / "entries" / "index.html", entries_index(entries, site))
+    write(OUT / "entries" / "index.html", entries_index(entries, site, layout))
     for e in entries:
-        write(OUT / "entries" / f"{e['slug']}.html", render_entry(e, site))
+        write(OUT / "entries" / f"{e['slug']}.html", render_entry(e, site, layout, entries))
     write(OUT / "daily" / "index.html", daily_index(dailies, site))
     for d in dailies:
         write(OUT / "daily" / f"{d['date']}.html", daily_page(d, by_slug, site))
@@ -683,7 +901,7 @@ def main():
         OUT / "robots.txt",
         f"User-agent: *\nAllow: /\nSitemap: {site['base_url']}/sitemap.xml\n",
     )
-    urls = ["/", "/about.html", "/entries/", "/daily/", "/feed.xml"]
+    urls = ["/", "/pipeline.html", "/about.html", "/entries/", "/daily/", "/feed.xml"]
     urls += [f"/entries/{e['slug']}.html" for e in entries]
     urls += [f"/daily/{d['date']}.html" for d in dailies]
     sm = ["<?xml version='1.0' encoding='UTF-8'?>", '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']

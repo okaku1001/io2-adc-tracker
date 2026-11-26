@@ -246,7 +246,7 @@
   const empty = document.getElementById("filter-empty");
   if (!cards.length) return;
 
-  const state = { q: "", company: "全部", drug: "全部", indication: "全部" };
+  const state = { q: "", group: "全部", company: "全部", drug: "全部", indication: "全部" };
 
   function norm(s) {
     return (s || "").toLowerCase();
@@ -256,14 +256,16 @@
     let shown = 0;
     cards.forEach(function (card) {
       const hay = norm(card.getAttribute("data-search"));
+      const group = card.getAttribute("data-group") || "";
       const companies = card.getAttribute("data-companies") || "";
       const drugs = card.getAttribute("data-drugs") || "";
       const indications = card.getAttribute("data-indications") || "";
       const okQ = !state.q || hay.indexOf(norm(state.q)) !== -1;
+      const okG = state.group === "全部" || group === state.group;
       const okC = state.company === "全部" || companies.split("|").indexOf(state.company) !== -1;
       const okD = state.drug === "全部" || drugs.split("|").indexOf(state.drug) !== -1;
       const okI = state.indication === "全部" || indications.split("|").indexOf(state.indication) !== -1;
-      const vis = okQ && okC && okD && okI;
+      const vis = okQ && okG && okC && okD && okI;
       card.classList.toggle("hidden", !vis);
       if (vis) shown += 1;
     });

@@ -1,0 +1,225 @@
+{
+  "nav_label": "管线与竞争",
+  "page_title": "管线与竞争",
+  "home_section_title": "管线与竞争",
+  "intro": "按康方品种看已核现状，并查看已挂上的相关试验、竞争与合作。竞品完整清单仍在「竞争与对照」。覆盖仍在按已核材料补全，不表示已经穷尽。",
+  "home_intro": "按康方品种查阅现状和已挂上的相关条目。完整分组与竞品清单见导览页。",
+  "group_labels": {
+    "ivo": "依沃西",
+    "cado": "卡度尼利",
+    "akeso-other": "康方其他品种与平台",
+    "partner": "合作与联用",
+    "competitor": "竞争与对照",
+    "policy": "政策与规则"
+  },
+  "cluster_kinds": {
+    "监管与上市": "试验",
+    "关键注册性试验": "试验",
+    "其他注册性与清单": "试验",
+    "关键试验": "试验",
+    "相关试验": "试验",
+    "相关竞争": "竞品",
+    "相关联用": "联用"
+  },
+  "sections": [
+    {
+      "id": "approved",
+      "title": "康方成药（已上市）",
+      "items": [
+        {
+          "slug": "ivonescimab-china",
+          "related_extra": {
+            "联用": [
+              "summit-az",
+              "adc-hs20093",
+              "adc-sys6043",
+              "sone-ve",
+              "akeso-adc",
+              "adc-other"
+            ]
+          },
+          "clusters": [
+            {
+              "title": "监管与上市",
+              "slugs": [
+                "harmoni-fda",
+                "ivonescimab-china"
+              ]
+            },
+            {
+              "title": "关键注册性试验",
+              "slugs": [
+                "harmoni-a",
+                "harmoni-2",
+                "harmoni-3",
+                "harmoni-6",
+                "harmoni-7",
+                "harmoni-10",
+                "harmoni-gi1",
+                "ea2251"
+              ]
+            },
+            {
+              "title": "其他注册性与清单",
+              "slugs": [
+                "other-harmoni",
+                "ivonescimab-perioperative",
+                "ivonescimab-trials",
+                "ivonescimab-esmo-2026",
+                "smt112-216",
+                "harmoni-bc1",
+                "harmoni-gu1",
+                "harmoni-gi3"
+              ]
+            },
+            {
+              "title": "相关竞争",
+              "slugs": [
+                "pumitamig",
+                "tivunatamig",
+                "mk-2010",
+                "domestic-pd1vegf",
+                "crescent-cr001",
+                "head-to-head-map"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "cadonilimab",
+          "clusters": [
+            {
+              "title": "关键试验",
+              "slugs": [
+                "compassion-37",
+                "compassion-40"
+              ]
+            },
+            {
+              "title": "相关竞争",
+              "slugs": [
+                "ql1706"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "penpulimab"
+        },
+        {
+          "slug": "gumokimab"
+        },
+        {
+          "slug": "ebronucimab"
+        },
+        {
+          "slug": "ebdarokimab"
+        }
+      ]
+    },
+    {
+      "id": "in-development",
+      "title": "康方在研与平台",
+      "items": [
+        {
+          "slug": "ligufalimab"
+        },
+        {
+          "slug": "manfidokimab"
+        },
+        {
+          "slug": "pulocimab"
+        },
+        {
+          "slug": "ak130"
+        },
+        {
+          "slug": "ak139"
+        },
+        {
+          "slug": "akeso-adc"
+        },
+        {
+          "slug": "akeso-early"
+        },
+        {
+          "slug": "akeso-platforms"
+        }
+      ]
+    },
+    {
+      "id": "partners",
+      "title": "合作与联用",
+      "items": [
+        {
+          "slug": "summit-az"
+        },
+        {
+          "slug": "adc-hs20093"
+        },
+        {
+          "slug": "adc-sys6043"
+        },
+        {
+          "slug": "sone-ve"
+        },
+        {
+          "slug": "adc-other"
+        }
+      ]
+    },
+    {
+      "id": "competitors",
+      "title": "竞争与对照",
+      "items": [
+        {
+          "slug": "pumitamig",
+          "clusters": [
+            {
+              "title": "相关试验",
+              "slugs": [
+                "rosetta-breast-01"
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "tivunatamig"
+        },
+        {
+          "slug": "mk-2010"
+        },
+        {
+          "slug": "domestic-pd1vegf"
+        },
+        {
+          "slug": "crescent-cr001"
+        },
+        {
+          "slug": "head-to-head-map"
+        },
+        {
+          "slug": "ql1706"
+        },
+        {
+          "slug": "sac-tmt"
+        },
+        {
+          "slug": "rc148"
+        }
+      ]
+    },
+    {
+      "id": "policy",
+      "title": "政策与规则",
+      "items": [
+        {
+          "slug": "coins-outbound-pharma"
+        },
+        {
+          "slug": "nhc-innovative-drug-use-18"
+        }
+      ]
+    }
+  ]
+}
