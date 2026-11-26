@@ -83,6 +83,130 @@ def md_blocks(text: str) -> str:
     return "".join(f"<p>{md_inline(p)}</p>" for p in parts)
 
 
+def date_key(s):
+    parts = (str(s) + "-01-01").split("-")[:3]
+    return tuple(int(x) for x in parts)
+
+
+def entry_recency_key(entry: dict):
+    keys = []
+    updated = entry.get("updated")
+    if updated:
+        keys.append(date_key(updated))
+    for ev in entry.get("timeline") or []:
+        if ev.get("date"):
+            keys.append(date_key(ev["date"]))
+    return max(keys) if keys else (0, 0, 0)
+
+
+def sort_by_recency(items):
+    return sorted(items, key=entry_recency_key, reverse=True)
+
+
+def _matching_fw_paren_end(text: str, start: int):
+    depth = 0
+    for j in range(start, len(text)):
+        if text[j] == "（":
+            depth += 1
+        elif text[j] == "）":
+            depth -= 1
+            if depth == 0:
+                return j + 1
+    return None
+
+
+def _tidy_extracted_body(text: str) -> str:
+    text = re.sub(r"[ \t]+", " ", text)
+    text = re.sub(r" +\n", "\n", text)
+    text = re.sub(r"\n +", "\n", text)
+    text = re.sub(r" +([。；，、])", r"\1", text)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text.strip()
+
+
+def _note_from_paren(raw: str) -> dict:
+    inner = raw[1:-1] if raw.startswith("（") and raw.endswith("）") else raw
+    m = re.match(r"更正日期\s*(\d{4}-\d{2}-\d{2})\s*[：:]\s*(.*)$", inner, re.S)
+    if m:
+        return {"date": m.group(1), "label": "更正", "text": m.group(2).strip()}
+    return {"date": "", "label": "更正", "text": inner.strip()}
+
+
+def _infer_note_date(text: str, year_hint: str = "") -> str:
+    m = re.search(r"(20\d{2}-\d{2}-\d{2})", text)
+    if m:
+        return m.group(1)
+    m = re.search(r"(\d{1,2})-(\d{1,2})\s*更正", text)
+    if m and year_hint:
+        return f"{year_hint}-{int(m.group(1)):02d}-{int(m.group(2)):02d}"
+    return ""
+
+
+_EXTRA_NOTE_RE = re.compile(
+    r"(?:"
+    r"[^。\n]*曾误写[^。\n]*。"
+    r"|[^。\n]*已更正：[^\n。]*。"
+    r"|[^。\n]*，已更正。"
+    r"|[^。\n]*更正为已经纳入。"
+    r")"
+)
+
+
+def split_corrections(text: str, year_hint: str = "") -> tuple:
+    """Split body into fact text and correction notes. Does not alter source data."""
+    if not text:
+        return "", []
+    notes = []
+    pieces = []
+    i = 0
+    while i < len(text):
+        m = re.search(r"（更正日期", text[i:])
+        if not m:
+            pieces.append(text[i:])
+            break
+        start = i + m.start()
+        end = _matching_fw_paren_end(text, start)
+        if end is None:
+            pieces.append(text[i:])
+            break
+        pieces.append(text[i:start])
+        notes.append(_note_from_paren(text[start:end]))
+        i = end
+    body = "".join(pieces)
+    extras = []
+
+    def take_extra(match: re.Match) -> str:
+        raw = match.group(0).strip()
+        extras.append(
+            {
+                "date": _infer_note_date(raw, year_hint),
+                "label": "更正",
+                "text": raw,
+            }
+        )
+        return ""
+
+    body = _EXTRA_NOTE_RE.sub(take_extra, body)
+    notes.extend(extras)
+    return _tidy_extracted_body(body), notes
+
+
+def render_corrections(notes) -> str:
+    bits = []
+    for n in notes:
+        label = n.get("label") or "更正"
+        if n.get("date"):
+            label = f"{label} {n['date']}"
+        bits.append(
+            '<aside class="correction">'
+            f'<p class="correction-label">{html.escape(label)}</p>'
+            f'<p>{md_inline(n.get("text") or "")}</p>'
+            "</aside>"
+        )
+    return "".join(bits)
+
+
+
 def fmt_date(iso: str, with_year: bool = True) -> str:
     parts = iso.split("-")
     if len(parts) == 1:
@@ -334,12 +458,15 @@ def render_guide(layout: dict, entries, prefix: str, compact: bool = False) -> s
             clusters_html = []
             for cluster in item.get("clusters", []):
                 rows = []
+                children = []
                 for child_slug in cluster.get("slugs", []):
                     if child_slug == slug:
                         continue
                     child = by_slug.get(child_slug)
                     if not child:
                         continue
+                    children.append(child)
+                for child in sort_by_recency(children):
                     rows.append(f"<li>{render_guide_row(child, prefix, compact)}</li>")
                 if not rows:
                     continue
@@ -388,10 +515,9 @@ def render_related(entry: dict, layout: dict, entries, prefix: str) -> str:
     blocks = []
     for kind, slugs in groups:
         lis = []
-        for slug in slugs:
-            child = by_slug.get(slug)
-            if not child:
-                continue
+        children = [by_slug[s] for s in slugs if s in by_slug]
+        for child in sort_by_recency(children):
+            slug = child["slug"]
             kicker = html.escape(child.get("kicker", ""))
             kicker_html = f'<span class="kicker">{kicker}</span>' if kicker else ""
             lis.append(
@@ -429,20 +555,18 @@ def render_entry(entry: dict, site: dict, layout: dict, entries) -> str:
     for g in entry.get("grades_present", []):
         labels.append(badge(g))
 
-    def date_key(s):
-        parts = (str(s) + "-01-01").split("-")[:3]
-        return tuple(int(x) for x in parts)
-
-    events = sorted(entry.get("timeline", []), key=lambda item: date_key(item["date"]))
+    events = sorted(entry.get("timeline", []), key=lambda item: date_key(item["date"]), reverse=True)
     timeline_html = []
     toc_items = []
     for i, ev in enumerate(events):
         eid = event_anchor(ev["date"], i)
         grades = "".join(badge(g) for g in ev.get("grades", []))
+        ev_body, ev_notes = split_corrections(ev.get("body", ""), str(ev.get("date", ""))[:4])
         timeline_html.append(f"""<li id="{html.escape(eid)}">
   <div class="t-date">{html.escape(fmt_date(ev['date']))} {grades}</div>
   <h2>{html.escape(ev['title'])}</h2>
-  {md_blocks(ev.get('body', ''))}
+  {md_blocks(ev_body)}
+  {render_corrections(ev_notes)}
   {render_table(ev.get('table'))}
   {render_sources(ev.get('sources', []))}
 </li>""")
@@ -472,14 +596,20 @@ def render_entry(entry: dict, site: dict, layout: dict, entries) -> str:
     status = entry.get("status", "")
     status_html = ""
     if status:
+        year_hint = str(entry.get("updated") or entry.get("date") or "")[:4]
+        status_body, status_notes = split_corrections(status, year_hint)
         status_html = f"""<section class="status-box" aria-labelledby="status-heading">
   <h2 id="status-heading" class="status-label">当前状态</h2>
-  <p class="status-text">{md_inline(status)}</p>
+  <p class="status-text">{md_inline(status_body)}</p>
+  {render_corrections(status_notes)}
 </section>"""
     skips = [("#timeline", "跳到时间线")] if events else None
     if toc_items:
         skips = (skips or []) + [("#entry-toc", "本页时间线目录")]
     related_html = render_related(entry, layout or {}, entries or [], "../")
+    summary_body, summary_notes = split_corrections(
+        entry.get("summary", ""), str(entry.get("updated") or "")[:4]
+    )
     body = f"""<article class="entry-layout">
   <header class="entry-header">
     <p class="kicker">{html.escape(entry.get('kicker', '临床条目'))}</p>
@@ -488,7 +618,7 @@ def render_entry(entry: dict, site: dict, layout: dict, entries) -> str:
     <div class="card-foot">{companies}{drugs}{inds}{''.join(labels)}</div>
   </header>
   {status_html}
-  <section class="summary">{md_blocks(entry.get('summary', ''))}</section>
+  <section class="summary">{md_blocks(summary_body)}{render_corrections(summary_notes)}</section>
   {toc_html}
   <ol class="timeline" id="timeline">
 {''.join(timeline_html)}
