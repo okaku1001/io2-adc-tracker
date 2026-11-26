@@ -98,7 +98,8 @@
             {
               "title": "相关竞争",
               "slugs": [
-                "ql1706"
+                "ql1706",
+                "volrustomig"
               ]
             }
           ]
@@ -200,6 +201,9 @@
         },
         {
           "slug": "ql1706"
+        },
+        {
+          "slug": "volrustomig"
         },
         {
           "slug": "sac-tmt"

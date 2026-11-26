@@ -5,13 +5,49 @@
   <link>https://okaku1001.github.io/io2-adc-tracker/</link>
   <description>以康方生物已公布的成药、管线和平台技术为底盘，记录已核临床与监管变动，并延伸到与之构成竞争或合作的具体品种。同一条试验只保留一个条目，每日动态是索引。</description>
   <language>zh-cn</language>
-  <lastBuildDate>2026-11-26 19:19 +0800</lastBuildDate>
+  <lastBuildDate>2026-11-26 19:54 +0800</lastBuildDate>
   <item>
+  <title>欧盟 CTIS：ROSETTA Lung-01 总体已授权，七国试验已于 11 月 25 日重启</title>
+  <link>https://okaku1001.github.io/io2-adc-tracker/entries/pumitamig.html</link>
+  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/pumitamig.html#2026-11-26</guid>
+  <pubDate>2026-11-26</pubDate>
+  <description>EU CT 2024-515765-34-00 总体状态为 Authorised。七国曾在 10 月 26 日结束招募并暂时中止（申办方决定），11 月 25 日试验重启；重启后未见新的开始招募通知。BioNTech 试验页和 ClinicalTrials.gov 仍写招募中，口径并列。</description>
+</item><item>
+  <title>新建 volrustomig 专条：阿斯利康官方管线确认 PD-1/CTLA-4 双抗机制</title>
+  <link>https://okaku1001.github.io/io2-adc-tracker/entries/volrustomig.html</link>
+  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/volrustomig.html#2026-11-26</guid>
+  <pubDate>2026-11-26</pubDate>
+  <description>管线截至 2026-10-30，机制原文为 PD-1/CTLA-4 bispecific mAb。仍列 eVOLVE-Cervical、eVOLVE-HNSCC、eVOLVE-Meso 三项 III 期；eVOLVE-Lung02 因有效性在 III 期终止。eVOLVE-Cervical 估计主要完成已改为 2027-11-26。</description>
+</item><item>
+  <title>AK130 摘要 4142 已核到，与康方 6 月稿数字并列</title>
+  <link>https://okaku1001.github.io/io2-adc-tracker/entries/ak130.html</link>
+  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/ak130.html#2026-11-26</guid>
+  <pubDate>2026-11-26</pubDate>
+  <description>数据截至 2026 年 1 月：入组 23 例；45 mg/kg 组 15 例可评估，ORR 20.0%（3/15），DCR 73.3%（11/15），≥3 级 TRAE 39.1%（9/23）。康方 6 月稿数据截至 2026 年 4 月，全部可评估 ORR 18.2%、DCR 77.3%，45 mg/kg 组 25.0%、68.8%。两套数字不合成一套。</description>
+</item><item>
+  <title>HARMONi-9：Summit 管线写 II 期，登记库与康方稿写 III 期，并列</title>
+  <link>https://okaku1001.github.io/io2-adc-tracker/entries/other-harmoni.html</link>
+  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/other-harmoni.html#2026-11-26</guid>
+  <pubDate>2026-11-26</pubDate>
+  <description>Summit 官方管线表将 NCT07010263 列为 China、Phase II、Recruiting。ClinicalTrials.gov 官方标题为 III 期，招募中，计划 560 例，实际开始 2025-06-13。康方 2025-08-11 稿亦写Ⅲ期。不裁定期别。</description>
+</item><item>
+  <title>Summit 管线已列出阿斯利康申办的依沃西联合 TROP2 ADC 一线 TNBC III 期，尚未招募</title>
+  <link>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-bc1.html</link>
+  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-bc1.html#2026-11-26</guid>
+  <pubDate>2026-11-26</pubDate>
+  <description>研究名称与招募地区均写 TBD。管线表未写出 Datroway 或 Dato-DXd，与 2026-10-02 宣布稿的用词并列。MSK 的 NCT07535437 不是这项 III 期。</description>
+</item><item>
+  <title>古莫奇产品中心引用《中国上市药品目录集》：通用名、商品名奇佑康和银屑病规格已核到</title>
+  <link>https://okaku1001.github.io/io2-adc-tracker/entries/gumokimab.html</link>
+  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/gumokimab.html#2026-11-26</guid>
+  <pubDate>2026-11-26</pubDate>
+  <description>通用名称为古莫奇单抗注射液，英文名称为 Gumokimab Injection；银屑病适应症，规格为 150 mg（1 mL）预封灌注射器和预充式自动注射笔。该段摘录未列强直性脊柱炎；该项适应症仍依据 2026-11-16 公司稿。</description>
+</item><item>
   <title>FDA / openFDA 已公开依沃西 BLA 761524 完整回复函原文</title>
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-fda.html</link>
   <guid>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-fda.html#2026-11-26</guid>
   <pubDate>2026-11-26</pubDate>
-  <description>函件日期 2026-11-13，Summit 于 11-15 宣布收到。函中写明不能按现有形式批准，93% 的 PFS 事件（257/275）发生在中国入组患者，并要求做符合 ICH E17 的新的多区域临床试验。已上站的 HARMONi 中位值、HR 和 p 值未改写。站上此前「原文未见公开」的表述已更正。</description>
+  <description>函件日期 2026-11-13，Summit 于 11-15 宣布收到。函中写明不能按现有形式批准，93% 的 PFS 事件（257/275）发生在中国入组患者，并要求做符合 ICH E17 的新的多区域临床试验。已上站的 HARMONi 中位值、HR 和 p 值未改写。</description>
 </item><item>
   <title>辉瑞 tivunatamig 联合恩诺单抗的一线尿路上皮癌 III 期已登记；三生中国 III 期改为已终止</title>
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/tivunatamig.html</link>
@@ -29,7 +65,7 @@
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/rc148.html</link>
   <guid>https://okaku1001.github.io/io2-adc-tracker/entries/rc148.html#2026-11-26</guid>
   <pubDate>2026-11-26</pubDate>
-  <description>NCT07935369 于 2026-11-13 首次发布，尚未招募。与本站此前按二手 CTR 写下的「国内计划 160 例」并列，不覆盖；CDE 原页仍未打开。</description>
+  <description>NCT07935369 于 2026-11-13 首次发布，尚未招募。与本站此前按二手 CTR 写下的「国内计划 160 例」并列，不覆盖；已核登记数字以 NCT07935369 的 680 例为准。</description>
 </item><item>
   <title>齐鲁宣布 QL1706 两项三阴性乳腺癌 II 期将在 SABCS 12 月 10 日报告</title>
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/ql1706.html</link>
@@ -53,7 +89,7 @@
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/penpulimab.html</link>
   <guid>https://okaku1001.github.io/io2-adc-tracker/entries/penpulimab.html#2026-11-26</guid>
   <pubDate>2026-11-26</pubDate>
-  <description>补建独立条目，不是新的监管决定。中国五项适应症以 2026 中报和 2025-12-26 公司稿为准，其中一线肝癌为第 5 项，公司写其余四项已进医保。FDA 于 2025-04-23 批准鼻咽癌一线联合化疗和后线单药，数字以 FDA 批准页为准。APOLLO 的 PFS、OS 以《柳叶刀·肿瘤学》摘要为准。NMPA 批件原页本期未能打开。</description>
+  <description>补建独立条目，不是新的监管决定。中国五项适应症以 2026 中报和 2025-12-26 公司稿为准，其中一线肝癌为第 5 项，公司写其余四项已进医保。FDA 于 2025-04-23 批准鼻咽癌一线联合化疗和后线单药，数字以 FDA 批准页为准。APOLLO 的 PFS、OS 以《柳叶刀·肿瘤学》摘要为准。</description>
 </item><item>
   <title>新建莱法利（AK117）条目：三项 III 期仍在招募，AML II 期数字按轨迹记录</title>
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/ligufalimab.html</link>
@@ -65,49 +101,49 @@
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/manfidokimab.html</link>
   <guid>https://okaku1001.github.io/io2-adc-tracker/entries/manfidokimab.html#2026-11-26</guid>
   <pubDate>2026-11-26</pubDate>
-  <description>补建独立条目。公司 2025-08-25 宣布 III 期达全部终点，2026-02-26 宣布 NDA 已获受理，均未给出具体疗效数字。CDE 原页和受理号本期未能打开。中报写青少年关键 III 期已完成，2 月稿还写「正在推进」，不把完成日写成某一天。</description>
+  <description>补建独立条目。公司 2025-08-25 宣布 III 期达全部终点，2026-02-26 宣布 NDA 已获受理，均未给出具体疗效数字。中报写青少年关键 III 期已完成，2 月稿还写「正在推进」，不把完成日写成某一天。</description>
 </item><item>
   <title>新建伊努西（伊喜宁）条目：两项适应症已获批并进医保，中国商业化授予济川</title>
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/ebronucimab.html</link>
   <guid>https://okaku1001.github.io/io2-adc-tracker/entries/ebronucimab.html#2026-11-26</guid>
   <pubDate>2026-11-26</pubDate>
-  <description>补建独立条目。公司 2024-09-30 宣布两项适应症获批。已发表 III 期摘要：450 mg 每 4 周一次，第 12 周 LDL-C 相对安慰剂降低 59.13%。2026-02-03 港交所公告，中国内地独家商业化权益授予济川药业，授权费 8,000 万元（含税），另有最高 1,000 万元里程碑。NMPA 批件原页本期未能打开。</description>
+  <description>补建独立条目。公司 2024-09-30 宣布两项适应症获批。已发表 III 期摘要：450 mg 每 4 周一次，第 12 周 LDL-C 相对安慰剂降低 59.13%。2026-02-03 港交所公告，中国内地独家商业化权益授予济川药业，授权费 8,000 万元（含税），另有最高 1,000 万元里程碑。</description>
 </item><item>
   <title>新建依若奇（爱达罗）条目：银屑病已获批，中报写 2025 年 11 月纳入医保</title>
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/ebdarokimab.html</link>
   <guid>https://okaku1001.github.io/io2-adc-tracker/entries/ebdarokimab.html#2026-11-26</guid>
   <pubDate>2026-11-26</pubDate>
-  <description>补建独立条目。公司 2025-04-18 中英文稿宣布中重度斑块状银屑病成人适应症获批，第 16 周 PASI 75 为 79.4%，第 52 周为 77.9%。2026 中报写该适应症于 2025 年 11 月纳入最新版医保目录。NMPA 原页本期未能打开。</description>
+  <description>补建独立条目。公司 2025-04-18 中英文稿宣布中重度斑块状银屑病成人适应症获批，第 16 周 PASI 75 为 79.4%，第 52 周为 77.9%。2026 中报写该适应症于 2025 年 11 月纳入最新版医保目录。</description>
 </item><item>
   <title>复核依沃西试验计数：官网「近 100 项」与可核 140 / 17 清单并列</title>
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/ivonescimab-trials.html</link>
   <guid>https://okaku1001.github.io/io2-adc-tracker/entries/ivonescimab-trials.html#2026-11-26</guid>
   <pubDate>2026-11-26</pubDate>
-  <description>状态复核，不是新的读出。2026-11-26 打开的康方产品中心中英文页写依沃西已针对 40 多项适应症开展近 100 项临床，其中 17 项注册性/III 期、7 项国际多中心。这与截至 11-17 可核的 140 项 II–III 期清单、以及中报「联合疗法超过 60 项、8 项头对头」不是同一口径，条目里并列，不互相改写。HARMONi-10 仍未见 ClinicalTrials.gov 登记。</description>
+  <description>状态复核，不是新的读出。2026-11-26 打开的康方产品中心中英文页写依沃西已针对 40 多项适应症开展近 100 项临床，其中 17 项注册性/III 期、7 项国际多中心。这与截至 11-17 可核的 140 项 II–III 期清单、以及中报「联合疗法超过 60 项、8 项头对头」不是同一口径，条目里并列，不互相改写。</description>
 </item><item>
   <title>补上 HARMONi-8A、9、GI2、GI6、HN1 的 NCT；GI6 与 GI3 分列</title>
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/other-harmoni.html</link>
   <guid>https://okaku1001.github.io/io2-adc-tracker/entries/other-harmoni.html#2026-11-26</guid>
   <pubDate>2026-11-26</pubDate>
-  <description>状态复核。登记库显示上述研究仍为招募中，计划例数与此前条目一致。HARMONi-9（NCT07010263）官方标题为 III 期；Summit 管线页本次未打开。HARMONi-GI6（NCT06951503 / AK112-312）是中国 FOLFOXIRI 方案，计划 560 人，与全球 HARMONi-GI3 不是同一项。</description>
+  <description>状态复核。登记库显示上述研究仍为招募中，计划例数与此前条目一致。HARMONi-9（NCT07010263）官方标题为 III 期，Summit 官方管线表写为 Phase II，期别并列。HARMONi-GI6（NCT06951503 / AK112-312）是中国 FOLFOXIRI 方案，计划 560 人，与全球 HARMONi-GI3 不是同一项。</description>
 </item><item>
   <title>新建 pulocimab（AK109）条目：COMPLUS-5 仍在招募，预计主要完成仍写 2026-11</title>
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/pulocimab.html</link>
   <guid>https://okaku1001.github.io/io2-adc-tracker/entries/pulocimab.html#2026-11-26</guid>
   <pubDate>2026-11-26</pubDate>
-  <description>补建独立条目，不是新的读出。国际非专利名和靶点以中报与 NCT06341335 官方标题为准。截至 11-26 仍为招募中，计划 506 人，登记页最后更新仍为 2024-06-24。中文通用名或商品名本次未核到。</description>
+  <description>补建独立条目，不是新的读出。国际非专利名和靶点以中报与 NCT06341335 官方标题为准。截至 11-26 仍为招募中，计划 506 人，登记页最后更新仍为 2024-06-24。</description>
 </item><item>
-  <title>新建 AK130 条目：胆道癌 Ib/II 期数据以公司稿为准，ASCO 摘要原页未打开</title>
+  <title>新建 AK130 条目：公司稿与 ASCO / JCO 摘要 4142 数字并列</title>
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/ak130.html</link>
   <guid>https://okaku1001.github.io/io2-adc-tracker/entries/ak130.html#2026-11-26</guid>
   <pubDate>2026-11-26</pubDate>
-  <description>补建独立条目。公司 2026-06-09 稿给出 2026 年 4 月截止的缓解率数字。JCO 摘要原页本次未能打开。登记库可见已完成的 I 期和仍在招募的 AK130-201（计划 135 人）；未见 III 期登记。</description>
+  <description>公司 2026-06-09 稿给出 2026 年 4 月截止的缓解率数字；JCO / ASCO 摘要 4142 数据截至 2026 年 1 月。两套数字并列，不合成一套。登记库可见已完成的 I 期和仍在招募的 AK130-201（计划 135 人）。</description>
 </item><item>
   <title>新建 AK139 条目：七项 II 期获准开展，登记库六项尚未招募，未见 COPD 登记</title>
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/ak139.html</link>
   <guid>https://okaku1001.github.io/io2-adc-tracker/entries/ak139.html#2026-11-26</guid>
   <pubDate>2026-11-26</pubDate>
-  <description>补建独立条目。公司 2026-02-11 稿与中报写国家药监局同意开展七项 II 期。截至 11-26，ClinicalTrials.gov 可见六项 II 期和一项健康受试者 I 期，状态均为尚未招募；慢性阻塞性肺疾病一项未核到 NCT。获准开展不等于已经入组。</description>
+  <description>补建独立条目。公司 2026-02-11 稿与中报写国家药监局同意开展七项 II 期。截至 11-26，ClinicalTrials.gov 可见六项 II 期和一项健康受试者 I 期，状态均为尚未招募。本条只记录已核登记号的试验。获准开展不等于已经入组。</description>
 </item><item>
   <title>新建康方技术平台条目：ACE、Tetrabody 及中报所列其余平台</title>
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/akeso-platforms.html</link>
@@ -121,17 +157,17 @@
   <pubDate>2026-11-26</pubDate>
   <description>补建合集条目，不是新的读出。名称与靶点以中报为准，阶段以登记库为主并与中报并列。仅 AK129、AK131 显示招募中；AK132 状态为未知；其余多为尚未招募。部分中报表述与登记页最后状态不完全同步，已在条目里写明。</description>
 </item><item>
-  <title>复核 HARMONi-BC1 仍在招募，Datroway 联合 III 期仍未见登记</title>
+  <title>复核 HARMONi-BC1 仍在招募；Summit 管线列出阿斯利康申办的 TROP2 ADC III 期，尚未招募</title>
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-bc1.html</link>
   <guid>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-bc1.html#2026-11-26</guid>
   <pubDate>2026-11-26</pubDate>
-  <description>状态复核。NCT06767527 仍为招募中，计划 416 人，估计主要完成仍为 2026-12。依沃西联合 Datroway 的一线三阴性乳腺癌 III 期本次再次检索 ClinicalTrials.gov，仍未见到对应登记。</description>
+  <description>NCT06767527 仍为招募中，计划 416 人，估计主要完成仍为 2026-12。Summit 官方管线已列出阿斯利康申办、一线三阴性乳腺癌、依沃西联合 TROP2 导向 ADC 的 III 期，研究名和地区为 TBD，状态尚未招募。</description>
 </item><item>
   <title>Summit 宣布计划启动全球 III 期 HARMONi-10，康方次日称已启动</title>
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-10.html</link>
   <guid>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-10.html#2026-11-18</guid>
   <pubDate>2026-11-18</pubDate>
-  <description>Summit 11-18 的 8-K 写宣布计划启动 HARMONi-10：依沃西对比度伐利尤单抗，用于含铂同步放化疗后未进展的不可切除 III 期 NSCLC 巩固治疗；全球试验中心启动预计于 2026 年第四季度开始。康方 11-19 中文官网写该国际多中心注册性 III 期「已启动」。双方对国际 III 期计数口径不同，并列记录，不裁定。国内 342 / 全球 830 的既有轨迹保留。截至 2026-11-26 仍未见 ClinicalTrials.gov 登记。</description>
+  <description>Summit 11-18 的 8-K 写宣布计划启动 HARMONi-10：依沃西对比度伐利尤单抗，用于含铂同步放化疗后未进展的不可切除 III 期 NSCLC 巩固治疗；全球试验中心启动预计于 2026 年第四季度开始。康方 11-19 中文官网写该国际多中心注册性 III 期「已启动」。双方对国际 III 期计数口径不同，并列记录，不裁定。国内 342 / 全球 830 的既有轨迹保留。</description>
 </item><item>
   <title>卡度尼利研究者发起试验 NCT05063916 登记状态改为已终止</title>
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/cadonilimab.html</link>
@@ -143,7 +179,7 @@
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-gi1.html</link>
   <guid>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-gi1.html#2026-11-17</guid>
   <pubDate>2026-11-17</pubDate>
-  <description>康方中文官网 11-17 宣布，依沃西联合化疗一线治疗局部晚期或转移性胆道癌的 sNDA 已获 NMPA 受理；此前该适应症已纳入优先审评；公司称这是依沃西申报上市的第 4 项适应症，申请基于 HARMONi-GI1。英文稿署 11-16。只记受理事实，官网复述的疗效数字不作为新读出。受理号与 NMPA/CDE 原页本期未能打开。</description>
+  <description>康方中文官网 11-17 宣布，依沃西联合化疗一线治疗局部晚期或转移性胆道癌的 sNDA 已获 NMPA 受理；此前该适应症已纳入优先审评；公司称这是依沃西申报上市的第 4 项适应症，申请基于 HARMONi-GI1。英文稿署 11-16。只记受理事实，官网复述的疗效数字不作为新读出。</description>
 </item><item>
   <title>依沃西试验清单增至 140 项：纳入 PEGASUS-Lung（NCT07941583）</title>
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/ivonescimab-trials.html</link>
@@ -155,19 +191,19 @@
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-gu1.html</link>
   <guid>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-gu1.html#2026-11-16</guid>
   <pubDate>2026-11-16</pubDate>
-  <description>FDA 于 11-13 批准度伐利尤单抗（I药）联合恩诺单抗作为新辅助治疗，术后继以 I药单药辅助，用于不适合或拒绝顺铂化疗的成年肌层浸润性膀胱癌。依据 VOLGA：相对单独手术，中位 EFS 未达到（95% CI 33.2–NR）对 12.1 个月，HR 0.51（0.38–0.67）；两臂中位 OS 均未达到，HR 0.58（0.40–0.83）。这是围手术期 IO+ADC 格局更新，不改写 HARMONi-GU1。VOLGA 对照为单独手术，不能用来比较 I药或依沃西联合恩诺单抗与恩诺单抗联合 K药。数字以 FDA 批准页为准；未打开《NEJM》全文、阿斯利康新闻稿和标签全文。</description>
+  <description>FDA 于 11-13 批准度伐利尤单抗（I药）联合恩诺单抗作为新辅助治疗，术后继以 I药单药辅助，用于不适合或拒绝顺铂化疗的成年肌层浸润性膀胱癌。依据 VOLGA：相对单独手术，中位 EFS 未达到（95% CI 33.2–NR）对 12.1 个月，HR 0.51（0.38–0.67）；两臂中位 OS 均未达到，HR 0.58（0.40–0.83）。这是围手术期 IO+ADC 格局更新，不改写 HARMONi-GU1。VOLGA 对照为单独手术，不能用来比较 I药或依沃西联合恩诺单抗与恩诺单抗联合 K药。数字以 FDA 批准页为准。</description>
 </item><item>
   <title>Summit 提交 8-K 备案，康方刊发第 13.10 条公告</title>
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-fda.html</link>
   <guid>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-fda.html#2026-11-16</guid>
   <pubDate>2026-11-16</pubDate>
-  <description>11-16 早间核对其时尚无对应 8-K 或康方公告。同日稍后，Summit 提交 8-K，对 11-15 新闻稿作备案，未见新的临床数字，也未见再申报或开会时点；康方按上市规则第 13.10 条公告，确认已注意该新闻稿，未写再申报路径。完整回复函原文仍未见公开。这不是新的 FDA 决定。</description>
+  <description>11-16 早间核对其时尚无对应 8-K 或康方公告。同日稍后，Summit 提交 8-K，对 11-15 新闻稿作备案，未见新的临床数字，也未见再申报或开会时点；康方按上市规则第 13.10 条公告，确认已注意该新闻稿，未写再申报路径。这不是新的 FDA 决定。</description>
 </item><item>
   <title>康方宣布古莫奇活动性强直性脊柱炎 sNDA 获 NMPA 批准</title>
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/gumokimab.html</link>
   <guid>https://okaku1001.github.io/io2-adc-tracker/entries/gumokimab.html#2026-11-16</guid>
   <pubDate>2026-11-16</pubDate>
-  <description>康方 11-16 官网宣布，古莫奇（奇佑康，IL-17A 单抗）治疗活动性强直性脊柱炎的 sNDA 已获 NMPA 批准，为第 2 项适应症；第 1 项为 2026 年 6 月的中重度斑块状银屑病。依据关键 III 期 AK111-303，公司称达到全部预设疗效终点，但未给出 ASAS20/ASAS40 数值。稿件写「近日」，未见批件日或批件号；NMPA/CDE 原页本期未能打开。此前因覆盖未含自免品种，这条获批未上站。</description>
+  <description>康方 11-16 官网宣布，古莫奇（奇佑康，IL-17A 单抗）治疗活动性强直性脊柱炎的 sNDA 已获 NMPA 批准，为第 2 项适应症；第 1 项为 2026 年 6 月的中重度斑块状银屑病。依据关键 III 期 AK111-303，公司称达到全部预设疗效终点，但未给出 ASAS20/ASAS40 数值。稿件写「近日」，未见批件日或批件号；此前因覆盖未含自免品种，这条获批未上站。</description>
 </item><item>
   <title>AK158D1 首次人体 I 期 NCT07939919 登记页首次发布</title>
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/akeso-adc.html</link>
@@ -179,7 +215,7 @@
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-fda.html</link>
   <guid>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-fda.html#2026-11-15</guid>
   <pubDate>2026-11-15</pubDate>
-  <description>2026-11-15 公司官网新闻稿：该 BLA 不能以现有形式获批。公司转述 FDA：缺乏统计学显著的 OS 改善时尚未建立充分有效性证据，无显著 OS 时 PFS 获益不足以支持批准所需的正向获益风险。完整回复函原文未见公开。适应症是 EGFR 突变非鳞 NSCLC、三代 TKI 之后，依沃西联合化疗，不是一线，也不是对 K药的头对头。稿件所写事后分析全人群、亚洲和西方 OS HR 均为 0.76，但未给出置信区间、p 值或数据截止，不能与此前几次分析拼接。11-16 早间核对其时尚无对应 8-K 或康方公告。同日稍后，Summit 提交 8-K，对 11-15 新闻稿作备案，未见新的临床数字，也未见再申报或开会时点；康方按上市规则第 13.10 条公告，确认已注意该新闻稿，未写再申报路径。完整回复函原文仍未见公开。</description>
+  <description>2026-11-15 公司官网新闻稿：该 BLA 不能以现有形式获批。公司转述 FDA：缺乏统计学显著的 OS 改善时尚未建立充分有效性证据，无显著 OS 时 PFS 获益不足以支持批准所需的正向获益风险。适应症是 EGFR 突变非鳞 NSCLC、三代 TKI 之后，依沃西联合化疗，不是一线，也不是对 K药的头对头。稿件所写事后分析全人群、亚洲和西方 OS HR 均为 0.76，但未给出置信区间、p 值或数据截止，不能与此前几次分析拼接。11-16 早间核对其时尚无对应 8-K 或康方公告。同日稍后，Summit 提交 8-K，对 11-15 新闻稿作备案，未见新的临床数字，也未见再申报或开会时点；康方按上市规则第 13.10 条公告，确认已注意该新闻稿，未写再申报路径。</description>
 </item><item>
   <title>2026 年版医保目录载明依沃西两项支付范围，一线鳞状 NSCLC 未列入该条</title>
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/ivonescimab-china.html</link>
@@ -222,30 +258,6 @@
   <guid>https://okaku1001.github.io/io2-adc-tracker/entries/cadonilimab.html#2026-11-13</guid>
   <pubDate>2026-11-13</pubDate>
   <description>NCT06762080 为广州医科大学申办、复旦大学附属金山医院合作的 I/II 期，鞘内给予卡度尼利联合培美曲塞，计划入组 39 例（估计），不是康方或 Summit 申办。对照 11-12 晨间快照，当时状态为在研、暂不招募，估计完成日期为 2026-10-30；11-12 更新后改为招募中，估计主要完成日期改为 2027-12-30。实际开始日期仍为 2025-03-07。登记页未见结果。计划日期不等于读出。</description>
-</item><item>
-  <title>BioNTech 以 2.05 亿美元购买一张 FDA 优先审评券，未指定用于哪个药</title>
-  <link>https://okaku1001.github.io/io2-adc-tracker/entries/pumitamig.html</link>
-  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/pumitamig.html#2026-11-12</guid>
-  <pubDate>2026-11-12</pubDate>
-  <description>2026-11-10 公司声明和 6-K：用于后期肿瘤管线未来的一次申报，交易尚待包括美国反垄断审查在内的交割条件。优先审评券只会缩短单次审评时限，不会让临床试验读出提前。Fierce Pharma 认为最说得通的用法是 pumitamig，这是二手解读，不是公司指定。</description>
-</item><item>
-  <title>四部门印发创新药配备使用通知，不是新进医保</title>
-  <link>https://okaku1001.github.io/io2-adc-tracker/entries/nhc-innovative-drug-use-18.html</link>
-  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/nhc-innovative-drug-use-18.html#2026-11-12</guid>
-  <pubDate>2026-11-12</pubDate>
-  <description>文末日期 2026-10-30。省级以上和地市级医院要把两目录内、本院有条件使用的 1 类新药纳入用药目录；不计入「一品两规」，也不纳入次均药费增幅等绩效指标。依沃西、卡度尼利已在医保目录内的适应症适用这些规则。未见卫健委原页，全文依据山西转载。</description>
-</item><item>
-  <title>美国财政部发布 COINS 对外投资拟议规则，拟纳入生物医药</title>
-  <link>https://okaku1001.github.io/io2-adc-tracker/entries/coins-outbound-pharma.html</link>
-  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/coins-outbound-pharma.html#2026-11-11</guid>
-  <pubDate>2026-11-11</pubDate>
-  <description>2026-10-22 征求意见稿拟把生物技术写入对外投资安全项目，书面意见须于 12 月 7 日前提交。这是拟议规则，不是已经生效的禁令。</description>
-</item><item>
-  <title>补记荣昌 RC118 联合 RC148 的一线胃癌 II/III 期</title>
-  <link>https://okaku1001.github.io/io2-adc-tracker/entries/rc148.html</link>
-  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/rc148.html#2026-11-10</guid>
-  <pubDate>2026-11-10</pubDate>
-  <description>CTR20264047，对照替雷利珠单抗联合化疗，用于 CLDN18.2 阳性、HER2 阴性的胃或胃食管结合部腺癌，国内计划 160 例，尚未招募。公示其实是 11-03，原页未核。翰森 NCT07899086 计划今日开始，查登记库仍尚未招募。</description>
 </item>
 </channel>
 </rss>
