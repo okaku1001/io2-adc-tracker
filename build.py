@@ -16,8 +16,9 @@ DATA = ROOT / "data"
 OUT = ROOT
 
 SITE_DEFAULT = {
-    "title": "IO2.0+ADC 临床追踪",
-    "tagline": "以康方生物已公布的成药、管线和平台技术为底盘，记录已核临床与监管变动，并延伸到与之构成竞争或合作的具体品种。同一条试验只保留一个条目，每日动态是索引。",
+    "title": "管线动态",
+    "tagline": "生物医药成药、管线与竞品的已核更新。",
+    "description": "以康方生物已公布的成药、管线和平台技术为底盘，记录已核临床与监管变动，并延伸到与之构成竞争或合作的具体品种。同一条试验只保留一个条目，每日动态是索引。",
     "base_url": "https://okaku1001.github.io/io2-adc-tracker",
     "disclaimer": "本站为公开信息整理，不构成投资建议。数字均来自已核对的一手或已标注来源，不代表康方、Summit 或其他公司立场。",
 }
@@ -266,7 +267,7 @@ def nav_html(prefix: str, current: str, site: dict, toc_launch: bool = False) ->
       </svg>
       <span class="brand-text">
         <span class="brand-title">{html.escape(site['title'])}</span>
-        <span class="brand-sub">公开临床动态 · 不构成投资建议</span>
+        <span class="brand-sub">{html.escape(site.get("tagline") or "")}</span>
       </span>
     </a>
     <nav class="nav" aria-label="主导航">
@@ -507,10 +508,185 @@ def latest_among(entries) -> str:
     return max(dates, key=date_key)
 
 
+
 def section_count_label(section_id: str, hub_count: int) -> str:
     if section_id == "approved":
         return f"{hub_count} 个品种"
     return f"{hub_count} 条"
+
+
+BOARD_LABELS = {
+    "approved": "已上市",
+    "in-development": "在研与平台",
+    "partners": "合作",
+    "competitors": "竞争",
+    "policy": "政策",
+}
+BOARD_PINS = {
+    "approved": ("ivonescimab-china", "cadonilimab"),
+    "in-development": ("ligufalimab", "akeso-platforms"),
+    "partners": ("summit-az",),
+    "competitors": ("pumitamig",),
+    "policy": (),
+}
+BOARD_LIMITS = {
+    "approved": 4,
+    "in-development": 4,
+    "partners": 4,
+    "competitors": 4,
+    "policy": 2,
+}
+# 图谱类条目不是品种，首页局面图不露出；完整列表仍在管线页。
+BOARD_SKIP = {"head-to-head-map"}
+BOARD_LINE_MAX = 72
+_SENT_SPLIT = re.compile(r"(?<=[。！？])")
+
+
+def short_verified_line(text: str, max_chars: int = BOARD_LINE_MAX) -> str:
+    """Cut a verified field down to one short sentence. Do not rewrite."""
+    text = (text or "").strip()
+    if not text:
+        return ""
+    parts = _SENT_SPLIT.split(text, maxsplit=1)
+    line = (parts[0] or text).strip()
+    if len(line) <= max_chars:
+        return line
+    cut = line[:max_chars]
+    for sep in ("，", "、", "；", " ", "：", ":"):
+        i = cut.rfind(sep)
+        if i >= max_chars * 2 // 3:
+            cut = cut[:i]
+            break
+    return cut.rstrip("，、；;：: ") + "…"
+
+
+# 局面图不用带工作记录用语的句子。只匹配过程语，不改写原文。
+_PROCESS_LINE = re.compile(
+    r"复核|"
+    r"打开并核对|"
+    r"打开官网|"
+    r"已打开.{0,30}(?:官网|登记|页面|原页)|"
+    r"打开中英文|"
+    r"打开.{0,24}(?:技术平台页|登记页|官网)|"
+    r"交叉核对|"
+    r"核对各平台|"
+    r"核对官方定义|"
+    r"补上已核|"
+    r"标明与中报|"
+    r"尚未看到原文|"
+    r"未能打开|"
+    r"未能回到|"
+    r"原文未见|"
+    r"仍未见登记|"
+    r"本期未打开|"
+    r"本期未找到|"
+    r"本条目此前"
+)
+
+
+def is_process_line(text: str) -> bool:
+    return bool(_PROCESS_LINE.search(text or ""))
+
+
+def clean_verified_line(text: str) -> str:
+    line = short_verified_line(text)
+    if line and not is_process_line(line):
+        return line
+    return ""
+
+
+def entry_board_line(entry: dict) -> str:
+    """One-line status from verified fields; skip process/work-record wording."""
+    line = clean_verified_line(entry.get("status") or "")
+    if line:
+        return line
+    line = clean_verified_line(entry.get("subtitle") or "")
+    if line:
+        return line
+    events = [ev for ev in (entry.get("timeline") or []) if ev.get("title") or ev.get("summary")]
+    events.sort(key=lambda ev: date_key(ev.get("date") or ""), reverse=True)
+    for ev in events:
+        line = clean_verified_line(ev.get("title") or "") or clean_verified_line(ev.get("summary") or "")
+        if line:
+            return line
+    return clean_verified_line(entry.get("title") or "")
+
+
+def board_display_name(entry: dict) -> str:
+    """Use the entry title. Collapse only an exact 'Name（Name）' duplication."""
+    title = (entry.get("title") or entry.get("slug") or "").strip()
+    m = re.fullmatch(r"(.+?)\s*[（(]\s*(.+?)\s*[）)]\s*", title)
+    if m and m.group(1) == m.group(2):
+        return m.group(1)
+    return title
+
+
+def pick_board_slugs(section: dict, by_slug: dict) -> list[str]:
+    """Pins first if they belong to this section, then fill by latest verified date."""
+    present = []
+    for item in section.get("items") or []:
+        slug = item.get("slug")
+        if slug and slug in by_slug and slug not in BOARD_SKIP and slug not in present:
+            present.append(slug)
+    if not present:
+        return []
+    sid = section.get("id") or ""
+    limit = BOARD_LIMITS.get(sid, 4)
+    pins = [s for s in BOARD_PINS.get(sid, ()) if s in present]
+    rest = [s for s in present if s not in pins]
+    # 同日按 layout.json 原有顺序补位，不按 slug 字母倒序。
+    rest.sort(
+        key=lambda s: (date_key(entry_latest_iso(by_slug[s])), -present.index(s)),
+        reverse=True,
+    )
+    chosen = []
+    for slug in pins + rest:
+        if slug not in chosen:
+            chosen.append(slug)
+        if len(chosen) >= limit:
+            break
+    return chosen
+
+
+def render_situation_board(layout: dict, entries, prefix: str) -> str:
+    by_slug = {e["slug"]: e for e in entries}
+    mods = []
+    for section in layout.get("sections") or []:
+        slugs = pick_board_slugs(section, by_slug)
+        if not slugs:
+            continue
+        sid = section.get("id") or ""
+        label = BOARD_LABELS.get(sid) or section.get("title") or ""
+        href = rel_to(prefix, f"pipeline.html#{sid}")
+        rows = []
+        for slug in slugs:
+            entry = by_slug[slug]
+            status = entry_board_line(entry)
+            status_html = (
+                f'<span class="board-status">{html.escape(status)}</span>' if status else ""
+            )
+            rows.append(
+                "<li>"
+                f'<a href="{html.escape(entry_url(slug, prefix))}">'
+                f'<span class="board-name">{html.escape(board_display_name(entry))}</span>'
+                f"{status_html}"
+                "</a></li>"
+            )
+        mods.append(
+            f'<section class="situation-mod" aria-labelledby="board-{html.escape(sid)}">'
+            f'<h3 id="board-{html.escape(sid)}"><a href="{html.escape(href)}">{html.escape(label)}</a></h3>'
+            f'<ul class="situation-list">{"".join(rows)}</ul>'
+            "</section>"
+        )
+    if not mods:
+        return ""
+    return f"""<section class="situation-board" aria-labelledby="situation-h">
+  <div class="section-h">
+    <h2 id="situation-h">局面</h2>
+    <a href="{rel_to(prefix, "pipeline.html")}">全部展开</a>
+  </div>
+  <div class="situation-grid">{"".join(mods)}</div>
+</section>"""
 
 
 def render_latest_meta(iso: str) -> str:
@@ -888,18 +1064,17 @@ def home(entries, dailies, site, layout=None):
     def rail_lis(items, passed: bool) -> str:
         bits = []
         for u in items:
-            detail = u.get("detail") or ""
-            detail_html = f'<p class="rail-detail">{html.escape(detail)}</p>' if detail else ""
             cls = ' class="is-passed"' if passed else ""
-            tag = '<p class="passed-tag">已过计划日</p>' if passed else ""
+            title = html.escape(u.get("title", ""))
+            slug = u.get("slug")
+            if slug:
+                title_html = f'<a class="rail-title" href="{html.escape(entry_url(slug, ""))}">{title}</a>'
+            else:
+                title_html = f'<p class="rail-title">{title}</p>'
             bits.append(
                 f"""<li{cls}>
   <p class="when">{html.escape(u.get('when', ''))}</p>
-  <div>
-    {tag}
-    <p class="rail-title">{html.escape(u.get('title', ''))}</p>
-    {detail_html}
-  </div>
+  {title_html}
 </li>"""
             )
         return "".join(bits)
@@ -952,46 +1127,24 @@ def home(entries, dailies, site, layout=None):
             list_html = f'<ul class="story-list">{"".join(rest)}</ul>'
 
     news_block = ""
+    list_block = ""
     if lead_html or list_html:
         news_block = f"""<section class="briefing-news" aria-labelledby="recent-h">
   <div class="section-h"><h2 id="recent-h">最近动态</h2><a href="daily/index.html">全部日期</a></div>
   {lead_html}
-  {list_html}
 </section>"""
+    list_block = f'<div class="briefing-list">{list_html}</div>' if list_html else ""
 
-    rails = []
-    if future:
-        rails.append(
-            f"""<aside class="briefing-rail" aria-labelledby="upcoming-h">
-  <div class="section-h"><h2 id="upcoming-h">即将到来</h2></div>
-  <ul class="date-rail">{rail_lis(future, False)}</ul>
+    rail_items = rail_lis(future, False) + rail_lis(past, True)
+    up_block = ""
+    if rail_items:
+        up_block = f"""<aside class="upcoming-track" aria-labelledby="upcoming-h">
+  <div class="section-h is-quiet"><h2 id="upcoming-h">即将到来</h2></div>
+  <ul class="date-rail">{rail_items}</ul>
 </aside>"""
-        )
-    if past:
-        rails.append(
-            f"""<aside class="briefing-rail is-passed" aria-labelledby="passed-h">
-  <div class="section-h"><h2 id="passed-h">已过计划日</h2></div>
-  <ul class="date-rail">{rail_lis(past, True)}</ul>
-</aside>"""
-        )
-    up_block = f'<div class="briefing-rails">{"".join(rails)}</div>' if rails else ""
 
     layout = layout or {}
-    guide_html = render_guide(layout, entries, "", compact=True)
-    catalog_block = ""
-    if guide_html:
-        section_title = html.escape(layout.get("home_section_title") or "管线与竞争")
-        home_intro = layout.get("home_intro") or ""
-        intro_html = f'<p class="guide-intro">{html.escape(home_intro)}</p>' if home_intro else ""
-        catalog_block = f"""<section class="catalog guide-home" aria-labelledby="catalog-h">
-  <div class="section-h">
-    <h2 id="catalog-h">{section_title}</h2>
-    <a class="guide-jump" href="pipeline.html">完整导览</a>
-  </div>
-  {intro_html}
-  {guide_html}
-  <p class="guide-foot"><a href="pipeline.html">打开完整「管线与竞争」导览</a> · <a href="entries/index.html">筛选全部条目</a></p>
-</section>"""
+    situation_block = render_situation_board(layout, entries, "")
 
     banner = site.get("banner") or {}
     banner_html = ""
@@ -1004,17 +1157,18 @@ def home(entries, dailies, site, layout=None):
     body = f"""<header class="masthead">
   <h1>{html.escape(site['title'])}</h1>
   <p class="lede">{html.escape(site['tagline'])}</p>
-  <p class="lede read-path">先看最近动态和即将到来的日期，再按「<a href="pipeline.html">管线与竞争</a>」查阅品种与已挂上的相关条目。</p>
   <p class="meta-row"><span>资料截至 {html.escape(site.get('source_as_of', '2026-11-10'))}（北京时间）</span><span>生成于 {html.escape(site['generated'])}（北京时间）</span></p>
 </header>
 <div class="home-board">
 {news_block}
-{up_block}
+{situation_block}
+{list_block}
 {banner_html}
-{catalog_block}
+{up_block}
 </div>
 """
     return page(site["title"], "", "home", site, body, body_class="page-home")
+
 
 
 def pipeline_page(entries, site, layout=None):
@@ -1036,10 +1190,10 @@ def pipeline_page(entries, site, layout=None):
 def about_page(site):
     body = f"""<header class="hero read">
   <h1>关于本站</h1>
-  <p class="lede">这是一份公开的临床动态整理。覆盖范围以康方生物已公布的全部成药、管线和平台技术为底盘，再延伸到全球能与之形成竞争或合作的具体管线与药物。不再只聚焦依沃西与卡度尼利。影响相关合作或商务发展的政策、交易规则，核实后也会单独成条收入。不把再鼎、亚盛、金斯瑞、百济、信达、恒瑞、君实、荣昌等公司的整条管线无差别并入，也不把与康方不构成竞争或合作的全球公司整线搬进来，只收与康方已公布成药、管线或平台相关的具体品种。本站覆盖仍在按已核材料补全，不表示已经穷尽。</p>
+  <p class="lede">「管线动态」整理生物医药成药、管线与竞品的已核更新。覆盖范围以康方生物已公布的全部成药、管线和平台技术为底盘，再延伸到全球能与之形成竞争或合作的具体管线与药物。影响相关合作或商务发展的政策、交易规则，核实后也会单独成条收入。不把再鼎、亚盛、金斯瑞、百济、信达、恒瑞、君实、荣昌等公司的整条管线无差别并入，也不把与康方不构成竞争或合作的全球公司整线搬进来，只收与康方已公布成药、管线或平台相关的具体品种。本站覆盖仍在按已核材料补全，不表示已经穷尽。</p>
 </header>
 <div class="read">
-  <p>阅读时可先看首页的「最近动态」和「即将到来」，再进入「管线与竞争」按康方品种查看已挂上的试验、竞争与合作。条目时间线仍是完整正文。</p>
+  <p>阅读时可先看首页的最近一条完整动态和局面图，再进入「管线与竞争」按品种展开已挂上的试验、竞争与合作。「即将到来」在首页收成一条日期轨道。条目时间线仍是完整正文。</p>
   <p>同一条试验、同一个药、同一件监管事项只保留一个条目。新进展并进原条目的时间线，不按日期拆成互不相干的短讯。每日动态页只作索引，指回这些条目。</p>
   <p>数字都带来源和日期。公司或会议上不同时点给出的口径，写成轨迹：哪一天怎么说、后来改成了什么、现在以哪一版为准。没有头对头比较时，不写「优于」或「低于」。跨试验数字只并置，并说明不可比。</p>
   <p>来源分成四类，条目里会看得见：</p>
@@ -1087,7 +1241,7 @@ def rss(dailies, entries_by_slug, site):
 <channel>
   <title>{html.escape(site['title'])}</title>
   <link>{html.escape(site['base_url'])}/</link>
-  <description>{html.escape(site['tagline'])}</description>
+  <description>{html.escape(site.get("description") or site.get("tagline") or "")}</description>
   <language>zh-cn</language>
   <lastBuildDate>{html.escape(site['generated'])} +0800</lastBuildDate>
   {''.join(items)}

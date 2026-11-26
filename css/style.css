@@ -132,8 +132,10 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   font-size: 1.05rem;
   letter-spacing: 0.02em;
   line-height: 1.2;
+  white-space: nowrap;
 }
 .brand-sub {
+  display: none;
   font-size: 0.75rem;
   color: var(--ink-soft);
   line-height: 1.3;
@@ -183,9 +185,12 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 .read { max-width: var(--read); margin-left: auto; margin-right: auto; }
 
 .masthead {
-  padding: 0.15rem 0 1rem;
-  margin-bottom: 1.35rem;
+  padding: 0.15rem 0 0.85rem;
+  margin-bottom: 1.1rem;
   border-bottom: 1px solid var(--line);
+}
+.page-home .masthead h1 {
+  font-size: 1.45rem;
 }
 .masthead h1 {
   font-family: var(--serif);
@@ -234,31 +239,22 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 
 .home-board {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(16.5rem, 22rem);
+  grid-template-columns: minmax(0, 1.15fr) minmax(22rem, 1fr);
   grid-template-areas:
-    "news rails"
-    "banner rails"
-    "catalog rails";
-  column-gap: 2.6rem;
-  row-gap: 1.55rem;
+    "news situation"
+    "list situation"
+    "banner situation"
+    "track track";
+  column-gap: 2.4rem;
+  row-gap: 1.4rem;
   align-items: start;
 }
 .briefing-news { grid-area: news; min-width: 0; }
-.briefing-rails { grid-area: rails; min-width: 0; display: flex; flex-direction: column; gap: 1.55rem; }
-.briefing-rail { min-width: 0; }
+.briefing-list { grid-area: list; min-width: 0; }
+.situation-board { grid-area: situation; min-width: 0; }
+.upcoming-track { grid-area: track; min-width: 0; }
 .home-board > .banner { grid-area: banner; }
-.catalog { grid-area: catalog; min-width: 0; }
-
-@media (min-width: 900px) {
-  .briefing-rails {
-    position: sticky;
-    top: 4.7rem;
-    max-height: calc(100vh - 5.5rem);
-    overflow: auto;
-    padding-right: 0.15rem;
-    -webkit-overflow-scrolling: touch;
-  }
-}
+.catalog { min-width: 0; }
 
 .banner {
   margin: 0;
@@ -904,20 +900,12 @@ table.data th { background: var(--chip); font-weight: 600; }
     grid-template-columns: 1fr;
     grid-template-areas:
       "news"
+      "situation"
+      "list"
       "banner"
-      "rail"
-      "catalog"
-      "rail-passed";
-    row-gap: 1.7rem;
+      "track";
+    row-gap: 1.5rem;
   }
-  .briefing-rails {
-    display: contents;
-    position: static;
-    max-height: none;
-    overflow: visible;
-  }
-  .briefing-rail { grid-area: rail; }
-  .briefing-rail.is-passed { grid-area: rail-passed; }
 }
 
 @media (max-width: 880px) {
@@ -1452,4 +1440,136 @@ table.data th { background: var(--chip); font-weight: 600; }
 @media (max-width: 599px) {
   .guide-mod > .guide-mod-head { padding-right: 2.1rem; }
   .guide-mod.is-hub { padding-left: 0.7rem; }
+}
+
+
+/* Home situation board: typographic blocks, not a card wall. */
+.situation-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.35rem;
+  row-gap: 0.15rem;
+}
+.situation-mod {
+  min-width: 0;
+  padding: 0.1rem 0 0.65rem;
+  border-bottom: 1px solid var(--line);
+}
+.situation-mod h3 {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin: 0 0 0.15rem;
+  line-height: 1.3;
+}
+.situation-mod h3 a {
+  text-decoration: none;
+  color: inherit;
+}
+.situation-mod h3 a:hover { color: var(--accent); }
+.situation-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.situation-list a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 0.4rem 0;
+  min-height: 44px;
+}
+.situation-list li + li a {
+  border-top: 1px solid var(--line);
+}
+.board-name {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 0.95rem;
+  font-weight: 650;
+  line-height: 1.35;
+}
+.board-status {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 0.1rem 0 0;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  line-height: 1.4;
+  font-weight: 400;
+}
+.situation-list a:hover .board-name { color: var(--accent); }
+.situation-list a:visited .board-name { color: var(--visited); }
+.situation-list a:visited:hover .board-name { color: var(--accent); }
+
+/* Upcoming date rail: lower visual weight than news and the situation board. */
+.upcoming-track {
+  margin-top: 0.15rem;
+  padding-top: 0.7rem;
+  border-top: 1px solid var(--line);
+}
+.upcoming-track .section-h {
+  border-bottom: 0;
+  margin-bottom: 0.35rem;
+  padding-bottom: 0;
+}
+.upcoming-track .section-h h2,
+.section-h.is-quiet h2 {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+}
+.upcoming-track .date-rail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+}
+.upcoming-track .date-rail li {
+  display: block;
+  flex: 1 1 11rem;
+  min-width: 10.5rem;
+  max-width: 16rem;
+  padding: 0.4rem 1rem 0.5rem 0;
+  border-bottom: 0;
+  border-right: 1px solid var(--line);
+}
+.upcoming-track .date-rail .when {
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+.upcoming-track .rail-title {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.86rem;
+  font-weight: 500;
+  margin: 0.12rem 0 0;
+  line-height: 1.4;
+  text-decoration: none;
+  color: inherit;
+}
+.upcoming-track a.rail-title:hover { color: var(--accent); }
+.upcoming-track .date-rail li.is-passed {
+  opacity: 0.62;
+}
+.upcoming-track .date-rail li.is-passed .when {
+  color: var(--ink-soft);
+  font-weight: 500;
+}
+
+@media (max-width: 699px) {
+  .situation-grid { grid-template-columns: 1fr; }
+  .upcoming-track .date-rail li {
+    flex: 1 1 100%;
+    max-width: none;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+    padding-right: 0;
+  }
 }

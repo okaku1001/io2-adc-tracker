@@ -1,6 +1,7 @@
 {
-  "title": "IO2.0+ADC 临床追踪",
-  "tagline": "以康方生物已公布的成药、管线和平台技术为底盘，记录已核临床与监管变动，并延伸到与之构成竞争或合作的具体品种。同一条试验只保留一个条目，每日动态是索引。",
+  "title": "管线动态",
+  "tagline": "生物医药成药、管线与竞品的已核更新。",
+  "description": "以康方生物已公布的成药、管线和平台技术为底盘，记录已核临床与监管变动，并延伸到与之构成竞争或合作的具体品种。同一条试验只保留一个条目，每日动态是索引。",
   "base_url": "https://okaku1001.github.io/io2-adc-tracker",
   "repo_url": "https://github.com/okaku1001/io2-adc-tracker",
   "source_as_of": "2026-11-26",
