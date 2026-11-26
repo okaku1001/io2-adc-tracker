@@ -105,7 +105,7 @@ def rel_to(prefix: str, target: str) -> str:
     return prefix + target
 
 
-def nav_html(prefix: str, current: str, site: dict) -> str:
+def nav_html(prefix: str, current: str, site: dict, toc_launch: bool = False) -> str:
     links = [
         ("index.html", "首页", "home"),
         ("entries/index.html", "条目", "entries"),
@@ -116,6 +116,12 @@ def nav_html(prefix: str, current: str, site: dict) -> str:
     for href, label, key in links:
         cur = ' aria-current="page"' if key == current else ""
         items.append(f'<a href="{rel_to(prefix, href)}"{cur}>{label}</a>')
+    toc_btn = ""
+    if toc_launch:
+        toc_btn = (
+            '<button class="toc-launch" type="button" aria-expanded="false" '
+            'aria-controls="entry-toc">时间线</button>'
+        )
     return f"""<header class="site-header">
   <div class="header-inner">
     <a class="brand" href="{rel_to(prefix, 'index.html')}">
@@ -129,7 +135,7 @@ def nav_html(prefix: str, current: str, site: dict) -> str:
       </span>
     </a>
     <nav class="nav" aria-label="主导航">
-      <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-label="打开菜单">☰</button>
+      {toc_btn}<button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-label="打开菜单">☰</button>
       <div class="nav-links">{''.join(items)}</div>
       <button class="icon-btn" id="theme-toggle" type="button" aria-label="切换深浅色">◐</button>
     </nav>
@@ -179,7 +185,7 @@ def page(title: str, prefix: str, current: str, site: dict, body: str, extra_hea
 <body{body_attr}>
 {progress}
 {"".join(skip_links)}
-{nav_html(prefix, current, site)}
+{nav_html(prefix, current, site, toc_launch=(body_class == 'page-entry'))}
 <main id="main" class="wrap">
 {body}
 </main>
@@ -256,10 +262,16 @@ def render_entry(entry: dict, site: dict) -> str:
         )
     toc_html = ""
     if toc_items:
-        toc_html = f"""<nav class="toc" aria-label="本页时间线">
-  <p class="toc-label">本页时间线</p>
+        toc_html = f"""<div class="toc-slot">
+<nav class="toc" id="entry-toc" aria-labelledby="toc-label">
+  <div class="toc-panel-head">
+    <p class="toc-label" id="toc-label">本页时间线</p>
+    <button class="toc-close" type="button" aria-label="关闭时间线目录">关闭</button>
+  </div>
+  <p class="toc-resume hidden"></p>
   <ol>{''.join(toc_items)}</ol>
-</nav>"""
+</nav>
+</div>"""
     impact = entry.get("impact") or {}
     impact_html = ""
     if impact.get("text"):
@@ -276,6 +288,8 @@ def render_entry(entry: dict, site: dict) -> str:
   <p class="status-text">{md_inline(status)}</p>
 </section>"""
     skips = [("#timeline", "跳到时间线")] if events else None
+    if toc_items:
+        skips = (skips or []) + [("#entry-toc", "本页时间线目录")]
     body = f"""<article class="entry-layout">
   <header class="entry-header">
     <p class="kicker">{html.escape(entry.get('kicker', '临床条目'))}</p>
@@ -425,19 +439,28 @@ def daily_index(dailies, site):
 
 def home(entries, dailies, site):
     upcoming = site.get("upcoming", [])
-    up_html = []
-    for u in upcoming:
-        detail = u.get("detail") or ""
-        detail_html = f'<p class="rail-detail">{html.escape(detail)}</p>' if detail else ""
-        up_html.append(
-            f"""<li>
+
+    def rail_lis(items, passed: bool) -> str:
+        bits = []
+        for u in items:
+            detail = u.get("detail") or ""
+            detail_html = f'<p class="rail-detail">{html.escape(detail)}</p>' if detail else ""
+            cls = ' class="is-passed"' if passed else ""
+            tag = '<p class="passed-tag">已过计划日</p>' if passed else ""
+            bits.append(
+                f"""<li{cls}>
   <p class="when">{html.escape(u.get('when', ''))}</p>
   <div>
+    {tag}
     <p class="rail-title">{html.escape(u.get('title', ''))}</p>
     {detail_html}
   </div>
 </li>"""
-        )
+            )
+        return "".join(bits)
+
+    future = [u for u in upcoming if not u.get("passed")]
+    past = [u for u in upcoming if u.get("passed")]
 
     recent_items = []
     for d in dailies:
@@ -491,12 +514,22 @@ def home(entries, dailies, site):
   {list_html}
 </section>"""
 
-    up_block = ""
-    if up_html:
-        up_block = f"""<aside class="briefing-rail" aria-labelledby="upcoming-h">
+    rails = []
+    if future:
+        rails.append(
+            f"""<aside class="briefing-rail" aria-labelledby="upcoming-h">
   <div class="section-h"><h2 id="upcoming-h">即将到来</h2></div>
-  <ul class="date-rail">{''.join(up_html)}</ul>
+  <ul class="date-rail">{rail_lis(future, False)}</ul>
 </aside>"""
+        )
+    if past:
+        rails.append(
+            f"""<aside class="briefing-rail is-passed" aria-labelledby="passed-h">
+  <div class="section-h"><h2 id="passed-h">已过计划日</h2></div>
+  <ul class="date-rail">{rail_lis(past, True)}</ul>
+</aside>"""
+        )
+    up_block = f'<div class="briefing-rails">{"".join(rails)}</div>' if rails else ""
 
     groups = [
         ("依沃西主线", [e for e in entries if e.get("group") == "ivo"]),
@@ -574,6 +607,7 @@ def about_page(site):
     <li><strong>推论</strong>：写明依据，以及判断来自研究组而非公司原文。</li>
   </ul>
   <p>本站不收录股价、融资细节、持仓或买卖建议，也不把计划中的日期写成已经读出或已经获批。</p>
+  <p>公开站每周一约 8:30（北京时间）更新一次。已上线内容若发现错误，会尽快在原条目改正并注明日期和依据，不必等周一。站点覆盖范围本次不扩大，仍以康方依沃西、卡度尼利及其 IO2.0+ADC 战略竞品与伙伴为限。2026-11-26 这一次是补上 11-23 未更新的一轮，不是改周更纪律。</p>
   <p>{html.escape(site['disclaimer'])}</p>
   <p class="muted">资料截至 {html.escape(site.get('source_as_of', '2026-11-10'))}（北京时间）。页面生成：{html.escape(site['generated'])}（北京时间，UTC+8）。</p>
 </div>

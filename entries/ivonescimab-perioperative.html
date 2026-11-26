@@ -13,7 +13,7 @@
 </head>
 <body class="page-entry">
 <div class="read-progress" aria-hidden="true"><span></span></div>
-<a class="skip" href="#main">跳到正文</a><a class="skip" href="#timeline">跳到时间线</a>
+<a class="skip" href="#main">跳到正文</a><a class="skip" href="#timeline">跳到时间线</a><a class="skip" href="#entry-toc">本页时间线目录</a>
 <header class="site-header">
   <div class="header-inner">
     <a class="brand" href="../index.html">
@@ -27,7 +27,7 @@
       </span>
     </a>
     <nav class="nav" aria-label="主导航">
-      <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-label="打开菜单">☰</button>
+      <button class="toc-launch" type="button" aria-expanded="false" aria-controls="entry-toc">时间线</button><button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-label="打开菜单">☰</button>
       <div class="nav-links"><a href="../index.html">首页</a><a href="../entries/index.html" aria-current="page">条目</a><a href="../daily/index.html">每日动态</a><a href="../about.html">关于</a></div>
       <button class="icon-btn" id="theme-toggle" type="button" aria-label="切换深浅色">◐</button>
     </nav>
@@ -46,10 +46,16 @@
   <p class="status-text">II 期全文已发表。截至 2026-11-06，ClinicalTrials.gov 上依沃西围手术期仍以这条 II 期和若干研究者发起研究为主；康方列举的十七项 III 期未点名围手术。论文自己要求更大的随机 III 期。</p>
 </section>
   <section class="summary"><p>试验编号 AK112-205（NCT05247684 / CTR20220028），赵等人发表于《Nature Medicine》，期刊页标注 Published: 2026-11-04。中国两个中心，开放、非随机，入组 90 人。公司稿主推完成手术人群；与 KEYNOTE-671、CheckMate-816 等 III 期并排看时，应用全分析集。中位无事件生存尚未成熟，总生存未报。</p></section>
-  <nav class="toc" aria-label="本页时间线">
-  <p class="toc-label">本页时间线</p>
+  <div class="toc-slot">
+<nav class="toc" id="entry-toc" aria-labelledby="toc-label">
+  <div class="toc-panel-head">
+    <p class="toc-label" id="toc-label">本页时间线</p>
+    <button class="toc-close" type="button" aria-label="关闭时间线目录">关闭</button>
+  </div>
+  <p class="toc-resume hidden"></p>
   <ol><li><a href="#ev-2026-11-04-0"><span class="toc-date">2026年11月4日</span><span class="toc-title">Nature Medicine 全文上线</span></a></li><li><a href="#ev-2026-11-06-1"><span class="toc-date">2026年11月6日</span><span class="toc-title">康方发布中文稿；日检将其记为 II 期全文上刊，未达重大事件门槛</span></a></li></ol>
 </nav>
+</div>
   <ol class="timeline" id="timeline">
 <li id="ev-2026-11-04-0">
   <div class="t-date">2026年11月4日 <span class="badge badge-一手">一手</span></div>
@@ -77,7 +83,7 @@
 <footer class="site-footer">
   <div class="footer-inner">
     <p>本站为公开信息整理，不构成投资建议。数字均来自已核对的一手或已标注来源，不代表康方、Summit 或其他公司立场。</p>
-    <p>资料截至 2026-11-16（北京时间）。页面生成：2026-11-16 09:06（北京时间，UTC+8）。</p>
+    <p>资料截至 2026-11-26（北京时间）。页面生成：2026-11-26 14:16（北京时间，UTC+8）。</p>
     <p class="footer-links">
       <a href="../feed.xml">RSS</a>
       <a href="../about.html">方法与来源说明</a>

@@ -13,7 +13,7 @@
 </head>
 <body class="page-entry">
 <div class="read-progress" aria-hidden="true"><span></span></div>
-<a class="skip" href="#main">跳到正文</a><a class="skip" href="#timeline">跳到时间线</a>
+<a class="skip" href="#main">跳到正文</a><a class="skip" href="#timeline">跳到时间线</a><a class="skip" href="#entry-toc">本页时间线目录</a>
 <header class="site-header">
   <div class="header-inner">
     <a class="brand" href="../index.html">
@@ -27,7 +27,7 @@
       </span>
     </a>
     <nav class="nav" aria-label="主导航">
-      <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-label="打开菜单">☰</button>
+      <button class="toc-launch" type="button" aria-expanded="false" aria-controls="entry-toc">时间线</button><button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-label="打开菜单">☰</button>
       <div class="nav-links"><a href="../index.html">首页</a><a href="../entries/index.html" aria-current="page">条目</a><a href="../daily/index.html">每日动态</a><a href="../about.html">关于</a></div>
       <button class="icon-btn" id="theme-toggle" type="button" aria-label="切换深浅色">◐</button>
     </nav>
@@ -43,13 +43,19 @@
   </header>
   <section class="status-box" aria-labelledby="status-heading">
   <h2 id="status-heading" class="status-label">当前状态</h2>
-  <p class="status-text">II 至 III 期可核对 139 项。注册性或 III 期可核对 17 项。</p>
+  <p class="status-text">II 至 III 期可核对 140 项。注册性或 III 期可核对 17 项。</p>
 </section>
   <section class="summary"><p>公司关于「注册性或 III 期、国际多中心、头对头」的数字，要按时间线读，不是把不同月份的说法当成互相否定的口径冲突。能看清的主干是：试验在增加，公司数字大体上随之走高；同一周里出现回落，或「超过 17」和「超过 18」并用时，才需要单独说明。「60 项」是康方中报「超过 60 项联合疗法临床试验」（全阶段），不是 II 至 III 期数。「80 项」或「87 项」对不上任何一种严格口径。</p></section>
-  <nav class="toc" aria-label="本页时间线">
-  <p class="toc-label">本页时间线</p>
-  <ol><li><a href="#ev-2026-08-05-0"><span class="toc-date">2026年8月5日</span><span class="toc-title">康方新闻：HARMONi-GU1 是第 16 项注册性或 III 期、第 6 项国际多中心</span></a></li><li><a href="#ev-2026-09-30-1"><span class="toc-date">2026年9月30日</span><span class="toc-title">中报：注册性 II/III 期 17 项、头对头 8 项</span></a></li><li><a href="#ev-2026-10-05-2"><span class="toc-date">2026年10月5日</span><span class="toc-title">公司稿改为 17 项注册性或 III 期、6 项国际多中心、7 项头对头</span></a></li><li><a href="#ev-2026-10-09-3"><span class="toc-date">2026年10月9日</span><span class="toc-title">HARMONi-10 加入清单，可核对注册性或 III 期变为 17 项</span></a></li><li><a href="#ev-2026-10-26-4"><span class="toc-date">2026年10月26日</span><span class="toc-title">同一天出现「超过 18 项」和「17 项」两种写法</span></a></li><li><a href="#ev-2026-11-02-5"><span class="toc-date">2026年11月2日</span><span class="toc-title">公司稿稳定为超过 17 项 III 期、7 项国际多中心、7 项头对头</span></a></li><li><a href="#ev-2026-11-09-6"><span class="toc-date">2026年11月9日</span><span class="toc-title">清单增至 138 项：纳入 MedSIR 二线肝细胞癌 II 期</span></a></li><li><a href="#ev-2026-11-13-7"><span class="toc-date">2026年11月13日</span><span class="toc-title">清单增至 139 项：纳入贵州医科大学研究者发起的依沃西 II 期</span></a></li></ol>
+  <div class="toc-slot">
+<nav class="toc" id="entry-toc" aria-labelledby="toc-label">
+  <div class="toc-panel-head">
+    <p class="toc-label" id="toc-label">本页时间线</p>
+    <button class="toc-close" type="button" aria-label="关闭时间线目录">关闭</button>
+  </div>
+  <p class="toc-resume hidden"></p>
+  <ol><li><a href="#ev-2026-08-05-0"><span class="toc-date">2026年8月5日</span><span class="toc-title">康方新闻：HARMONi-GU1 是第 16 项注册性或 III 期、第 6 项国际多中心</span></a></li><li><a href="#ev-2026-09-30-1"><span class="toc-date">2026年9月30日</span><span class="toc-title">中报：注册性 II/III 期 17 项、头对头 8 项</span></a></li><li><a href="#ev-2026-10-05-2"><span class="toc-date">2026年10月5日</span><span class="toc-title">公司稿改为 17 项注册性或 III 期、6 项国际多中心、7 项头对头</span></a></li><li><a href="#ev-2026-10-09-3"><span class="toc-date">2026年10月9日</span><span class="toc-title">HARMONi-10 加入清单，可核对注册性或 III 期变为 17 项</span></a></li><li><a href="#ev-2026-10-26-4"><span class="toc-date">2026年10月26日</span><span class="toc-title">同一天出现「超过 18 项」和「17 项」两种写法</span></a></li><li><a href="#ev-2026-11-02-5"><span class="toc-date">2026年11月2日</span><span class="toc-title">公司稿稳定为超过 17 项 III 期、7 项国际多中心、7 项头对头</span></a></li><li><a href="#ev-2026-11-09-6"><span class="toc-date">2026年11月9日</span><span class="toc-title">清单增至 138 项：纳入 MedSIR 二线肝细胞癌 II 期</span></a></li><li><a href="#ev-2026-11-13-7"><span class="toc-date">2026年11月13日</span><span class="toc-title">清单增至 139 项：纳入贵州医科大学研究者发起的依沃西 II 期</span></a></li><li><a href="#ev-2026-11-17-8"><span class="toc-date">2026年11月17日</span><span class="toc-title">清单增至 140 项：纳入 PEGASUS-Lung（NCT07941583）</span></a></li></ol>
 </nav>
+</div>
   <ol class="timeline" id="timeline">
 <li id="ev-2026-08-05-0">
   <div class="t-date">2026年8月5日 <span class="badge badge-一手">一手</span></div>
@@ -99,17 +105,23 @@
   <p>新增 NCT07936578：贵州医科大学申办的研究者发起、前瞻性探索性 II 期，单臂、开放，计划入组 40 例（估计），状态为尚未招募。官方题目为依沃西联合同步放化疗治疗晚期非小细胞肺癌。合作方栏为空白，申办方不是康方或 Summit。研究首次发布日期 2026-11-13，末次更新提交日期 2026-11-10，末次更新日期 2026-11-13；估计开始日期写 2026-10-30，估计主要完成日期 2028-10-30，完成日期 2029-10-30。内部编号 SL-202608234。唯一地点为贵州医科大学附属肿瘤医院（贵阳）。</p><p>纳入标准写明：既往未经治疗、组织学或细胞学确认、不可切除、PD-L1 TPS ≥ 1% 的 IV 期非小细胞肺癌等。干预描述为同步放化疗后，接受 2–4 个周期依沃西联合化疗，无疾病进展者接受依沃西维持治疗，最长 2 年或至因毒性不耐受停药。主要终点包括研究者按 RECIST 1.1 确认的客观缓解率。登记页未见结果。计划日期不等于已经开始或已经读出。</p><p>可核对的 II 至 III 期由此前 138 项增至 139 项。注册性或 III 期仍为 17 项，无状态变化。</p>
   
   <p class="sources">来源：<a href="https://clinicaltrials.gov/study/NCT07936578" rel="noopener noreferrer">ClinicalTrials.gov NCT07936578（首次发布 2026-11-13）</a> <span class="badge badge-一手">一手</span></p>
+</li><li id="ev-2026-11-17-8">
+  <div class="t-date">2026年11月17日 <span class="badge badge-一手">一手</span></div>
+  <h2>清单增至 140 项：纳入 PEGASUS-Lung（NCT07941583）</h2>
+  <p>新增 NCT07941583（首字母缩写 PEGASUS-Lung）：浙江大学医学院附属第二医院申办的研究者发起、多中心、单臂、开放 II 期，评估依沃西联合 Iza-bren（izalontamab brengitecan / BL-B01D1）用于三代 EGFR-TKI 经治、携带 EGFR 敏感突变的晚期非鳞 NSCLC。计划入组 43 例（估计），状态为尚未招募。合作方为宁波市第二医院、温州医科大学附属第一医院。申办方不是康方或 Summit。研究首次发布日期与末次更新日期均为 2026-11-17；估计开始日期 2026-12-01，估计主要完成日期与完成日期均为 2030-06-01。</p><p>干预描述为每三周一个周期：依沃西 20 mg/kg，第 1 天静脉给药；Iza-bren 2.5 mg/kg，第 1、8 天静脉给药。主要终点为无进展生存期（PFS）。登记页未见结果。计划日期不等于已经开始或已经读出。</p><p>可核对的 II 至 III 期由此前 139 项增至 140 项。注册性或 III 期仍为 17 项，无状态变化。HARMONi-10 截至 2026-11-26 仍无 ClinicalTrials.gov 登记，见该条目。</p>
+  
+  <p class="sources">来源：<a href="https://clinicaltrials.gov/study/NCT07941583" rel="noopener noreferrer">ClinicalTrials.gov NCT07941583（首次发布 2026-11-17；2026-11-26 再核）</a> <span class="badge badge-一手">一手</span></p>
 </li>
   </ol>
   
-  <p class="entry-updated muted">最后写入本条目的资料日期：2026年11月13日。</p>
+  <p class="entry-updated muted">最后写入本条目的资料日期：2026年11月17日。</p>
 </article>
 
 </main>
 <footer class="site-footer">
   <div class="footer-inner">
     <p>本站为公开信息整理，不构成投资建议。数字均来自已核对的一手或已标注来源，不代表康方、Summit 或其他公司立场。</p>
-    <p>资料截至 2026-11-16（北京时间）。页面生成：2026-11-16 09:06（北京时间，UTC+8）。</p>
+    <p>资料截至 2026-11-26（北京时间）。页面生成：2026-11-26 14:16（北京时间，UTC+8）。</p>
     <p class="footer-links">
       <a href="../feed.xml">RSS</a>
       <a href="../about.html">方法与来源说明</a>

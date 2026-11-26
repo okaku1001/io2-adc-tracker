@@ -3,12 +3,8 @@
   "tagline": "以康方生物为中心，记录依沃西、卡度尼利及其战略竞品与伙伴的核心临床变动。同一条试验只保留一个条目，每日动态是索引。",
   "base_url": "https://okaku1001.github.io/io2-adc-tracker",
   "repo_url": "https://github.com/okaku1001/io2-adc-tracker",
-  "source_as_of": "2026-11-16",
+  "source_as_of": "2026-11-26",
   "disclaimer": "本站为公开信息整理，不构成投资建议。数字均来自已核对的一手或已标注来源，不代表康方、Summit 或其他公司立场。",
-  "banner": {
-    "title": "Summit 宣布依沃西 HARMONi BLA 收到 FDA 完整回复函",
-    "text": "2026-11-15 公司官网新闻稿：该 BLA 不能以现有形式获批。公司转述 FDA：缺乏统计学显著的 OS 改善时尚未建立充分有效性证据，无显著 OS 时 PFS 获益不足以支持批准所需的正向获益风险。完整回复函原文未见公开。适应症是 EGFR 突变非鳞 NSCLC、三代 TKI 之后，依沃西联合化疗，不是一线，也不是对 K药的头对头。"
-  },
   "upcoming": [
     {
       "when": "2026-12-07",
@@ -21,24 +17,30 @@
       "detail": "同时安排一次计划内早期 OS 期中分析。公司原文是事件数预计达到，不等于数据公布日。"
     },
     {
-      "when": "计划 2026-11-10",
-      "title": "翰森 NCT07899086（HS-20093+依沃西）计划开始",
-      "detail": "截至 2026-11-11 查 ClinicalTrials.gov，状态仍为尚未招募，最后更新 2026-10-27。"
-    },
-    {
-      "when": "2026-11（登记估计）",
-      "title": "COMPLUS-5 预计主要完成",
-      "detail": "卡度尼利联合 AK109 与紫杉醇，用于免疫治疗后进展的胃癌。计划日期不等于读出。"
-    },
-    {
       "when": "2026Q4（指引）",
       "title": "EA2251 美国开中心",
       "detail": "一线晚期胆道癌的海外确认路径。Summit 称 registration-enabling。"
     },
     {
+      "when": "已宣布，仍未见登记",
+      "title": "HARMONi-10 的 ClinicalTrials.gov 页",
+      "detail": "试验已由 Summit（2026-11-18）与康方（2026-11-19）宣布。截至 2026-11-26 检索 ClinicalTrials.gov，仍未见 HARMONi-10 / AK112-3010 的对应登记。"
+    },
+    {
       "when": "仍未见到登记",
-      "title": "依沃西+Datroway 一线 TNBC III 期、HARMONi-10 的 CT.gov 页",
-      "detail": "合作或 CDE 公示已经宣布，截至 2026-11-11 仍未在 ClinicalTrials.gov 查到对应登记。"
+      "title": "依沃西+Datroway 一线 TNBC III 期的 CT.gov 页",
+      "detail": "合作此前已经宣布。截至 2026-11-11 仍未在 ClinicalTrials.gov 查到对应登记；本期未再对该项做专项检索。"
+    },
+    {
+      "when": "2026-11（登记估计）",
+      "title": "COMPLUS-5 预计主要完成",
+      "detail": "卡度尼利联合 AK109 与紫杉醇，用于免疫治疗后进展的胃癌（NCT06341335）。截至 2026-11-26 查 ClinicalTrials.gov，状态仍为招募中，预计主要完成仍为 2026-11，最后更新仍为 2024-06-24。计划日期不等于读出。"
+    },
+    {
+      "when": "已过计划开始日（原计划 2026-11-10）",
+      "title": "翰森 NCT07899086（HS-20093+依沃西）",
+      "detail": "登记页估计开始日期原为 2026-11-10。截至 2026-11-26 查 ClinicalTrials.gov，状态仍为尚未招募，估计开始日期仍写 2026-11-10，最后更新仍为 2026-10-27。计划日期不等于已经开始。",
+      "passed": true
     }
   ]
 }

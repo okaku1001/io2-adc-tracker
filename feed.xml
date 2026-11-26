@@ -5,19 +5,49 @@
   <link>https://okaku1001.github.io/io2-adc-tracker/</link>
   <description>以康方生物为中心，记录依沃西、卡度尼利及其战略竞品与伙伴的核心临床变动。同一条试验只保留一个条目，每日动态是索引。</description>
   <language>zh-cn</language>
-  <lastBuildDate>2026-11-16 09:06 +0800</lastBuildDate>
+  <lastBuildDate>2026-11-26 14:16 +0800</lastBuildDate>
   <item>
+  <title>Summit 宣布计划启动全球 III 期 HARMONi-10，康方次日称已启动</title>
+  <link>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-10.html</link>
+  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-10.html#2026-11-18</guid>
+  <pubDate>2026-11-18</pubDate>
+  <description>Summit 11-18 的 8-K 写宣布计划启动 HARMONi-10：依沃西对比度伐利尤单抗，用于含铂同步放化疗后未进展的不可切除 III 期 NSCLC 巩固治疗；全球试验中心启动预计于 2026 年第四季度开始。康方 11-19 中文官网写该国际多中心注册性 III 期「已启动」。双方对国际 III 期计数口径不同，并列记录，不裁定。国内 342 / 全球 830 的既有轨迹保留。截至 2026-11-26 仍未见 ClinicalTrials.gov 登记。</description>
+</item><item>
+  <title>卡度尼利研究者发起试验 NCT05063916 登记状态改为已终止</title>
+  <link>https://okaku1001.github.io/io2-adc-tracker/entries/cadonilimab.html</link>
+  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/cadonilimab.html#2026-11-18</guid>
+  <pubDate>2026-11-18</pubDate>
+  <description>ClinicalTrials.gov 于 11-18 更新：NCT05063916（卡度尼利单药、复发性宫颈小细胞神经内分泌癌 II 期，M.D. Anderson 申办）总体状态改为已终止，实际入组 9 例，whyStopped 为「&lt;75% participation」。未见结果。这不是疗效读出。</description>
+</item><item>
+  <title>康方宣布依沃西一线胆道癌 sNDA 获 NMPA 受理</title>
+  <link>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-gi1.html</link>
+  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-gi1.html#2026-11-17</guid>
+  <pubDate>2026-11-17</pubDate>
+  <description>康方中文官网 11-17 宣布，依沃西联合化疗一线治疗局部晚期或转移性胆道癌的 sNDA 已获 NMPA 受理；此前该适应症已纳入优先审评；公司称这是依沃西申报上市的第 4 项适应症，申请基于 HARMONi-GI1。英文稿署 11-16。只记受理事实，官网复述的疗效数字不作为新读出。受理号与 NMPA/CDE 原页本期未能打开。</description>
+</item><item>
+  <title>依沃西试验清单增至 140 项：纳入 PEGASUS-Lung（NCT07941583）</title>
+  <link>https://okaku1001.github.io/io2-adc-tracker/entries/ivonescimab-trials.html</link>
+  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/ivonescimab-trials.html#2026-11-17</guid>
+  <pubDate>2026-11-17</pubDate>
+  <description>ClinicalTrials.gov 于 11-17 首登 NCT07941583（PEGASUS-Lung）：依沃西联合 Iza-bren 用于三代 EGFR-TKI 经治非鳞 NSCLC 的研究者发起 II 期，计划 43 例，尚未招募。这不是疗效读出。可核对的 II 至 III 期由 139 项增至 140 项；注册性或 III 期仍为 17 项。</description>
+</item><item>
   <title>FDA 批准 I药联合恩诺单抗用于特定肌层浸润性膀胱癌围手术期（VOLGA）</title>
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-gu1.html</link>
   <guid>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-gu1.html#2026-11-16</guid>
   <pubDate>2026-11-16</pubDate>
   <description>FDA 于 11-13 批准度伐利尤单抗（I药）联合恩诺单抗作为新辅助治疗，术后继以 I药单药辅助，用于不适合或拒绝顺铂化疗的成年肌层浸润性膀胱癌。依据 VOLGA：相对单独手术，中位 EFS 未达到（95% CI 33.2–NR）对 12.1 个月，HR 0.51（0.38–0.67）；两臂中位 OS 均未达到，HR 0.58（0.40–0.83）。这是围手术期 IO+ADC 格局更新，不改写 HARMONi-GU1。VOLGA 对照为单独手术，不能用来比较 I药或依沃西联合恩诺单抗与恩诺单抗联合 K药。数字以 FDA 批准页为准；未打开《NEJM》全文、阿斯利康新闻稿和标签全文。</description>
 </item><item>
+  <title>Summit 提交 8-K 备案，康方刊发第 13.10 条公告</title>
+  <link>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-fda.html</link>
+  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-fda.html#2026-11-16</guid>
+  <pubDate>2026-11-16</pubDate>
+  <description>11-16 早间核对其时尚无对应 8-K 或康方公告。同日稍后，Summit 提交 8-K，对 11-15 新闻稿作备案，未见新的临床数字，也未见再申报或开会时点；康方按上市规则第 13.10 条公告，确认已注意该新闻稿，未写再申报路径。完整回复函原文仍未见公开。这不是新的 FDA 决定。</description>
+</item><item>
   <title>Summit 宣布 FDA 就依沃西 HARMONi BLA 发出完整回复函（CRL）</title>
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-fda.html</link>
   <guid>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-fda.html#2026-11-15</guid>
   <pubDate>2026-11-15</pubDate>
-  <description>2026-11-15 公司官网新闻稿：该 BLA 不能以现有形式获批。公司转述 FDA：缺乏统计学显著的 OS 改善时尚未建立充分有效性证据，无显著 OS 时 PFS 获益不足以支持批准所需的正向获益风险。完整回复函原文未见公开。适应症是 EGFR 突变非鳞 NSCLC、三代 TKI 之后，依沃西联合化疗，不是一线，也不是对 K药的头对头。稿件所写事后分析全人群、亚洲和西方 OS HR 均为 0.76，但未给出置信区间、p 值或数据截止，不能与此前几次分析拼接。截至 11-16 早间，SEC 未见对应 8-K，康方亦未见对应公告。</description>
+  <description>2026-11-15 公司官网新闻稿：该 BLA 不能以现有形式获批。公司转述 FDA：缺乏统计学显著的 OS 改善时尚未建立充分有效性证据，无显著 OS 时 PFS 获益不足以支持批准所需的正向获益风险。完整回复函原文未见公开。适应症是 EGFR 突变非鳞 NSCLC、三代 TKI 之后，依沃西联合化疗，不是一线，也不是对 K药的头对头。稿件所写事后分析全人群、亚洲和西方 OS HR 均为 0.76，但未给出置信区间、p 值或数据截止，不能与此前几次分析拼接。11-16 早间核对其时尚无对应 8-K 或康方公告。同日稍后，Summit 提交 8-K，对 11-15 新闻稿作备案，未见新的临床数字，也未见再申报或开会时点；康方按上市规则第 13.10 条公告，确认已注意该新闻稿，未写再申报路径。完整回复函原文仍未见公开。</description>
 </item><item>
   <title>2026 年版医保目录载明依沃西两项支付范围，一线鳞状 NSCLC 未列入该条</title>
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/ivonescimab-china.html</link>
@@ -222,30 +252,6 @@
   <guid>https://okaku1001.github.io/io2-adc-tracker/entries/domestic-pd1vegf.html#2026-10-25</guid>
   <pubDate>2026-10-25</pubDate>
   <description>PD-1/VEGF/CTLA-4 三抗。一线 TPS≥50% 单药在更晚截止时整体 ORR 87.5%（21/24），30 mg/kg 组 11/11。早期单臂，无头对头。</description>
-</item><item>
-  <title>ESMO 2026 官方摘要上线，依沃西与卡度尼利早期研究完成逐项核对</title>
-  <link>https://okaku1001.github.io/io2-adc-tracker/entries/ivonescimab-esmo-2026.html</link>
-  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/ivonescimab-esmo-2026.html#2026-10-23</guid>
-  <pubDate>2026-10-23</pubDate>
-  <description>包括一线低危肾癌 3592O、胸腺癌 iTHYM、食管鳞癌 2908P、二线胃癌 2898P 等。LBA8 当时仍在禁发期。</description>
-</item><item>
-  <title>CDE 公示依沃西拟纳入优先审评，列表页未写适应症</title>
-  <link>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-gi1.html</link>
-  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-gi1.html#2026-10-23</guid>
-  <pubDate>2026-10-23</pubDate>
-  <description>申请人康方赛诺，申请日 10-20，公示截止 10-30。一线胆道癌的适应症当时只见于二手报道。</description>
-</item><item>
-  <title>BioNTech 拟将 ROSETTA Breast-01 的化疗换成 Trodelvy</title>
-  <link>https://okaku1001.github.io/io2-adc-tracker/entries/rosetta-breast-01.html</link>
-  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/rosetta-breast-01.html#2026-10-22</guid>
-  <pubDate>2026-10-22</pubDate>
-  <description>用于一线 PD-L1 低或阴性三阴性乳腺癌，尚待监管批准。原文是 pumitamig 自身首个全球 III 期 ADC 联合，不是全球首个 PD-(L)1 联合 ADC 的 III 期。</description>
-</item><item>
-  <title>康方医学公众号预告 ESMO 消化道研究</title>
-  <link>https://okaku1001.github.io/io2-adc-tracker/entries/ivonescimab-esmo-2026.html</link>
-  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/ivonescimab-esmo-2026.html#2026-10-22</guid>
-  <pubDate>2026-10-22</pubDate>
-  <description>数字当时来自公司稿，次日已对照官方摘要核对。HARMONi-GI1 仍无会上数字。</description>
 </item>
 </channel>
 </rss>

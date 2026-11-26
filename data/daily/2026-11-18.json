@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-18",
+  "title": "Summit 宣布计划启动全球 III 期 HARMONi-10；康方次日称已启动",
+  "items": [
+    {
+      "entry": "harmoni-10",
+      "headline": "Summit 宣布计划启动全球 III 期 HARMONi-10，康方次日称已启动",
+      "blurb": "Summit 11-18 的 8-K 写宣布计划启动 HARMONi-10：依沃西对比度伐利尤单抗，用于含铂同步放化疗后未进展的不可切除 III 期 NSCLC 巩固治疗；全球试验中心启动预计于 2026 年第四季度开始。康方 11-19 中文官网写该国际多中心注册性 III 期「已启动」。双方对国际 III 期计数口径不同，并列记录，不裁定。国内 342 / 全球 830 的既有轨迹保留。截至 2026-11-26 仍未见 ClinicalTrials.gov 登记。",
+      "grades": [
+        "一手"
+      ]
+    },
+    {
+      "entry": "cadonilimab",
+      "headline": "卡度尼利研究者发起试验 NCT05063916 登记状态改为已终止",
+      "blurb": "ClinicalTrials.gov 于 11-18 更新：NCT05063916（卡度尼利单药、复发性宫颈小细胞神经内分泌癌 II 期，M.D. Anderson 申办）总体状态改为已终止，实际入组 9 例，whyStopped 为「<75% participation」。未见结果。这不是疗效读出。",
+      "grades": [
+        "一手"
+      ]
+    }
+  ],
+  "note": "HARMONi-10 并入已有条目，不另开新条；Summit「计划启动」与康方「已启动」及双方计数口径并列，不裁定。NCT05063916 并入卡度尼利既有时间线。"
+}

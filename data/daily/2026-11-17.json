@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-17",
+  "title": "康方宣布依沃西一线胆道癌 sNDA 获 NMPA 受理",
+  "items": [
+    {
+      "entry": "harmoni-gi1",
+      "headline": "康方宣布依沃西一线胆道癌 sNDA 获 NMPA 受理",
+      "blurb": "康方中文官网 11-17 宣布，依沃西联合化疗一线治疗局部晚期或转移性胆道癌的 sNDA 已获 NMPA 受理；此前该适应症已纳入优先审评；公司称这是依沃西申报上市的第 4 项适应症，申请基于 HARMONi-GI1。英文稿署 11-16。只记受理事实，官网复述的疗效数字不作为新读出。受理号与 NMPA/CDE 原页本期未能打开。",
+      "grades": [
+        "一手",
+        "未核实"
+      ]
+    },
+    {
+      "entry": "ivonescimab-trials",
+      "headline": "依沃西试验清单增至 140 项：纳入 PEGASUS-Lung（NCT07941583）",
+      "blurb": "ClinicalTrials.gov 于 11-17 首登 NCT07941583（PEGASUS-Lung）：依沃西联合 Iza-bren 用于三代 EGFR-TKI 经治非鳞 NSCLC 的研究者发起 II 期，计划 43 例，尚未招募。这不是疗效读出。可核对的 II 至 III 期由 139 项增至 140 项；注册性或 III 期仍为 17 项。",
+      "grades": [
+        "一手"
+      ]
+    }
+  ],
+  "note": "sNDA 受理并入已有 HARMONi-GI1 条目，不另开新条，也不把官网复述的 GI1 数字当作新读出。NCT07941583 并入试验清单，并在「其他依沃西 ADC 联用」点一句。"
+}

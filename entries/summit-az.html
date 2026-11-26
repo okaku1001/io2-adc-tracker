@@ -13,7 +13,7 @@
 </head>
 <body class="page-entry">
 <div class="read-progress" aria-hidden="true"><span></span></div>
-<a class="skip" href="#main">跳到正文</a><a class="skip" href="#timeline">跳到时间线</a>
+<a class="skip" href="#main">跳到正文</a><a class="skip" href="#timeline">跳到时间线</a><a class="skip" href="#entry-toc">本页时间线目录</a>
 <header class="site-header">
   <div class="header-inner">
     <a class="brand" href="../index.html">
@@ -27,7 +27,7 @@
       </span>
     </a>
     <nav class="nav" aria-label="主导航">
-      <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-label="打开菜单">☰</button>
+      <button class="toc-launch" type="button" aria-expanded="false" aria-controls="entry-toc">时间线</button><button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-label="打开菜单">☰</button>
       <div class="nav-links"><a href="../index.html">首页</a><a href="../entries/index.html" aria-current="page">条目</a><a href="../daily/index.html">每日动态</a><a href="../about.html">关于</a></div>
       <button class="icon-btn" id="theme-toggle" type="button" aria-label="切换深浅色">◐</button>
     </nav>
@@ -46,10 +46,16 @@
   <p class="status-text">2022 年 12 月完成授权。阿斯利康投资于 2026-10-05 交割。</p>
 </section>
   <section class="summary"><p>目前已知的跨国合作几乎都是各自供药、分担费用、各自保留权益的临床合作。没有任何一家获得依沃西的商业权益，阿斯利康入股 Summit 也不含依沃西权益。ADC 一方可以随时换伙伴。交易对价有两套口径，必须并列，以 10-K 为一手。</p></section>
-  <nav class="toc" aria-label="本页时间线">
-  <p class="toc-label">本页时间线</p>
+  <div class="toc-slot">
+<nav class="toc" id="entry-toc" aria-labelledby="toc-label">
+  <div class="toc-panel-head">
+    <p class="toc-label" id="toc-label">本页时间线</p>
+    <button class="toc-close" type="button" aria-label="关闭时间线目录">关闭</button>
+  </div>
+  <p class="toc-resume hidden"></p>
   <ol><li><a href="#ev-2022-12-08-0"><span class="toc-date">2022年12月8日</span><span class="toc-title">康方将美欧日等海外权益授给 Summit</span></a></li><li><a href="#ev-2026-09-28-1"><span class="toc-date">2026年9月28日</span><span class="toc-title">阿斯利康签约认购 20 亿美元可转换优先股</span></a></li><li><a href="#ev-2026-11-04-2"><span class="toc-date">2026年11月4日</span><span class="toc-title">特别股东会通过法定普通股由 10 亿股增至 20 亿股</span></a></li></ol>
 </nav>
+</div>
   <ol class="timeline" id="timeline">
 <li id="ev-2022-12-08-0">
   <div class="t-date">2022年12月8日 <span class="badge badge-一手">一手</span></div>
@@ -83,7 +89,7 @@
 <footer class="site-footer">
   <div class="footer-inner">
     <p>本站为公开信息整理，不构成投资建议。数字均来自已核对的一手或已标注来源，不代表康方、Summit 或其他公司立场。</p>
-    <p>资料截至 2026-11-16（北京时间）。页面生成：2026-11-16 09:06（北京时间，UTC+8）。</p>
+    <p>资料截至 2026-11-26（北京时间）。页面生成：2026-11-26 14:16（北京时间，UTC+8）。</p>
     <p class="footer-links">
       <a href="../feed.xml">RSS</a>
       <a href="../about.html">方法与来源说明</a>
