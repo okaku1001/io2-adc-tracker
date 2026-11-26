@@ -3,9 +3,9 @@
 <channel>
   <title>IO2.0+ADC 临床追踪</title>
   <link>https://okaku1001.github.io/io2-adc-tracker/</link>
-  <description>以康方生物为中心，记录依沃西、卡度尼利及其战略竞品与伙伴的核心临床变动。同一条试验只保留一个条目，每日动态是索引。</description>
+  <description>记录康方生物已公布管线的核心临床与监管变动，以及可能与这些管线竞争或合作的品种。同一条试验只保留一个条目，每日动态是索引。</description>
   <language>zh-cn</language>
-  <lastBuildDate>2026-11-26 14:16 +0800</lastBuildDate>
+  <lastBuildDate>2026-11-26 14:28 +0800</lastBuildDate>
   <item>
   <title>Summit 宣布计划启动全球 III 期 HARMONi-10，康方次日称已启动</title>
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-10.html</link>
@@ -42,6 +42,18 @@
   <guid>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-fda.html#2026-11-16</guid>
   <pubDate>2026-11-16</pubDate>
   <description>11-16 早间核对其时尚无对应 8-K 或康方公告。同日稍后，Summit 提交 8-K，对 11-15 新闻稿作备案，未见新的临床数字，也未见再申报或开会时点；康方按上市规则第 13.10 条公告，确认已注意该新闻稿，未写再申报路径。完整回复函原文仍未见公开。这不是新的 FDA 决定。</description>
+</item><item>
+  <title>康方宣布古莫奇活动性强直性脊柱炎 sNDA 获 NMPA 批准</title>
+  <link>https://okaku1001.github.io/io2-adc-tracker/entries/gumokimab.html</link>
+  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/gumokimab.html#2026-11-16</guid>
+  <pubDate>2026-11-16</pubDate>
+  <description>康方 11-16 官网宣布，古莫奇（奇佑康，IL-17A 单抗）治疗活动性强直性脊柱炎的 sNDA 已获 NMPA 批准，为第 2 项适应症；第 1 项为 2026 年 6 月的中重度斑块状银屑病。依据关键 III 期 AK111-303，公司称达到全部预设疗效终点，但未给出 ASAS20/ASAS40 数值。稿件写「近日」，未见批件日或批件号；NMPA/CDE 原页本期未能打开。此前因覆盖未含自免品种，这条获批未上站。</description>
+</item><item>
+  <title>AK158D1 首次人体 I 期 NCT07939919 登记页首次发布</title>
+  <link>https://okaku1001.github.io/io2-adc-tracker/entries/akeso-adc.html</link>
+  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/akeso-adc.html#2026-11-16</guid>
+  <pubDate>2026-11-16</pubDate>
+  <description>ClinicalTrials.gov 于 11-16 首次发布 NCT07939919（方案号 AK158D1-101），康方申办的 AK158D1 晚期实体瘤 I 期。截至 11-26 查阅，状态为尚未招募，计划入组 349 例（估计）。估计开始日期写 11-16，不等于已经开始。未见结果。并入已有「康方自研 ADC」条目，不单开新品种页。</description>
 </item><item>
   <title>Summit 宣布 FDA 就依沃西 HARMONi BLA 发出完整回复函（CRL）</title>
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-fda.html</link>

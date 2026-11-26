@@ -534,6 +534,7 @@ def home(entries, dailies, site):
     groups = [
         ("依沃西主线", [e for e in entries if e.get("group") == "ivo"]),
         ("卡度尼利", [e for e in entries if e.get("group") == "cado"]),
+        ("康方其他管线", [e for e in entries if e.get("group") == "akeso-other"]),
         ("联用与伙伴", [e for e in entries if e.get("group") == "partner"]),
         ("竞品与对照", [e for e in entries if e.get("group") == "competitor"]),
         ("政策与规则", [e for e in entries if e.get("group") == "policy"]),
@@ -594,7 +595,7 @@ def home(entries, dailies, site):
 def about_page(site):
     body = f"""<header class="hero read">
   <h1>关于本站</h1>
-  <p class="lede">这是一份公开的临床动态整理，关注 IO2.0（以 PD-(L)1×VEGF 双抗为代表）和 ADC2.0 组合，中心是康方生物的依沃西与卡度尼利，以及它们的授权伙伴、联用药和直接竞品。影响这一赛道合作或商务发展的政策、交易规则，核实后也会单独成条收入。</p>
+  <p class="lede">这是一份公开的临床动态整理。覆盖范围为康方生物已公布的全部管线（已上市、已进临床，以及公司在中报或官网已点名的在研品种），以及可能与这些管线构成竞争或合作的品种。不再只聚焦依沃西与卡度尼利。影响相关合作或商务发展的政策、交易规则，核实后也会单独成条收入。不把再鼎、信达、百济等公司的整条管线无差别并入，只收与康方已公布管线相关的具体品种。</p>
 </header>
 <div class="read">
   <p>同一条试验、同一个药、同一件监管事项只保留一个条目。新进展并进原条目的时间线，不按日期拆成互不相干的短讯。每日动态页只作索引，指回这些条目。</p>
@@ -607,7 +608,7 @@ def about_page(site):
     <li><strong>推论</strong>：写明依据，以及判断来自研究组而非公司原文。</li>
   </ul>
   <p>本站不收录股价、融资细节、持仓或买卖建议，也不把计划中的日期写成已经读出或已经获批。</p>
-  <p>公开站每周一约 8:30（北京时间）更新一次。已上线内容若发现错误，会尽快在原条目改正并注明日期和依据，不必等周一。站点覆盖范围本次不扩大，仍以康方依沃西、卡度尼利及其 IO2.0+ADC 战略竞品与伙伴为限。2026-11-26 这一次是补上 11-23 未更新的一轮，不是改周更纪律。</p>
+  <p>公开站每天约 8:30（北京时间）更新一次，周末也更新。已上线内容若发现错误，会尽快在原条目改正并注明日期和依据。2026-11-16 起曾改为严格每周一更新；11-26 先补上 11-23 未更的一轮，随后恢复日更，并把覆盖扩大到康方已公布全部管线及可能与之竞争的竞品管线。</p>
   <p>{html.escape(site['disclaimer'])}</p>
   <p class="muted">资料截至 {html.escape(site.get('source_as_of', '2026-11-10'))}（北京时间）。页面生成：{html.escape(site['generated'])}（北京时间，UTC+8）。</p>
 </div>
