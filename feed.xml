@@ -5,8 +5,50 @@
   <link>https://okaku1001.github.io/io2-adc-tracker/</link>
   <description>以康方生物已公布的成药、管线和平台技术为底盘，记录已核临床与监管变动，并延伸到与之构成竞争或合作的具体品种。同一条试验只保留一个条目，每日动态是索引。</description>
   <language>zh-cn</language>
-  <lastBuildDate>2026-11-26 18:27 +0800</lastBuildDate>
+  <lastBuildDate>2026-11-26 19:19 +0800</lastBuildDate>
   <item>
+  <title>FDA / openFDA 已公开依沃西 BLA 761524 完整回复函原文</title>
+  <link>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-fda.html</link>
+  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-fda.html#2026-11-26</guid>
+  <pubDate>2026-11-26</pubDate>
+  <description>函件日期 2026-11-13，Summit 于 11-15 宣布收到。函中写明不能按现有形式批准，93% 的 PFS 事件（257/275）发生在中国入组患者，并要求做符合 ICH E17 的新的多区域临床试验。已上站的 HARMONi 中位值、HR 和 p 值未改写。站上此前「原文未见公开」的表述已更正。</description>
+</item><item>
+  <title>辉瑞 tivunatamig 联合恩诺单抗的一线尿路上皮癌 III 期已登记；三生中国 III 期改为已终止</title>
+  <link>https://okaku1001.github.io/io2-adc-tracker/entries/tivunatamig.html</link>
+  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/tivunatamig.html#2026-11-26</guid>
+  <pubDate>2026-11-26</pubDate>
+  <description>NCT07954882（Symbiotic-GU-07）于 2026-11-24 首次发布，计划 800 例，尚未招募，估计 12 月 3 日开始，与 HARMONi-GU1 同适应症、同恩诺单抗骨架，不是该试验的结果。Symbiotic-GYN-18 已于 11 月 5 日实际开始。三生中国 III 期 NCT06980272 登记页于 11 月 18 日改为已终止，实际入组 3 例；此前「420 人、尚未读出」已改正。</description>
+</item><item>
+  <title>默沙东宣布 TroFuse-015：sac-TMT 在三线及以后胃食管腺癌达到总生存期主要终点</title>
+  <link>https://okaku1001.github.io/io2-adc-tracker/entries/sac-tmt.html</link>
+  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/sac-tmt.html#2026-11-26</guid>
+  <pubDate>2026-11-26</pubDate>
+  <description>公司 2026-11-20 稿：入组 473 例，对照研究者选择化疗，OS 主要终点达到「统计学显著且具有临床意义」的改善；PFS 次要终点未达到；具体数字未给。这不是联合 K药的路径，也不是与依沃西的头对头。</description>
+</item><item>
+  <title>RC118 联合 RC148 一线胃癌 II/III 期出现 ClinicalTrials.gov 登记，计划 680 例</title>
+  <link>https://okaku1001.github.io/io2-adc-tracker/entries/rc148.html</link>
+  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/rc148.html#2026-11-26</guid>
+  <pubDate>2026-11-26</pubDate>
+  <description>NCT07935369 于 2026-11-13 首次发布，尚未招募。与本站此前按二手 CTR 写下的「国内计划 160 例」并列，不覆盖；CDE 原页仍未打开。</description>
+</item><item>
+  <title>齐鲁宣布 QL1706 两项三阴性乳腺癌 II 期将在 SABCS 12 月 10 日报告</title>
+  <link>https://okaku1001.github.io/io2-adc-tracker/entries/ql1706.html</link>
+  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/ql1706.html#2026-11-26</guid>
+  <pubDate>2026-11-26</pubDate>
+  <description>公司 2026-11-10 稿列出 PS13-2（QUEEN-NATURE）和 P4-12-01。完整数据将于大会期间发布，不是已经读出。</description>
+</item><item>
+  <title>依沃西可核 II 至 III 期清单由 140 项增至 141 项</title>
+  <link>https://okaku1001.github.io/io2-adc-tracker/entries/ivonescimab-trials.html</link>
+  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/ivonescimab-trials.html#2026-11-26</guid>
+  <pubDate>2026-11-26</pubDate>
+  <description>纳入浙江省肿瘤医院研究者发起试验 NCT07955363（2026-11-24 首次发布）。官方标题写 Phase Ib，登记库期别为 II 期。注册性或 III 期仍为 17 项。</description>
+</item><item>
+  <title>补记君实 JS207 联合 JS007 一线肝癌 III 期已完成首例给药</title>
+  <link>https://okaku1001.github.io/io2-adc-tracker/entries/domestic-pd1vegf.html</link>
+  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/domestic-pd1vegf.html#2026-11-26</guid>
+  <pubDate>2026-11-26</pubDate>
+  <description>公司 2026-10-29 官网稿宣布 NCT07823348 完成首例给药，计划 560 例，主要终点 PFS 和 OS。本站 11 月 3 日仍写「尚未招募」，属漏记，已改正。公司「全球首个」表述不作本站裁定。</description>
+</item><item>
   <title>新建派安普利（安尼可）条目：中国五项适应症与 FDA 鼻咽癌批准</title>
   <link>https://okaku1001.github.io/io2-adc-tracker/entries/penpulimab.html</link>
   <guid>https://okaku1001.github.io/io2-adc-tracker/entries/penpulimab.html#2026-11-26</guid>
@@ -204,48 +246,6 @@
   <guid>https://okaku1001.github.io/io2-adc-tracker/entries/rc148.html#2026-11-10</guid>
   <pubDate>2026-11-10</pubDate>
   <description>CTR20264047，对照替雷利珠单抗联合化疗，用于 CLDN18.2 阳性、HER2 阴性的胃或胃食管结合部腺癌，国内计划 160 例，尚未招募。公示其实是 11-03，原页未核。翰森 NCT07899086 计划今日开始，查登记库仍尚未招募。</description>
-</item><item>
-  <title>试验清单增至 138 项</title>
-  <link>https://okaku1001.github.io/io2-adc-tracker/entries/ivonescimab-trials.html</link>
-  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/ivonescimab-trials.html#2026-11-09</guid>
-  <pubDate>2026-11-09</pubDate>
-  <description>新增 MedSIR 申办的二线肝细胞癌 II 期 NCT07917481。HARMONi-GI3 计划例数由 600 调整为 900 已在 11-05 记入。</description>
-</item><item>
-  <title>康方发布围手术期 II 期《Nature Medicine》中文稿</title>
-  <link>https://okaku1001.github.io/io2-adc-tracker/entries/ivonescimab-perioperative.html</link>
-  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/ivonescimab-perioperative.html#2026-11-06</guid>
-  <pubDate>2026-11-06</pubDate>
-  <description>期刊页标注 11-04 发表。完成手术人群与全分析集的病理缓解率不同，并排看 III 期时应用全分析集。属 II 期全文上刊，不是 III 期读出。</description>
-</item><item>
-  <title>Summit 三季报细化 HARMONi-3 时间表</title>
-  <link>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-3.html</link>
-  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-3.html#2026-11-05</guid>
-  <pubDate>2026-11-05</pubDate>
-  <description>两个队列均已入组完成。鳞癌主要 PFS 事件数预计 2026 年第四季度达到，同时做一次计划内早期总生存期中分析。事件数达到不等于读出。</description>
-</item><item>
-  <title>三季报重申 FDA 要求统计学显著的总生存，PDUFA 仍为 11-14</title>
-  <link>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-fda.html</link>
-  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-fda.html#2026-11-05</guid>
-  <pubDate>2026-11-05</pubDate>
-  <description>6 月更新的 OS（HR 0.76，名义 p=0.0151）已提交 FDA。未提咨询会或延期。</description>
-</item><item>
-  <title>康方宣布一线胆道癌正式获纳入优先审评</title>
-  <link>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-gi1.html</link>
-  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-gi1.html#2026-11-05</guid>
-  <pubDate>2026-11-05</pubDate>
-  <description>此前 10-23 为拟纳入公示。未披露审评时限。CDE 原页当时未打开，以公司稿为准。港交所无对应自愿公告。</description>
-</item><item>
-  <title>HARMONi-GI3 登记页入组目标改为 900 例</title>
-  <link>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-gi3.html</link>
-  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/harmoni-gi3.html#2026-11-05</guid>
-  <pubDate>2026-11-05</pubDate>
-  <description>与 Summit 三季报「计划 900 例、预计 2027 年第三季度完成入组」一致。</description>
-</item><item>
-  <title>特别股东会通过法定普通股增至 20 亿股</title>
-  <link>https://okaku1001.github.io/io2-adc-tracker/entries/summit-az.html</link>
-  <guid>https://okaku1001.github.io/io2-adc-tracker/entries/summit-az.html#2026-11-05</guid>
-  <pubDate>2026-11-05</pubDate>
-  <description>用于阿斯利康优先股转换。424B7 是登记转售，不是新发行。交割本身发生在 10-05。</description>
 </item>
 </channel>
 </rss>
